@@ -1,0 +1,427 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate, url}
+\newcommand{\dx}{dx}
+\begin{document}
+
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Bonus Homework and Exam Review - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, December 9 at the start of the final exam.}
+\end{center}
+
+{\bf It is strongly recommended that you do as many of these problems as possible. This is the best
+way to review for the exam.} I recommend the following: Work on ten problems at a time, and come up
+with solutions without checking the book or your notes. Take a break. Then, look at your solutions
+and compare them to the book, your notes, and your old homeworks and see if there is anything you want
+to change.
+
+{\bf For any graphing problems:} Find all critical points, inflection points, intervals of increase
+and decrease, where the graph is concave up or down, and horizontal and vertical asymptotes.
+
+{\bf Where appropriate:} Always draw a diagram and/or a graph if it is relevant to your problem,
+and explain yourself clearly.
+
+{\bf The exam will include}, among other questions: at least one graphing question, at least
+one optimization question, at least one related rates question, at least one volume or area
+question, at least one question where you are given a graph and have to say something about it,
+and at least one of the first eight questions below. 
+
+{\bf Extra credit: This assignment is completely optional.} 
+It is worth extra credit equivalent to two homework assignments.
+{\bf Partial extra credit cheerfully given}; this is {\itshape extremely long}, 
+if you don't get through all of this, please turn in
+what you have.
+
+{\bf Good luck!} Taylor, Lauren, and I are all here to help if you get stuck.
+
+\begin{enumerate}[(1)]
+
+\item
+Give the definition of the derivative of a function 
+$f(x)$ at the point $x = a$. (Please give an algebraic
+definition, using an equation.) Draw a picture and
+explain why your equation gives the slope of the tangent
+line to the graph of $f(x)$ at $x = a$.
+
+\item
+Give the definition of the definite integral of a function
+$f(x)$ between $x = a$ and $x = b$. (Give an
+algebraic definition, using an equation.)
+Draw a picture and explain why your equation
+gives the area under the graph of $f(x)$ between
+$a$ and $b$.
+
+\item
+Give the definition of the indefinite integral
+of a function $f(x)$.
+
+\item
+What do indefinite integrals have to do with derivatives, and how do you
+know?
+
+\item
+What do definite integrals have to do with derivatives, and how do you know?
+
+\item
+State both parts of the Fundamental Theorem of Calculus.
+
+\item
+The first part of the Fundamental Theorem of Calculus tells you that
+$\frac{d}{dx}\bigg( \int_a^x f(t) dt \bigg) = f(x)$. Why is this
+true? Draw a picture and explain.
+
+\item
+What does the Mean Value Theorem say? Draw a picture and explain.
+
+\item
+Find the absolute maximum and minimum of $f(x) = x e^{-x^2/8}$ on the interval $[-1, 4]$.
+
+\item
+If $f$ and $g$ are two functions, draw a picture which explains why $(fg)' = f' g + g' f$.
+
+\item
+A snowball melts so that its surface area decreases at a rate of 1 $cm^2/min$. Find the rate
+at which the diameter decreases when the diameter is 10 cm. (The surface area of a sphere of radius
+$r$ is $4 \pi r^2$.
+
+\item
+Find the absolute maximum and minimum values of $f(x) = \frac{x}{x^2 + 1}$ on $[0, 2]$.
+
+\item
+Give an equation of a function which is not differentiable (at at least one point), and
+explain why it is not differentiable.
+
+\item
+Do prob. 7 on p. 285 of Stewart.
+
+\item
+Find $f'(t)$ if $f(t) = \frac{1}{2} t^6 - t^4 + t$.
+
+\item
+Define the function $\cos(x)$.
+
+\item
+A man starts walking north at 4 ft/s from a point $P$. Five minutes later a woman starts
+walking south at 5 ft/s from a point 500 ft due east of $P$. At what rate are they moving apart
+15 min after the woman starts walking?
+
+\item
+Do prob. 3 on p. 162 of Stewart.
+
+\item
+Verify that $f(x) = \sqrt{x} - x/3$ satisfies the hypotheses of Rolle's thorem
+on the interval $[0, 9]$. Then find all numbers $c$ that satisfy the conclusion of Rolle's
+theorem.
+
+\item
+Find the absolute maximum and minimum of $f(t) = 2 \cos t + \sin 2t$ on the interval
+$[0, \pi/2]$.
+
+\item
+Do prob. 6 on p. 162 of Stewart.
+
+\item
+Graph a function $f$ for which $f(0) = 0$, $f(1) = 1$, $\lim_{x \rightarrow \infty} f(x) = 0$,
+and $f$ is odd.
+
+\item
+Find all local and absolute maxima and minima of $f(x) = e^x$.
+
+\item
+Find $\int_0^4 \sqrt{4x - x^2}$ using geometry.
+
+\item
+Find $f'(u)$ if $f(u) = \frac{\ln u}{1 + \ln(2u)}$.
+
+\item
+Find the derivative of $f(x) = \sqrt{1 + 2x}$ using the definition of the derivative.
+State the domain of $f(x)$ and of its derivative.
+
+\item
+Do prob. 9 on p. 97 of Stewart.
+
+\item
+Do prob. 61 on p. 297 of Stewart.
+
+\item
+Graph the function $y = x^3$ on $[0, 1]$ and estimate the area under the curve
+by dividing it into four intervals.
+
+
+\item
+Find the first and second derivatives of $G(r) = \sqrt{r} + r^{1/3}$.
+
+\item
+What does $\lim_{x \rightarrow -\infty} g(x) = 6$ mean?
+
+\item
+Find $y'$ if $y = x^x$.
+
+\item
+Explain why $\frac{d}{dx}(\ln x) = \frac{1}{x}$. (You may use any fact you know
+about the function $y = e^x$.
+
+\item
+A Norman window has the shape of a rectangle with a semicircle on top.
+If the perimeter of the window is 30 ft, find the dimensions of the window
+with the largest area.
+
+\item
+Graph $f(x) = e^{-x^2}$.
+
+\item
+Find $\lim_{x \rightarrow 16} \frac{4 - \sqrt{x}}{16 x - x^2}$.
+
+\item
+Find $y'$ if $y= \frac{x + 1}{x^3 + x - 2}$.
+
+\item
+If $f(x) = 3x^2 - 5x$, find $f'(2)$ and use it to find an equation of the tangent
+line to the parabola $y = 3x^2 - 5x$ at the point $(2, 2)$.
+
+\item
+Do prob. 52 on p. 345 of Stewart.
+
+\item
+Find the derivative of $f(t) = 5t - 9t^2$ using the definition of the derivative.
+State the domain of the function and of its derivative.
+
+\item
+Sketch the graph of a function with two local maxima, one local minimum, and no
+absolute maximum.
+
+\item
+Do prob. 4 on p. 388 of Stewart.
+
+\item
+Find $g'(x)$ if $g(x) = \frac{3x - 1}{2x + 1}$.
+
+\item
+Find the area bounded by the curves $y = 1/x$, $y = 1/x^2$, and $x = 2$.
+
+\item
+Graph $f(x) = \frac{x}{x - 1}$.
+
+\item
+If $\sqrt{xy} = 1 + x^2 y$, find $\frac{dy}{dx}$. (Your answer may have $y$ in it.)
+
+\item
+Find $\lim_{x \rightarrow - \infty} \frac{1}{2x - 3}$.
+
+\item
+Do prob. 42 on p. 164 of Stewart.
+
+\item
+A farmer wants to build a rectangular fence along a river. She has 100 feet of fencing and
+does not need any fence along the river. How much area can she enclose?
+
+\item
+Find the limit $\lim_{x \rightarrow -2} \frac{2 - |x|}{2 + x}$ if it exists.
+If it does not exist, say why.
+
+\item
+Evaluate $\int_0^1 10^x dx$.
+
+\item
+A boat leaves a dock at 2:00 and travels due south at 20 km/h. Another boat has been
+heading due east at 15 km/h and reaches the same dock at 3:00. At which time were the two
+boats closest together?
+
+\item
+Find the volume of the solid obtained by rotating the region bounded by
+$y = 1/x$, $x = 1$, $x = 2$, $y = 0$ about the $x$-axis.
+
+\item
+Let $f(x) = x^2$. Use the Mean Value Theorem to show that there is a point $c \in (-1, 2)$
+with $f'(c) = 1$. Then, find $f'(x)$ and figure out all such values of $c$. Draw
+a picture which illustrates your conclusions.
+
+\item
+Explain why $\frac{d}{dx}(\cos x) = - \sin x$.
+
+\item
+Find the derivative of $f(x) = \csc x$ and $g(x) = \sec x$.
+
+\item
+Find the volume of a square pyramid with base length $b$ and height $b$.
+
+\item
+Find the point on the line $y = 4x + 7$ that is closest to the origin.
+
+\item
+Find $\lim_{x \rightarrow \infty} \big( \sqrt{9 x^2 + x} - 3x \big)$.
+
+\item
+If $1 + x = \sin(x y^2)$, find $\frac{dy}{dx}$. (Your answer may have $y$ in it.)
+
+\item
+Find the volume of a sphere with radius $r$.
+
+\item
+A rectangular storage container with an open top is to have a volume of
+10 $m^3$. The length of its base is twice the width. Material for the base
+costs 10 dollars per square meter. Material for the sides costs 6 dollars per square
+meter. Find the cost of materials for the cheapest such container.
+
+\item
+Find the volume of the solid obtained by rotating the region bounded by the following
+curves about the $y$-axis: $y^2 = x$, $x = 2y$.
+
+\item
+Graph $f(x) = \frac{x}{x^2 + 9}$.
+
+\item
+You drive 120 miles from Columbia to Charlotte, and the trip takes two hours.
+At some point, your speed is exactly 60 mph. Explain how you know this. Must there
+be a point at which your speed is exactly 65 mph?
+
+\item
+The number of bacteria after $t$ hours in a laboratory experiment is $n = f(t)$.
+What is the meaning of the derivative $f'(5)$? What are its units?
+
+Suppose there is an unlimited amount of space and nutrients for the bacteria.
+Which do you think is larger, $f'(5)$ or $f'(10)$? Does it matter if the supply of
+nutrients is limited? Explain.
+
+\item
+Do prob. 7 on p. 410 of Stewart.
+
+\item
+Explain why $\lim_{\theta \rightarrow 0} \frac{ \sin \theta}{\theta} = 1$ without
+L'Hospital's rule.
+
+\item
+Graph $y =  x \sqrt{5 - x}$.
+ 
+\item
+Find the limit $\lim_{t \rightarrow 9} \frac{9 - t}{3 - \sqrt{t}}$.
+
+\item
+Find $\frac{dy}{dx}$ if $y = \sin^{-1} x$.
+
+\item
+Evaluate $\int_0^1 x e^{-x^2} dx$.
+
+\item
+A television camera is positioned 4000 ft from the base of a rocket launching pad.
+A rocket rises vertically, and its speed is 600 ft/s when it has risen 3000 feet.
+How fast is the distance from the television camera to the rocket changing at that moment?
+
+\item
+Find two numbers whose sum is 10 and whose product is a maximum.
+
+\item
+Find $\lim_{x \rightarrow \infty} \cos x$.
+
+\item
+Graph $y = x \tan x$ for $ - \pi/2 < x< \pi/2$.
+
+\item
+Gravel is being dumped from a conveyor belt at a rate of 30 $ft^3/min$, and it forms
+a pile in the shape of a cone whose base diameter and height are always equal. How fast is the pile
+increasing when the pile is 10 ft high?
+
+\item
+You and nine friends are working on calculus problems together. Each of you can solve
+problems at a rate of $r(t) = 6 + t$, where $t$ is the number of hours you have worked
+(you improve as you go along!), and $r(t)$ is the number of calculus problems per hour.
+
+If each problem takes half a page, and you work front and back, and a piece of paper
+is 0.01 in thick, how fast is the pile of homework problems increasing when you have
+been working for 35 hours?
+
+\item
+Evaluate $\int \frac{\sin 2x}{\sin x} dx$.
+
+\item
+Evaluate $\int_0^7 \sqrt{4 + 3x} dx$.
+
+\item
+Graph $y = x/2 - \sin x$ for $0 < x < 3 \pi$.
+
+\item
+A parking lot charges \$5 for the first hour (or part of an hour) and \$5 for
+each succeeding hour (or part), up to a daily maximum of \$20. Sketch a graph
+of the cost of parking at this lot as a function of the time parked there.
+In addition, discuss the discontinuities of this function and their significance
+to someone who parks in the lot.
+
+\item
+Find all points on the graph of the function $f(x) = 2 \sin x + \sin^2 x$ at which
+the tangent line is horizontal.
+
+\item
+Find $y'$ if $y = \frac{1 - \sec x}{\tan x}$.
+
+\item
+Find the horizontal and vertical asymptotes of $y = \frac{x^3 - x}{x^2 - 6x + 5}$.
+
+\item
+Evaluate $\int \cos \theta \sin^6 \theta d \theta$.
+
+\item
+Graph $y = x - \ln x$.
+
+\item
+A lighthouse is on a small island 3 km away from the nearest point $P$ on a straight
+shoreline and its light turns four revolutions per minute. How fast is the beam of light
+moving along the shoreline when it is 1 km from $P$?
+
+\item
+Find the derivative of $y = (2x - 5)^4 (8 x^2 - 5)^{-3}$.
+
+\item
+Evaluate $\int e^x \sin(e^x) dx$.
+
+\item
+A trough is 10 ft long and its ends have the shape of isoceles traingles that
+are 3 ft across the top and have a height of 1 ft. If the trough is being filled with
+water at a rate of 12 $ft^3/min$, how fast is the water level rising when the water
+is 6 inches deep?
+
+\item
+Graph $y = 1/(1 + e^{-x})$.
+
+\item
+Explain what it means to say that $\lim_{x \rightarrow 1^-} f(x) = 3$ and
+$\lim_{x \rightarrow 1^+} f(x) = 7$. In this situation is it possible that
+$\lim_{x \rightarrow 1} f(x)$ exists?
+
+\item
+A ball is thrown into the air with velocity 40 ft/s, and its height in feet after
+$t$ seconds is given by $y = 40t - 16t^2$. Find the velocity when $t = 2$.
+
+\item
+Evaluate $\int x \sin(x^2) dx$.
+
+\item
+Find the equation of the tangent line to $y = \frac{1}{\sin x + \cos x}$ at the point
+$(0, 1)$.
+
+\item
+Find the derivative of $f(x) = (1 + 2x + x^3)^{1/3}$.
+
+\item
+Graph $y = \frac{x^2 - 4}{x^2 - 2x}$. (Hint: look for a partial shortcut)
+\item
+Do prob. 17 on p. 151 of Stewart.
+
+\item
+Find $\lim_{\theta \rightarrow 0} \frac{\tan 6 \theta}{\sin 2 \theta}$.
+
+\end{enumerate}
+
+\end{document}

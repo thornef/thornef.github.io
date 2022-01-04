@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate, url}
+\newcommand{\dx}{dx}
+\begin{document}
+
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 10 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Wednesday, November 14}
+\end{center}
+
+\begin{enumerate}[(a)]
+
+\item
+What is an indefinite integral? Explain thoroughly.
+
+\item
+What is a definite integral? Explain thoroughly and draw a picture.
+
+\item
+Graph the function $y = x^2$, and estimate $\int_0^1 x^2 dx$ by dividing
+$[0, 1]$ into four, then six, then eight intervals.
+
+\item
+Graph the function $y = x^3$ and estimate $\int_0^1 x^3 dx$ by dividing
+$[0, 1]$ into two, three, four intervals.
+
+\item
+Graph the function $y = x$ and estimate $\int_0^1 x dx$ by dividing
+$[0, 1]$ into four, then six, then eight intervals. Then, evaluate $\int_0^1 x dx$
+using geometry and compare your answers.
+
+\item
+Evaluate $\int_0^4 \sqrt{4 - (x - 2)^2} \dx$ using geometry.
+
+\item
+Evaluate $\int_0^4 \sqrt{4x - x^2} \dx$ using geometry.
+
+\item
+Evaluate $\int_0^3 4x \dx$ using geometry.
+
+\item
+Evaluate $\int_{-2}^0 3x \dx$ using geometry.
+
+\item
+Evalute $\int_{-4}^4 \frac{x}{2} \dx$ using geometry.
+
+\item
+Evaluate $\int_{-2}^5 (x + 3) \dx$ using geometry.
+
+\item
+What does the Fundamental Theorem of Calculus say, and why is it true? Explain carefully
+and throughly.
+
+\item
+Stewart, Ch. 4.9, 49-52, 57, 63. (Recall that the velocity function is the derivative
+of the position function, and the acceleration is the derivative of the velocity. In 63,
+use $a(t) = -10 m/s^2$.)
+
+\item
+Stewart, Ch. 5.3, 4, 7, 8.
+
+\item
+Stewart, Ch. 5.3, 19-40, omit 34 (even).
+
+\item
+Stewart, Ch. 5.3, 43.
+
+\end{enumerate}
+Additional problems:
+\begin{enumerate}[(a)]
+\item
+Stewart, 4.9, 1-14 (odd).
+
+\item
+Stewart, Ch. 5.3, 19-40 (odd).
+\end{enumerate}
+Bonus: 5.3, 76.
+\end{document}

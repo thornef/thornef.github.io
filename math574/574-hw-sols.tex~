@@ -1,0 +1,153 @@
+\documentclass[12pt]{amsart}
+\textwidth 7.0in
+
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.6in
+\pagestyle{empty}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[mathscr]{euscript}
+\usepackage{enumerate, verbatim, url}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-12mm}
+
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Selected Homework Solutions - Math 574, Frank Thorne}
+\end{center}
+\begin{enumerate}[1.]
+\item(4.5, 12). If $a$ and $b$ are rational numbers, $b \neq 0$, and $r$ is an irrational number,
+then prove that $a + br$ is irrational.
+
+Proof. We argue by contradiction. Suppose that $a + br$ is rational. Then $br = (a + br) - a$ is rational,
+being a difference of two rational numbers. Also, $r = \frac{br}{b}$ is rational, being a quotient of two
+rational numbers (the denominator of which is not zero). However, we assumed that $r$ was irrational,
+and $r$ cannot be both rational and irrational.
+
+This is a contradiction, and therefore $a + br$ is irrational.
+
+\item(4.5, 15). Prove that if $a$, $b$, and $c$ are integers and $a^2 + b^2 = c^2$, then at least one of $a$ and
+$b$ is even.
+
+Proof: We argue by contradiction. Suppose that both $a$ and $b$ are odd. Then we can write $a = 2m + 1$ and
+$b = 2n + 1$ for integers $m$ and $n$, and therefore
+$$a^2 + b^2 = (2m + 1)^2 + (2n + 1)^2 = 4m^2 + 4m + 1 + 4n^2 + 4n + 1 = 4(m^2 + m + n^2 + n) + 2.$$
+
+We divide into two cases: $c$ is even, or $c$ is odd. If $c$ is odd, then so is $c^2$. However, the calculation above
+showed that $a^2 + b^2$ is even, and this is a contradiction. If $c$ is even, then it is divisible by 2, and so $c^2$ is divisible
+by 4. However, $a^2 + b^2$ is equal to a multiple of 4 plus 2, and so it is not divisible by 4. In either case we have a contradiction.
+Therefore, at least one of $a$ and $b$ is even.
+
+\item Prove that $\sqrt{2} + 2$ is irrational.
+
+Proof. We use the results, previously proved, that $\sqrt{2}$ is irrational, and that the sum of two
+rational numbers is rational.
+
+Suppose to the contrary that $\sqrt{2} + 2$ is rational. Then $\sqrt{2} = -2 + (\sqrt{2} + 2)$
+is the sum of two rational numbers, hence rational. However, we know that it's irrational,
+and this is a contradiction. Therefore $\sqrt{2} + 2$ is irrational.
+
+\item Prove that $\sqrt[3]{3}$ irrational.
+
+We have to argue the following claim first: Suppose that for some integer $n$, $n^3$ is divisible
+by 3. Then $n$ is also divisible by 3.
+
+To prove this, we argue by contradiction. Suppose that $n$ is not divisible by 3. In this case
+we can write $n = 3a + 1$ or $n = 3a + 2$ for some integer $a$, by the division-with-remainder theorem.
+
+If $n = 3a + 1$, then $$n^3 = (3a + 1)^3 = 27a^3 + 27a^2 + 9a + 1 = 3(9a^3 + 9a^2 + 3a) + 1,$$
+so that $n^3$ is of the form $3b + 1$, hence it is not divisible by 3.
+
+If $n = 3a + 2$, then $$n^3 = (3a + 2)^3 = 27a^3 + 54a^2 + 36a + 8 = 3(9a^3 + 18a^2 + 12a + 2) + 2,$$
+so that $n^3$ is of the form $3b + 1$, hence it is not divisible by 3.
+
+In either case, we get a contradiction. Therefore $n$ is divisible by 3.
+
+Now we prove the main claim. Suppose to the contrary that we can write $\sqrt[3]{3}$ as a fraction $\frac{a}{b}$,
+where $a$ and $b$ have no common factor. Then, cubing, we have $3 = \frac{a^3}{b^3}$ and therefore $3 b^3 = a^3$.
+Thus, $a^3$ is divisible by 3 and so $a$ is also (by the claim argued above). Write $a = 3c$ for some integer $c$
+so that $3 b^3 = 27 c^3$, and thus $b^3 = 9 c^3$. Therefore $b^3$ is divisible by 3, and hence $b$ is also.
+
+But then $a$ and $b$ are both divisible by 3, contradicting the assumption that they have no common factor.
+
+\item Prove that $\lim_{x \rightarrow 2} 0 = 0$.
+Suppose that any $\epsilon > 0$ is given. Then let $\delta = 37.$ (Note: Any choice of $\delta$ whatsoever 
+works.) Then, we must prove that whenever $|x - 2| < \delta$, we have $|0 - 0| < \epsilon$. However, the latter conclusion is true
+regardless of $x$, and so this holds. Therefore, $\lim_{x \rightarrow 2} 0 = 0$.
+
+\item Prove that $\lim_{x \rightarrow 2} -2x - 9 = -13.$
+
+Suppose $\epsilon > 0$ is given.
+
+[Aside: This is not needed in the proof, but this calculation tells you what $\delta$ to pick.
+If $-2x - 9 = -13 + \epsilon$, then $x = 2 - \epsilon/2$, and if $-2x - 9 = -13 - \epsilon$,
+then $x = 2 + \epsilon/2$. So we should choose $\delta = \epsilon/2$, or any smaller $\delta$.]
+
+Let $\delta = \epsilon/2$, and suppose that $|x - 2| < \delta$. Then this means that
+$2 - \delta < x < 2 + \delta$, so that $2 - \epsilon/2 < x < 2 + \epsilon/2$. Multiplying by
+$-2$ and subtracting 9, we obtain $-13 + \epsilon > -2x - 9 > -13 - \epsilon$, so that
+$|(-2x - 9) - (-13)| < \epsilon$ whenever $|x - 2| < \delta$, as required.
+
+\item Prove that $\lim_{x \rightarrow \pi/4} \sin(x) \neq 1$.
+Let $\epsilon = 0.99 - \frac{\sqrt{3}}{2}$, and suppose that some $\delta > 0$ is given. We must prove that
+there exists $x$ such that $|x - \pi/4| < \delta$ and $|\sin(x) - 1| > \epsilon$. 
+
+We choose $x = min(\pi/3, \pi/4 + \delta/2)$. Then $|x - \pi/4| < \delta$ and $x$ is between $\pi/4$ and $\pi/3$,
+so that $\sin(x)$ is between $\sqrt{2}/2$ and $\sqrt{3}/2$. This implies that $1 - \sin(x)$ is at least $1 - \sqrt{3}/2$, which
+is greater than $\epsilon = 0.99 - \frac{\sqrt{3}}{2}$. Therefore, 
+$\lim_{x \rightarrow \pi/4} \sin(x) \neq 1$.
+
+\item(5.3, 18). Prove that $5^n + 9 < 6^n$, for integers $n \geq 2$.
+
+Proof. Let $P(n)$ be the statement $5^n + 9 < 6^n$. Observe that $P(2)$ is true
+because $5^2 + 9 = 34 < 36 = 6^n$.
+
+Now, suppose that $P(n)$ is true for some $n$. Then, we have the inequalities
+$$
+5^{n + 1} + 9 = 5 \cdot 5^n + 9 < 5 \cdot(5^n + 9) < 5 \cdot 6^n < 6 \cdot 6^n = 6^{n + 1}.$$
+Therefore, $P(n + 1)$ is true, and the result follows by induction.
+
+Comment: When writing induction proofs, please do not write down $P(n + 1)$ and then write
+a chain of statements leading to something you know is true. Although this can often be turned into a
+correct proof, this is backwards (it is the converse of what you are trying to do).
+
+\item(6.2, 9) Prove that for any sets $A$, $B$, $C$,
+$(A - B) \cup (C - B) = (A \cup C) - B$.
+
+Proof. First, we prove that $(A - B) \cup (C - B)
+\subseteq (A \cup C) - B$. Suppose that $x \in (A - B) \cup (C - B)$.
+Then, either $x$ is in $A - B$ or $x$ is in $C - B$ (or both).
+If $x$ is in $A - B$, then $x \in A$ and $x \not \in B$.
+Since $x \in A$, we have $x \in (A \cup C)$, and therefore
+$x \in (A \cup C) - B$.
+
+If $x$ is in $C - B$, then $x \in C$ and $x \not \in B$.
+Since $x \in C$, we have $x \in(A \cup C)$, and therefore
+$x \in (A \cup C) - B$.
+
+Since $x \in (A \cup C) - B$ in either case, we can conclude
+that $x \in (A \cup C) - B$, and therefore that
+$(A - B) \cup (C - B) \subseteq (A \cup C) - B$.
+
+Now, we must prove that $\subseteq (A \cup C) - B
+\subseteq (A- B) \cup (C - B)$. Suppose that $x \in (A \cup C) - B$.
+Then, $x \in A \cup C$, and $x \not \in B$. 
+
+Since $x \in A \cup C$, either $x \in A$ or $x \in C$ (or both).
+If $x \in A$, since $x \not \in B$, we have $x \in A - B$.
+If $x \in C$, since $x \not \in B$, we have $x \in C - B$.
+In either case, $x$ is in at least one of $A - B$ and $C - B$,
+and therefore $(A \cup C) - B
+\subseteq (A- B) \cup (C - B)$.
+
+It thus follows that
+$(A \cup C) - B = (A- B) \cup (C - B)$.
+
+\end{enumerate}
+
+\end{document}

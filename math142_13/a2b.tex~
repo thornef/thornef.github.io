@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Examination 2 - Math 142, Frank Thorne (thorne@math.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Thursday, October 24, 2013}
+\end{center}
+
+{\bf Instructions and Advice:} 
+
+\begin{itemize}
+\item
+There are eight questions, some of which are shorter than others.
+\item
+You are welcome to as much scratch paper as you need. Turn in everything you want graded,
+and throw away everything you do not want graded.
+\item
+{\bf Draw pictures where appropriate.} If you have any doubt, then a picture is appropriate.
+\item
+Be clear, write neatly, explain what you are doing, and show your work. {\bf This is especially
+important for earning partial credit} in case your work contains one or more mistakes.
+Be warned that {\bf work I cannot understand will not receive any credit.}
+\item
+75 minutes is a long time. Don't dilly-dally, but don't rush. {\bf You are strongly advised
+to take the entire 75 minutes to complete the examination.} If you finish early, you have the
+opportunity to check your work.
+\item
+Please work without books, notes, calculators, or any assistance from others. 
+\item
+I will be at the front of the room; if you have
+any questions, feel free to ask me. 
+\end{itemize}
+
+\begin{center}
+{\bf GOOD LUCK!}
+\end{center}
+\newpage
+
+\begin{enumerate}[(1)]
+\item
+(12 points) Find the volume of sphere of radius $6$.
+
+({\itshape Warning:} You will not get credit for remembering the formula
+and plugging in $6$. A correct answer will carry out the calculus
+computation. You {\itshape may} use the fact that a circle of radius $r$ has
+area $\pi r^2$, without further justification.)
+
+Draw a picture illustrating your computation.
+
+\item
+(10 points) The region bounded by $y = \frac{1}{9} x^2$, $x = 3$, and $y = 0$ 
+is rotated around the
+$y$-axis. Find the volume of the resulting solid.
+
+As part of your answer, sketch the region, the resulting solid, and a typical disk or washer.
+
+\item
+(10 points) Explain what it means for a curve to be defined by parametric equations. Give and graph
+an example. (Your example should be different than other questions on this exam.)
+
+\item
+(10 points) Sketch the curve given by the equations $x = 2 \cos t$, $y = t - \cos t$ for $0 \leq t \leq 2\pi$.
+
+(10 points) In addition, find the equation of the tangent line when $t = \pi/3$, and sketch it on your graph.
+
+\item
+(10 points) Three graphs are given, along with parametric equations for them (in a different order). 
+Match the graphs with the equations,
+and give reasons for your choices.
+\item
+(10 points) Plot the point whose polar coordinates are $(-3, \pi/4)$. In addition, find Cartesian
+coordinates of this point, and find another set of polar coordinates $(r, \theta)$ for the
+same point with $r > 0$.
+\item
+(10 points) Sketch the curve with the polar equation $r = 2 \cos 2 \theta$ for $0 \leq \theta \leq 2 \pi$.
+
+(8 points) Also, find the slope of the
+tangent line when $\theta = \pi/3$.
+
+\item
+(10 points) A graph of the curve $r = 2 + 2 \cos \theta$ is provided. Write down a definite integral
+which represents the area of the curve. In addition, use the graph to give a rough estimate for the value of this
+integral.
+
+\end{enumerate}
+
+\end{document}

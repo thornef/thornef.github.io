@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Examination 2 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Wednesday, October 31, 2012}
+\end{center}
+
+Please work without books, notes, calculators, or any assistance from others. If you have
+any questions, feel free to ask me. Please do your work on separate paper; you should staple this sheet to your work (put this on top)
+and turn in everything together. 
+
+The first four questions are 15 points and the last two are 20 each.
+\\
+\\
+\begin{enumerate}[(1)]
+\item
+Find $\frac{dy}{dx}$ if $y = \frac{x}{4 - \tan x}$.
+
+\item
+Find $\frac{dy}{dx}$ if $\sin(xy) = x^2 - \ln(y)$.
+
+\item
+If a ball is given a push so that it has an initial velocity of 5 $m/s$ down a certain
+inclined plane, then the distance it has rolled after $t$ seconds is $s = 5t + 3t^2$.
+
+(a) Find the velocity after 2 s.
+
+(b) How long does it take for the velocity to reach 35 m/s?
+
+\item
+A plane flying horizontally at an altitude of 1 mi and a speed of 500 mi/h passes directly over a radar
+station. Find the rate at which the distance from the plane to the station is increasing when it is 2 mi away from
+the station.
+
+\item
+Find the absolute maximum and minimum values of $y = e^x - x$ on $[-1, 1]$.
+\item
+Graph the function $y = \frac{x}{2} - \sin(x)$ for $0 < x < 2 \pi$. Indicate where your graph is increasing or decreasing,
+and where it is concave up and down. Indicate all the critical points and points of inflection.
+
+\end{enumerate}
+
+\end{document}

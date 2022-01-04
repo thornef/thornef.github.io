@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 4 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Monday, September 24}
+\end{center}
+\begin{enumerate}[(a)]
+
+\item
+Draw a graph of a function which is not differentiable, and geometrically explain why it is not differentiable.
+
+\item
+Give an equation of a function which is not differentiable, and algebraically explain why it is not differentiable.
+(You can use the same function or a different function.)
+
+\item
+Give the definition of the {\itshape derivative} of a function
+$f(x)$ at the point $x = a$. (Please give the algebraic definition,
+using an equation.)
+
+Draw a picture and explain why your
+equation gives the slope of the tangent line to the graph of $f(x)$
+at $x = a$.
+
+\item
+Stewart, Ch. 2.8, 3, 5-8, 14.
+\item
+Stewart, Ch. 2.8, 19-29 (even).
+\item
+Stewart, Ch. 2.8, 41-43.
+\item
+If $f(x) = c$, where $c$ is a constant, find $f'(x)$ using the definition.
+Draw a picture which explains your conclusion.
+
+\item
+Explain why the derivative of $e^x$ is equal to $e^x$. You may take for granted that
+$\lim_{h \rightarrow 0} \frac{e^h - 1}{h} = 1$.
+
+\item
+Stewart, Ch. 3.1, 2-34, 45-46 (even).
+
+\item
+Stewart, Ch. 3.1, 49. (Note: The acceleration is the derivative of the velocity.)
+
+\item
+What is the 500th derivative of $f(x) = x^{100}$? Explain why.
+
+\item
+Stewart, Ch. 3.2, 1-18, 27-30 (even).
+
+\item
+Stewart, Ch. 3.2, 31-34 (even).
+\end{enumerate}
+Additional problems:
+
+\begin{enumerate}[(a)]
+\item
+Stewart, Ch. 2.8, 15-16 (all), 19-29 (odd).
+
+\item
+Stewart, Ch. 3.1, 2-34, 45-46 (odd).
+
+\item
+Stewart, Ch. 3.2, 1-18, 27-30 (odd).
+
+\item
+Stewart, Ch. 3.2, 31-34 (odd).
+\end{enumerate}
+{\bf Bonus} (1 point each):
+\begin{enumerate}[(a)]
+\item
+Evaluate $\lim_{x \rightarrow 1} \frac{x^{2012} - 1}{x - 1}.$
+\item
+Find the tenth derivative of $f(x) = x^2 e^x$. (Hint: This is way too messy
+to do by brute force. Find a pattern.)
+\end{enumerate}
+\end{document}

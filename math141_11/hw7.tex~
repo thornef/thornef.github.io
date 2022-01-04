@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 7 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, October 7}
+\end{center}
+
+\begin{enumerate}[(a)]
+\item
+Stewart, Chapter 3 Review (pp. 262-263), 15-40, 57-61, 65-66, 83-84; even required, odd recommended.
+
+\item
+Stewart, Ch. 3.9, 11-34; even required, odd recommended. You do not have to follow Stewart's
+(a)-(e) exactly (although this is a very good idea!) but with these problems especially, 
+you should {\bf explain what you are doing}
+in complete sentences and {\bf draw a picture} if appropriate.
+
+\item
+Define the terms {\itshape local maximum}, {\itshape local minimum}, {\itshape absolute maximum},
+{itshape absolute minimum}, and {\itshape critical number}.
+
+\item
+Describe how to find all the critical numbers of a function.
+
+\item
+Describe how to find all the local maxima of a function.
+
+\item
+(Trick question. Explain why.) Explain how to find all the absolute maxima of a function.
+
+\item
+Stewart, Ch. 4.1, 7-10, 13-14, 21-28, 47-60; even required, odd recommended.
+
+\end{enumerate}
+
+\end{document}

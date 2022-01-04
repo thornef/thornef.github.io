@@ -1,0 +1,327 @@
+<HTML>
+
+<HEAD>
+
+<TITLE> Math 574, Spring 2012 </TITLE>
+
+</HEAD>
+
+<BODY BGCOLOR=#FFFFFF>
+
+<P>
+
+<DIV ALIGN="CENTER">
+<B> <FONT SIZE="+3"> Discrete Mathematics -- Mathematics 574
+</FONT>
+</B>
+</DIV>
+
+<P>
+
+<DIV ALIGN="CENTER"> </DIV>
+
+<P>
+
+<BR>
+
+<DIV ALIGN="CENTER"> <B> <FONT SIZE=+2> Frank Thorne - Spring 2012 </FONT> </B> </DIV>
+
+<P>
+
+<BR>
+
+<DIV ALIGN="CENTER"> 
+<B> <FONT SIZE=+2> University of South Carolina </FONT> </B> </DIV>
+
+<P>
+
+<HR>
+
+<P>
+
+<MENU>
+
+<table BORDER>
+
+<tr>
+
+<td> &nbsp                                                      &nbsp </td>
+<td> &nbsp                <b> Instructor              </b>      &nbsp </td>
+
+</tr>
+
+<tr>
+
+<td> &nbsp         
+     &nbsp </td>
+<td> &nbsp <a HREF="http://www.math.sc.edu/~thornef"> Frank Thorne </a> 
+     &nbsp </td>
+
+</tr>
+
+<tr>
+
+<td> &nbsp <b> Office </b> &nbsp </td>
+<td> &nbsp LeConte 400G    &nbsp </td>
+</tr>
+
+<tr>
+
+<td> &nbsp <b> E-mail </b>        &nbsp </td>
+<td> &nbsp thornef [at] mailbox.sc.edu     &nbsp </td>
+
+</tr>
+
+<tr>
+
+<td rowspan=3> &nbsp <b> Office hours </b> &nbsp </td>
+
+<td> Mon/Thu 3:30-4:30, Tue 10:00-11:00 </td>
+
+</tr>
+
+</tr>
+
+</table>
+
+<p>
+
+
+</MENU>
+
+<P>
+
+<HR>
+
+<P>
+
+<FONT SIZE =+2> <B> Course information and learning outcomes: </B> </Font>
+
+<p>
+Students will master foundational concepts in discrete mathematics, including:
+set theory, logic, proof techniques (induction, contradiction, and others),
+and elementary combinatorics (counting techniques).
+
+<P>
+
+<MENU>
+
+<li> <font size=+1> <b> Text </b> </font>: 
+Susanna Epp, <i>Discrete Mathematics: Introduction to Mathematical Reasoning</i>, brief edition.
+You can buy it from Amazon <a href="http://www.amazon.com/Discrete-Mathematics-Introduction-Mathematical-Reasoning/dp/0495826170/ref=sr_1_4?s=books&ie=UTF8&qid=1320966083&sr=1-4">here</a>, for over $30 less than the campus bookstore
+is charging.
+<p>
+Update: The bookstore <i>doesn't even have it</i> (??!) despite the fact
+that I requested it six weeks ago, and the manager
+has not responded to my inquiries. Please buy the book online.
+
+<p>
+<li> <font size=+1> <b> Lectures </b> </font>:
+LeConte 405, Tues/Thurs, 2:00-3:15.
+
+<p>
+
+<li> <font size=+1> <b> Exam schedule </b> </font>: 
+
+<p>
+
+<a href="exam1.pdf">Exam 1:</a> February 9, in class.
+<a href="exam1-sols.pdf">Solutions.</a>
+<p>
+<a href="574-e2.pdf">Exam 2 (with solutions)</a> March 22, in class.
+<p>
+<a href="p-exam3.pdf">Practice Exam 3</a>.
+<p>
+<b>Final Exam:</b> Wed., May 2, 9:00 am - 12:00 noon.
+<li> <font size=+1> <b> Finals Period Office Hours/Review Session: </b> </font>
+<p>
+As settled by popular vote, there will be a <b>review session</b> 
+on <b>Sunday</b>, April 29 in the usual room, from 7:00 until around 9:00. Bring questions.
+<p>
+<b>Office Hours</b>: Mon., April 23 and Tue., April 24, 1:30-2:30. Monday and Tuesday, April 30-May 1,
+times TBD (requests welcome!)
+<p>
+<li> <font size=+1> <b> Homework </b> </font>:
+<p>
+<b> WARNING. I assign a lot of homework.</b>
+<p>
+The homework is intended to take 6-8 hours a week (which is a lot of effort). Please
+count on making a consistent effort to do well in this class! Note that starting the night before will
+not be good enough. If homework takes you more than 8 hours on any given week then please let me know.
+<p>
+(Grading details, TBA)
+<P>
+There will be a few <b>bonus</b> problems on each homework, each worth one or two points, up to a maximum
+score of 11/10 on each week's homework. The bonus homework is intended to let you skip some (not all) of
+the more routine exercises if you feel like attempting something more difficult.
+<p>
+<a href="574-hw-sols.pdf">Some homework solutions</a>.
+
+<li> <font size=+1> <b> Grading </b> </font>: 
+
+<p>
+<b>WARNING</b>. You will be graded both on correctness and on quality of exposition. Indeed, a major
+focus of Math 574 is the ability to communicate mathematical ideas clearly.
+<b>The standard is that someone who doesn't know the answer should be able to easily follow your work.</b>
+In particular, please write in <b>complete English sentences</b> where appropriate (in particular, where
+writing proofs.)
+
+Any work that is confusing, ambiguous, or poorly explained will not receive full credit.
+<p>
+<b>Exams</b> will have a variety of questions. Some questions will be chosen directly from the
+homework assignments, and most will at least be similar to homework problems.
+
+<p>
+<b>Grading scale</b>: A = 90+, B+ = 85+, B = 78+, C+ = 73+, C = 66+, D = 52+. 
+<p>
+<b>Please note that my grading scale is more generous than the usual 10-point scale.</b> However,
+I am a (slightly) stricter grader than most.
+This is intended
+to balance out.
+
+<p>
+<table border>
+
+<tr>
+
+<td> &nbsp Grade component     &nbsp </td>
+<td> &nbsp <b> % of grade </b> &nbsp </td>
+
+</tr>
+
+<tr> 
+
+<td> &nbsp <b> Two in-class exams </b> &nbsp </td> 
+<td> &nbsp 20% x 2                    &nbsp </td> 
+
+</tr>
+
+<tr> 
+<td> &nbsp <b> Final exam: </b> &nbsp </td> 
+<td> &nbsp 35%                  &nbsp </td> 
+
+</tr>
+
+<td> &nbsp <b> Homework: </b> &nbsp </td> 
+<td> &nbsp 25%               &nbsp </td> 
+
+</tr>
+
+</table>
+<p>
+<li> <font size=+1> <b> Contacting me </b> </font>:
+
+<b>Please contact me if you have any questions about the course, about my expectations, about my lectures,
+about the homeworks, about the reading, or about anything else</b>. The syllabus is demanding and it is my
+job to help you succeed.
+
+The best ways to get help are to come to office hours (no appointment necessary) or to e-mail me (I will
+almost always reply within 24 hours). If neither of these work for you then please e-mail me to set up an
+appointment.
+<p>
+
+<P>
+<li> <font size=+1> <b> Feedback </b> </font>:
+
+This is my first time teaching Math 574 at the University of South Carolina.
+<b>I would be grateful to receive any and all feedback.</b> If your feedback is critical and
+you would like to be anonymous, consider signing up for a Yahoo or Gmail account and e-mailing
+from there (I will cheerfully respond).
+
+<p>
+
+<li> <font size=+1> <b> Make-up policy </b> </font>:
+
+<p>
+
+If you have a legitimate conflict with any of the exams it is your responsibility to inform me <b>at least a week before</b> the exam.
+
+Late homework will be accepted <b>once per student</b>, up to a week late; after that, no late homework please
+except in case of emergency.
+<p>
+<b>Academic honesty</b> and <b>attendance</b> are expected of all students.
+<P>
+
+<b>Calculators</b> will not be needed, and they will not be permitted on exams.
+
+<p>
+<li> <font size=+1> <b>Lectures and homeworks</b> </font>:
+<p>
+The following schedule is a <b>rough</b> outline of what we will cover. <b>Subject
+to change.</b> Homework assignments will be added here as the term goes on. 
+<p>
+<b>Jan. 10-12:</b> Sets, relations, and functions (Ch. 1.1-1.3)
+<p>
+*       <a href="hw0.pdf">Homework 0</a>, due Friday, January 13, by 5:00. (Please note the special instructions.)
+<p>
+<b>Jan. 17-19:</b> Introduction to logic (Ch. 2.1-2.3)
+<p>
+*       <a href="hw1.pdf">Homework 1</a>, due Friday, January 20, by 5:00. 
+
+<P>
+<b>Jan. 24-26:</b> Introduction to logic (Ch. 2.1-3.4)
+<p>
+*       <a href="hw2.pdf">Homework 2</a>, due Friday, January 27, by 5:00.
+
+<p>
+<b>Jan. 31-Feb. 2:</b> The logic of quantified statements (Ch. 3.1-3.4)
+<p>
+*       <a href="hw3.pdf">Homework 3</a>, due Friday, February 3, by 5:00.
+
+<p>
+<b>Feb. 7:</b> Methods of proof (Ch. 4.1-4.6)
+<p>
+<b>Feb. 9:</b> Midterm Examination 1
+<p>
+<b>Feb. 14-16:</b> Methods of proof (cont.) (Ch. 4.1-4.6)
+<p>
+*       <a href="hw4.pdf">Homework 4</a>, due Friday, February 17, by 5:00.
+
+<p>
+<b>Feb. 21-23:</b> Proof by induction (Ch. 5.1-5.4)
+<p>
+*       <a href="hw5.pdf">Homework 5</a>, due Friday, February 24, by 5:00.
+<p>
+<b>Feb. 28-Mar. 1</b> Induction (Ch. 5)
+<p>
+*       <a href="hw6.pdf">Homework 6</a>, due Friday, March 2, by 5:00.
+<p>
+<b>Mar. 6-Mar. 8</b> Spring Break!
+<p>
+<b>Mar. 13-15</b> Introduction to set theory (Ch. 6.1-6.4, 7.2)
+<p>
+*       <a href="hw7.pdf">Homework 7</a>, due Monday, March 19, by 5:00.
+<p>
+<b>Mar. 20</b> More on set theory; exam review 
+<p>
+<b>Mar. 22</b> Midterm Examination 2
+<p>
+<b>Mar. 27-29</b> Counting and probability (Ch. 9)
+<p>
+*       <a href="hw8.pdf">Homework 8</a>, due Monday, April 2, by 5:00.
+<p>
+<b>Apr. 3-5</b> Counting and probability (cont.) (Ch. 9)
+<p>
+*       <a href="hw9.pdf">Homework 9</a>, due Friday, April 6, by 5:00.
+<p>
+<p>
+<b>Apr. 10-12</b> Counting and probability (cont.) (Ch. 9)
+<p>
+<p>
+*       <a href="hw10.pdf">Homework 10</a>, due Monday, April 16, by 5:00.
+<p>
+<b>Apr. 17-19</b> Counting and probability (cont.) (Ch. 9)
+<p>
+<b>Final exam:</b> May 2, 9:00 am-12:00 pm.
+ 
+<HR>
+
+<P>
+
+</BODY>
+</HTML>
+
+
+
+
+

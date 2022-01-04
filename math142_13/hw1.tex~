@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 1 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, August 30}
+\end{center}
+
+{\bf Important:} As with everything else in life, being right is not enough.
+Please show your work, write in complete sentences, and explain your reasoning clearly. 
+\\
+\\
+{\bf Required problems.}
+
+\begin{enumerate}[(a)]
+\item
+What is a function? (This is the most important question in all of mathematics.)
+
+\item
+Suppose that $f$ is a function whose domain and range are subsets of the real numbers.
+Explain how to draw the graph of $f$, and what the graph represents.
+
+\item
+Explain what it means to say that
+$$\lim_{x \rightarrow a} f(x) = c.$$
+
+\item
+Define the {\itshape derivative} of a function. Define it using an equation, and also explain
+your definition in English. In addition, draw a picture and explain why your equation describes
+the tangent line to the graph.
+
+\item
+Define an {\itshape inverse function.}
+Explain how to find the derivative of $f^{-1}(x)$, if you know the derivative of $f(x)$.
+
+\item
+Define the functions $\sin(x)$, $\cos(x)$, $\tan(x)$, $\csc(x)$, $\sec(x)$, $\cot(x)$, $e^x$, and
+$\ln(x)$, and say what each of their derivatives is. For $\sin(x)$, $\cos(x)$, and $e^x$, it is okay
+to just state the derivatives. For the other functions, explain how you got your answer. (You will want
+to use the derivatives of sin, cosine, and $e^x$!)
+
+\item
+State the power rule, the product rule, the quotient rule, and the chain rule for finding derivatives.
+
+\item
+Stewart, Ch. 3 Review, pp. 262-263: 6-16, 57, 89 (do (d) without a graphing calculator),
+93.
+
+\item
+Define the {\itshape antiderivative} of a function.
+
+\item
+Define the {\itshape definite integral}
+$$\int_a^b f(x) dx.$$
+Give an equation, and explain why your equation gives the area underneath the curve from $x = a$
+to $x =b$.
+
+\item
+What does the fundamental theorem of calculus say? Why is it true? Explain thoroughly.
+
+\item
+Stewart, Ch. 5.3, 19-26.
+
+\end{enumerate}
+{\bf Additional problems.}
+\begin{enumerate}[(a)]
+\item
+Stewart, Ch. 3 Review, 1-5, 17-22.
+
+\item
+Stewart, Ch. 5.3, 27-32.
+
+\end{enumerate}
+{\bf Bonus} (2 points).
+\begin{enumerate}[(a)]
+\item
+What is the Mean Value Theorem, and why does anybody care about it?
+
+\end{enumerate}
+
+\end{document}

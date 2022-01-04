@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate, url}
+\newcommand{\dx}{dx}
+\begin{document}
+
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 13 - Math 142, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, December 5}
+\end{center}
+
+\begin{enumerate}[(a)]
+\item
+What is a power series?
+
+\item
+Describe an example of a power series which converges for all values of $x$.
+
+\item
+Describe an example of a power series which converges only for some values of $x$.
+
+\item
+Are there any power series which converge for no values of $x$?
+
+\item
+What is the radius of convergence of a power series? How do you find it?
+
+\item
+11.8, 5-18. However, you do not have to test the endpoints of the interval for convergence.
+
+\item
+What is a Taylor series? Why is the formula for it true?
+
+\item
+Find the Maclaurin (Taylor) series for the following functions. Determine their radii of convergence.
+\begin{itemize}
+\item $f(x) = x^2$
+\item $f(x) = e^x$
+\item $f(x) = e^{2x}$
+\item $f(x) = \cos(x)$
+\item $f(x) = \sin(x)$
+\item $f(x) = \cos(4x)$
+\item $f(x) = \sin(x^2)$
+\item $f(x) = x^3 \sin(x)$.
+\item $f(x) = x + e^x$.
+\end{itemize}
+\item
+Explain why the Taylor series for $e^x$ gives you a formula for $e$.
+\item
+Compute $e$, as a fraction or decimal, to fairly good accuracy. Your estimate should plausibly be within $\frac{1}{10}$, but you don't need to show this.
+\item
+Compute $1/e$, as a fraction or decimal, to fairly good accuracy. Your estimate should plausibly be within $\frac{1}{100}$,
+but you don't need to show this.
+\item
+Compute $\sin(1/10)$, as a fraction or decimal, to fairly good accuracy. Your estimate should plausibly be within $\frac{1}{100}$,
+\item
+Compute $\sqrt{1.1}$, as a fraction or decimal, 
+to fairly good accuracy. Your estimate should plausibly be within $\frac{1}{1000}$,
+but you don't need to show this.
+\item
+Stewart, 11.10, 29, 30.
+\end{enumerate}
+Additional problems:
+\begin{enumerate}[(a)]
+\item
+Stewart, 11.8, 19-24, 11.10, 15, 16, 31-36.
+
+\end{enumerate}
+Bonus: Use Taylor series to explain why $e^{ix} = \cos(x) + i \sin(x)$.
+\\
+\\
+{\bf That's all folks!}
+
+\end{document}

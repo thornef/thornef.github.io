@@ -1,0 +1,42 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Probability}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Sample Spaces and Events}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}The Addition and Multiplication Rules}{11}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Permutations and factorials}{18}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Exercises}{22}{subsection.2.4}
+\contentsline {section}{\numberline {3}Expectation}{26}{section.3}
+\contentsline {subsection}{\numberline {3.1}Definitions and examples}{26}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Linearity of expectation}{32}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}A further expected value example}{35}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Exercises}{36}{subsection.3.4}
+\contentsline {section}{\numberline {4}Counting}{38}{section.4}
+\contentsline {subsection}{\numberline {4.1}The Multiplication Rule}{39}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Permutations and combinations}{40}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Pascal's Triangle}{43}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Exercises}{47}{subsection.4.4}
+\contentsline {section}{\numberline {5}Example: Poker}{49}{section.5}
+\contentsline {subsection}{\numberline {5.1}Poker Hands}{50}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Poker Betting}{54}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Examples}{55}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Exercises}{60}{subsection.5.4}
+\contentsline {section}{\numberline {6}Inference}{62}{section.6}
+\contentsline {subsection}{\numberline {6.1}Conditional Probability}{63}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}The Monty Hall Problem}{65}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Bayes' Theorem}{68}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Monty Hall Revisited}{72}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Exercises}{75}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}More Exercises}{77}{subsection.6.6}
+\contentsline {section}{\numberline {7}Competition}{79}{section.7}
+\contentsline {subsection}{\numberline {7.1}Introduction}{79}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Examples of Strategic Games}{81}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Nash Equilibrum}{84}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Exercises}{88}{subsection.7.4}
+\contentsline {section}{\numberline {8}Backwards Induction}{89}{section.8}
+\contentsline {subsection}{\numberline {8.1}The Big Wheel}{90}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Player 3}{91}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Player 2 -- Example}{91}{subsubsection.8.1.2}
+\contentsline {section}{\numberline {9}Special Topics}{93}{section.9}
+\contentsline {subsection}{\numberline {9.1}Divisibility Tests}{93}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Bonkers, Gray Codes, and Mathematical Induction}{95}{subsection.9.2}
+\contentsline {section}{\numberline {10}Project Ideas}{97}{section.10}
+\contentsline {section}{\numberline {11}Review of Games, Links, and Principles}{97}{section.11}

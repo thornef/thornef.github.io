@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim, skull}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\newcommand{\p}{\mathfrak{p}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Algebraic number theory (Spring 2013), Homework 3}
+\end{center}
+\begin{center}Frank Thorne, thornef@webmail.sc.edu
+\end{center}
+\begin{center}
+{\bf Due Monday, February 10}
+\end{center}
+
+\begin{enumerate}
+\item (5 points)
+Represent $23$, $\frac{1}{4}$, $-7$, and $-\frac{1}{14}$ as $7$-adic numbers. Which of them
+are $7$-adic integers?
+
+\item (5 points)
+Write out a formal proof that there exists an injection $\Z_{(p)} \rightarrow \Z_p$.
+
+\skull
+
+\item (*7 points)
+Look up and write out the definition of an {\itshape inverse limit} in general,
+in terms of a universal property. (For example, see the Wikipedia page.) Prove that $\Z_p$
+is the inverse limit of the rings $\Z/(p^n)$, under the projection morphisms, according
+to this definition.
+
+\item (5 points) Represent $\sqrt{6}$ as a $5$-adic integer (find the first few $5$-adic
+digits, and prove that you can keep going without quoting Hensel's lemma), and prove that
+you cannot represent $\sqrt{6}$ as a $7$-adic integer.
+
+\item (10 points) Starting from the completion definition of $\Q_p$ (Cauchy sequences mod 
+Cauchy sequences converging to zero), prove the following properties, less sketchily than was done
+in lecture:
+\begin{itemize}
+\item $\Q_p$ is a field.
+\item $\Z_p$ is a ring, and $(p)$ is the unique maximal ideal.
+\item $\Q_p$ and $\Z_p$ possess an absolute value which agrees with the $p$-adic absolute value
+on $\Q$ and $\Z$, and are complete with respect to this absolute value.
+\end{itemize}
+
+\item (5 points)
+Prove that addition or multiplication by any fixed element of $\Q_p$ is (topologically) a homeomorphism from $\Q_p$
+to itself.
+
+{\itshape If you want to study valuations in general, the adeles, Tate's thesis, etc., please be sure to
+do this exercise. (Or just convince yourself it's ``obvious''.)}
+
+\item (7 points)
+$\Z_p$ is {\itshape compact}.
+
+\end{enumerate}
+
+\end{document}

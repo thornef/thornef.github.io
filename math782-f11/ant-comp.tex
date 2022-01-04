@@ -1,0 +1,115 @@
+
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate}
+\usepackage{comment}
+\usepackage{ifthen, url}
+\newcommand{\textmod}{{\text {\rm mod}}}
+\newcommand{\textMod}{{\text {\rm Mod}}}
+
+
+\oddsidemargin = -1cm \evensidemargin = -1cm \textwidth = 6.8in
+\textheight =8.5in
+\topmargin =0.0in
+
+\title{Comprehensive exam in analytic number theory (Fall 2012)}
+\begin{document}           % End of preamble and beginning of text.
+\maketitle
+Answer everything in the first part and as much of the second part as you can.
+\section{The First Part}
+\begin{enumerate}[1.]
+\item
+For a primitive Dirichlet character $\chi \ (\textmod \ q)$, define a character sum
+$S_{\chi}(t) := \sum_{n \leq t} \chi(n).
+$ The {\bf Polya-Vinogradov} inequality is the statement that
+$|S_{\chi}(t)| \ll \sqrt{q} \log q.$
+\\
+\\
+A paper of Goldmakher \cite{gold} offers the following nice proof that
+$\max_{t \leq q} |S_{\chi}(t)| \gg \sqrt{q}$:
+\vskip 0.1in
+``A slick proof of this is to apply partial summation to the Gauss sum
+$\tau(q) := \sum_{n \leq q} \chi(n) e(n/q)
+$ and use the classical result that for primitive $\chi \ (\textmod \ q)$, $|\tau(\chi)| = \sqrt{q}$.''
+\vskip 0.2in
+(a.) Explain what the word ``primitive'' means, and show that it is necessary in the discussion above.
+
+(b.) Prove that for primitive $\chi$, $|\tau(x)| = \sqrt{q}$. (Hint: evaluate $\tau(\chi) \overline{\tau(\chi)}$.)
+
+(c.) Spell out the details of Goldmakher's argument.
+\vskip 0.2in
+\item 
+(a.) Define the {\itshape convolution} $f \ast g$ of two arithmetic functions $f$ and $g$.
+
+(b.) If $f$ and $g$ are multiplicative, prove that $f \ast g$ is as well.
+
+(c.) Let $\mu(n)$ be the M\"obius function, and let $1$ be the constant function, equal to $1$ for every $n$. 
+
+Evaluate $\mu \ast 1$, and thus obtain a simple identity for the Dirichlet series $\sum_n \mu(n) n^{-s}$.
+\vskip 0.2in
+\item
+Assume that $x$ is a real number $> 1$, not an integer. Then the {\bf explicit formula} reads
+$$\psi(x) = x - \sum_{\rho} \frac{x^{\rho}}{\rho} - \frac{ \zeta'(0)}{ \zeta(0)} - \frac{1}{2} \log(1 - x^{-2}).$$
+
+(a.) Explain what the above means. Your answer should define the function $\psi(x)$ and say what the sum over $\rho$ is.
+
+(b.) Give a sketch of how this formula is proved.
+
+(c.) Suppose that you have proved that the above terms on the right, except for $x$, are all $o(x)$, so that
+$\psi(x) \sim x$. Deduce an asymptotic formula (e.g. {\itshape the prime number theorem}) for the number of primes $\leq x$.
+
+(d.) Given the above formula, prove that the zeta function has at least one nontrivial zero. (What does ``nontrivial'' mean?)
+
+\end{enumerate}
+\section{The Fun Part}
+Answer as many questions as you can.
+\\
+\\
+\begin{enumerate}[1.]
+\item
+The following appears in a still unpublished preprint of Bhargava and Shnidman.
+\\
+\\
+\begin{quote}
+By Theorem 14 and Lemma 16, it now suffices to count pairs $(b, c) \in L$, up to $SO_Q(\mathbb{Z})$-equivalence,
+subject to the condition $Q'(b, c)^2 = (b^2 - bc + c^2)^2 < X$. The number of integral points inside the elliptic region
+cut out by the latter inequality is approximately equal to its area $(2 \pi/\sqrt{3}) X^{1/2}$, with an error of at most $O(X^{1/4})$.
+Meanwhile, being the (orientation-preserving) symmetry group of the triangular lattice, $SO_Q(\mathbb{Z})$ is isomorphic to
+$C_6$, the cyclic group of order $6$. Since this is the cubic action, the cyclic subgroup $C_3 \subseteq SO_Q(\mathbb{Z})$
+acts trivially. Up to equivalence, we thus obtain
+$$\frac{2 \pi}{2 \sqrt{3}} X^{1/2} + O(X^{1/4})$$
+points inside the ellipse.
+\end{quote}
+\vskip 0.1in
+Evaluate the infinite sum
+$$1 - \frac{1}{2} + \frac{1}{4} - \frac{1}{5} + \frac{1}{7} - \frac{1}{8} + \cdots$$
+and explain the relation to the Bhargava-Shnidman excerpt.
+\\
+\\
+\item
+In his 1859 memoir, Riemann conjectured that the nontrivial zeroes $\rho = \beta + i \gamma$ 
+of the zeta function satisfy $\beta = 1/2$. (If you somehow manage to prove this, you will definitely pass the exam.)
+Riemann guessed this based on some numerical computations. He found that the first few zeroes are
+$\rho = \frac{1}{2} + 14.134\cdots i$, $\rho = \frac{1}{2} + 21.012\cdots i$, $\rho = \frac{1}{2} + 25.010\cdots i$, $\dots$.
+
+How might he have found these zeroes? Describe a method of proving this, subject to numerical computations that
+could reasonably by done by hand.
+\\
+\\
+\vskip 0.2in
+\item
+Let $f(n)$ be the characteristic function of integers $p_1^{e_1} p_2^{e_2} \cdots p_k^{e_k}$ such that, when written
+as shown as a product of distinct primes, all the $e_i$ are odd.
+
+Prove a formula for $\sum_{n \leq x} f(n)$ which is as explicit, and has as good of an error term, as possible.
+\\
+\\
+\item
+Explain something interesting about character sums which you have read in Iwaniec-Kowalski or elsewhere.
+
+\end{enumerate}
+\begin{thebibliography}{99}
+\bibitem{gold}
+L. Goldmakher, \url{http://arxiv.org/pdf/0911.5547v2.pdf}.
+\end{thebibliography}
+\end{document}

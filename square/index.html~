@@ -1,0 +1,154 @@
+<html>
+<head>
+<TITLE>Frank Thorne</TITLE>
+<body>
+<TABLE BORDER=0 COLS=2 WIDTH=100%>
+<TR>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=60%>
+<H1>
+<P>Frank Thorne</P>
+</H1>
+<P>
+University of South Carolina<BR>
+Department of Mathematics<BR>
+
+400-G LeConte College<BR>
+1523 Greene Street<BR>
+Columbia, SC 29201<BR>
+thorne [at] math [dot] sc [dot] edu<BR>
+</P>
+</TD>
+<TD ALIGN="LEFT" VALIGN="CENTER" WIDTH=40%>
+<IMG SRC="frank.jpg" HEIGHT=250 WIDTH=318>
+</TD>
+</TR>
+</TABLE>
+<HR size=3, width="100%">
+<h3>Teaching</h3> 
+<p>
+<a href="math531/index.html">Math 531, Foundations of Geometry</a>, Fall 2012.
+<p>
+<a href="math141/index.html">Math 141, Calculus I</a>, Fall 2012.
+<p>
+<a href="math574/index.html">Math 574, Discrete Math</a>, Spring 2012.
+<p>
+<a href="math141_11/index.html">Math 141, Calculus I</a>, Fall 2011.
+<p>
+<a href="math782/index.html">Math 782, Analytic Number Theory</a>, Fall 2011.
+<p>
+<HR size=2, width="100%">
+<p>
+My research interests include various aspects of analytic and algebraic number theory.
+Recently I have become very interested in Shintani zeta functions and their applications to
+counting number fields.
+<p>
+<a href="cv.pdf">Curriculum vitae.</a>
+<p>
+My talk at the Joint Meetings: <a href="jmm-talk.pdf">1 + 2 + 3 + 4 + ...</a>
+<p>
+<h3>Seminars at the University of South Carolina:</h3>
+<a href="https://docs.google.com/document/d/13Wmbl6q6tblfNqh4ty40PD2dIesWjH0s17efBhzcNco/preview">
+Summer schedule</a> for 2012.
+<p>
+<a href="https://docs.google.com/document/d/1YgqKZ9slc42YKb1hh78_YV6TiHAKLFcIgfDNUKbR2io/preview">
+Number Theory Seminar, Spring 2012</a>
+<p>
+<a href="https://docs.google.com/document/d/1asr4PxSDo-S715BJOMyGqf0WHvspOPeYZXINFaGLd3g/preview">
+Number Theory Seminar, Fall 2012</a>
+
+<p>
+<h3>Publications and Preprints::</h3>
+<p>
+1. <a href="bounded-gaps.pdf">
+Bounded gaps between products of primes with applications to elliptic curves
+and ideal class groups</a>, International Mathematics Research Notices
+(2008), 41 pp.
+<p>
+2. <a href="maier-ff.pdf">
+Irregularities in the distributions of primes in function fields</a>, Journal of Number Theory <b>128</b> (2008), 1784-1794.
+<p>
+3.
+<a href="prime-bubbles.pdf">
+Bubbles of congruent primes</a>, submitted.
+<p>
+4.
+<a href="ff-uncertainty.pdf">
+An uncertainty principle for function fields</a>, Journal of Number Theory
+<b>131</b> (2011), 1363-1389.
+<p>
+5.
+<a href="survey.pdf">
+Maier matrices beyond Z</a> (survey paper), Proceedings of the
+Integers Conference 2007.
+<p>
+6. <a href="shintani-proceedings-final.pdf">
+Analytic properties of Shintani zeta functions</a>, 
+Proceedings of
+the RIMS Symposium on automorphic forms, automorphic representations, and related topics (Kyoto, 2010).
+<p>
+7.
+<a href="http://arxiv.org/abs/1102.2914">
+The secondary term in the counting function for cubic fields</a> (with Takashi Taniguchi),
+submitted.
+<p>
+8.
+<a href="papers/no-euler-product-final.pdf">Shintani's zeta function is not a finite sum of Euler products</a>,
+submitted.
+<p>
+9.
+<a href="http://www.math.kobe-u.ac.jp/~tani/lbc.pdf">
+Orbital L-functions for the space of binary cubic forms</a> (with Takashi Taniguchi),
+submitted.
+<p>
+10.
+<a href="papers/four-perspectives.pdf">
+Four perspectives on secondary terms in the Davenport-Heilbronn theorems</a>, submitted.
+<p>
+11.
+<a href="http://arxiv.org/pdf/1208.2170.pdf">
+An error estimate for counting S_3-sextic number fields</a> (with Takashi Taniguchi),
+submitted.
+<p>
+Supplementary files: <a href="CountS3.java">CountS3.java</a>, <a href="sextic-compare.gp">sextic-compare.gp</a>,
+and <a href="S3-sextic-notes.pdf">a paper</a> with some supplementary numerical data.
+<p>
+12.
+Book review of <i>Opera de Cribro</i> and <i>An introduction to sieve methods and their applications</i>,
+solicited for Bulletin of the AMS, submitted.
+<p>
+several more in progress!
+<p>
+<a href="dead-papers.html">Dead letter office.</a>
+<p>
+<h3>Upcoming/Recent Professional Activities:</h3>
+<p>
+AMS Sectional Meeting, Tucson, AZ, October 27-28, 2012.
+<p>
+<a href="http://www.aimath.org">
+AIM SQuaRE on Four Perspectives on a Secondary Term</a>, October 29-November 2, 2012.
+<p> 
+AMS/MAA Joint Meetings, San Diego, January 9-12, 2013.
+<p>
+University of Oxford, March (?), 2013.
+<p>
+<a href="http://icerm.brown.edu/sp-s13-w3">Combinatorics, Multiple Dirichlet Series, and Analytic Number Theory</a>,
+ICERM, Brown University, April 15-19, 2013.
+<p>
+Atkin Workshop on the Cohen-Lenstra Heuristics, University of Illinois at Chicago, May 4-5, 2013.
+<p>
+Dartmouth College, May 9 (?), 2013.
+<p>
+MRC Research Group, MIT, May 11-15, 2013.
+<p>
+Stanford University, Spring 2013 (to be confirmed).
+<p>
+Kyoto University, Spring 2013 (to be confirmed).
+<p>
+<a href="http://www.renyi.hu/conferences/erdos100/">Erdos Centennial</a> or
+<a href="http://www-fourier.ujf-grenoble.fr/ja2013/index-en.html">
+28th Journees Arithmetiques</a>, July 1-5, 2013. (<i>the same week? really?</i>)
+<p>
+<a href="previous-talks.html">Previous talks.</a>
+<h3>Other Stuff</h3>
+To be added (?)
+</html>

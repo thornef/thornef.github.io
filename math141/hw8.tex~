@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 8 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Monday, October 29}
+\end{center}
+
+\begin{enumerate}[(a)]
+\item
+What does the first derivative tell you about the shape of a graph?
+
+\item
+What does the second derivative tell you about the shape of a graph?
+
+\item
+Stewart, Ch. 4.3; 5, 6, 19, 21, 30-32, 61-65.
+
+\item
+Stewart, Ch. 4.3; 24-29, 35-50 (even).
+
+\item 
+For all the graphing problems, explicitly describe each of the following when relevant
+to your graph.
+
+\begin{enumerate}[(1)]
+\item
+Where are the $x$- and $y$-intercepts?
+
+\item
+Where is the graph positive and negative?
+
+\item
+Where are the critical points?
+
+\item
+Where is the graph increasing and decreasing?
+
+\item
+Where are the inflection points?
+
+\item
+Where is the graph concave up and concave down?
+
+\item
+Where are the asymptotes? (If $f(x)$ has asymptotes)
+\end{enumerate}
+Stewart, Ch. 4.5; 1-10, 31-44 (even).
+
+
+\item
+Graph $f(x) = 2 \cos x + \sin 2x$.
+
+\item
+Graph $f(x) = 2 \sin x + \cos 2x$.
+
+\item
+Graph $f(x) = e^{-x}$.
+
+\item
+Graph $f(x) = e^{-x^2}$.
+
+\item
+Graph $f(x) = \ln(4 - x^2)$.
+\end{enumerate}
+Additional problems:
+\begin{enumerate}[(a)]
+\item
+Stewart, Ch. 4.3; 24-29, 35-44 (odd).
+\item
+
+Stewart, Ch. 4.5; 5-10, 35-44 (odd).
+\end{enumerate}
+Bonus: (2 points for either) 4.5, 53, 66.
+
+\end{document}

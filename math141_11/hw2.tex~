@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 2 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, September 2}
+\end{center}
+
+As always, please show your work and explain yourself clearly. If this homework
+takes more than ten hours, please bring this to my attention.
+\\
+\\
+\begin{enumerate}[(a)]
+\item
+Suppose that you are given the graph of the function $y = f(x)$, and
+you want to find the slope of the tangent line to the graph at the point
+$(a, f(a))$. Explain how to guess this slope by
+finding the slopes of secant lines.
+
+\item
+Given the slope of the tangent line to the graph of $y = f(x)$ at the point
+$(a, f(a))$, explain how to find the equation of this line.
+
+\item
+By finding the slopes of appropriate secant lines, determine the equation
+of the tangent line to $y = x^2$ at $(1, 1)$.
+
+\item
+By finding the slopes of appropriate secant lines, determine the equation
+of the tangent line to $y = -x$ at $(4, -4)$.
+
+\item
+By finding the slopes of appropriate secant lines, determine the equation
+of the tangent line to $y = x^3 - 3$ at $(1, -2)$.
+
+\item
+Stewart, Ch. 2.2, 1-4, 7, 9, 13.
+
+\item
+Stewart, Ch. 2.3, 11-30, 40, 42.
+
+For this part only, the even problems are required and the odd problems
+are strongly recommended.
+
+\item
+Consider the following definition of a limit: `We say that
+$\lim_{x \rightarrow a} f(x) = c$ if $f(x)$ gets closer and closer to
+$c$ as $x$ gets closer and closer to $a$.'
+
+What is wrong with this definition?
+
+\item
+Give the definition of a limit, e.g., 
+explain what it means to say that $\lim_{x \rightarrow a} f(x) = c$.
+You may explain in words, or using the $\epsilon-\delta$ formalism.
+
+\item 
+Explain what it means for a function $f(x)$ to be continuous.
+(The informal definition is okay.)
+
+\item
+Stewart, Ch. 2.5, 7-8.
+
+\item
+Graph the following functions. Which are continuous? For the functions
+that are not continuous, explain why.
+
+$f(x) = x^2$, $f(x) = \sin(x)$, $f(x) = \frac{1}{x - 2}$,
+$f(x) = \frac{x - 1}{x^2 - 1}$, $f(x) = e^x.$
+
+\end{enumerate}
+
+\end{document}

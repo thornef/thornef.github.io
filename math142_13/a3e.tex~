@@ -1,0 +1,144 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Final Examination - Math 142, Frank Thorne (thorne@math.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Thursday, December 12, 2013}
+\end{center}
+
+{\bf Instructions and Advice:} 
+
+\begin{itemize}
+\item
+There are fifteen questions, some of which are shorter than others.
+\item
+You are welcome to as much scratch paper as you need. Turn in everything you want graded,
+and throw away everything you do not want graded.
+\item
+{\bf Draw pictures where appropriate.} If you have any doubt, then a picture is appropriate.
+\item
+Be clear, write neatly, explain what you are doing, and show your work. {\bf This is especially
+important for earning partial credit} in case your work contains one or more mistakes.
+Be warned that {\bf work I cannot understand will not receive any credit.}
+\item
+150 minutes is a long time. Don't dilly-dally, but don't rush. {\bf You are strongly advised
+to take the entire 150 minutes to complete the examination.} If you finish early, you have the
+opportunity to check your work.
+\item
+You are welcome and encouraged to refer to the list of convergence tests provided with the exam.
+\item
+Please work without books, notes, calculators, or any assistance from others. 
+\item
+I will be at the front of the room; if you have
+any questions, feel free to ask me. 
+\end{itemize}
+
+\begin{center}
+{\bf GOOD LUCK!}
+\end{center}
+\newpage
+
+\begin{enumerate}[(1)]
+\item
+Evaluate
+\[
+\int \cos \theta \sin^6 \theta d\theta.
+\]
+\item
+Evaluate
+\[
+\int p^5 \ln p dp.
+\]
+\item
+Evaluate
+\[
+\int \frac{1}{(t + 4)(t - 1)} dt.
+\]
+\item
+Evaluate
+\[
+\int_0^{\infty} \frac{x}{(x^2 + 2)^2} dx.
+\]
+\item
+Sketch the region enclosed by the curves listed below. Decide whether to integrate with
+respect to $x$ or $y$. Draw a typical approximating rectangle and label its height and width. Then,
+find the area of the region.
+\[
+y = \sin(x), \ y = e^x, \ x = 0, \ x = \pi/2.
+\]
+\item
+Find the volume of the solid obtained by rotating the region bounded by the given curves
+around the specified line. Sketch the region, the solid, and a typical disk or washer.
+\[
+y = 2 - \frac{1}{2} x, \ y = 0, \ x = 1, \ x = 2 \textnormal{the x-axis}
+\]
+\item
+Sketch the curve given by the parametric equations
+\[
+x = 5 \sin(t), y = t^2, - \pi \leq t \leq t.
+\]
+Indicate with an arrow the direction in which the curve is traced as $t$ increases.
+In addition, eliminate the parameter to find a Cartesian equation of the curve.
+\item
+Find $\frac{dy}{dx}$ and $\frac{d^2 y}{dx^2}$ for the curve given. For which values of $t$ is
+the curve concave upward?
+\[
+x = t^3 - 12t, \ y = t^2 - 1
+\]
+\item
+Plot the points given by the following polar coordinates: $(1, \pi)$, $(2, -2\pi/3)$, and $(-2, 3 \pi/4)$.
+Find Cartesian coordinates for each point.
+\item
+Determine whether the geometric series
+\[
+\frac{1}{8} - \frac{1}{4} + \frac{1}{2} - 1 + \cdots
+\]
+is convergent or divergent. If it is convergent, find its sum.
+\item
+Use the integral test to determine whether the series is convergent or divergent.
+\[
+\sum_{n = 1}^{\infty} \frac{5 - 2 \sqrt{n}}{n^3}.
+\]
+If the series diverges, then draw a graph which
+represents both the series and the integral you’re comparing it to.
+
+If the series converges, give upper and lower bounds on the value of your series
+which are guaranteed to be accurate within $0.01$. Draw a graph which represents your
+lower bound.
+\item
+Using the comparison test, or otherwise, determine whether the following series converges or diverges:
+\[
+\sum_{n = 1}^{\infty} \frac{4 + 3^n}{\sqrt{2^n}}.
+\]
+\item
+Using the ratio test, or otherwise, determine whether the series is absolutely convergent, conditionally
+convergent, or divergent.
+\[
+\sum_{n = 1}^{\infty} (-1)^{n + 1} \frac{ n^2 2^n }{n!}.
+\]
+\item
+Find the radius of convergence and interval of convergence of the series:
+\[
+\sum_{n = 1}^{\infty} (-1)^n \frac{x^{2n} }{(2n)!}
+\]
+\item
+Find the Taylor (Maclaurin) series of the function $f(x) = x + e^x$, and determine its
+radius of convergence.
+
+\end{enumerate}
+
+\end{document}

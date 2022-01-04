@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim, url}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf The Geometry of Numbers (Spring 2014): Homework 3}
+\end{center}
+\begin{center}Frank Thorne, thorne@math.sc.edu
+\end{center}
+
+Asterisks indicate problems representative of what might appear on the comprehensive exam.
+Plusses indicate problems whose solutions will likely involve background beyond what has been taught here
+and in 701/702.
+\\
+\\
+\begin{enumerate}
+\item (* 10 points)
+On page 13.2 of my notes online, a graph was drawn indicating the lattice points we counted
+in our proof of Dirichlet's class number formula.
+
+Choose your favorite positive discriminant $D \equiv 1 \pmod 4$ and a quadratic form
+$a x^2 + bxy + cy^2$ of discriminant $D$. Note that this form will necessarily have
+$b \neq 0$.
+
+For your particular choice of quadratic form, draw the analogous graph. How many points
+are contained in it, as a function of $N$? State the result and explain the connection
+to Dirichlet's class number formula.
+
+\item (10+ points)
+Conduct numerical experiments concerning $h(D)$ for a wide variety of discriminants $D$.
+Report on what you find. What is $h(D)$ on average? Are there any factors (e.g. when $D$
+lies in certain residue classes) that cause $h(D)$ to be big? What is the largest that
+$h(D)$ looks like it ever gets?
+
+For an additional 10 points, do numerical experiments {\itshape both} by writing your
+own program from scratch to compute class numbers, and {\itshape also} by programming
+in PARI/GP, Sage, or some other such language and using the built-in functionality.
+(Confirm that they agree!!)
+
+\item (* 10 points)
+Describe the results of applying Davenport's lemma for a variety of convex bodies. In
+particular, what do you get for the following? Work out the main terms and the error terms
+in:
+\begin{itemize}
+\item The $n$-dimensional sphere of radius $r$,
+\item An $n$-dimensional ellipsoid of radii $r_1, r_2, \dots, r_n$,
+\item An $n$-dimensional cube of side length $r$.
+\end{itemize}
+In addition, find a convex body where the error term is larger than the main term, where
+the main term predicts that the body should contain many points, but which in fact contains
+no lattice points at all.
+
+\item (10 points)
+Prove the `compact' version of Minkowski's convex body theorem:
+
+Let $T \subseteq \mathbb{R}^n$ be a compact, convex, symmetric, 
+measurable set, and $\Lambda$ a full lattice
+in $\mathbb{R}^n$. Then, if $\mu(T) \geq 2^n {\textrm{Vol}}(\Lambda)$ then $T$
+contains a nonzero point of $\Lambda$.
+
+(This was proved in Lecture 17 without the compactness assumption, and with strict inequality
+required for $\mu(T)$.)
+
+\item (* 5 points)
+Is Minkowski's theorem sharp? Either: For any fixed $\delta$, find a lattice $\Lambda$
+and some $T$ for which $\mu(T) > (1 - \delta) 2^n {\textrm{Vol}}(\Lambda)$, or provide
+some kind of evidence that the result can be further improved.
+
+\item (20 points)
+Prove that if $K$ is a cubic field, then $|{\textrm{Disc}}(K)| \geq 23$.
+
+(I don't think it is so hard, but I want to encourage everyone to do it so it is worth a lot of
+points.)
+
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 9 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, October 21}
+\end{center}
+
+Note: We will only spend a very little bit of time on L'Hospital's rule, and questions
+about it will not appear on the exam.
+\begin{enumerate}[(a)]
+\item
+What does the first derivative tell you about the shape of a graph?
+
+\item
+What does the second derivative tell you about the shape of a graph?
+
+\item
+Stewart, Ch. 4.3; 5, 6, 19, 21, 30-32, 61-65.
+
+\item
+Stewart, Ch. 4.3; 24-29, 33-54; even required, odd recommended.
+
+\item
+Stewart, Ch. 4.5; 1-10, 31-40; even required, odd recommended.
+
+\item
+What does L'Hospital's rule say?
+
+\item
+Stewart, Ch. 4.4; 5, 9, 10.
+
+\end{enumerate}
+
+\end{document}

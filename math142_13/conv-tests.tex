@@ -1,0 +1,108 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate, url}
+\newcommand{\dx}{dx}
+\begin{document}
+
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Convergence Tests for Math 142 --- Frank Thorne (thorne@math.sc.edu)}
+\end{center}
+\begin{center}
+{\bf This sheet will be provided to you on the exam.}
+\end{center}
+\vskip 10pt
+\vskip 10pt
+The convergence tests below concern infinite series
+\[
+\sum_{n = 1}^{\infty} a_n = a_1 + a_2 + a_3 + \cdots
+\]
+Sometimes we write $f(n)$ instead of $a_n$.
+\vskip 10pt
+{\bf Guidelines:}
+{\bf 1.} We wrote down a series starting at $a_1$, but in fact the starting
+value isn't important. If we have a series $\sum_{n = 0}^{\infty} a_n$
+or $\sum_{n = 91887}^{\infty} a_n$ or $\sum_{n = -5189234}^{\infty} a_n$ then
+the convergence tests work equally well.
+\vskip 10pt
+{\bf 2.} Only the {\itshape eventual behavior} of the series matters. In {\bf all}
+of the convergence tests below, it is permissible to pick some $N$ and only
+look at the $a_n$ with $n \geq N$.
+\vskip 10pt
+{\bf 3.} Some of the convergence tests assume that all of the $a_n$ are
+nonnegative. They also work if {\bf all} of the $a_n$ are nonpositive, but not
+necessarily if they have mixed signs.
+\vskip 20pt
+{\bf 1. The $n$th term test.} If it is not true that $\lim_{n \rightarrow \infty} a_n = 0$, then
+$\sum_{n = 1}^{\infty} a_n$ diverges.
+\vskip 10pt
+{\bf 2. The integral test.} Suppose that $f(x)$ is a positive, continuous, and decreasing function
+for $x \geq 1$.
+
+Then, $\sum_{n = 1}^{\infty} f(n)$ converges if and only if $\int_{x = 1}^{\infty} f(x) dx$ converges.
+
+Also, if we estimate $\sum_{n = 1}^{\infty} f(n)$ by
+\[
+f(1) + f(2) + \cdots + f(k) + \int_{k + 1}^{\infty} f(x) dx,
+\]
+then the estimate is too low by somewhere between $0$ and $f(k + 1)$. (You should know how to draw pictures
+which explain why this is true.)
+\vskip 10pt
+{\bf 3. The alternating series test.} Given an alternating series
+\[
+\sum_{n = 1}^{\infty} (-1)^{n + 1} a_n = a_1 - a_2 + a_3 - a_4 + \cdots,
+\]
+where (1) all the $a_i$ are positive, (2) $a_i > a_{i + 1}$ for each $i$, and $\lim_{n \rightarrow \infty} a_n = 0$,
+then the series converges.
+
+If you approximate the series by the first $k$ terms, the error is between $0$ and the $k + 1$st term.
+
+\vskip 10pt
+{\bf 4. The comparison test.} Suppose you have two series
+\[ \sum_{n = 1}^{\infty} a_n, \ \ \ \sum_{n = 1}^{\infty} b_n,\]
+where all the $a_n$ and $b_n$ are nonnegative.
+
+\begin{itemize}
+\item
+If $a_n \leq b_n$ for each $n$, and $\sum_{n = 1}^{\infty} b_n$ converges, then
+$\sum_{n = 1}^{\infty} a_n$ also converges and $\sum_{n = 1}^{\infty} a_n \leq
+\sum_{n = 1}^{\infty} b_n$.
+\item
+If $a_n \geq b_n$ for each $n$, and $\sum_{n = 1}^{\infty} b_n$ diverges, then
+$\sum_{n = 1}^{\infty} a_n$ also diverges.
+\end{itemize}
+\vskip 10pt
+{\bf 5. The limit comparison test.}
+Suppose you have two series
+\[ \sum_{n = 1}^{\infty} a_n, \ \ \ \sum_{n = 1}^{\infty} b_n,\]
+where all the $a_n$ and $b_n$ are nonnegative.
+
+If $\lim_{n \rightarrow \infty} \frac{a_n}{b_n}$ exists, and equals some
+{\itshape positive} number other than $0$ or $\infty$, then either both
+series converge or both series diverge.
+\vskip 10pt
+{\bf 6. The absolute convergence test.}
+If a series converges absolutely, then it converges.
+\vskip 10pt
+{\bf 7. The ratio test.}
+Suppose that $\lim_{n \rightarrow \infty} \bigg| \frac{ a_{n + 1} }{a_n} \bigg|$
+exists and equals some number $L$.
+
+\begin{itemize}
+\item
+If $L < 1$, then $\sum_{n = 1}^{\infty} a_n$ converges absolutely.
+\item
+If $L > 1$, then $\sum_{n = 1}^{\infty} a_n$ diverges.
+\end{itemize}
+
+\end{document}

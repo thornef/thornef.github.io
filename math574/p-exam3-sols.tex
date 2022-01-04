@@ -1,0 +1,238 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.6in 
+\pagestyle{empty}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[mathscr]{euscript}
+\usepackage{enumerate, verbatim, url}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-12mm}
+
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Practice ``Examination 3'' with Solutions - Math 574, Frank Thorne (thorne@math.sc.edu)}
+\end{center}
+
+There was no Exam 3, but enumerative combinatorics will be on the final. If I'd given a midterm,
+it would have looked something like this (although probably this is a bit longer than a midterm would have been.)
+\\
+\\
+\begin{enumerate}[1.]
+\item
+\begin{enumerate}[(a)]
+\item
+How many bit strings of length 9 are there?
+\\
+\\
+$2^9 = 512$. There are two choices for the first bit, two choices for the second bit, and so on until the ninth
+bit, so we multiply 2 nine times.
+\item
+How many bit strings of length 9 are there, which start with a 1 and which have at least one other 1?
+\\
+\\
+$2^8 - 1 = 255$. Counting bit strings of length 9 which start with a 1 is the same as counting bit strings of length
+8 with no condition. There are 256 of these, and we subtract one because we don't want to count the string $100000000$.
+
+\item
+How many bit strings of length 9 are there, such that every 1 is followed immediately by a zero?
+\\
+\\
+This is a little bit harder. One good way to do this is to split into cases. There can be 0, 1, 2, 3, or 4 ones.
+If there are no ones, there is one possibility. If there is one one, then we are permuting one string $10$ and seven
+additional zeroes, and we can do this in any order, so there are ${8 \choose 1} = 8$ possibilities. If there are two
+ones, then we are permuting two strings $10$ and five zeroes, for ${7 \choose 2} = 21$ possibilities. We can similarly
+count the number of bit strings with 3 or 4 ones, so that the total is
+$${9 \choose 0} + {8 \choose 1} + {7 \choose 2} + {6 \choose 3} + {5 \choose 4} = 1 + 8 + 21 + 20 + 5 = 55.$$
+
+\end{enumerate}
+
+\item
+You are in a city with rectangular blocks. You want to walk five blocks north and three blocks east,
+while walking north or east for every block.
+\begin{enumerate}[(a)]
+\item
+In how many ways can do you this?
+\\
+\\
+This is the same as counting bit strings of length 8 with 5 zeroes and 3 ones, where each zero means walk north
+and each one means walk east. So the answer is ${8 \choose 5} = 56$.
+
+\item
+Suppose now you are not allowed to go east for the first block. Now in how many ways can you do this?
+\\
+\\
+If we are not allowed to go east for the first block then we must go north for the first block. So we have
+to choose how to walk four blocks north and three blocks east, and by the same logic the number of ways is
+${7 \choose 4} = 35.$
+\end{enumerate}
+
+\item
+\begin{enumerate}[(a)]
+\item
+How many integers between 1 and 1000 are multiples of 2 or multiples of 5?
+\\
+\\
+There are 500 multiples of 2, 200 multiples of 5, and 100 multiples of both. So the answer, by the Inclusion-Exclusion
+principle, is 
+$$500 + 200 - 100 = 600.$$
+\\
+\\
+{\bf Alternative solution.} An integer is a multiple of 2 or 5 if its last digit is 2, 4, 5, 6, 8, or 0.
+The problem asks us to choose 3 digits so that the last is 2, 4, 5, 6, 8, or 0, and there are no conditions
+on the first two digits. (If we choose 000, this corresponds to 1000.) The total number of possibilities is
+thus 
+$$10 \times 10 \times 6 = 600.$$
+
+\item
+(Careful!) How many integers between 1 and 1000 are multiples of 2, multiples of 5, or multiples of 10?
+\\
+\\
+{\bf The long way:} There are 500 multiples of 2, 200 multiples of 5, 100 multiples of 10, 100 multiples of 2 and 5,
+100 multiples of 2 and 10, 100 multiples of 5 and 10, and 100 multiples of 2, 5, and 10. So the answer is
+$$500 + 200 + 100 - (100 + 100 + 100) + 100 = 600.$$
+\\
+\\
+{\bf The shortcut:} An integer is a multiple of 10 if and only if it is a multiple of both 2 and 5. So if a number
+is a multiple of 10, it will automatically satisfy both of the other conditions, and so adding ``or multiples of 10''
+is a redundant condition -- it doesn't count anything new. So the answer is 600, same as last problem.
+
+Note that this explains why the number 100 occurs five times in ``the long way''!
+
+
+\end{enumerate}
+
+\item
+You pass five graded papers back to the five students who wrote them. In how many ways can you do this, so that
+no student gets his or her own paper? (Explain fully.)
+\\
+\\
+This is the inclusion-exclusion principle. We did in this in class (for the ``race game''). 
+
+It is easier to count the number of ways so that at least one student gets their paper back, and then subtract
+from 120. Suppose that the students are named Ann, Bob, Cid, Deb, and Eve. Let $A$ be the set of ways to pass the
+papers back so that Ann gets her paper back; let $B$ be the set of ways to pass the papers back so that Bob gets his
+paper back, and so on. We want to count $A \cup B \cup C \cup D \cup E$. The inclusion-exclusion principle says that
+\begin{align*}
+|A \cup B \cup C \cup D \cup E| = & |A| + |B| + |C| + |D| + |E|
+\\ & - |A \cap B| - |A \cap C| - \cdots
+\\ & + |A \cap B \cap C| + |A \cap B \cap D| + \cdots
+\\ & - |A \cap B \cap C \cap D| - |A \cap B \cap C \cap E| - \cdots
+\\ & + |A \cap B \cap C \cap D \cap E|.
+\end{align*}
+The second row includes all intersections of two sets, the third row counts all intersections of three sets, the fourth row
+counts all intersections of four sets.
+
+In row $i$, the size of each term is $(n - i)!$, because you specify where $i$ of the papers go and allow the rest to be
+arbitrary. There are ${n \choose i}$ terms, because there is one term for each subset of $\{A, B, C, D, E\}$ of size $i$.
+
+Therefore,
+$$|A \cup B \cup C \cup D \cup E| = 4! {5 \choose 1} - 3! {5 \choose 2} + 2! {5 \choose 3} - 1! {5 \choose 4} + 0! {5 \choose 5}
+= 120 - 6 \cdot 10 + 2 \cdot 10 - 1 \cdot 5 + 1 = 76.$$
+So the total number of ways to pass all papers to the wrong students is $5! - 76 = 120 - 76 = 44.$
+
+\item
+How many numbers must you pick to ensure that at least three of them have the same remainder when divided by 11?
+\\
+\\
+23. This doesn't have to happen if we pick 22 numbers. For example, if we pick 1 through 22 then we get each remainder
+twice. However, if we have 23 numbers then we are trying to put 23 pigeons (the numbers) in 11 pigeonholes (the remainders).
+Since $\frac{23}{11} > 2$, it follows that more than two (so, three) pigeons must go in the same hole, i.e., at least three
+integers must have the same remainder when divided by 11.
+
+\item
+A computer programming team has 13 members -- six men and seven women.
+\begin{enumerate}[(a)]
+\item
+In how many ways can you choose a team of five?
+\\
+\\
+The answer is just ${13 \choose 5}$.
+\item
+In how many ways can you choose a team of five, with two men and three women?
+\\
+\\
+We choose the men and women separately: ${6 \choose 2} \cdot {7 \choose 3} = 15 \cdot 35 = 525.$
+
+\item
+In how many ways can you choose a team of five, with at most three men?
+\\
+\\
+We have to break up into cases. The total is
+$${7 \choose 5} + {7 \choose 4}{6 \choose 1} + {7 \choose 3}{6 \choose 2} + {7 \choose 2}{6 \choose 3}.$$
+
+\item
+Suppose that one of the men and one of the women are a divorced couple, and refuse to work together.
+In how many ways can you choose a team of five, with two men and three women?
+\\
+\\
+We start with 525 as before. Then we subtract all the ways where we pick both the man and the woman from this couple.
+There are ${5 \choose 1} {6 \choose 2} = 5 \cdot 15 = 75$ ways to do this, so there are $525 - 75 = 450$ ways left over.
+
+\end{enumerate}
+
+\item
+How many functions are there from the set $X = \{1, 2, 3\}$ to the set $Y = \{A, B, C, D, E, F, G\}$?
+How many of these are one-to-one?
+\\
+\\
+There are $7^3 = 343$ functions total: For each element $x$ of $X$ we have seven different choices for where to send $x$.
+There are $7 \cdot 6 \cdot 5 = 210$ one-to-one functions: Seven choices for the first element, six choices for the second
+(because we used one already), five for the third.
+ 
+\item
+A store sells 8 kinds of balloons with at least 30 balloons of each kind. How many different combinations
+of 30 balloons can be chosen? What if the store has only 10 red balloons, but at least 30 of every other kind
+of balloon?
+\\
+\\
+We solve this as a stars-and-bars problem. We represent the balloons by 30 stars. We have seven bars, so that
+all the balloons before the first bar are of the first type, all the balloons after the first and before the second are
+of the second type, and so on. (Seven bars partition the balloons into 8 regions.) Any permutation of 30 stars and 7 bars
+yields a different way of buying balloons, so the total number is ${37 \choose 7}$.
+
+For the second part, if we buy 11 red balloons, then $37 - 11 = 26$, so there are ${26 \choose 7}$ ways of buying balloons
+with at least 11 red. Since this is not allowed, the final answer is ${37 \choose 7} - {26 \choose 7}$.
+
+\item
+How many solutions to $x_1 + x_2 + x_3 = 10$ are there, where $x_1, \ x_2, \ x_3$ are nonnegative integers?
+What if, instead, $x_1, \ x_2, \ x_3$ are positive integers?
+\\
+\\
+This is again a stars-and-bars problem. (Imagine we want to buy 10 balloons of three different colors.) We have
+10 stars and 2 bars, so that the 2 bars divide the stars into three pieces, and the number of stars tell us $x_1$, $x_2$, $x_3$
+respectively. The total number of possibilities is ${12 \choose 2}$.
+
+If we require $x_1, \ x_2, \ x_3$ to be positive, then let $y_1 = x_1 - 1, \ y_2 = x_2 - 1, y_3 = x_3 - 1$ be nonnegative.
+Our problem is the same as asking $y_1 + y_2 + y_3 = 7$, so there are 7 stars and two bars, and the total number of possibilities
+is ${9 \choose 2} = 36$.
+
+\item
+Explain why the equation
+$$2^n = {n \choose 0} + {n \choose 1} + {n \choose 2} + \cdots + {n \choose n}$$
+is a consequence of the binomial theorem. In addition, {\itshape either} give a proof
+of this identity which does not rely on the binomial theorem, {\itshape or} prove the binomial
+theorem.
+\\
+\\
+The binomial theorem says that
+$$(x + y)^n = {n \choose 0} x^n + {n \choose 1} x^{n - 1} y^1 + {n \choose 2} x^{n - 2} y^2 + \cdots + {n \choose n} x^0 y^n.$$
+If we plug in $x = y = 1$, then the left side is equal to $2^n$, and all the $x^k y^{n - k}$ terms are 1, so the right side becomes
+the right side of the identity above, as desired.
+
+We can give a combinatorial proof as follows. $2^n$ counts the number of bit strings of length $n$, total. Now ${n \choose 0}$
+counts the number of bit strings of length $n$ and no ones; ${n \choose 1}$ counts the number of bit strings of length $n$ and one $1$;
+and so on: ${n \choose k}$ counts the number of bit strings of length $n$ with $k$ ones. When we add up all the possibilities we get
+the right side of our identity above, and this is the same as $2^n$.
+
+
+\end{enumerate}
+
+\end{document}

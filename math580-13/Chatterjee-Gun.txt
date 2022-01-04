@@ -1,0 +1,37 @@
+Chatterjee and Gun, On the zeros of generalized Hurwitz zeta function
+
+*Preliminary* referee report. The results seem to be original and of modest, although not insignificant, interest. I am ambivalent about whether the paper should be accepted to JNT --- so I describe a couple strengths and weaknesses of the paper and ask that the editor make the final call. I also give a few recommendations. 
+
+I have not (yet) read the paper in detail or verified the proofs. If the editor recommends proceeding, I will be happy to take a more careful look.
+
+
+*Evaluation*: The authors prove a hybrid of the following two results in the literature:
+
+(1) Davenport and Heilbronn (in classical work) proved that the Hurwitz zeta
+function \zeta(s, a) has infinitely many zeroes with Re(s) > 1, in case a is rational or transcendental
+(and not 1/2 or 1). Cassels did this for algebraic irrationals.
+
+(2) Saias and Weingartner looked at Dirichlet series F(s) \sum_n f(n) n^{-s}, 
+where f(n) is a periodic function, such that F(s) is a nontrivial sum of Dirichlet L-functions. For these,
+they proved the same.
+
+The authors' main result is a proof of the analogous hybrid result for Dirichlet series of the form \sum_n f(n) (n + a)^{-s}. The proof proceeds along standard lines; although I did not (yet) check the proof in detail it certainly seems plausible.
+
+In the referee's opinion, the Dirichlet series considered are slightly unnatural, although not extremely so. This is
+the main result of the paper and I think the paper should be evaluated on this basis. Certainly these kinds of
+questions are interesting and the paper does a nice job of filling a gap in the literature, and providing another
+example of a function for which this kind of result can be proved. The down sides are that I'm guessing that the paper is unlikely to be widely read, or to lead to followup work; also, the results are unlikely to be surprising to experts.
+
+The authors also formulate two additional results, Theorem 1.3 and Corollary 1.4. To me these left a poor impression. The authors compare their results to a conjecture of Erdos, who conjectured
+the nonvanishing of certain Dirichlet series at the boundary of absolute convergence. Any such work is likely to be
+quite challenging -- ask any beginning analytic number theorist, after reading Dirichlet's proof for L(1, \chi)! In contrast, the authors prove the nonvanishing of Dirichlet series very far into their regions of absolute convergence. This is much easier, and the comparison to Erdos's conjecture does not seem justified.
+I regret that these results strike me as fairly trivial, and not of independent interest.
+
+
+*Suggestions for a revision*:
+
+There is a grammatical mistake in the title of the paper, and another one in the abstract. Although the paper appears to be quite well written overall, this still leaves a poor impression. I request that the authors proofread their entire paper before resubmitting.
+
+There is a very recent paper of Booker and Thorne (http://arxiv.org/abs/1306.6362) on a related topic which the authors might consider citing.
+
+I recommend removing Theorem 1.3 and Corollary 1.4 and allowing the paper to stand on the strength of the first two results.

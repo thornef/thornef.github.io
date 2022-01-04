@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim, url}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 8 - Analytic number theory}
+\end{center}
+\begin{center}Frank Thorne, thornef@mailbox.sc.edu
+\end{center}
+\begin{center}
+{\bf Due Friday, October 21}
+\end{center}
+\begin{enumerate}
+\item(5 points)
+It was proved in lecture (see also Ch. 18 of Davenport) that
+\begin{equation}
+\psi(x) = x + O\bigg(x\exp(-C_1 (\log x)^{1/2} )(\log x) + x\exp(- (\log x)^{1/2})(\log x)^2\bigg)
+\end{equation}
+for an effective constant $C_1$. Prove that this implies that
+\begin{equation}
+\psi(x) = x + O\bigg(x\exp(-C_2(\log x)^{1/2} )\bigg)
+\end{equation}
+and further
+\begin{equation}
+\pi(x) = \frac{x}{\log x} + O\bigg(x\exp(-C_3(\log x)^{1/2}) \bigg),
+\end{equation}
+where in your proof you determine values for $C_2$ and $C_3$ in terms of $C_1$.
+(No need to determine the best constants.)
+
+\item(5 points)
+It was partially shown in class, and is shown entirely in Davenport, that
+$$\sum_{\gamma > 0} \frac{\beta}{\beta^2 + \gamma^2} = \frac{-B}{2},$$
+where $-B$ is an explicit constant $> 0.022$.
+
+From this formula, prove explicit (no $\ll$, big-$O$) bounds for the number of zeroes in $\zeta(s)$
+in the critical strip with $\Im(s) < T$.
+
+({\itshape Caution:} We already implicitly used similar bounds to establish the existence of the
+infinite product for $\xi(s)$, so this is not another approach to proving such bounds.)
+
+\item(5 points)
+The formula of the previous problem implicitly assumes that the zeroes of $\zeta(s)$
+occur in complex conjugate pairs. Accordingly, you need to prove separately that
+$\zeta(s)$ doesn't have any real zeroes between 0 and 1.
+
+Prove this. 
+
+\item(5 points)
+Imagine that $\zeta(s)$ satisfied the Riemann hypothesis, except for four zeroes off the
+critical line located at, say, $(.5 \pm .4) \pm 15i$. Show that this implies 
+a version of the prime number theorem of the form
+\begin{equation}
+\psi(x) = x + \ast x^{9/10} + O(x^{1/2} \log^2 x).
+\end{equation}
+(You should determine what goes in the place of the asterisk.)
+
+For 5 more points, compute, present, and explain numerical evidence that this version of the
+prime number theorem is wrong. 
+
+\item(5+ points)
+Download the software ``L'' from Mike Rubinstein's webpage (easily found via Google),
+and/or Tim Dokchitser's ``ComputeL''.
+Run a variety of numerical experiments on the zeroes of the zeta function,
+the values of $\zeta(1 + it)$, or anything else you're prepared to argue is
+interesting. Report your findings.
+
+\item(5 points)
+If $a_i$, for $1 \leq i \leq k$, is a sequence of positive numbers between 0 and 1,
+prove that $\sum_i a_i < 1 + \sum_{i < j} a_j a_j$.
+
+\end{enumerate}
+
+\end{document}

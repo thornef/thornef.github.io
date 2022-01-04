@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim, url}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 10 - Analytic number theory}
+\end{center}
+\begin{center}Frank Thorne, thornef@mailbox.sc.edu
+\end{center}
+\begin{enumerate}
+\item (15 points; do part for partial credit)
+Consider the integral
+\begin{equation}\label{eqn_int}
+\int_{c - i \infty}^{c + i \infty} \zeta(s) \frac{X^s}{s} ds.
+\end{equation}
+
+(a) Shift the contour to the following sequence of line segments: from $c - i \infty$ to
+$c - i T$, to $a - i T$, to $a + iT$, to $c + iT$, to $c + i \infty$, where $a < 1$.
+Assuming that the resulting integral is an error term, evaluate the main term of \eqref{eqn_int}
+(the integrand has a residue).
+
+(b) Bound the resulting integral in terms of $T$. The portions on the line $\Re(s) = c$
+can be estimated as in lecture (the error term for truncations of Perron's formula).
+For the rest, you can take $a < 0$ and use the functional equation, or alternatively take
+$a = 1/2$ and use the convexity bound.
+
+(c) Choosing $T$ optimally, obtain a good error term for this integral.
+
+(d) In light of Perron's formula, you have proved an arithmetic density theorem
+for the most important (and most widely studied) sequence in analytic number theory.
+Write down the profundity which you have now just proved.
+
+(Note: You may have also seen other proofs of your conclusion in (d).)
+
+\item (5 points each part)
+[add the calculations from Montgomery and Vaughan!]
+
+\item (5 points)
+Given
+\begin{equation}
+1 + \frac{1}{4} + \frac{1}{9} + \frac{1}{16} + \cdots = \frac{\pi^2}{6},
+\end{equation}
+\begin{equation}
+1 + \frac{1}{16} + \frac{1}{81} + \frac{1}{256} + \cdots = \frac{\pi^4}{90},
+\end{equation}
+calculate $\zeta(-1)$ and $\zeta(-3)$. Is
+\begin{equation}
+1 + \frac{1}{8} + \frac{1}{27} + \frac{1}{64} + \cdots = \frac{\pi^3}{n}
+\end{equation}
+for some integer $n$?
+
+\item (7 points)
+Obtain an explicit constant $C$ for which the Polya-Vinogradov inequality holds in the
+form
+$$\sum_{n = M + 1}^{M + N} \chi(n) < C q^{1/2} \log q$$
+for any nonprincipal character $\chi$ modulo $q$. (Recall that if $\chi$ is primitive,
+we can take $C = 1$.)
+
+\item
+By request I will add some further exercises on Fourier analysis; but these will have
+to wait until I get my hands on a good book on the subject.
+
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 5 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, September 23}
+\end{center}
+
+\begin{enumerate}[(a)]
+\item
+If $f(x) = c$, where $c$ is a constant, find $f'(x)$ using the definition.
+Draw a picture which explains your conclusion.
+
+\item
+If $f(x) = x^n$, where $n$ is a positive integer, explain why $f'(x) = n x^{n - 1}$.
+
+\item
+If $f$ and $g$ are two functions, draw a picture which explains why $(f + g)' = f' + g'$
+and why $(fg)' = fg' + f'g$. Why is it not true that $(fg)' = f' g'$?
+
+\item
+Explain why the derivative of $e^x$ is equal to $e^x$. You may take for granted that
+$\lim_{h \rightarrow 0} \frac{e^h - 1}{h} = 0$.
+
+\item
+Stewart, Ch. 3.1, 2-34, 45-46; even required, odd recommended.
+
+\item
+Stewart, Ch. 3.1, 49. (Note: The acceleration is the derivative of the velocity.)
+
+\item
+What is the 500th derivative of $f(x) = x^{100}$? Explain why.
+
+\item
+Stewart, Ch. 3.2, 1-18, 27-30; even required, odd recommended.
+
+\item
+Stewart, Ch. 3.2, 31-34.
+
+\item
+Explain why $\frac{d}{dx}(\sin x) = \cos x$ and $\frac{d}{dx}(\cos x) = - \sin x$.
+
+\item
+Find $\frac{df}{dx}$ for the functions $f(x) = \tan x$, $f(x) = \cot x$, $f(x) = \sec x$, and
+$f(x) = \csc x$.
+
+\item
+Find the 4th, 7th, 23rd, and 4000001th derivatives of $\sin x$ and $\cos x$.
+
+\item
+Explain why $\lim_{\theta \rightarrow 0} \frac{\sin \theta}{\theta} = 1$.
+
+\item
+Stewart, Ch. 3.3, 3-14, 21-24; even required, odd recommended.
+
+\item
+Stewart, Ch. 3.3, 31, 35.
+
+\item
+Stewart, Ch. 3.3, 39-44; even required, odd recommended.
+
+\item
+Stewart, Ch. 3.3, 49.
+
+\end{enumerate}
+
+\end{document}

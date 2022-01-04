@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim, url}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\newcommand{\p}{\mathfrak{p}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Algebraic number theory (Spring 2013), Homework 6}
+\end{center}
+\begin{center}Frank Thorne, thorne@math.sc.edu
+\end{center}
+\begin{center}
+{\bf Due Friday, April 19}
+\end{center}
+Recall that starred (*) exercises may involve background beyond what is assumed in this course.
+
+\begin{enumerate}
+\item (5 points)
+Prove that any finite subgroup of the unit circle is cyclic.
+
+\item (5 points)
+Determine the unit group $\mathcal{O}_K^{\times}$ for all imaginary quadratic fields
+$K = \Q(\sqrt{-D})$.
+
+\item (7 points)
+Determine the fundamental unit in $\mathbb{Q}(\sqrt{D})$ for each positive $D \leq 10$.
+
+\item (5 points)
+Compute the Galois group of $\Q(\zeta_8)$, and find all fields intermediate between
+$\Q$ and $\Q(\zeta_8)$.
+
+\item (5 points)
+Compute the Galois group of $\Q(\zeta_{11})$, and find all fields intermediate between
+$\Q$ and $\Q(\zeta_{11})$.
+
+\item (3 points)
+Describe explicitly the splitting of all primes in the extension $\Q(\zeta_{11})$.
+
+\item (12 points)
+Let $f(x)$ be a cubic polynomial such that the splitting field $K$ of $f(x)$ over $\Q$
+has degree $6$.
+
+Enumerate all possible splitting types of primes in $K$. There will {\itshape not} be that
+many. You should find examples for all splitting types you claim can occur, and prove that
+other splitting types can't occur.
+
+\item (25 points)
+Let $m$ and $n$ be distinct squarefree integers not equal to $1$.
+
+\begin{enumerate}[(a)]
+\item
+Prove that $\Q(\sqrt{m}, \sqrt{n})$ is Galois over $\Q$ with Galois group $\Z/2 \times \Z/2$.
+Does this field have any quadratic subfields other than $\Q(\sqrt{m})$ and $\Q(\sqrt{n})$? 
+\item
+Suppose $p$ ramifies in both $\Q(\sqrt{m})$ and $\Q(\sqrt{n})$. What happens in $K$? Find an
+example.
+\item
+Suppose $p$ splits in both of these fields. What happens in $K$? Find an example.
+\item
+Suppose $p$ is inert in both of these fields. What happens in $K$? Find an example.
+\item
+Suppose the splitting behavior of $p$ is different in both of these fields. What happens in $K$?
+Find an example.
+\item ({\itshape David Zureick-Brown's favorite algebraic number theory problem}) Does there exist
+an irreducible polynomial which is reducible mod every prime?
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}

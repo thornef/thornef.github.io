@@ -1,0 +1,443 @@
+<HTML>
+
+<HEAD>
+
+<TITLE> Math 141, Fall 2012 </TITLE>
+
+</HEAD>
+
+<BODY BGCOLOR=#FFFFFF>
+
+<P>
+
+<DIV ALIGN="CENTER">
+<B> <FONT SIZE="+2"> Calculus I - Mathematics 141, &nbsp Sections 13 and 14
+</FONT>
+</B>
+</DIV>
+
+<P>
+
+<DIV ALIGN="CENTER"> </DIV>
+
+<BR>
+
+<DIV ALIGN="CENTER"> <B> <FONT SIZE=+1> Frank Thorne - Fall 2012 </FONT> </B> </DIV>
+
+<DIV ALIGN="CENTER"> 
+<B> <FONT SIZE=+1> University of South Carolina </FONT> </B> </DIV>
+
+<P>
+<p>
+<b>Welcome to Math 141!</b> Calculus is a beautiful, important, challenging, and fascinating subject.
+
+<HR>
+
+<P>
+
+<font size=+1> <b> Instructional Staff </b> </font>:
+<p>
+<ul>
+<li><b>Instructor:</b> Frank Thorne, LeConte 400G, thorne [at] math.sc.edu.
+<br>
+Office Hours: Monday 3:30-4:30, Tuesday 3:30-4:30, Friday 2:30-3:30.
+<p>
+(Note: I might have to reschedule these for meetings and such)
+<p>
+<li><b>Substitute Instructor:</b> Heather Smith, smithhc5 [at] email.sc.edu.
+<p>Heather will sub for me when I'm away at conferences.
+Office Hours: TBA (only on weeks when I'm out of town)
+
+<p> 
+<li><b>Teaching Assistant:</b> Wilson Harvey, LeConte 122B, harveywa [at] email.sc.edu
+<br>
+The TA will hold discussion sections and
+office hours and grade the homeworks. His job is to help you get through the course.
+<br>
+<p>
+Office Hours: Monday 11-12, Wed/Fri 10-11.
+<p>
+<li><b>Supplemental Instructor:</b> Stuart Sands, sandss [at] email.sc.edu.
+<br>
+The <i>supplemental instructor</i> is an undergraduate who has done very well in Math 141 in the past.
+He will attend all the lectures and is here to help.
+<br>
+In place of office hours he holds <b>SI sessions</b> (see below) that you can go to.
+</ul>
+<p>
+<p>
+
+
+<P>
+
+<HR>
+
+<P>
+
+<FONT SIZE =+1> <B> Learning outcomes: </B> </Font>
+
+<p>
+<b>Successful students will:</b>
+<ul>
+<li>Have ample opportunities to practice and use <b>algebra and trigonometry</b>, further increasing their skills in these areas. <b>Algebra
+is an absolute prerequisite for calculus</b>, but at the same time the course will be directed towards students whose algebra skills may
+be <b>slightly</b> rusty and in need of practice.
+<li>Understand <b>quantitative data</b> and its presentation. In calculus, this usually takes the shape of a 
+<b>function</b>. Functions will be presented in terms of equations, or in terms of graphs,
+or in English text, and students will be required to <b>seamlessly translate</b> between these.
+<li>Develop the ability to explain their work clearly. As with the previous bullet point, this 
+will involve a combination of equations, graphs, and English text. <b>Students are expected to learn to write well.</b>
+<li>Understand what <b>definitions and theorems</b> are. The student will be able to give <b>precise definitions</b>
+as well as <b>informal explanations</b> and will be able to <b>explain the correspondence.</b>
+<li>Tackle problems that require more than one step to solve, or whose solution is not obvious. Typically this means that you <b>try
+something</b>, and <b>if it doesn't work you try something else.</b>
+</ul>
+This could describe any math class. Typically, all of this is best learned in some <i>specific</i> context. Therefore,
+successful students will also:
+<ul>
+<li>
+Master concepts and problems involving limits, derivatives, integrals, and applications of all of the above.
+</ul>
+<p>
+<b>Warning. There is a ton of homework. It will be collected and graded.</b> That is because this is the most effective way for you
+to learn. But:
+<ul>
+<li>
+This class has
+a 12-point curve (i.e. A=88, B=76, etc.) as opposed to the usual ten point curve. My standards are high and so I think it is fair
+that you should have more wiggle room. 
+<li>
+All of the assignments for this course, including a complete list of questions that may
+show up on the exams, are posted below. So <b>everything is completely predictable</b>, and you can look before you leap.
+<li>
+<b>My goal is that you will earn the highest grades of any 141 class.</b> To that end, I've made my expectations
+very clear -- the standards are high, but you can meet them and it is my job to help you.
+<li>
+If the numerical average on any midterm exam is at least 76%, then we will have a pizza lunch (in class) the day I hand back the exams.
+</ul>
+<P>
+
+<font size=+1> <b> Text </b> </font>: 
+James Stewart, <i> Calculus, Early Transcendentals, </i> 6th edition. We will use a custom
+edition of this book, available in the campus bookstore. It has not changed since last year, so please feel
+free to buy a used version from an upperclassman.
+<p>
+I also highly recommend
+<a href="http://djm.cc/library/Calculus_Made_Easy_Thompson.pdf">
+Calculus Made Easy</a> by Silvanus Thompson.
+If nothing else, read the epilogue on p. 283.
+
+
+<P>
+
+<font size=+1> <b> Meeting schedule </b> </font>:
+<ul>
+<li><b>Lectures:</b> MWF, 12:20-1:10, LC 113.
+<li><b>Maple Lab:</b> (TBD)
+<li><b>Recitation:</b> (TBD)
+</ul>
+
+<font size=+1> <b> Exam schedule </b> </font>: 
+<ul>
+<li><b>Precalculus Exam</b> (half exam, really more of a long quiz), Monday, September 3. Will be dropped from your final average if this improves your grade.
+<li><b>Midterm Exam 1:</b> Wednesday, September 26.
+<li><b>Midterm Exam 2:</b> Wednesday, October 31.
+<li><b>Midterm Exam 3:</b> Wednesday, November 30.
+<li><b>Final Exam:</b> Thursday, December 13, 12:30 p.m.
+</ul>
+All exams will be held in the usual classroom (LC 113), during class meetings (except for the final).
+<p>
+The <b>midterm exams</b> will be very similar to the homeworks, and several problems will be taken exactly
+from the homework assignments. There will not be any topics on the exams that were not covered in the
+homeworks.
+<p>
+The <b>final exam will be taken exactly from the homeworks</b>. <a href="final-exam.pdf">See here</a>.
+<p>
+<a href="pexam1.pdf">Practice Exam 1</a>, <a href="141-pexam1-sols.pdf">solutions</a>.
+<p>
+<a href="a2a.pdf">Practice Exam 2</a>, <a href="pexam2-sols.pdf">solutions</a>.
+<p>
+<p>
+<a href="a3b.pdf">Practice Exam 3</a>, <a href="141-pe3.pdf">solutions</a>.
+<p>
+
+
+<b>These</b> were two of the midterm exams from last year: (Note that the selection of material was a little bit different.)
+<p>
+<a href="../math141_11/exam1.pdf">Exam 1,</a>
+<a href="../math141_11/exam1-sols.pdf">solutions.</a>
+<p>
+<a href="../math141_11/exam2.pdf">Exam 2,</a>
+<a href="../math141_11/exam2-sols.pdf">solutions.</a>
+<p>
+<font size=+1> <b> Homework </b> </font>:
+
+Homework is due to your TA by 5:00 p.m., on Fridays except as otherwise noted below. (Your TA will tell you where to turn in your homework.)
+The homework <b>will be graded and returned to you,</b> according to the following scheme. Each homework is
+worth 10 points. Out of that, three problems will be selected each week (randomly, for the most part) and graded
+carefully, and each is worth 2 points. The remaining 4 points are for overall quality and completion.
+<p>
+<b>All the homework assignments</b> can be downloaded from this website (see below).
+<b>They are long.</b> Do not start the night before.<b>They are also very important.</b>
+<p>
+Each homework will have ''required'', ''additional'', and (one or more) ''bonus'' problems. 
+The additional problems are not required; if you do them then the points taken off elsewhere will be reduced by up to 50%.
+The bonus problems are extra credit.
+<p>
+All exam problems will be taken verbatim from the homework assignments.
+<P>
+
+<font size=+1> <b> Grading </b> </font>: 
+
+<p>
+You will be graded <b>both on correctness and on quality of exposition.</b> 
+The standard is that someone who doesn't know the answer should be able to easily follow your work.
+Any work that is confusing, ambiguous, or poorly explained will not receive full credit.
+
+<p>
+The grade cutoffs are: A for 88%, B+ for 84%, B for 76%, C+ for 72%, C for 64%, and D for 50%.
+
+<p>
+<table border>
+
+<tr>
+
+<td> &nbsp                     &nbsp </td>
+<td> &nbsp <b> % of grade </b> &nbsp </td>
+
+</tr>
+
+<tr> 
+
+<td> &nbsp <b> Three in-class exams: </b> &nbsp </td> 
+<td> &nbsp 20% x 2                    &nbsp </td> 
+
+</tr>
+
+<tr> 
+<td> &nbsp <b> Final exam: </b> &nbsp </td> 
+<td> &nbsp 30%                  &nbsp </td> 
+
+</tr>
+
+<tr> 
+
+<td> &nbsp <b> Maple lab assignments: </b> &nbsp </td> 
+<td> &nbsp 15%                             &nbsp </td> 
+
+</tr>
+
+<tr> 
+
+<td> &nbsp <b> Homework: </b> &nbsp </td> 
+<td> &nbsp 15%               &nbsp </td> 
+
+</tr>
+
+</table>
+<p>
+Only <b>your highest two</b> midterm exam grades will be counted. Also, the above does not include the precalculus
+exam the week of September 3. This exam will be counted 10% or 0% of your total, whichever makes your grade turn out higher.
+
+<P>
+
+<font size=+1> <b> Make-up policy </b> </font>:
+
+<p>
+
+If you have a legitimate conflict with any of the exams it is your responsibility to inform me <b>at least a week before</b> the exam.
+Otherwise, makeups will only be given in case of emergency.
+
+Late homework will generally not be accepted, but please ask your TA if you have special circumstances.
+<P>
+
+<font size=+1> <b> Calculators </b> </font>:
+
+<p>
+
+Calculators will not be allowed for the exams. You may use them on the homework if you want, but this is discouraged,
+as the purpose of the homework is to prepare you for the exams.
+
+<p>
+
+<P>
+
+<a NAME="si"> </a> <a NAME="sihrs"> </a> 
+<font size=+1> <b> Supplemental instruction </b> </font>:
+
+<p>
+
+<b>Stuart Sands</b> runs the supplemental instruction sessions. This is a
+valuable resource and you are strongly encouraged to take advantage of it.
+Please go to ask questions and meet other students. It is a particularly
+good place to
+work on your homework.
+<p>
+These sessions run Sunday at 5 pm, Tuesday at 9 pm, and Thursday at 7 pm in Gambrell 130.
+
+<P> 
+There is also <b>free drop-in tutoring</b> available for all 100-level math courses. This is available
+in LC 105, MW 11-2 and 2:15-3:15, adn TTh 11-3. Also, the ACE Centers in Columbia, Sims, and Bates House dorms will
+operate on the following schedule: Sims, 6-9 pm M-Th, Columbia and Bates 7-9 pm M-Th.
+
+<p>
+<font size=+1> <b> Other help resources </b> </font>: 
+<A HREF="http://www.math.sc.edu/mathlab.html">     Math lab</A>, 
+<A HREF="http://www.math.sc.edu/mathlab/private/"> Private tutors </A>.
+
+
+<P>
+<br>
+<font size=+2> <b> Schedule of lectures, homeworks, and exams </b> </font>
+<p>
+Stars (*) indicate days in which I will be attending conferences out of town, and where the substitute
+instructor will fill in for me.
+<p>
+Homeworks are not always due on the same days of the week. This could be a bit annoying (my apologies), but it was done
+to make sure no one homework is excessively long.
+
+<ul>
+<li>
+8/24: <b>What is all the fuss about?</b>
+<li>
+8/27: <b>Going around in circles</b> (Ch. 1.2-1.3, Trigonometric and composite functions)
+<li>
+8/29: <b>Growing really fast</b> (Ch. 1.4-1.5, Exponential and logarithmic functions)
+<li>
+8/31: <b>The cast of characters</b> (Review and consolidation)
+<li>
+<p>
+<a href="hw1.pdf">Homework 1</a>, due Tuesday, September 4. (<b>Warning!</b> It's not short.)
+<P>
+<li>9/3: <b>Labor day (no class)</b>
+<p>
+During the week's discussion section there will be a <b>precalculus exam</b>
+which
+will count 10% of your final grade if it helps you; otherwise it will be dropped. 
+<p>
+The precalculus exam will be <b>six questions chosen at random from Homework 1</b>. You will
+have <b>thirty minutes</b>, the rest of section will be spent going over solutions.
+<li>
+9/5 (*): <b>Measuring a curved line</b> (Ch. 2.1, The tangent and velocity problems)
+<li>
+9/7 (*): <b>With a really, really small ruler</b> (2.2, introducing limits)
+<li>
+9/10: <b>The rules of the game</b> (2.2, 2.3, computing limits)
+<p>
+<a href="hw2.pdf">Homework 2</a>, due Monday, September 10. (shorter, but they get long again soon.)
+<li> 
+9/12: <b>A long time ago and very far away</b> (2.6, limits at infinity)
+<li>
+9/14: <b>Change we can measure</b> (2.7, introduction to the derivative)
+<li>
+9/17: <b>What the derivative *really* is</b> (2.8, the derivative as a function)
+<p>
+<a href="hw3.pdf">Homework 3</a>, due Monday, September 17.
+<li>
+9/19: <b>The rules of the game, II</b> (3.1, computing derivatives)
+<li>
+9/21: <b>The rules of the game, III</b> (3.2, computing derivatives)
+<li>
+9/24 (*): <b>Review</b>
+<p>
+<a href="hw4.pdf">Homework 4</a>, due Monday, September 24. (<b>warning:</b> long) 
+<li>
+9/26 (*): <a href="141-exam1.pdf">Exam 1</a>, <a href="141-exam1-sols.pdf">solutions</a>.
+<p>
+<li>
+9/28 (*): <b>Going around in circles, II</b> (3.3, derivatives of trig functions)
+<li>
+10/1: <b>It looks like a duck and it acts like a duck...</b> (3.4, the chain rule)
+<li>
+10/3: <b>A dirty trick</b> (3.5, implicit differentiation)
+<li>
+10/5: <b>Derivatives of logarithms</b> (3.6)
+<p>
+<a href="hw5.pdf">Homework 5</a>, due Friday, October 5.
+<li>
+10/8: <b>The more things change...</b> (3.7, applications to the sciences)
+<li>
+10/10: <b>300,000,000 hungry rabbits</b> (3.8, exponential growth and decay)
+<li>
+10/12: <b>Of lights and ladders</b> (3.9, related rates)
+<p>
+<a href="hw6.pdf">Homework 6</a>, due Friday, October 12.
+<li>
+10/15: <b>As good as it gets</b> (4.1, maxima and minima)
+<li>
+10/17: <b>Derivatives and graphing</b> (4.3)
+<p>
+<a href="hw7.pdf">Homework 7</a>, due <b>Wednesday</b>, October 17.
+<p>
+10/19: <b>Fall break</b>
+<li>
+10/22: <b>Derivatives and graphing, II </b> (4.3-4.5)
+<li>
+10/24: <b>L'Hopital's rule</b> (4.4)
+<li>
+10/26: <b>Derivatives and graphing, III </b> (4.5)
+<li>
+10/29 (*): <b>Review</b>
+<p>
+<a href="hw8.pdf">Homework 8</a>, due <b>Monday</b>, October 29. <b>Warning.</b> This is proably the hardest homework assignment. Get a head start!
+<li>
+10/31 (*): <b>Exam 2</b>.
+<p>
+<li>
+11/2 (*): <b> The best fence money can buy</b> (4.7, optimization)
+<li>
+11/5: <b>The dog who knew calculus</b> (4.7, optimization)
+<li>
+11/7: <b>Running everything backwards</b> (4.9, the antiderivative)
+<p>
+<a href="hw9.pdf">Homework 9</a>, due Wednesday, November 7.
+<li>
+11/9: <b>Area and distance</b> (5.1)
+<li>
+11/12: <b>THE BIG KAHUNA</b> (5.3: the fundamental theorem of calculus)
+<li>
+11/14: <b>The "net change theorem"</b> (5.4: really it's more of the same)
+<p>
+<a href="hw10.pdf">Homework 10</a>, due Wednesday, November 14.
+<li>
+11/16: <b>Making problems easier</b> (5.5: integration by substitution)
+<li>
+11/19: <b>Making problems easier</b> (5.5, more substitution)
+<p>
+Note that <a href="http://math.ucsd.edu/~wgarner/math20b/int_sqrt_tan.htm">this</a> will not appear on the exam.
+<p>
+<a href="hw11.pdf">Homework 11</a>, due Monday, November 19. (Homeworks 11-13 are shorter than earlier homeworks.)
+<p>
+11/21-23: <b>Thanksgiving!</b>
+<li>
+11/26: <b>Above this and below that</b> (6.1, area between curves)
+<li>
+11/28: <b>Review</b>
+<p>
+<a href="hw12.pdf">Homework 12</a>, due Wednesday, November 28.
+<li>
+11/30: <b>Exam 3</b>.
+<p> 
+<li>
+12/3: <b>Introduction to volumes</b> (6.2)
+<li>
+12/5: <b>Where calculus goes from here!</b>
+<li>
+12/7: <b>Review for final exam</b>
+<p>
+<a href="hw13.pdf">Homework 13</a>, due Friday, December 7.
+<p>
+<b>Bonus questions</b> (to be prepared). The bonus will be in the form of four practice final exams,
+and you can turn them in for extra credit. They are due at the final exam. If you finish them early,
+you can bring them to me and I will grade them and give you feedback.
+<li>
+12/13, 12:30 p.m. - 3:00 p.m.: <a href="final-exam.pdf">Final exam.</a>
+<P>
+
+</BODY>
+</HTML>
+
+
+
+
+

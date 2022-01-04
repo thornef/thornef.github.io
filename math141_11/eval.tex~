@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate, url}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Supplementary Evaluation - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+\end{center}
+
+The following questions supplement the official university teaching evaluations. Answering these
+questions is optional but encouraged. If you fill out this evaluation, please return it to my mailbox
+on the fourth floor of LeConte. (No need to put your name on it.)
+
+{\bf Please note that I anticipate teaching Math 141 again soon} and your responses will directly affect
+what I do!
+
+Thank you for your feedback!
+
+\begin{enumerate}[(1)]
+\item
+Did you ever have any difficulty hearing my voice, reading the blackboard, or anything related?
+(If yes, please explain.)
+
+\vskip 1in
+\item
+{\bf Homework:} Did you ever spend more than 8-10 hours during any one week on the homework? Consistently?
+(It was intended that you should not have to.) If so, please elaborate.
+
+\vskip 1.5in
+\item
+Was the homework helpful for your understanding of the material? Please comment on any parts of the homework
+assignments which were particularly helpful or unhelpful.
+
+\vskip 2in
+\item
+{\bf Choice of topics:} Next time, I intend to make the following minor changes to the syllabus:
+add a lecture near the beginning reviewing ``word problems'' and how to approach them; remove the
+lecture on the ``limits game'' and the formal definition of a limit; expand the treatment of related
+rates substantially; (maybe) remove the discussion of logarithmic differentiation; (maybe) say a little
+bit about exponential growth and decay (see Section 3.8).
+
+Do you agree with these changes? Do you suggest any others?
+
+\vskip 2in
+\item
+Did you ever have any difficulty contacting me or other instructional staff? If yes, please elaborate.
+
+\vskip 1in
+\item
+(I very much hope the answer to this question is no, but if yes, please explain.) Do you ever feel you were
+treated unfairly for any reason?
+
+\vskip 1in
+\item
+Do you have any other suggestions for the next time I teach Math 141?
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,182 @@
+\documentclass[11pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[mathscr]{euscript}
+\usepackage{enumerate, verbatim, url}
+\oddsidemargin = 0.0cm \evensidemargin = 0.0cm \textwidth = 6.5in
+\textheight =8.5in
+\newtheorem{case}{Case}
+\newcommand{\caseif}{\textnormal{if }}
+\newcommand{\leg}[2]{\genfrac{(}{)}{}{}{#1}{#2}}
+\newcommand{\bfrac}[2]{\genfrac{}{}{}{0}{#1}{#2}}
+\newcommand{\sm}[4]{\left(\begin{smallmatrix}#1&#2\\ #3&#4 \end{smallmatrix} \right)}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}{\bf Conjecture}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
+\theoremstyle{remark}
+\newtheorem*{theoremno}{{\bf Theorem}}
+\newtheorem*{remark}{Remark}
+\newtheorem*{example}{Example}
+\numberwithin{theorem}{section} \numberwithin{equation}{section}
+
+\newcommand{\ord}{\text {\rm ord}}
+\newcommand{\li}{\text {\rm li}}
+\newcommand{\putin}{\text {\rm \bf ***PUT IN***}}
+\newcommand{\st}{\text {\rm \bf ***}}
+\newcommand{\mfG}{\mathfrak{G}}
+\newcommand{\mfF}{\mathfrak{F}}
+\newcommand{\pr}{\text {\rm pr}}
+\newcommand{\sfpart}{\text {\rm sf}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calW}{\mathcal{W}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\GG}{\mathcal{G}}
+\newcommand{\FF}{\mathcal{F}}
+\newcommand{\QQ}{\mathcal{Q}}
+\newcommand{\Mp}{\text {\rm Mp}}
+\newcommand{\frakG}{\mathfrak{G}}
+\newcommand{\Qmd}{\mathcal{Q}_{m,d}}
+\newcommand{\la}{\lambda}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Cl}{{\text {\rm Cl}}}
+\newcommand{\Tr}{{\text {\rm Tr}}}
+\newcommand{\rk}{{\text {\rm rk}}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Qd}{\mathcal{Q}_d}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\SL}{{\text {\rm SL}}}
+\newcommand{\GL}{{\text {\rm GL}}}
+\newcommand{\textmod}{{\text {\rm mod}}}
+\newcommand{\textMod}{{\text {\rm Mod}}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\PSL}{{\text {\rm PSL}}}
+\newcommand{\lcm}{{\text {\rm lcm}}}
+\newcommand{\Gal}{{\text {\rm Gal}}}
+\newcommand{\add}{{\text {\rm add}}}
+\newcommand{\sub}{{\text {\rm sub}}}
+\newcommand{\Sym}{{\text {\rm Sym}}}
+\newcommand{\End}{{\text {\rm End}}}
+\newcommand{\Frob}{{\text {\rm Frob}}}
+\newcommand{\Disc}{{\text {\rm Disc}}}
+\newcommand{\Stab}{{\text {\rm Stab}}}
+\newcommand{\Op}{\mathcal{O}_K}
+\newcommand{\h}{\mathfrak{h}}
+\newcommand{\G}{\Gamma}
+\newcommand{\g}{\gamma}
+\newcommand{\zaz}{\Z / a\Z}
+\newcommand{\znz}{\Z / n\Z}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\Div}{{\text {\rm Div}}}
+\newcommand{\tr}{{\text {\rm tr}}}
+\newcommand{\odd}{{\text {\rm odd}}}
+\newcommand{\bk}{B_k}
+\newcommand{\rr}{R_r}
+\newcommand{\sump}{\sideset{}{'}\sum}
+\newcommand{\gkr}{\mathfrak{g}_{k,r}}
+\newcommand{\re}{\textnormal{Re}}
+\newcommand{\im}{\textnormal{Im}}
+\newcommand{\Res}{\textnormal{Res}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\Aut}{\textnormal{Aut}}
+\def\H{\mathbb{H}}
+
+
+
+\begin{document}
+\title[Analytic number theory]
+{Analytic number theory, Fall 2011}
+\author{Frank Thorne}
+\address{Department of Mathematics, University of South Carolina,
+1523 Greene Street, Columbia, SC 29208}
+\email{fthorne@math.stanford.edu}
+
+\maketitle
+\section{Details}
+{\bf Room, time, office hours, etc.} TBA.
+\\
+\\
+{\bf Grading.} Your grade will consist of {\bf homework} (75\%) as well as a short {\bf term project} (25\%). For the term project you are asked to
+independently learn about some topic in analytic number theory, write a paper of 5+ pages on it, and give a 20-minute presentation to the class
+or in the number theory seminar.
+
+The homeworks will be long and difficult and will present a variety of different problems for you to solve. However,
+an average of 50\% will suffice for an A, so
+newcomers or students in other discplines will not be expected to master everything. Aspiring number theorists are naturally encouraged to be more ambitious.
+
+\section{Textbook and topics}
+We will be using Davenport, {\itshape Multiplicative number theory} as a basic reference. We should be able to cover about half the book, including
+Dirichlet's theorem on primes in arithmetic progression, characters and cyclotomy, the class number formula, the Riemann zeta function and its
+analytic properties, and the proof of the prime number theorem.
+
+We will also spend at least a little time discussing some more elementary aspects of the subject:
+general Dirichlet series, multiplicative functions, and ``elementary'' methods for estimating their partial sums.
+(``Elementary'' doesn't mean ``easy'', but rather that we will not need complex analysis.)
+
+I will also plan on a couple of seminar-style lectures which will introduce some more advanced topics, and which will not be the basis
+for homework exercises. In particular I will say a little bit about how this theory
+intersects with research areas being pursued by myself and the other number theorists at USC.
+
+\section{Prerequisites}
+The course has a number of ``soft'' prerequisites. Soft as in, the following material is foundational in studying analytic number theory
+and you will need to become proficient in order to succeed.
+It is not expected that you will be familiar with all of this material, and we will devote some time to discussing each of these topics.
+The student who has not seen any of these topics should probably plan on additional background reading and hard work to succeed.
+\\
+\\
+{\bf Abstract algebra.} We will use the language of groups, rings, and fields when it helps to illuminate the subject material. For example,
+the multiplicative group $\mathbb{F}_p^{\times}$ is cyclic, and is isomorphic to its character group (the group of homomorphisms
+$\mathbb{F}_p^{\times} \rightarrow \mathbb{C}^{\times}).$ It will be good to know what all this means, and ideal if you know how to prove it.
+\\
+\\
+{\bf Complex analysis.} The Riemann zeta function 
+\begin{equation}
+\zeta(s) = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \cdots
+\end{equation}
+defines an analytic function when the infinite sum above converges, i.e., when $\Re(s) > 1$. It is a nontrivial and very useful fact
+that this function has an {\itshape analytic continuation} to the whole complex plane; 
+i.e., that there is an analytic function $\zeta(s)$ which is given by the infinite
+sum above when the infinite sum is defined.
+
+It would be good to know what this means, and even better to know why this is surprising. (We will cover this for people who aren't familiar
+with this.) Riemann's proof of the analytic continuation
+is one of the cornerstones of analytic number theory and we will present the proof in detail.
+
+Another example is the contour integral
+\begin{equation} \int_{2 - i \infty}^{2 + i \infty} X^s \frac{ds}{s},
+\end{equation}
+where $X$ is a positive real number, and 
+the integral is taken over the real line $\Re(s) = 2$. The first order of business (which we will briefly cover) 
+is to understand what the above notation means; i.e., what is a ``contour integral''? If that is familiar, why does it converge,
+but not absolutely? Finally, can you evaluate it?
+\\
+\\
+{\bf Asymptotic analysis.} It will simplify many of the tedious details in our proofs to use the language of asymptotic analysis,
+big-O notation, and implied constants. If $f(x)$ and $g(x)$ are two real-valued functions, we say that $f(x) = O(g(x))$ or
+(equivalently) $f(x) \ll g(x)$ if $|f(x)| < C g(x)$ for some constant $C$. Commonly, we instead require the weaker condition
+that there exists some $X, C > 0$ such that $|f(x)| < C g(x)$ for all $x > X$.
+
+Can you prove the following?
+\begin{equation}
+1 + x + 10 x^2 \ll x^3,
+\end{equation}
+\begin{equation}
+x^{100} \ll e^x,
+\end{equation}
+\begin{equation}
+\frac{1}{\sqrt{x}} + \log(x) + \exp((\log x)^{1/2}) \ll x.
+\end{equation}
+Fluency in proving these sorts of inequalities are a requirement in analytic number theory, and developing this fluency
+will be one of the aims of our course.
+
+\end{document}
+
+

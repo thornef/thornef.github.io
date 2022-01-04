@@ -1,0 +1,108 @@
+
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate}
+\usepackage{comment}
+\usepackage{ifthen, url}
+\newcommand{\textmod}{{\text {\rm mod}}}
+\newcommand{\textMod}{{\text {\rm Mod}}}
+
+
+\oddsidemargin = -1cm \evensidemargin = -1cm \textwidth = 6.8in
+\textheight =8.5in
+\topmargin =0.0in
+
+\title{Comprehensive Exam in Analytic Number Theory (Fall 2013)}
+\begin{document}           % End of preamble and beginning of text.
+\maketitle
+\vskip 1.0cm
+\begin{enumerate}[1.]
+\item
+Refer to p. 8 of Davenport's book. Assume that $q$ is an odd prime $\equiv 3 \pmod{4}$,
+\[
+L(s) = \sum_{n = 1}^{\infty} \left( \frac{n}{q} \right) n^{-s},
+\]
+and
+\[
+G(n) = \sum_{m = 1}^{q - 1} \left( \frac{m}{q} \right) \exp(2 \pi i mn/q).
+\]
+\begin{enumerate}[(a)]
+\item
+Justify that $G \neq 0$ by computing $G^2$.
+\item
+Prove (1) on p. 8.
+\item
+Prove that the series in (2) converges for $|z| \leq 1$ and $z \neq 1$.
+\item
+Prove (6).
+\item
+Verify the statement immediately after (7).
+\item
+Dirichlet's class number formula for imaginary quadratic fields
+says that, for $d < 0$, 
+\[
+h(d) = \frac{ w \sqrt{|d|}}{2 \pi} L(s, \chi_d),
+\]
+where $h(d)$ is the class number of $\mathbb{Q}({\sqrt{d}})$, and
+\[
+L(s, \chi_d) = \sum_{n = 1}^{\infty} \left( \frac{d}{n} \right) n^{-s}.
+\]
+Using all of these formulas (all of which were proved by Dirichlet), compute the
+class number of $\mathbb{Q}(\sqrt{-31})$.
+\end{enumerate}
+\vskip 0.5cm
+
+\item
+The nonvanishing of $L(1, \chi)$ is such a beautiful theorem that it's worth a second
+proof. Refer to p. 37 of Iwaniec-Kowalski.
+\begin{enumerate}[(a)]
+\item
+Justify the equation after (2.29).
+\item
+IK refer to `opening the convolution (2.29)'. Define the convolution of two arithmetic
+functions, and say what two functions (2.29) is the convolution of.
+\item
+Justify each step of the proof after `We obtain', in substantially more detail
+than Iwaniec and Kowalski do. For each of the $O$-terms, specify what variables,
+if any, the implied constants depend on.
+
+(Hint: My hand-written note `Require ...', which I wrote a few years ago, might be a useful hint,
+but I wrote it in a somewhat sloppy way.)
+\end{enumerate}
+\vskip 0.5cm
+\item
+Explicitly describe all of the Dirichlet characters modulo 10.
+\item
+\vskip 0.5cm
+Refer to Chapter 7 of Shakarchi and Stein's book.
+\begin{enumerate}[(a)]
+\item
+Summarize the proof given there of the prime number theorem.
+\item
+With Lemma 2.4 as a model, prove a similar formula for
+\[
+\frac{1}{2 \pi i} \int_{c - i \infty}^{c + i \infty} \frac{a^s}{s(s + 1)(s + 2)}.
+\]
+For convergence issues, you are welcome, and indeed strongly encouraged, to use facts proved 
+on pp. 192-193, e.g. to compare your integrals to theirs rather than to imitate their proof.
+\item
+Formulate an analogue of Proposition 2.3 which uses your variant of Lemma 2.4.
+\item
+Another analogue of Lemma 2.4 (Perron's formula) is that the integral
+\[
+\frac{1}{2 \pi i} \int_{c - i \infty}^{c + i \infty} \frac{a^s}{s} ds
+\]
+is equal to $0$ if $0 < a < 1$, and $1$ if $a > 1$. Do not prove this, but do prove
+an analogue of Proposition 2.3 which directly gives a formula for $\psi(x)$.
+\item
+(bonus) All of this is related to a general phenomenon of interest to Fourier analysts.
+How?
+\item
+Using this last analogue, if possible, would have made Stein and Shakarchi's 
+proof of the prime number theorem
+simpler, for example because it would eliminate the need for Proposition 2.2. However, there
+is one point at which their argument would fail. Find it, and explain.
+\end{enumerate}
+\end{enumerate}
+
+\end{document}

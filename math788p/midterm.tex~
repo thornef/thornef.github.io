@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Examination 2 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Wednesday, October 31, 2012}
+\end{center}
+
+Please work without books, notes, calculators, or any assistance from others. If you have
+any questions, feel free to ask me. Please do your work on separate paper; you should staple this sheet to your work (put this on top)
+and turn in everything together. 
+
+The first five questions are 16 points each and the last is 20 points.
+\\
+\\
+\begin{enumerate}[(1)]
+\item
+Compute $\frac{df}{dx}$ for $f(x) = \tan(x)$ and for $f(x) = \csc(x)$.
+
+\item
+Find $\frac{dy}{dx}$ if $y = \ln(7 + 2 x^5)$.
+
+\item
+Explain the meaning and the origin of the equation $y(t) = y(0) e^{kt}$ in modeling situations
+such as population growth, compound interest, radioactive decay, etc. When is $k$ positive, and
+when is it negative?
+
+\item
+If a snowball melts so that its surface area decreases at a rate of 1 $cm^2/min$, find the rate
+at which the diameter decreases when the diameter is $10$ $cm$.
+
+(Recall that the surface area of a sphere of radius $r$ is $4 \pi r^2$.)
+
+\item
+Find the absolute maximum and minimum values of $\frac{x}{x^2 + 1}$ on $[0, 2]$.
+ 
+\item
+Graph the function $y = 2 + 2 x^2 - x^4$. Indicate where your graph is increasing or decreasing,
+and where it is concave up and down. Indicate all the critical points and points of inflection.
+
+\end{enumerate}
+
+\end{document}

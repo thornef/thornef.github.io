@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 3 - Analytic number theory}
+\end{center}
+\begin{center}Frank Thorne, thornef@mailbox.sc.edu
+\end{center}
+\begin{center}
+{\bf Due Friday, September 16}
+\end{center}
+\begin{enumerate}
+\item (8 points)
+Let $d(n)$ be the divisor function. Prove that $d(n) \ll n^{\epsilon}$ for any $\epsilon > 0$, with the implied
+constant depending on $\epsilon$.
+
+\item (12- points)
+Find, with proof, the value of $n < 10^{50}$ such that $d(n)$ is maximized.
+
+(Partial credit for partial results: $d(n)$ is within a factor of two of the maximum possible value, etc.)
+
+\item (3 points)
+Let $d_k(n)$ the number of ways of writing $n$ as a product of $k$ factors. Explain why
+\begin{equation}
+\sum_{n \geq 1} \frac{ d_k(n) }{n^s} = \zeta(s)^k
+\end{equation}
+for $\Re(s) > 1$.
+
+\item (5-12 points)
+For fixed $k$, determine an asymptotic formula for $\sum_{n \leq x} d_k(n)$. (Five points for an asymptotic
+formula; more points for secondary terms (you can be a little bit vague here) and good error terms.
+
+\item (5 points)
+Determine a formula for $\sum_{n \leq x} \phi(n)$. You should be able to come up with a very good error term.
+
+\item (5+ points)
+Using a computer, compute $\sum_{n \leq x} \mu(n)$ for a good range of $x$ (You should be able to do it at
+least to $x = 10^6$). Describe and/or graph your results. (Conjectures encouraged!)
+
+\end{enumerate}
+
+\end{document}

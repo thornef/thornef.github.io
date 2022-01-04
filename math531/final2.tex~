@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Final Examination -- Math 531}
+\end{center}
+\begin{center}
+{\bf Due Saturday, December 15}
+\end{center}
+
+\begin{enumerate}[(1)]
+\item
+Prove that a quadrilateral is a parallelogram if and only if its diagonals bisect each other.
+\item
+Let $AX$ be the angle bisector of $\angle A$ in $\triangle ABC$. Prove that
+\begin{equation}
+\frac{BX}{XC} = \frac{AB}{AC}.
+\end{equation}
+
+\item
+Let $P$ be a point inside a circle, and let $XY$ and $UV$ be two chords going through $P$.
+Prove that $PX \cdot PY = PU \cdot PY$.
+
+\item
+Given acute angled $\triangle ABC$ as in Figure III.1, extend the altitudes from $A$, $B$, $C$
+to meet the circumcircle at $X$, $Y$, and $Z$ respectively. Prove that $AX$ bisects $\angle Z X Y$.
+
+{\itshape Hint.} Look for congruent triangles.
+\item
+Suppose that $AX$ is a median of a triangle, and $G$ is the centroid. Prove that $AG = 2 GX$.
+
+\item
+Prove that the three angle bisectors of a triangle are concurrent.
+\item
+Let $A, B, C, D$ be four collinear points and suppose that $P$ is a point not on the line
+through them. Prove that
+$$cr(A, B, C, D) = \frac{ \sin(\angle APC) \sin( \angle BPD)}{ \sin( \angle APD) \sin(\angle BPC)}.$$
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 5 - Math 574, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, February 17 at 5:00.}
+\end{center}
+{\bf There are shortcuts on this week's homework.} If this starts to get tedious and repetitive, look for them!
+\\
+\\
+For epsilon-delta problems, if you graph your function you may assume that a function $f(x)$ is increasing
+on an interval $[a, b]$ if it is clearly visible from your graph. For example, $f(x) = x^2$ is increasing
+on $[1, 2]$.
+
+\begin{enumerate}
+\item
+Prove that $\sqrt{3}$ is irrational.
+\item
+Prove that $\sqrt{5}$ is irrational.
+\item
+Prove that $\sqrt{6}$ is irrational.
+\item
+Prove that $\sqrt{2} + 2$ is irrational.
+\item
+Prove that $48\sqrt{5} + 2$ is irrational.
+\item
+Prove that $\sqrt[3]{2}$ is irrational.
+\item
+Prove that $\sqrt[3]{3}$ is irrational.
+\item
+Prove that $\lim_{x \rightarrow 2} 0 = 0.$
+\item
+Prove that $\lim_{x \rightarrow 5} 3x = 15.$
+\item
+Prove that $\lim_{x \rightarrow 3} 4x - 1 = 11.$
+\item
+Prove that $\lim_{x \rightarrow 2} -2x - 9 = -13.$
+\item
+Prove that $\lim_{x \rightarrow 5} 0 \neq 1.$
+\item
+Prove that $\lim_{x \rightarrow 4} 2x + 1 \neq 10.$
+\item
+Prove that $\lim_{x \rightarrow 2} x^2 \neq 3.$
+\item
+Prove that $\lim_{x \rightarrow \frac{\pi}{4}} \sin(x) \neq 1.$
+\item
+A few additional problems will be added later (there will be a few more problems from
+Chapter 4 of Epp's book.)
+\end{enumerate}
+{\bf Bonus} (harder $\epsilon-\delta$ proofs)
+\begin{enumerate}
+\item (2 points)
+Prove that $\lim_{x \rightarrow 3} x^4 = 81$.
+\item (2 points)
+Prove that $\lim_{x \rightarrow 0} \sin(1/x)$ does not exist.
+\item (2 points)
+Prove that $\lim_{x \rightarrow 0} \frac{\sin(x)}{x} = 1$. (Do not use L'Hopital's
+Rule.)
+\end{enumerate}
+\end{document}

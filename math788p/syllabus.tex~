@@ -1,0 +1,178 @@
+\documentclass[11pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[mathscr]{euscript}
+\usepackage{enumerate, verbatim, url}
+\oddsidemargin = 0.0cm \evensidemargin = 0.0cm \textwidth = 6.5in
+\textheight =8.5in
+\newtheorem{case}{Case}
+\newcommand{\caseif}{\textnormal{if }}
+\newcommand{\leg}[2]{\genfrac{(}{)}{}{}{#1}{#2}}
+\newcommand{\bfrac}[2]{\genfrac{}{}{}{0}{#1}{#2}}
+\newcommand{\sm}[4]{\left(\begin{smallmatrix}#1&#2\\ #3&#4 \end{smallmatrix} \right)}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}{\bf Conjecture}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
+\theoremstyle{remark}
+\newtheorem*{theoremno}{{\bf Theorem}}
+\newtheorem*{remark}{Remark}
+\newtheorem*{example}{Example}
+\numberwithin{theorem}{section} \numberwithin{equation}{section}
+
+\newcommand{\ord}{\text {\rm ord}}
+\newcommand{\li}{\text {\rm li}}
+\newcommand{\putin}{\text {\rm \bf ***PUT IN***}}
+\newcommand{\st}{\text {\rm \bf ***}}
+\newcommand{\mfG}{\mathfrak{G}}
+\newcommand{\mfF}{\mathfrak{F}}
+\newcommand{\pr}{\text {\rm pr}}
+\newcommand{\sfpart}{\text {\rm sf}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calW}{\mathcal{W}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\GG}{\mathcal{G}}
+\newcommand{\FF}{\mathcal{F}}
+\newcommand{\QQ}{\mathcal{Q}}
+\newcommand{\Mp}{\text {\rm Mp}}
+\newcommand{\frakG}{\mathfrak{G}}
+\newcommand{\Qmd}{\mathcal{Q}_{m,d}}
+\newcommand{\la}{\lambda}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Cl}{{\text {\rm Cl}}}
+\newcommand{\Tr}{{\text {\rm Tr}}}
+\newcommand{\rk}{{\text {\rm rk}}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Qd}{\mathcal{Q}_d}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\SL}{{\text {\rm SL}}}
+\newcommand{\GL}{{\text {\rm GL}}}
+\newcommand{\textmod}{{\text {\rm mod}}}
+\newcommand{\textMod}{{\text {\rm Mod}}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\PSL}{{\text {\rm PSL}}}
+\newcommand{\lcm}{{\text {\rm lcm}}}
+\newcommand{\Gal}{{\text {\rm Gal}}}
+\newcommand{\add}{{\text {\rm add}}}
+\newcommand{\sub}{{\text {\rm sub}}}
+\newcommand{\Sym}{{\text {\rm Sym}}}
+\newcommand{\End}{{\text {\rm End}}}
+\newcommand{\Frob}{{\text {\rm Frob}}}
+\newcommand{\Disc}{{\text {\rm Disc}}}
+\newcommand{\Stab}{{\text {\rm Stab}}}
+\newcommand{\Op}{\mathcal{O}_K}
+\newcommand{\h}{\mathfrak{h}}
+\newcommand{\G}{\Gamma}
+\newcommand{\g}{\gamma}
+\newcommand{\zaz}{\Z / a\Z}
+\newcommand{\znz}{\Z / n\Z}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\Div}{{\text {\rm Div}}}
+\newcommand{\tr}{{\text {\rm tr}}}
+\newcommand{\odd}{{\text {\rm odd}}}
+\newcommand{\bk}{B_k}
+\newcommand{\rr}{R_r}
+\newcommand{\sump}{\sideset{}{'}\sum}
+\newcommand{\gkr}{\mathfrak{g}_{k,r}}
+\newcommand{\re}{\textnormal{Re}}
+\newcommand{\im}{\textnormal{Im}}
+\newcommand{\Res}{\textnormal{Res}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\Aut}{\textnormal{Aut}}
+\def\H{\mathbb{H}}
+
+
+
+\begin{document}
+\title[Topics in algebraic number theory]
+{Topics in algebraic number theory, Spring 2013}
+\author{Frank Thorne}
+\address{Department of Mathematics, University of South Carolina,
+1523 Greene Street, Columbia, SC 29208}
+\email{fthorne@math.stanford.edu}
+
+\maketitle
+LeConte ???, MWF 12:20-1:10. Office hours TBA.
+\\
+\\
+{\bf Learning outcomes.} The student will master a variety of tools used in modern algebraic number theory, and will also
+learn their connection to classical number theoretic questions concerning the distribution of primes and the solutions of
+Diophantine equations.
+\\
+\\
+{\bf References.} Useful source materials include Neukirch, {\itshape Algebraic Number Theory}; Marcus, {\itshape Number Fields};
+Milne, {\itshape Algebraic Number Theory} (available for free online); and my own notes which I will publish online. Additional
+references will be suggested throughout the semester.
+\\
+\\
+{\bf Instructional Delivery Strategy.} Lecture.
+\\
+\\
+{\bf Grading.} Grading will be on an open points scale. 200 points will be necessary for an A, 140 for a B, 120 for C, 100 for D.
+Assignments will include a variety of homework sets (worth at least 200 points total), 
+an optional computational project (worth 50 points), and an open-book, take-home final exam (unlimited time, but students should work
+by themselves; worth 50 points). As the total value of the assignments is more than 200 points, 
+students will be able to exercise some choice as to which projects
+best meet their research and learning interests.
+ 
+Graduate students who have been admitted to Ph.D. candidacy may be offered a reduced workload if negotiated with the instructor.
+\\
+\\
+{\bf Prerequisites.} Graduate standing in the math department or permission of instructor. 
+
+It is expected that students will have taken 703/704 (algebra) or its equivalent elsewhere, or be concurrently enrolled in it.
+Math 784 (Filaseta's algebraic number theory) is strongly recommended as a prerequisite, but the course will be accessible (with
+extra effort) to students who didn't take this. Any additional background in abstract algebra and/or number theory will be helpful.
+\\
+\\
+{\bf List of topics.} The following is a rough outline of some of the topics we are likely to cover. We are likely not to have time for all of them.
+\begin{enumerate}
+\item {\bf The $p$-adic numbers.} (4 weeks.) 
+Introduced by Hensel, the $p$-adic numbers allow us to look ``one prime at a time'' and are ubiquitous in
+modern algebraic number theory. We will carefully look at their algebraic and topological properties.
+
+We will also prove the {\itshape Hasse-Minkowski theorem}, the first example of a {\itshape local-to-global} principle for the solution
+of Diophantine equations, which will help motivate the study of the $p$-adics.
+
+\item {\bf The geometry of numbers.} (4 weeks.) One way of understanding number fields is to regard their rings of integers as a lattice. We will
+carry out this construction and learn what insight it gives us. We will study the {\bf discriminants} and {\bf class groups} 
+of number fields, and prove classical bounds on these quantities. We will also see (in principle, at least) how to compute the class group
+of any number field.
+
+\item {\bf The decomposition of prime ideals in extensions.} (4 weeks.) A classical topic in algebraic number theory, due to Hilbert,
+is how prime ideals split in extensions. They can `split', be `inert', or `ramify'. We will learn what this means and see what it has
+to do with classical questions. For example, a classical result (probably proved in Filaseta's course) gives a concise description of
+the integers which can be written as a sum of two squares. We will see how this can be interpreted in terms of Hilbert's theory.
+
+\item {\bf Valuations and their extensions.} {\itshape If there is time and interest}, we will investigate the theory of valuations,
+or (mostly) equivalently, the theory of {\itshape extensions} of the $p$-adic numbers. As we will see, this theory complements Hilbert's,
+and allows us to study number fields globally by looking at their local properties.
+
+\item {\bf Tate's thesis.} {\itshape If there is time and interest}, we will look at John Tate's visionary 1951 Princeton thesis, which
+combined algebraic number theory with analytic. Tate started with the $p$-adic numbers and combined all of them to form the {\itshape
+ring of adeles}, and observed that this was an excellent space on which to do harmonic analysis. This led to a beautiful proof of
+the functional equation of the Riemann zeta functions (and more generally, of Hecke $L$-functions). Later, it led to a huge variety
+of generalizations (e.g. the Langlands program), many of them conjectural, and all of them very important and widely studied. 
+We will see what it was that Tate did.
+
+\item {\bf Introduction to class field theory.} (2 weeks.) The subject of {\bf class field theory} classifies the {\bf abelian extensions} of
+a number field in terms of the {\bf class group}. Indeed, there is a beautiful isomorphism between the class group of a number
+field $K$, and the Galois group of its maximal abelian unramified extension, called the Artin map. This subject is frequently considered
+to be the crowning achievement of algebraic number theory. The proofs of class field theory
+are notoriously difficult, and so we will skip them, but we will study the basic theorems and derive some elementary consequences.
+\end{enumerate}
+\\
+\\
+{\bf Attendance policy.} No penalty will be enforced for missed classes.
+
+\end{document}
+
+

@@ -1,0 +1,23 @@
+To the referee (and the editor):
+
+Thanks for all your comments. We incorporated all of them, including the suggestion to enumerate fields more efficiently by means of class field theory. We now have discriminants up to 10^23.
+
+You suggested that this was worth its own project --- after which I realized a good algorithm for enumerating S_3 fields, along the lines of your suggestion, proceeded naturally from work I had done with Henri Cohen. So, with Takashi's permission, I added a description of this algorithm to my paper with Cohen
+
+http://arxiv.org/pdf/1301.3563v2.pdf
+
+and cite this paper here. So, your suggestions have improved not only this paper, but a second one of mine also. Thank you very much!
+
+In addition to taking the referee's suggestions, we reread the whole paper. We made a couple of very minor changes here and there, mostly to improve the exposition. The somewhat substantial changes, other than those mentioned above:
+
+In Section 3, around (3.4) and (3.5), we removed some technical details which weren't pertinent to the present paper and referred instead to [10, 11].
+
+Section 5 is of course substantially revised, due to our additional numerical data. We decided to describe both algorithms --- in light of the odd mismatch between theory and experiment, it seems useful to have verified the numerical data by two different methods.
+
+There was a little bit of additional speculation which we removed from Section 5. Upon seeing more data, we decide that the data itself makes a stronger impression than our guesswork. In particular, it seems very ambiguous whether the data supports an error term of O(X^{1/4}), if not outright doubtful, and so we no longer suggest that it does.
+
+The table of arithmetic progressions (mod 5) was presented in a vague manner. In fact, as I double-checked, the table previously listed Disc(|D|) (mod 5) for negative discriminants, but I believe it is more natural to tabulate Disc(D) (mod 5). Also, previously the paper didn't say whether we were counting Disc(|D|) or Disc(D). The paper now tabulates Disc(D) (so I reversed the data from 1 to 4) and explicitly says so.
+
+Again, thank you very much for your useful suggestions, and for your considerations.
+
+--Frank (on behalf of Takashi also)

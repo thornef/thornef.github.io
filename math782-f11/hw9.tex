@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim, url}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 9 - Analytic number theory}
+\end{center}
+\begin{center}Frank Thorne, thornef@mailbox.sc.edu
+\end{center}
+\begin{enumerate}
+\item(5+ points)
+Consider a variant Gauss sum
+\begin{equation}
+G(p^2) = \sum_{m = 1}^{p^2} \Big( \frac{m}{p} \Big) e(m/p^2),
+\end{equation}
+where $p$ is an odd prime. Is $|G(p^2)| = p$ always? Prove or disprove.
+Further prove as much as you can about this Gauss sum.
+
+\item (5 points; Iwaniec and Kowalski, (4.24))
+If $u$ and $v$ are real numbers with $v$ positive, prove the Poisson summation variant
+\begin{equation}
+\sum_{m \in \mathbb{Z}} f(vm + u) = \frac{1}{v} \sum_{n \in \mathbb{Z}} \widehat{f}(n/v) e(un/v).
+\end{equation}
+(The easiest proof starts with the Poisson summation formula and does a change of variables.)
+
+\item (5 points)
+For any $N > 0$, rigorously justify the existence of the integral $\int_{- \infty}^{\infty} e(N x^2) dx$.
+(Note that it does not converge absolutely.)
+
+({\bf Bonus,} 5 points)
+Evaluate it without any appeal to Gauss sums. (Warning: Off the top of my head I don't know how to do this.)
+
+\item (5 points)
+Prove, for any $\alpha \in \mathbb{R}$, and any $x > 0$, that
+\begin{equation}
+\sum_{n \in \mathbb{Z}} e^{-(n + \alpha)^2 \pi /x} = x^{1/2} \sum_{n \in \mathbb{Z}} e^{-n^2 \pi x + 2 \pi i n \alpha}.
+\end{equation}
+
+\item (5 points)
+Prove that $\zeta(0) = -1/2$.
+
+\item (5 points)
+If $\chi$ is a primitive, nonprincipal character mod $q$, prove that
+\begin{equation}
+\chi(n) \tau(\overline{\chi}) = \sum_{m = 1}^q \overline{\chi}(m) e(mn/q)
+\end{equation}
+if $(n, q) = 1$.
+
+\item(3 points) If $\chi$ is primitive mod $q$, prove that
+\begin{equation}
+L(1, \chi) = \sum_{n \leq x} \frac{\chi(n)}{n} + O(q^{1/2} \log q/x)
+\end{equation}
+for any $x \geq 1$ and $q \geq 1$. 
+
+\item(4 or 8 points)
+Conclude from the previous problem that
+\begin{equation}
+\sum_{\chi \neq \chi_0} L(1, \chi) = \phi(q) + O(q^{1/2} \log q),
+\end{equation}
+where the summation is over all nontrivial characters modulo $q$.
+(For 4 points, assume $q$ is an odd prime; for 8 points, don't.)
+
+\end{enumerate}
+
+\end{document}

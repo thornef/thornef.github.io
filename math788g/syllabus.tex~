@@ -1,0 +1,220 @@
+\documentclass[11pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[mathscr]{euscript}
+\usepackage{enumerate, verbatim, url}
+\oddsidemargin = 0.0cm \evensidemargin = 0.0cm \textwidth = 6.5in
+\textheight =8.5in
+\newtheorem{case}{Case}
+\newcommand{\caseif}{\textnormal{if }}
+\newcommand{\leg}[2]{\genfrac{(}{)}{}{}{#1}{#2}}
+\newcommand{\bfrac}[2]{\genfrac{}{}{}{0}{#1}{#2}}
+\newcommand{\sm}[4]{\left(\begin{smallmatrix}#1&#2\\ #3&#4 \end{smallmatrix} \right)}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}{\bf Conjecture}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
+\theoremstyle{remark}
+\newtheorem*{theoremno}{{\bf Theorem}}
+\newtheorem*{remark}{Remark}
+\newtheorem*{example}{Example}
+\numberwithin{theorem}{section} \numberwithin{equation}{section}
+
+\newcommand{\ord}{\text {\rm ord}}
+\newcommand{\li}{\text {\rm li}}
+\newcommand{\putin}{\text {\rm \bf ***PUT IN***}}
+\newcommand{\st}{\text {\rm \bf ***}}
+\newcommand{\mfG}{\mathfrak{G}}
+\newcommand{\mfF}{\mathfrak{F}}
+\newcommand{\pr}{\text {\rm pr}}
+\newcommand{\sfpart}{\text {\rm sf}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calW}{\mathcal{W}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\GG}{\mathcal{G}}
+\newcommand{\FF}{\mathcal{F}}
+\newcommand{\QQ}{\mathcal{Q}}
+\newcommand{\Mp}{\text {\rm Mp}}
+\newcommand{\frakG}{\mathfrak{G}}
+\newcommand{\Qmd}{\mathcal{Q}_{m,d}}
+\newcommand{\la}{\lambda}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Cl}{{\text {\rm Cl}}}
+\newcommand{\Tr}{{\text {\rm Tr}}}
+\newcommand{\rk}{{\text {\rm rk}}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Qd}{\mathcal{Q}_d}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\SL}{{\text {\rm SL}}}
+\newcommand{\GL}{{\text {\rm GL}}}
+\newcommand{\textmod}{{\text {\rm mod}}}
+\newcommand{\textMod}{{\text {\rm Mod}}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\PSL}{{\text {\rm PSL}}}
+\newcommand{\lcm}{{\text {\rm lcm}}}
+\newcommand{\Gal}{{\text {\rm Gal}}}
+\newcommand{\add}{{\text {\rm add}}}
+\newcommand{\sub}{{\text {\rm sub}}}
+\newcommand{\Sym}{{\text {\rm Sym}}}
+\newcommand{\End}{{\text {\rm End}}}
+\newcommand{\Frob}{{\text {\rm Frob}}}
+\newcommand{\Disc}{{\text {\rm Disc}}}
+\newcommand{\Stab}{{\text {\rm Stab}}}
+\newcommand{\Op}{\mathcal{O}_K}
+\newcommand{\h}{\mathfrak{h}}
+\newcommand{\G}{\Gamma}
+\newcommand{\g}{\gamma}
+\newcommand{\zaz}{\Z / a\Z}
+\newcommand{\znz}{\Z / n\Z}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\Div}{{\text {\rm Div}}}
+\newcommand{\tr}{{\text {\rm tr}}}
+\newcommand{\odd}{{\text {\rm odd}}}
+\newcommand{\bk}{B_k}
+\newcommand{\rr}{R_r}
+\newcommand{\sump}{\sideset{}{'}\sum}
+\newcommand{\gkr}{\mathfrak{g}_{k,r}}
+\newcommand{\re}{\textnormal{Re}}
+\newcommand{\im}{\textnormal{Im}}
+\newcommand{\Res}{\textnormal{Res}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\Aut}{\textnormal{Aut}}
+\def\H{\mathbb{H}}
+
+
+
+\begin{document}
+\title[The Geometry of Numbers]
+{The Geometry of Numbers}
+\author{Frank Thorne}
+\address{Department of Mathematics, University of South Carolina,
+1523 Greene Street, Columbia, SC 29208}
+\email{fthorne@math.stanford.edu}
+
+\maketitle
+Office hours: Tuesdays, 2:00-5:00.
+\\
+\\
+{\bf Learning outcomes.} The student will master a variety of classical methods used in
+number theory, concerning the solution to counting problems in terms of lattice points, 
+and will also be exposed to contemporary research in the subject.
+tools used in modern algebraic number theory, and will also
+learn their connection to classical number theoretic questions concerning the distribution of primes and the solutions of
+Diophantine equations.
+\\
+\\
+{\bf References.} Useful source materials include Cox, {\itshape Primes of the form
+$x^2 + ny^2$}, Siegel's book on the geometry of numbers, and other references to be announced.
+\\
+\\
+{\bf Instructional Delivery Strategy.} Lecture.
+\\
+\\
+{\bf Grading.} Large numbers of problems will be proposed, and the students will be required
+to solve only some of them. 200+ for an A, 100+ for a B.
+The number of points is somewhat arbitrary and does not reflect a particular percentage
+of the number of problems assigned.
+\\
+\\
+{\bf Prerequisites.} Graduate standing in the math department or permission of instructor. 
+
+Students should have taken 703/704 (algebra) or its equivalent elsewhere, or be concurrently enrolled in it. Also, students will be assumed to know elementary number theory, for example
+as taught by Trifonov in the fall.
+
+Some material presented will rely on more advanced topics (algebraic geometry, algebraic number theory, etc.)
+Since students will not be required to solve all homework problems, students will still be able to succeed
+without this background material.
+\\
+\\
+{\bf List of topics.} The following is a rough outline of some of the topics we are likely to cover. We are likely not to have time for all of them.
+\begin{enumerate}[1.]
+\item {\bf Warmup: the circle and hyperbola problems.}
+Here are two classical questions:
+\begin{center}
+How many points $(x, y)$ in the plane satisfy $x^2 + y^2 < N$?
+
+\smallskip
+How many points $(x, y)$ in the plane satisfy $x > 0, \ y > 0, xy < N$?
+\end{center}
+These are called, naturally enough, the {\itshape circle and hyperbola} problems respectively. The first problem
+counts sums of two squares, or (equivalently) Gaussian integers (i.e., elements of $\mathbb{Z}[i]$), and the
+second problem asks for the average of the {\itshape divisor function} $d(n)$. 
+
+We will begin our course by proving asymptotic formulas for each. Then we will look at the error terms. We will
+obtain a good error term for the circle problem, but we will ask if we can do better. (We can, if we use
+{\itshape Poisson summation}, or (basically equivalently) the {\itshape functional equation for Dedekind's zeta
+function}). 
+
+For the hyperbola problem the error term will be much more problematic. In fact our analysis will find a
+{\itshape secondary term}, which may be explained by looking at the {\itshape geometry of the cusp},
+or at the {\itshape zeta function}.
+
+Later, we will introduce and prove {\itshape Davenport's lemma} \cite{D}, which generalizes our method for solving
+the circle problem. We will then consider what happens if we vary our problem. For example, suppose that we want
+$x^2 + y^2$ or $xy$ to be a quadratic residue modulo $7$? Will the error terms go up or down?
+
+\item {\bf Gauss: Quadratic forms.} 
+We will then turn to the subject of {\itshape quadratic forms}, and its investigation by many, especially Gauss: 
+representations of integers, class numbers, fundamental domains, Diophantine
+questions, and investigating class numbers individually and on average. These questions are the prototype for
+more difficult questions that were asked later (e.g. those appearing in Bhargava's work).
+
+Our investigation will be thorough and highly accessible to beginners. One good book is Cox \cite{cox}, and there
+are plenty of others.
+
+\item {\bf Dirichlet: The class number formula.}
+We will prove Dirichlet's class number formula, in both the imaginary and the more difficult real case. We will
+see how the real case presents additional difficulties and how these are resolved. A thorough understanding of
+this will be very helpful in understanding more technical geometry of numbers arguments.
+
+\item {\bf Minkowski and Hermite: Bounding number fields by discriminant.}
+We will cover classical theorems of Minkowski and Hermite on bounding the number of number fields of bounded
+discriminant. Since Minkowski's theorem was thoroughly covered in Spring 2013 (in 788P) it will get an abbreviated
+treatment here.
+
+\item {\bf Siegel on quadratic forms.}
+We then plan to 
+turn to Siegel's investigation of {\itshape indefinite} quadratic forms. and see how he computed
+the average class number, weighted by the regulator. An important point is to see why he needed this weighting.
+Indeed, we will discover an annoying phenomenon: for real quadratic fields you cannot generally count the
+class group independently from the regulator.
+
+\item {\bf Davenport and Heilbronn.}
+We will study Davenport and Heilbronn's parameterization of cubic rings and fields in terms of binary cubic forms.
+As always there
+are two questions to be studied: (1) How does one set up such a parameterization, and (2) how does one
+then count the resulting lattice points?
+
+\item {\bf Contemporary work: Bhargava, Wood, Shankar, Ho, ...}
+A lot of exciting work is being conducted in this subject {\itshape right now.} As time permits we will give
+a quick overview of this subject. I also hope to have one or two guest lecturers come and address our number
+theory seminar.
+
+(This is a highly suitable topic for Ph.D. dissertations.)
+\end{enumerate}
+
+{\bf Attendance policy.} No penalty will be enforced for missed classes.
+
+\begin{thebibliography}{99}
+
+\bibitem{BST} M. Bhargava, A. Shankar, and J. Tsimerman,
+\emph{On the Davenport-Heilbronn theorem and second order terms}, on the arXiv.
+
+\bibitem{Cox} D. Cox,
+\emph{Primes of the form $x^2 + n y^2$}, second edition.
+
+\bibitem{D} H. Davenport,
+\emph{On a principle of Lipschitz.}
+\end{thebibliography}
+
+\end{document}
+
+

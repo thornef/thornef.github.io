@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate, url}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 8 - Math 142, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, November 1}
+\end{center}
+
+\begin{enumerate}[(a)]
+\item
+11.1, 1, 2, 3, 5, 6, 9, 12, 14, 17-29, 61-66.
+\item
+Explain what sigma notation means and how to use it.
+
+\item
+What is a geometric series? When does it converge, and if so, to what?
+
+\item
+Derive the formula for the sum of a geometric series.
+
+\item
+11.2, 11-14, 21-24, 35-36, 47, 58, 64, 65.
+
+\end{enumerate}
+Additional: 11.1, 30-39; 11.2, 25-32.
+\\
+Bonus: 71, 78.
+\end{document}

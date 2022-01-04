@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim, url}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\newcommand{\p}{\mathfrak{p}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Algebraic number theory (Spring 2013), Homework 6}
+\end{center}
+\begin{center}Frank Thorne, thorne@math.sc.edu
+\end{center}
+\begin{center}
+{\bf Due Wednesday, May 8}
+\end{center}
+
+{\itshape Note: Any homework turned in after Thursday, May 2 at noon should be sent to me by e-mail,
+so I can grade it from the road.}
+
+\begin{enumerate}
+\item (5 points)
+Determine, with proof, the Galois group of $x^4 - 2x^3 + 2x^2 + 4x + 2$.
+
+\item (5 points)
+Determine, with proof, the Galois group of $x^4 - 2x^2 + 2x^2 + 2x - 1$.
+
+\item (10 points)
+Determine, with proof, the Galois group of 
+$x^5 + x^3 - 2x^2 - 1$.
+
+\item (10 points)
+Determine the Galois group of
+$x^5 + 5x^3 + 5x - 1$.
+
+\item (10 points)
+Find, with proof, a polynomial with Galois group $Sym(7)$.
+
+\item (50 points)
+(If applicable) Describe, in around two to three pages, something interesting you have learned this semester,
+about number theory or a related topic, outside of this course and your other coursework.
+
+\end{enumerate}
+
+\end{document}

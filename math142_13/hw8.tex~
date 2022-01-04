@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 8 - Math 142, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Tuesday, October 22}
+\end{center}
+
+\begin{enumerate}[(a)]
+\item
+What are polar coordinates?
+
+\item
+10.3, 1-12, 29-40, 56.
+
+\item
+What is the formula for the area of a region defined by polar coordinates? Why is it
+true? Draw a picture, explain, and give an example.
+
+\item
+What is the formula for the slope of the tangent line to curve defined by polar coordinates? 
+
+\item
+10.3, 57-60.
+
+\item
+10.4, 5-12.
+\end{enumerate}
+
+Additional problems:
+\begin{enumerate}
+\item
+10.3, 41-48; 10.4, 13-14, 17-20.
+\end{enumerate}
+Bonus: Look through the exercises at all the ridiculous Greek or Greek-sounding
+names for the various parametric curves. Find out, beyond the extent described in your
+book, how at least two of them got their name.
+\end{document}

@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Final Examination - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Thursday, December 13, 2012}
+\end{center}
+
+There will be sixteen questions. Everything from homeworks 2-13 is fair game,
+but as you can see below some topics will get more attention than others.
+
+\begin{enumerate}[(1)]
+\item
+There will be two {\bf theoretical} questions, chosen at random from the
+following: HW4 (c), HW6 (i), (j), HW8 (a), (b), HW10 (a), (b), (l),
+HW11 (e). They will not both be chosen from the same midterm exam.
+
+\item
+There will be at least one question  
+asking you to interpret a graph, chosen at random from the following:
+Ch. 2.7, 11, 12, 17;
+Ch. 2.8, 5-8, 41-43;
+Ch. 4.9, 49-52; 5.3, 4; Chapter 5 Review, 7.
+
+\item
+Two questions will ask you to compute derivatives, where you will not
+be required to reason directly from the definition. These will be chosen
+randomly from the problems in Chapter 3.1-3.6 and the Chapter Review from Homeworks 4-7.
+Some of these problems don't directly ask you to compute a derivative,
+and in that case I will choose a different problem.
+
+\item
+Two questions will ask you to compute integrals.
+These will be chosen randomly from the problems in Chapters 4.9-5.5
+on Homeworks 9-11 which ask you to compute integrals. 
+Some of these problems don't directly ask you to compute an integral,
+and in that case I will choose a different problem.
+
+\item
+One question will ask you to graph a function using information
+about the derivatives. This will be chosen randomly from
+the Chapter 4.5 problems, or (f)-(j), appearing on Homework 8.
+
+\item
+An optimization question will appear. This will be chosen at random
+from Homework 9 (excluding (f)).
+
+\item
+A question from Chapters 3.7-3.9 on Homeworks 6-7, chosen at random.
+
+\item
+An area or volume question, from Chapters 6.1-6.2 on Homeworks 12 and 13,
+chosen at random.
+\end{enumerate}
+
+In addition, questions will be picked from five of the categories (chosen randomly) below:
+\begin{enumerate}
+\item
+A question from Homework 2, chosen at random.
+\item
+A question from Homework 3, chosen at random.
+\item
+A question from Homework 4, not falling into one of the categories above,
+chosen at random.
+\item
+A question from Homework 5, not falling into one of the categories above,
+or (a)-(d) on Homework 6,
+chosen at random.
+\item
+A further question from Chapters 3.7-3.9, chosen at random from the two sections not covered by the first question.
+\item
+A second graphing question will be chosen from the list above. If the
+first was chosen from Chapter 2, the second will be chosen from Chapters 4-5,
+and vice versa.
+\item
+A question from (b)-(e) or Chapter 4.1 on Homework 7, chosen at random.
+\item
+A question from Chapter 4.3, excluding 63-65, on Homework 8, chosen at random.
+\item
+A question from (b)-(k) or 5.3, 7-8, on Homework 10, or (b)-(d) on Homework 11, or questions from 5.5 on Homework 12, not asking you to directly compute an integral, chosen at random.
+\item
+A further applied-type problem, selected at random from: Ch. 2.7, 13, 14, 44-47; Ch. 3.3, 35; Ch. 4.3, 63-65.
+
+\end{enumerate}
+
+\end{document}

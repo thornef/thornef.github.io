@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate, url}
+\newcommand{\dx}{dx}
+\begin{document}
+
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 11 - Math 142, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, November 13}
+\end{center}
+\begin{enumerate}[(a)]
+
+
+\item
+What is the ratio test?
+
+\item
+What does it mean for a series to converge {\bf absolutely}? {\bf Conditionally}?
+
+\item
+11.6, 5-16, 31.
+
+\end{enumerate}
+Additional problems: 11.6, 17-28.
+\\
+\\
+Bonus: 11.6, 38.
+
+\end{document}

@@ -1,0 +1,108 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim, url}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+\newtheorem{problem}{Problem}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{definition}{Definition}
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 6b - Analytic number theory}
+\end{center}
+\begin{center}Frank Thorne, thornef@mailbox.sc.edu
+\end{center}
+\begin{center}
+{\bf Due Friday, October 7}
+\end{center}
+{\bf
+Complex analysis practice.}
+If you work on this, please ignore Homework 6a.
+
+\begin{enumerate}
+\item (3 points)
+If $f$ and $g$ are holomorphic functions, then so are $f + g$, $fg$ (and, by induction,
+$f^n$ for any positive integer $n$), and $cf$, where $c$ is a constant.
+
+\item (5 points)
+Suppose that $f(z) = \sum_{n \geq 0} a(n) (z - z_0)^n$ converges absolutely whenever
+$z - z_0 < \rho$. (In fact, if it converges throughout this region, then it converges absolutely).
+
+Prove that $f$ is holomorphic in this region.
+
+\item (5 points)
+Prove the Cauchy-Riemann equations.
+
+\item (3 points)
+Prove that $f(z) = \overline{z}$ is not holomorphic.
+
+\item (10 points)
+{\bf Important.} {\bf Carefully} evaluate the integral
+\begin{equation}
+\int_{2 - i \infty}^{2 + i \infty} \frac{dz}{z^3 + 1},
+\end{equation}
+via the following procedure. First of all, reduce the problem to
+an evaluation of 
+\begin{equation}
+\int_{2- i T}^{2 + i T} \frac{dz}{z^3 + 1},
+\end{equation}
+and explain why this is justified. Then, ``shift the contour'' to
+a rectangular contour from $2 - iT$ to $A - iT$ (where $A$ is a big real number),
+to $A + iT$ to $2 + iT$. Explain what ``shifting the contour'' means.
+Then, bound the value of this contour from above. Your bound will
+be in terms of $A$ and $T$. Prove that this can be made arbitrarily small
+by choosing $A$ and $T$ appropriately.
+
+Colloquially this is referred to as ``shifting the contour all the way to the right''.
+Why is this a good way to think about the problem?
+
+\item (10+ points)
+(Some of this will be done in lecture, but not all. I haven't decided exactly what yet.
+Please fill in all the gaps.)
+
+The gamma function is defined by
+\begin{equation}
+\Gamma(s) = \int_0^{\infty} e^{-t} t^{s - 1} ds.
+\end{equation}
+Note that if $s \in \C$, $t^s := \exp(s \log t)$. There is no ambiguity if $t$ is positive real.
+
+(a) Determine (with proof) the set of all $s$ for which this integral converges, and the
+set of all $s$ for which it defines a holomorphic function of $s$.
+
+(b) Integrating by parts, prove the functional equation
+\begin{equation}
+\Gamma(s + 1) = s \Gamma(s)
+\end{equation}
+in the region of absolute convergence. Explain why this continues $\Gamma(s)$
+to a function holomorphic on the whole complex plane, except for simple poles
+at $s = 0, -1, -2, -3, \cdots$
+
+(c) Evalute the residues at the poles.
+
+(d) It can be shown that
+\begin{equation}
+\Gamma(s) \Gamma(1 - s) = \frac{\pi}{\sin \pi s}.
+\end{equation}
+(For bonus points, prove this.) Using this identity, prove that $\Gamma(s)$ is never equal
+to zero.
+
+\item
+I might add some more problems if I come up with anything good. (But tackling all of this
+is already good.)
+
+\end{enumerate}
+
+\end{document}

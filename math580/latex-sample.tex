@@ -1,0 +1,230 @@
+\documentclass[12pt, leqno]{article}
+\newenvironment{proof}{\noindent {\bf Proof:}}{$\Box$ \vspace{2 ex}}
+
+\usepackage{amsmath, amssymb, amscd, hyperref}
+\usepackage{latexsym, epsfig, color, url, relsize, soul}
+\usepackage[all]{xy}
+\usepackage{tikz, verbatim, xcolor, skull, sgame}\renewcommand\gamestretch{2}
+\usetikzlibrary{calc,matrix}
+\usepackage{ifthen,environ,etoolbox}
+\newcommand{\urlc}[1]{\begin{center} \url{#1} \end{center}}
+\newcommand{\newgame}[2]{ smallskip {\bf Game Description} (#1): #2 \smallskip }
+
+\newcommand{\hs}\heartsuit
+\newcommand{\cs}\clubsuit
+\renewcommand{\ss}\spadesuit
+\newcommand{\ds}\diamondsuit
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{theorem}[proposition]{Theorem}
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{example}[proposition]{Example}
+\newtheorem{question}[proposition]{Question}
+\newtheorem{lemma}[proposition]{Lemma}
+\newtheorem{remark}[proposition]{Remark}
+\newtheorem{defn}[proposition]{Definition}
+\newtheorem{exm}[proposition]{Example}
+\newtheorem{assmp}{Assumption}
+\newtheorem{aim}{Aim}
+
+
+\setlength{\topmargin}{-0.2in}
+\setlength{\oddsidemargin}{-0.1in}
+\setlength{\evensidemargin}{-0.1in}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{8.6in}
+
+\newtheorem{definition}[proposition]{Definition}
+\newtheorem{notation}[proposition]{Notation}
+
+%%%%%%%%%%%%%%%%
+% What you see below is the important part! You don't need to understand or change anything above this line.
+%%%%%%%%%%%%%%%%
+
+\title{Latex Sample File}
+     
+\author{Frank Thorne}
+       
+\begin{document}
+\maketitle
+
+
+
+This is an example of a paper written using the software LaTeX. It is intended to illustrate what LaTeX is good for and how to use it.
+
+
+\section{What is LaTeX?}
+
+LaTeX (pronounced lay-tech, and often written \LaTeX), is typesetting software written and designed by Donald Knuth and Leslie
+Lamport. It can be used to write documents of any sort, but it was designed for mathematics and computer science.
+
+The biggest difference between LaTeX and programs like Microsoft Word is that Word is a `WYSIWYG' (What You See Is What You Get)
+editor and LaTeX is not. In Word you edit your document directly, as it will eventually appear. When you use LaTeX you edit a .tex file,
+and then typeset it to produce a nice looking PDF file. For example if you type this
+\begin{verbatim}
+\[
+\frac{3}{5} \cdot x + \frac{2}{5} \cdot (1 - x) = \frac{2 + x}{5},
+\]
+\end{verbatim}
+then it will come out looking like this.
+\[
+\frac{3}{5} \cdot x + \frac{2}{5} \cdot (1 - x) = \frac{2 + x}{5},
+\]
+\[
+\frac{3}{2 + \frac{4}{7 + \frac{1}{1 + \frac{1}{2}}}} \cdot x + \frac{2}{\int_0^6 x^3 \ dx} \cdot (1 - x) = \frac{2 + x}{5},
+\]
+
+Another feature of LaTeX is that it auto-numbers sections, definitions, examples, and so forth. For example:
+
+\begin{definition}\label{foo}
+\begin{enumerate}
+\item
+A {\bf sample space} is the set of all possible outcomes of a some process.
+\item
+An {\bf event} is any subset of the sample space.
+\end{enumerate}
+\end{definition}
+
+\begin{example}\label{bar}
+Blah, blah, blah....
+\end{example}
+
+\begin{theorem}\label{baz}
+Mathematics is fun!
+\end{theorem}
+\begin{proof} Obvious. \end{proof}
+
+Let us now look at the LaTeX code which we used to produce this.
+
+\begin{verbatim}
+\begin{definition}\label{foo}
+\begin{enumerate}
+\item
+A {\bf sample space} is the set of all possible outcomes of a some process.
+\item
+An {\bf event} is any subset of the sample space.
+\end{enumerate}
+\end{definition}
+
+\begin{example}\label{bar}
+Blah, blah, blah....
+\end{example}
+
+\begin{theorem}\label{baz}
+Mathematics is fun!
+\end{theorem}
+\begin{proof} Obvious. \end{proof}
+\end{verbatim}
+We did not have to worry about the numbers -- LaTeX figures out how to number them for us. The labels are optional -- we can 
+leave out the part that says \begin{verbatim}\label{foo}\end{verbatim} and so on. But if we leave it in, then we can refer to these --
+for example if we write
+
+\begin{verbatim}
+By Theorem \ref{foo}, we now know that...
+\end{verbatim}
+
+then it ends up looking like this:
+
+\medskip
+
+By Theorem \ref{foo}, we now know that...
+
+\medskip
+If we reorder everything, then it will get the numbers right automatically.
+
+\section{How to get started}
+Here is a suggested procedure for how to get started with using LaTeX.
+
+\begin{itemize}
+\item Download a program that can process LaTeX files (which will have a .tex extension) and can produce nice PDFs. This will
+consist of the LaTeX software itself, and it will often have nice additional features like a built-in text editor, spell checking, and so on.
+
+There are many programs you can use, and most of them can be downloaded legally for free. (Indeed, most of them are
+open-source, so you can download the source code too if you like.)
+
+For Macintosh, I personally use TeXShop which you can download here:
+\urlc{http://pages.uoregon.edu/koch/texshop/}
+
+I don't use Windows, so I don't personally know of a good LaTeX editor for that platform. You might try MiKTeX:
+\urlc{http://www.miktex.org}
+
+\item
+Once you have downloaded something, I recommend that you start with this sample file and start by compiling it. Make sure that
+you get output matching what's on the web page!
+
+After that, I would try making small tweaks and seeing what happens. There is a bunch of crap at the beginning which is probably
+confusing -- you don't need to worry about what it means.
+
+Within this sample file, you should ignore the parts which are labeled `verbatim' (i.e., between begin verbatim and end verbatim). I used that
+to show LaTeX code in the final document without having LaTeX process it. This won't be relevant to your final project.
+
+\item
+For some changes, depending on your LaTeX editor you may need to compile the code {\itshape twice} to get it right.
+
+\item
+Here are some further resources:
+
+\urlc{http://math.ucr.edu/~huerta/latexforbeginners.html}
+
+In addition, I have posted the original LaTeX code for the course notes on the website, so you can read those too.
+
+\item
+Finally, {\bf feel free to ask me for help!} If you have your work on a laptop, you are encouraged to bring it to class and ask me questions
+beforehand and aferwards.
+
+\end{itemize}
+
+\subsection{A subsection}
+There's nothing here, but I added this so you can see how to add subsections if you like.
+
+\section{Some number theory examples}
+
+Here are a few number theory examples, so you can follow the formatting.
+
+Here is the proof of Theorem 4 on p. 30 of Dudley \cite{D}.
+\begin{theorem} 
+If $ac \equiv bc \pmod{m}$ and $(c, m) = 1$, then $a \equiv b \pmod{m}$.
+\end{theorem}
+
+\begin{proof}
+From the definition of congruence, $m | (ac - bc)$; consequently, $m | c(a - b)$. Because $(m, c) = 1$, we can conclude from Theorem 5 of
+Section 1 that $m | (a - b)$. That is, $a \equiv b \pmod{m}$.
+\end{proof}
+
+Here is an example of a table:
+\[ 
+\begin{tabular}{|c||c|c|c|c|c|c|c|c|c}
+ - & 3 & 5 & 7 & 11 & 13 & 17 & 19 & 23 & 29 \\ 
+ \hline 3 & 0 & -1 & -1 & 1 & - & - & -1 & 1 & -1 \\ 
+ 5 & -1 & 0 & -1 & 1 & -1 & -1 & 1 & - & 1 \\ 
+ 7 & 1 & -1 & 0 & -1 & -1 & - & - & - & - \\ 
+ 11 & -1 & 1 & 1 & 0 & -1 & - & - & - & -1 \\ 
+ 13 & 1 & -1 & -1 & -1 & 0 & 1 & -1 & 1 & -1 \\ 
+ 17 & -1 & -1 & -1 & -1 & - & 0 & -1 & -1 & - \\ 
+ 19 & 1 & 1 & -1 & -1 & -1 & 1 & 0 & -1 & - \\ 
+ 23 & -1 & -1 & 1 & 1 & 1 & -1 & 1 & 0 & - \\ 
+ 29 & -1 & 1 & 1 & -1 & 1 & -1 & -1 & 1 & 0 
+ \end{tabular} 
+ \]
+
+
+\section{The bibliography}
+I included a sample of a bibliography at the end of the document. Each bibliographic item has a name and you can cite it like this
+\cite{D}. The name you put inside the {\itshape bibitem} is not important and is just for your reference -- you will cite it using the same name you give.
+
+I do not care about bibliographic formatting and style. Please just make sure that the bibliography looks neat, and most importantly
+that {\bf all} sources are credited. This includes web sources. Some samples follow below.
+
+
+\begin{thebibliography}{10000}
+
+\bibitem{D} U. Dudley,
+{\itshape Elementary Number Theory},
+second edition, Dover, 1978.
+
+\bibitem{madore} D. Madore,
+{\itshape A first introduction to $p$-adic numbers},
+\url{http://www.madore.org/~david/math/padics.pdf}.
+
+\end{thebibliography}
+
+\end{document}

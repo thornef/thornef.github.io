@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate, url}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 11 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, November 4}
+\end{center}
+
+{\bf For related rates and optimization problems: Please draw and label your
+pictures, list and describe your variables, highlight any equations that occur, and explain all of your
+work.}
+
+Some of these problems are borrowed from
+\url{http://www.ms.unimelb.edu.au/~ram/Teaching/2006Fallmath221/HW8F06.pdf}
+but you don't need to look there unless you're curious. 
+\\
+\\
+{\bf Related rates problems:}
+
+\begin{enumerate}[(a)]
+\item
+Find the rate of the change of the volume of a sphere with respect
+to a change in the radius.
+
+\item
+Find the rate of change of the volume of a cylinder of height 1
+with respect to a change in the radius.
+
+\item
+Find the rate of change of the volume of a cylinder of radius 1
+with respect to a change in the height.
+
+\item
+The side of a square is increasing at the rate of 0.2 cm/s.
+Find the rate of change of the perimeter of the square.
+
+\item
+
+The bottom of a rectangular swimming pool is $30 \times 50$ feet.
+Water is pumped into the tank at the rate of 500 cubic feet per minute.
+Find the rate at which the level of the water in the tank is rising.
+
+\item
+A five foot tall woman is standing at some distance from a 20 foot tall pole,
+and is walking away from the pole. A streetlight
+is on top of the pole. How fast is the tip of her shadow growing as she
+walks away from the pole?
+
+\item
+A lighthouse is on a small island 3 km away from the nearest point $P$ on 
+a straight shoreline and its
+light turns four revolutions per minute. 
+How fast is the beam of light moving along the shoreline when it is 1 km
+from $P$?
+
+\item
+A boat is pulled into a dock by a rope attached to the bow of the boat,
+passing through a pulley on the dock that is 1 $m$ higher than the bow
+of the boat. If the rope is pulled in at a rate of 1 $m/s$, how
+fast is the boat approaching the dock when it is 8 $m$ from the dock?
+
+\item
+A 10 foot ladder rests on a wall and is sliding down the wall (and the bottom is sliding away from the wall). 
+If the bottom of the ladder slides away from the wall at a speed of
+2 ft/s, how fast is the angle between the top of the ladder and the
+wall changing when the angle is $\pi/4$ radians?
+
+\item
+A television camera is positioned 4000 ft from the base of a rocket launching
+pad. A rocket rises vertically, and its speed is 600 $ft/s$ when
+it has risen 3000 feet.
+How fast is the distance from the television camera to the
+rocket changing at that moment?
+
+\item
+In the previous question, how fast is the camera's angle of elevation
+changing at that same moment?
+\\
+\\
+{\bf Other problems:}
+\\
+\\
+\item
+Find two numbers whose sum is 10 and whose product is a maximum.
+
+\item
+Find two numbers whose sum is 10 and whose product is a minimum.
+({\bf This is not possible! Explain why.})
+
+\item
+Find two numbers whose difference is 10 and whose product is a minimum.
+
+\item
+A farmer wants to build a rectangular fence along a river. She has 100 feet of fencing,
+and she does not need any fence along the river. What is the most area she can
+enclose?
+
+\item
+Stewart, Ch. 4.7: 11, 12, 14, 15, 17, 18, 21, 30, 44, 46, 47, 50, 52, 
+55, 58, 63 (all).
+
+\item
+Stewart, Ch. 4.9, 1-14 (odd recommended; even required)
+
+\end{enumerate}
+
+\end{document}

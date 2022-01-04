@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate, url, amssymb, amsmath}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Problem Set 3 -- Arithmetic Geometry, Frank Thorne (thorne@math.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, February 12, 2016}
+\end{center}
+Choose one. (Not that I discourage you from solving both.)
+
+\begin{enumerate}[(1)]
+\item
+(Do not use the Riemann-Roch theorem for any of this. Please argue directly.)
+\begin{enumerate}[(a)]
+\item
+Prove that the degree $0$ part of the Picard group of $\mathbb{P}^1$ is trivial.
+\item
+Let $L$ be a line in $\mathbb{P}^2$. 
+Prove that the degree $0$ part of the Picard group of $L$ is trivial.
+\item
+Let $V = V(X^2 + Y^2 - Z^2)$ in $\mathbb{P}^2$. 
+Prove that the degree $0$ part of the Picard group of $V$ is trivial.
+\item
+Let $E$ be an elliptic curve. 
+Prove that the degree $0$ part of the Picard group of $V$ is {\itshape not} trivial.
+
+You might follow (but in your own words please) the elegant proof here:
+\url{http://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2014/chapter-14.pdf}
+\end{enumerate}
+
+\item
+(Suitable if you enjoy computer programming.)
+
+Using Python, Java, Sage, PARI/GP, etc. (or any other language of your choice), write a computer program which accepts the following input:
+\begin{itemize}
+\item
+The equation of an elliptic curve $E$ (which you may assume is of the form $y^2 = x^3 + Ax + B$).
+\item
+Two points $P_1$ and $P_2$ on $E$, each given as ordered pairs $(x_i, y_i)$. 
+You may assume that neither is the point at infinity, but do not assume they are unequal.
+\end{itemize}
+Your program should return the coordinates of $P_1 + P_2$.
+
+Please use rational number rather than floating point arithmetic if this is natively supported by your programming language of choice. But
+{\itshape please do the arithmetic from scratch!} (i.e., don't use PARI/GP and Sage's built in functionality to do exactly this. Of course, this is a great
+way to check your work.)
+\end{enumerate}
+\end{document}

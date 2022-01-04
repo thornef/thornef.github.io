@@ -1,0 +1,136 @@
+%This is for amsart
+%\documentclass[12pt]{amsart}
+
+%This is for article   
+\documentclass[11pt, leqno]{article}
+\newenvironment{proof}{\noindent {\bf Proof:}}{$\Box$ \vspace{2 ex}}
+
+\usepackage{amsmath, amssymb, amscd}
+\usepackage{latexsym, epsfig, color, url, relsize}
+\usepackage{tikz, verbatim}
+
+\usepackage{fullpage}    %HELLO!!!!
+
+\newcommand*\mycirc[1]{%
+  \begin{tikzpicture}
+      \node[draw,circle,inner sep=1pt] {#1};
+   \end{tikzpicture}}
+   
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{{\rm{N}}}
+\newcommand{\ns}{{\rm{ns}}}
+\newcommand{\PGL}{{\rm{PGL}}}
+\newcommand{\Tr}{{\rm{Tr}}}
+\renewcommand{\char}{{\rm{char}}}
+\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\co}{\mathcal{O}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\nz}{+}
+\newcommand{\QQ}{\mathcal{Q}}
+\newcommand{\calW}{\mathcal{W}}
+\newcommand{\GQ}{G_{\Q}}
+\newcommand{\Qbar}{\bar{\Q}}
+\newcommand{\ra}{\rangle}
+\newcommand{\la}{\langle}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\wP}{\widehat{\Phi}}
+\newcommand{\charfn}{\mathbf{1}}
+\newcommand{\sillyX}{\mathfrak{X}}
+\newcommand{\sumf}{\sideset{}{{}^\flat}\sum}
+
+
+\newcommand{\six}[6]{ #1 #2 #3 #4 #5 #6}
+\newcommand{\tw}[2]{#1 #2}
+%\newcommand{\tw}[2]{ \begin{matrix} #1 \\ #2 \end{matrix}}
+
+\newcommand\Hom{\operatorname{Hom}}
+\newcommand\Aut{\operatorname{Aut}}
+\newcommand\Out{\operatorname{Out}}
+\newcommand\Vol{\operatorname{Vol}}
+\newcommand\Disc{\operatorname{Disc}}
+\newcommand\disc{\operatorname{Disc}}
+\newcommand\im{\operatorname{im}}
+\newcommand\Stab{\operatorname{Stab}}
+\newcommand\Gal{\operatorname{Gal}}
+\newcommand\Res{\operatorname{Res}}
+\newcommand\SL{\operatorname{SL}}
+\newcommand\GL{\operatorname{GL}}
+\newcommand\gl{\operatorname{GL}}
+\newcommand\Dist{\operatorname{Dist}}
+\newcommand\dist{\operatorname{dist}}
+\newcommand\lcm{\operatorname{lcm}}
+\newcommand\fc{\operatorname{fc}}
+\newcommand\calI{\mathcal{I}}
+
+%\newcommand\beq{\begin{equation}}
+%\newcommand\eeq{\end{equation}}
+
+\newcommand\cF{\mathcal{F}}
+\newcommand\Sym{\operatorname{Sym}}
+\newcommand\tra{\mathsmaller T}
+%\newcommand{\tw}[12]{ \begin{matrix} #1 #2 #3 #4 #5 #6 \\ #7 #8 #9 #10 #11 #12}
+%This numbers everything by section
+\newtheorem{proposition}{Proposition}%[section]
+\newtheorem{theorem}[proposition]{Theorem}
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{example}[proposition]{Example}
+\newtheorem{question}[proposition]{Question}
+\newtheorem{lemma}[proposition]{Lemma}
+\newtheorem{remark}[proposition]{Remark}
+\newtheorem{defn}[proposition]{Definition}
+\newtheorem{exm}[proposition]{Example}
+\newtheorem{assmp}{Assumption}
+\newtheorem{aim}{Aim}
+
+
+%This will keep definitions and notations unnumbered and non-italicized.
+\newenvironment{definition}{\vspace{2 ex}{\noindent{\bf Definition. }}}{\vspace{2 ex}}
+\newenvironment{notation}{\vspace{2 ex}{\noindent{\bf Notation. }}}{\vspace{2 ex}}
+
+
+\title{766666666622222222222222229950000003333333333311488}
+    
+\author{Speaker: Michael Filaseta}
+       
+\begin{document}
+
+\maketitle
+The eponymous number of the title illustrates {\it blocks} in base $10$: it has ten of them -- the initial $7$, the string of sixes, etc.
+According to the abstract, it is the largest number divisible by $2^{52}$, relatively prime to 5, which consists of blocks where no two of the blocks are formed using the same digit.
+(This fact was not actually mentioned during the talk however.)
+
+There were two main theorems. The most interesting of them (in my view), and the one to which Michael devoted most of his energy to proving, is the following:
+if $a$ and $b$ are integers with $\frac{ \log a}{ \log b} \not \in \Q$, then $\lim_{n \rightarrow \infty} B(a^n, b) = \infty$, where $B(x, b)$ denotes the number of blocks
+in the integer $x$ when written base $b$. So, for example, it is not possible that arbitrarily high powers of $7$ could consist of a string of all ones, or a string of twos followed by
+a string of ones, etc. This feels decidedly nontrivial.
+
+Indeed, nontrivial enough that it feels like it shouldn't just follow from some sort of elementary manipulations. A big tool should be required, and here that tool is {\it Baker's theorem
+on linear forms of logarithms}. That theorem says the following. Suppose we are given algebraic numbers $\alpha_1$ through $\alpha_r$ and $\beta_0$ through $\beta_r$ such that
+the quantity
+\[
+\Lambda := \beta_0 + \beta_1 \log(\alpha_1) + \cdots + \beta_r \log(\alpha_r)
+\]
+is nonzero. Then its absolute value can be bounded below. The bound is explicit, and depends on the {\itshape heights} of the algebraic numbers involved. The height of an integer
+is just its absolute value, the height of a rational number (written in lowest terms) is the maximum of the height of the numerator and demoninator, and the height of a general
+algebraic number is the absolute value of the largest coefficient of its minimal polynomial (written over $\Z$). An application which Michael presented is that (for a certain constant $C$)
+$|\log(2) - \frac{a}{b}| > \frac{1}{|b|^C}$ for every rational number $\frac{a}{b}$.
+
+This brought Michael to the main body of his talk. He first reinterpreted the main theorem in terms of polynomial identities rather than `blocks', and established that
+it follows from a finiteness lemma (Lemma 1) for certain systems of polynomial equalities and inequalities. He then began to present a complete proof of how this lemma from Baker's theorem. (He didn't finish his talk; he pledged to do so next week, although I will be out of town for the sequel.)
+
+For me, the talk illustrated a difference between Michael's taste in mathematics and my own, as it illustrated a strength of Michael's which I don't share. He clearly put a lot of
+his effort into his presentation, but the end of the talk involved a huge variety of notation, as well as identities which I didn't really `understand', and I became lost during the proof.
+I tend to appreciate `machinery' to hang my hat on, but Michael demonstrated his mastery of working with equations exactly as they are, without trying to fit them onto
+some other framework. Ultimately he (and his collaborators) succeeded in deducing a striking result from Baker's theorem.
+
+\end{document}

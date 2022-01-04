@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 4 - Math 531, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, October 12}
+\end{center}
+{\bf Subject to additions.}
+
+Note: For proofs in this homework, write them roughly in the style of Euclid.
+You do not have to follow his style exactly, and feel free to describe triangles as being
+congruent (which he did not), but please do not depart too much from Euclid.
+
+Also, don't appeal to unproved propositions beyond where we are in the text.
+\\
+\\
+\begin{enumerate}[(1)]
+\item 
+The proof of Proposition 5 appeals to eight previous facts (see the margins: I.Def.20, I.Post 2, etc.)
+For each of these, explicitly explain how this fact is being used.
+
+\item
+In Proposition 2, there are two possibilities for how an equilateral triangle $DAB$ might be constructed on $AB$.
+Draw two pictures with $A$, $B$, $C$ in roughly the same spots in each, and draw the remaining picture both ways, 
+with $D$ constructed on either side of $AB$. Explain the difference, if any, in the resulting proof.
+
+\item
+Write a proof of Proposition 3 which does not use Proposition 2. (Hint: You will end up essentially duplicating
+the proof of Proposition 2 in your proof.)
+
+\item
+In the commentary, Joyce says: ``Frequently, though, one end of the line $C$ is already placed at $A$, and then the
+construction of $I.2$ isn't required. In that case, only one circle needs to be drawn.
+
+Explain.
+\item
+Proposition 6 is the same as Problem 1B.1 in Isaacs. How might you have solved Problem 1B.1 in a different way?
+Why would this proof be inappropriate here in Euclid?
+
+\item
+Prove Proposition 7 in case $D$ lies inside triangle $ABC$. (See the criteria.) Also, describe what other special
+cases can occur and prove the proposition in these cases as well.
+
+\end{enumerate}
+
+\end{document}

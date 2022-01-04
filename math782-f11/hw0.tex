@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\author{Homework 0 - Frank Thorne}
+\begin{center}{\bf Homework 0 - Analytic number theory}
+\end{center}
+\begin{center}Frank Thorne, thornef@webmail.sc.edu
+\end{center}
+\begin{center}
+{\bf Due Friday, September 26}
+\end{center}
+
+{\bf Instructions:} These problems are designed to gauge your background in analytic number theory and related topics. 
+These problems do {\bf not} necessarily represent material
+you are expected to know. 
+
+Please solve as many of these problems as you can. Please do not take more than three hours.
+Refer to books or notes if you must, but {\bf no searching the internet,} that defeats the point.
+
+{\bf Please provide partial solutions or comments} if you don't know how to completely answer a problem.
+You will automatically get full credit on this assignment, if your effort looks reasonable.
+\\
+\\
+\begin{enumerate}
+\item
+Let $\pi(x)$ denote the number of primes $\leq x$. Can you prove any upper and lower bounds for $\pi(x)$?
+\\
+\\
+{\bf Hints. This is not an easy question.} It is very nontrivial to prove any lower bound whatsoever. You can 
+prove trivial upper bounds without much difficulty; for example, you can show that $\pi(x) \leq \frac{x}{2} + 1$
+by looking at divisibility by 2. Can you improve this into a bound of the form $\pi(x) \leq \frac{x}{g(x)}$, where $g(x)$
+is a function unbounded as $x \rightarrow \infty$?
+
+Please use asymptotic notation (big-O, $\ll$, $\gg$; see below) if appropriate for your answer.
+
+\item
+We say that $a \neq 0$ is a {\itshape quadratic residue} modulo $p$ if there is an integer $x$ with $x^2 \equiv a \ (\textnormal{mod} \ p)$.
+Say (and prove) everything you can about quadratic residues (e.g. how many are there? if $a$ and $b$ are residues,
+are $ab$ and $a + b$? etc.)
+
+Do you think there are more quadratic residues less than $p/2$ or greater than $p/2$?
+
+\item
+Consider the contour integral
+\begin{equation}
+\int_{2 - i \infty}^{2 + i \infty} X^s \frac{ds}{s},
+\end{equation}
+where the integral is over the line $2 + it$ in the complex plane.
+
+Explain what the notation means (how is a {\itshape contour integral} defined?) Why does this integral converge,
+but not absolutely? Finally, if $X$ is a positive real number, can you evaluate it? (hint: there are three cases)
+
+If you have not had a course in complex variables before, then say so and attempt guesses for the first two questions.
+(You need a nontrivial theorem for the third.)
+
+\item
+The {\itshape M\"obius inversion formula} says the following. Let $f$ and $g$ be multiplicative functions,
+i.e. $f(mn) = f(m) f(n)$ if $m$ and $n$ are coprime. Then,
+\begin{equation}
+f(n) = \sum_{d | n} g(d)
+\end{equation}
+if and only if
+\begin{equation}
+g(n) = \sum_{d | n} \mu(d) f(n/d).
+\end{equation}
+Here $\mu(d)$ is the M\"obius function, defined to be multiplicative, so that $\mu(p) = -1$ for any prime $p$,
+and $\mu(n) = 0$ if $n$ is divisible by any squarefree number.
+
+Prove this.
+
+\item
+Recall that we say $f(x) \ll g(x)$ if there exist constants $C$ and $X$, such that $f(x) < C g(x)$ whenever
+$x > X$. We write $f(x) = O(g(x))$ to mean the same thing.
+
+Prove the following equations:
+\begin{equation}
+1 + x + 10 x^2 \ll x^3,
+\end{equation}
+\begin{equation}
+x^{100} \ll e^x,
+\end{equation}
+\begin{equation}
+\frac{1}{\sqrt{x}} + \log(x) + \exp((\log x)^{1/2}) \ll x.
+\end{equation}
+In your proof you should determine values of $C$ and $X$. However, ({\bf important}) please come up with
+the {\bf simplest proof}. If your value of $C$ is $(9^{9^{99999999999}})!!!!$, then that is an explicit constant,
+good enough.
+
+\item
+Prove that for any integers $a$ and $b$, there is an integer $n$ with $n \equiv a \ (\textnormal{mod} \ 13)$ and 
+$n \equiv b \ (\textnormal{mod} \ 37)$. (Do not quote any theorem of which this is a special case!)
+
+\item
+What do you know about analytic number theory, what do you hope to learn, and what (if anything) scares you about
+the subject? 
+\end{enumerate}
+
+\end{document}

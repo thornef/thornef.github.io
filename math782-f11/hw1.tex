@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 1 - Analytic number theory}
+\end{center}
+\begin{center}Frank Thorne, thornef@webmail.sc.edu
+\end{center}
+\begin{center}
+{\bf Due Friday, September 2}
+\end{center}
+
+There is a lot of work to do here! Most of the solutions I have not worked out myself in detail.
+There is at least one problem I don't know how to solve.
+Doing half the problems every week is pretty good.
+\\
+\\
+\begin{enumerate}
+\item (5 points)
+(This problem is boring, but it is good hygiene to do it once in your life.)
+
+(a) Let $a_n$, $n \geq 1$ be an infinite sequence. Come up with a good notion of what it should mean
+for the product $\prod_n a_n$ to converge absolutely.
+
+(b) Using your above definition, rigorously prove that if $s$ is a complex number with $\Re(s) > 1$,
+the product $\prod_p \frac{1}{1 - p^{-s}}$ converges absolutely and is equal to $\sum_n \frac{1}{n^s}$.
+
+\item (5 points)
+Prove that for $\Re(s) > 1$ we have
+\begin{equation}
+\zeta(s) = s \int_1^{\infty} \frac{ \lfloor y \rfloor }{y^{s + 1}} dy
+= \frac{s}{s - 1} - s \int_1^{\infty} \frac{ \{ y \} }{y^{s + 1}} dy.
+\end{equation}
+Prove further that the integral on the right converges absolutely for $Re(s) > 0$. (Prove additionally that it
+is analytic as a function of $s$ if you have the complex analysis background.) This equation allows us to
+define $\zeta(s)$ whenever $\Re(s) > 0$ and $s \neq 1$.
+
+The unsolved {\itshape Riemann hypothesis} says that if $\zeta(s) = 0$ then $\Re(s) = \frac{1}{2}$. (Prove that,
+and I will give you a lot of bonus points...)
+
+\item (5 points)
+This is basically the same proof we saw in class, but arranged slightly differently. (See p. 56 of Davenport.)
+If we define $T(x) = \sum_{m \leq x} \lfloor x/m \rfloor$, prove that $T(x) = \sum_{n \leq x} \log n$.
+Prove directly that 
+\begin{equation}
+T(x) - 2T(x/2) \leq \sum_{m \leq x} \Lambda(m)
+\end{equation}
+and conclude that 
+\begin{equation}
+\pi(x) \log x > x (\log 2 - o(1)).
+\end{equation}
+
+You can do the upper bound too if you like.
+\item (10 points)
+By considering the combination
+\begin{equation}
+T(x) - T(x/2) - T(x/3) - T(x/5) + T(x/30),
+\end{equation}
+prove better upper and/or lower bounds for $\pi(x)$.
+
+\item (5 points)
+Suppose that $\pi(x)$ is asymptotic to $C \frac{x}{\log x}$ for some $C$. Prove, using what we already know,
+that $C$ must be 1.
+
+(If you prefer, answer this question with $\psi(x)$ and $C x$ instead.)
+
+\item (5 points)
+Prove that (as asserted in lecture)
+\begin{equation}
+\sum_{p^e, \ \ e \geq 2} \frac{1}{p^e} = O(1),
+\end{equation}
+where the sum is over powers of primes (but excluding the primes themselves).
+
+\item
+(5 points, {\bf This one is important, please do it even if you skip a lot of questions}) 
+Assuming that $\pi(x) \asymp \frac{x}{\log x}$, conclude (using partial summation) that $\psi(x) \asymp x$.
+\end{enumerate}
+
+\end{document}

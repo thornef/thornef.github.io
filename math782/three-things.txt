@@ -1,0 +1,185 @@
+9/6/19 Alicia Lamarche, Algebra seminar
+
+1. Can decompose a birational map as a finite sequence of blow-ups and blow-downs on smooth subvarieties.
+
+2. How in general would one prove that X is rational, without constructing a birational map or an isomorphism of function fields?
+
+3. The two definitions of "rational" in AG are apparently implicitly related. How?
+
+9/19/19 Michael Filaseta, Number Theory seminar
+
+1. The irreducible reciprocal factors of f(x)x^n + g(x) can be described independently of n.
+
+2. Sawin, Schusterman, and Stoll describe the notion of a "robust" factorization of a polynomial. *Roughly* this involves minimalities of the heights of the two factors.
+
+3. A trick of Ljunggren is useful in checking irreducibility. If the non-reciprocal part of a polynomial is reducible, then there is a clever trick which will detect this.
+
+
+9/20/19 Robert Vandermolen, Algebra Seminar
+
+1. Derived categories were introduced as a note keeping device for algebraic homology.
+
+2. Quotients of varieties by group actions can be shown to not be varieties by checking Hausdorffness. (I was a bit confused by this point, would like to understand better.)
+
+3. "Walls and chambers" (in derived categories) are related to the question of which line bundles describe which open sets in a GIT quotient.
+
+9/21-22/19 Palmetto Number Theory Series, Charlotte NC
+
+Alex Kontorovich, Conjectures about Fibonacci numbers.
+
+1. The idea: compute (conjecturally) the liminf of the quotient
+
+(# prime factors of F_n L_n w/multiplicity)/log n.
+
+Expected to be nonzero.
+
+2. Take a "random" set of product of finitely many exponentially growing integers. Should this predict the same result?
+
+3. The "affine sieve" connects this all to algebraic geometry. Would be interesting to better understand how.
+
+Alex Dunn, Twisted moments of 1/2-integral weight L-functions
+
+1. These modular forms are well behaved after twisting by Dirichlet characters, although the level goes up.
+
+2. The Mellin transform of a modular form L-function spits out the completed L-function.
+
+3. Question of Hoffstein: Does Lindelof persist (in either t or q aspect) in contexts where GRH is not expected to hold?
+
+Kalani Thalagoda, Group presentation of GL(2, O_F)
+
+1. GL(2, O_F), where F is an imaginary quadratic field, has an action on H^3 with a nice tesselation.
+
+2. Group presentations can be described in terms of combinatorial data -- the CW structure of this tesselation.
+
+3. "Combinatorial paths" through the tesselation let you write down relations explicitly.
+
+Zack Tripp, Multiplicities of zeroes of zeta functions
+
+1. GRH pair correlation estimate for Dedekind zeta function of an abelian number field.
+
+2. Bound from below the number of distinct zeroes for the same zeta function.
+
+3. Montgomery proved an interesting offbeat variation of the explicit formula.
+
+Eun Hye Lee, Multiple Dirichlet series associated to binary cubic forms
+
+1. Li Mei Lim: Studied a MFS associated to the space of ternary quadratic forms, with respect to the action of a parabolic subgroup of SL(3, Z).
+
+2. Look at the action of [1,1;0,1] on binary cubic forms -- four "semi-invariants".
+
+3. Main theorem: construct a 2-variable MDS using two of the semi-invariants, and give a meromorphic continuation to C^2. 
+
+Sarah Peluse, Bounds for sets with no arithmetic progressions.
+
+1. Multidimensional Szemeredi: let S \subset \Z^d finite. If [A] \subset [N^d] has no homothetic copies of S (i.e. a+bS) then |A|= o_S(N).
+
+2. A finite field result: if a subset of F_p doesn't contain any triples x, x+y, x+y^2, then it is of size at most O(p^(14/15)).
+
+3. Z is much harder than F_p because the algebraic geometry goes away.
+
+4. The explicit formula for the L^4 norm of the Fourier transform in terms of Gowers norms: could this be useful in reverse, e.g. we understand the other side and want to bound the Fourier transforms -- for example in the setting of prehomogeneous vector spaces?
+
+Shenhui Liu, GL(3) analogue of Selberg's S(t) result
+
+1. arg zeta(1/2 + it) closely related to N(t).
+
+2. Average of S(t, \chi)^{2n} over \chi is independent of t, up to an error term.
+
+3. Hecke-Maass forms for SL(3, Z) are known to have nice L-functions.
+
+Amita Malik - Zeroes of derivatives of completed L-functions
+
+1. On RH, \xi^{(m)} = 0 --> Re(s) = 1/2.
+
+2. Conrey: can prove a positive proportion of such are on the critical line.
+
+3. Can get equidistribution for x\gamma_i (mod 1) for any real x, where \gamma_i runs over the imaginary parts of zeroes of zeta or of \zeta^{(m)}.
+
+Fatma Cicek, Selberg's central limit theorem
+
+1. Selberg central limit theorems for |log(\zeta(1/2 + it))| and arg zeta(1/2 + it) -- *almost* identical, but with slightly different error terms.
+
+2. log |\zeta'| is easier to understand than arg \zeta'.
+
+3. There are results concerning differences of zeroes between different L(s, chi), and between L(s, chi) and zeta.
+
+Shabnam Akhtari, Representations of integers by binary forms.
+
+1. Thue: There are finitely many solutions to F(x, y) = n with F an irred binary n-ic form with n \geq 3. The proof is easy, granting results on Diophantine approximation.
+
+2. Bombieri-Schmidt: At most 215n solutions to F(x,y) = \pm 1 for large degree n. Improved substantially by the speaker.
+
+3. Question (asked by Shabnam): why is 1 important here?
+
+
+Scott Ahlgren: Kloostermann sums, Maass forms, and partitions
+
+1. Character sum identities allow you to go back and forth between different explicit formulas for p(n).
+
+2. There are interesting and apparently nontrivial identities for individual Kloostermann sums.
+
+3. It's conjectured that \sum_{c \leq X} A_c(n) / c \ll (nX)^{\epsilon}. Can one (conjecturally!) do still better? Does the infinite sum converge?
+
+Steven Jin, L_1 norms of exponential sums
+
+1. Lower bounds for \int_0^1 | \sum_{n = 1}^N a_n e(nx) | dx have gotten attention (in complete generality).
+
+2. Assuming that a_n is supported on squarefree integers allows one to do much better.
+
+3. Lower bounds can be obtained from upper bounds, and in particular from Linnik's large sieve.
+
+Anup Dixit - Classification for L-functions
+
+1. Beurling 1951. A Dirichlet series satisfying certain analytic properties of zeta(s) has to be zeta(s).
+
+2. Theorem: given analytic data including the residue at s=1, can determine the zeta function up to a list of bounded size.
+
+3. What bound would this give on the number of Dedekind zeta functions of number fields of bounded discriminant?
+
+Tom Wright, A conditional density for Carmichael numbers
+
+1. Heath-Brown's conjecture on improved Linnik can be used as input to other results (e.g. involving Carmichael numbers)
+
+2. Erdos: to look for Carmichael numbers, look for good LCMs.
+
+3. A trick appearing in the guts of the proof: pick q's such that the q-1 have lots of common factors.
+
+Debanjana Kundu, Iwasawa theory for fine Selmer groups
+
+1. Fine Selmer groups are subgroups of classical Selmer groups, with extra conditions at primes over p to make them act more like ordinary class groups.
+
+2. If E/F has rank 0 and finite Sha, then for a density 1 subset of primes, the p-power part of Sel(E/F_cyc) is trviail.
+
+3. The speaker was able to get some equivalences between a elliptic curve Selmer group conjecture and a classical one.
+
+9/26: Joe Foster, Number Theory Seminar -- What do Michael's students do?
+
+1. Cohn: If p is prime, the polynomial which represents it with x=10 is irreducible.
+
+2. In generalizations, if the polynomial has a factor, it is likely to be an integer shift of a cyclotomic polynomial.
+
+3. Recurrence relations play a role in the theory.
+
+9/27: Lea Beneish, Modules for certain subgroups of M_24
+
+1. Gives a natural interpretation of the coefficients of E_2(z) as dimensions of M_24-modules.
+
+2. New proof of Mazur result: can find a form congruent to (1/24)*(E_2(Nz) - E_2(z)) modulo something appropriate.
+
+3. "Virtual modules": like direct sums, but with negative multiplicities allowed.
+
+9/27: Jackson Morrow. Non-Archimedean entire curves in closed subvarieties of semi-abelian varieties
+
+1. Look at holomorphic maps C -> X(C). Interesting to *not* require them to be maps of varieties.
+
+2. Abelian varieties are required to be projective. Just being commutative is not enough.
+
+3. "Semi-norms" allow |x| = 0 even for nonzero x.
+
+10/3: Jeremiah Southwick, The Infinitude of Weak Primes
+
+1. There are infinitely many "weak primes": if you change any digit, get a composite number.
+
+2. For all (a, j) \neq (2, 6), there is a prime p so that the order of a (mod p) is j.
+
+3. Linnik's theorem proves quite useful here. The exact value of the exponent doesn't matter.

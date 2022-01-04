@@ -1,0 +1,219 @@
+<HTML>
+
+<HEAD>
+
+<TITLE> Math 788p, Spring 2013 </TITLE>
+
+</HEAD>
+
+<BODY BGCOLOR=#FFFFFF>
+
+<P>
+
+<DIV ALIGN="CENTER">
+<B> <FONT SIZE="+3"> Math 788P, Topics in algebraic number theory
+</FONT>
+</B>
+</DIV>
+<p>
+Math 788P is a second course in algebraic number theory, following Michael's
+introduction in Fall 2012. It is intended to give students an introduction to
+the language, tools, and power of modern algebraic number theory. As such we will
+develop much of the "highbrow" algebraic theory.
+<p>
+Frank Thorne, LeConte 400G.
+<p>
+Office hours: Wednesdays, 2:00-5:00. Alternatively, ask me questions after class or find me in the hall.
+<p>
+<a href="comp_syll.pdf">Comprehensive exam syllabus</a>. This will be added to as the semester progresses.
+<p>
+<a href="eval.tex">Course evaluation.</a>
+<p>
+<b>Prerequisites.</b> Michael's algebraic number theory course or equivalent, or a willingness to do extra
+work on the side. Abstract algebra; students should have taken 703/704 or their equivalent, or be enrolled
+in them concurrently. (Some material uses Galois theory; this will be taught after Matt covers it in 704.)
+<p>
+<b>Grading.</b> There will be a variety of long homework assignments totalling at least 400 points.
+The grading scale is A = 200+, B = 140+, giving students flexibility to choose problems matching their
+background, interests, and curiosity. Students writing their dissertations may be excused from part of the
+workload (if arranged in advance) at the discretion of the instructor.
+<p>
+There was a <a href="midterm.pdf">midterm exam</a> held on April 1, 2013.
+<p>
+<h2>Schedule</h2>
+The class will meet 12:20-1:10, MWF.
+
+Due to my travel obligations,
+class is cancelled on the following dates: March 1, March 8, March 18, March 20, April 10 through April 17.
+<p>
+<b>Extra classes</b>: To make up for the cancelled classes, we will have an extra class on Tuesday most (but not all)
+weeks, starting on January 29. The extra classes will be out of the stream of the MWF classes, and will cover a variety
+of additional topics: adeles and ideles, proof of the Hasse-Minkowski theorem, Galois theory of valuations, the idelic
+proof of finiteness of the class number, Tate's thesis, Artin L-functions, the Scholz reflection principle, and/or whatever
+else I decide is cool. These classes will be in seminar style, allowing you to see a variety of interesting advanced topics.
+<p>
+The material covered in the Tuesday classes will not appear on the comprehensive exam.  
+<p>
+<h2>Homework</h2>
+Late homework will be accepted, although discouraged. Please do not turn in a large stack of homework at the end of the
+semester.
+<p>
+(Exception: If you failed to turn in any homework earlier in the semester, then please <i>do</i> turn in a large stack of homework
+at the end of the semester.)
+<p>
+<a href="hw1.pdf">Homework 1</a>, due January 25.
+<p>
+<a href="hw2.pdf">Homework 2</a>, due February 1.
+<p>
+<a href="hw3.pdf">Homework 3</a>, due February 10.
+<p>
+<a href="hw4.pdf">Homework 4</a>, due February 27.
+<p>
+<a href="hw5.pdf">Homework 5</a>, due March 22.
+<p>
+<a href="hw5a.pdf">Homework 5a</a> (concerning valuation theory), due March 22.
+<p>
+<a href="hw6.pdf">Homework 6</a>, due April 19.
+<p>
+<a href="hw7.pdf">Homework 7</a>, due May 8.
+<p>
+<a href="hw8.pdf">Homework 8</a>, due May 8.
+<p>
+For some programs you will want to use <a href="http://www.sagemath.org">Sage</a> or
+<a href="http://pari.math.u-bordeaux.fr">PARI/GP</a>.
+<p>
+<a href="hw-extra.pdf">Bonus problem</a> (due to <a href="http://math.stanford.edu/~vakil">Ravi Vakil</a>).
+
+<h2>Lecture Notes</h2>
+Warnings:
+<p>
+(1) The relationship between these notes and what I actually lectured on is a little bit complicated.
+<p>
+(2) There are uncorrected mistakes in these notes. (Please feel free to ask about anything you find suspicious,
+or otherwise make comments or suggestions.) 
+<p>
+<a href="ant-week1.pdf">Lectures 1-3: </a> Introduction.
+<p>
+<a href="ant4-11.pdf">Lectures 4-11: </a> Dedekind domains, p-adic numbers, Hasse-Minkowski.
+<p>
+<a href="ant-c.pdf">Lectures 12-13.</a>
+<p>
+<a href="ant-a.pdf">Lectures 14-21.</a>
+<p>
+<a href="ant-e.pdf">Lectures 22-27.</a> (missing 24, to be uploaded)
+<p>
+<a href="ant24-33.pdf">Lectures 24-33.</a>
+<p>
+<a href="34-35.pdf">Lectures 34-35.</a>
+<p>
+<a href="ant-t1.pdf">Tuesday Lecture 1:</a> Introduction to valuations in general.
+<p>
+<a href="ant-b.pdf">Tuesday Lectures 2-4.</a>
+<p>
+<a href="ant-d.pdf">Tuesday Lectures 5-6.</a>
+<p>
+<h2>References.</h2>
+ No books will be required, but many are recommended. Among these:
+<p>
+<a href="http://www.math.sc.edu/~filaseta/gradcourses/TheMath784Notes.pdf">Michael Filaseta's notes</a>.
+<p>
+<b>Rafe Jones</b>, <i>Lecture notes on algebraic number theory.</i> I took Rafe's course as a grad student, it was
+damn good, and my handwriting back then was much better than it is now. With Rafe's permission, I'll scan and post
+the notes I took.
+<p>
+<b>J.S. Milne</b>, <i>Algebraic number theory</i>, <a href=" http://www.jmilne.org/math/CourseNotes/ANT.pdf">available
+free online</a>.
+<p>
+<b>J. Neukirch</b>, <i>Algebraic number theory</i>. Obnxiously expensive, but a masterpiece of a book, for anyone who wants to learn the subject
+really thoroughly (including class field theory, with complete proofs).
+<p>
+<b>Cassels and Frohlich</b>, <i>Algebraic number theory</i>. An advanced book, a classic, probably the best for learning 
+class field theory. Contains' Tate's thesis.
+<p>
+<b>Murty and Esmonde</b>, <i>Problems in algebraic number theory</i>. I'll probably look here for some homework problems.
+<p>
+<b>Marcus</b>, <i>Number fields</i>. A popular introduction. Not TeXXed, and please don't imitate his notation
+for the integers mod p, but has a very accessible introduction to Hilbert's ramification theory, and much else besides.
+<p>
+<b>Gouvea</b>, <i>p-adic numbers: an introduction</i>. A lively book, less than forty bucks. Consider buying it.
+<p>
+<b>Serre</b>, <i>A course on arithmetic</i>. Beautiful and tiny. Contains a section on the Hasse-Minkowski theorem
+which I intend to cover. (You probably don't need to buy it for this course, but you could not go wrong by buying it
+and reading it)
+<p>
+<b>Lang</b>, <i>Algebraic number theory</i>. Reading Lang is like eating broccoli. Sometimes a bit hard to get down,
+but extremely good for you.
+<p>
+<b>Cox</b>, <i>Primes of the form x^2 + ny^2</i>. A beautiful book, covering a very interesting bit of algebraic number theory,
+and also giving an excellent introduction to modular forms. Unfortunately Wiley insists on 
+<a href="http://as.wiley.com/WileyCDA/WileyTitle/productCd-0471190799.html">gouging its customers</a> and is completely
+unworthy of your business. Ask to borrow my copy instead.
+<p>
+<b>Childress</b>, <i>Class field theory</i>. A more accessible introduction to class field theory than those of Neukirch
+or Cassels-Frohlich. Very well written.
+
+<h2>Topics to be covered:</h2>
+<p>
+Note: The list of references to be covered is not exhaustive; most of the references cover all the topics, I have tried
+to pick the ones which I anticipate relying on the most.
+<ul>
+<li> <b>The p-adic numbers.</b> (4 weeks) Introduced by Kurt Hensel, 
+the p-adic numbers allow us to look ``one prime at a time'' and are ubiquitous in
+modern algebraic number theory. We will carefully look at their algebraic and topological properties.
+
+We will also prove the <i>Hasse-Minkowski theorem</i>, the first example of a <i> local-to-global</i> principle for the solution
+of Diophantine equations, which will help motivate the study of the $p$-adics.
+<p>
+References: Gouvea, Neukirch, Milne, Serre.
+
+<li> <b>The geometry of numbers.</b> (4 weeks.) One way of understanding number fields is to regard their rings of integers as a lattice. We will
+carry out this construction and learn what insight it gives us. We will study the <b>discriminants</b> and <b>class groups</b> 
+of number fields, and prove classical bounds on these quantities. We will also see (in principle, at least) how to compute the class group
+of any number field.
+
+We might have an entire graduate course on this subject in 2013-2014; if so, then I will abbreviate my treatment. 
+<p>
+References: Neukirch, Marcus.
+
+<li> <b>The decomposition of prime ideals in extensions.</b> (4 weeks.) A classical topic in algebraic number theory, due to Hilbert,
+is how prime ideals split in extensions. They can `split', be `inert', or `ramify'. We will learn what this means and see what it has
+to do with classical questions. For example, a classical result (probably proved in Filaseta's course) gives a concise description of
+the integers which can be written as a sum of two squares. We will see how this can be interpreted in terms of Hilbert's theory.
+<p>
+I think Michael covered some of this material in his course, but without the modern language and theory. So, this will build on Michael did.
+We will develop the (very beautiful) connections with Galois theory and discuss the all-important <i>Frobenius element</i>, and at some
+point I will mumble the word "Spec", draw a bunch of points on the blackboard, and claim that they are an <i>algebraic curve</i>.
+<p>
+References: Neukirch, Milne.
+
+<li>
+<b> Valuations and their extensions.</b> (depending on time) There is another approach to Hilbert's ramification theory, via the theory
+of valuations, corresponding to extensions of the $p$-adic numbers. This is the true highbrow approach to algebraic number theory, as it 
+allows us to study number fields globally by looking at their local properties. In other words, <i>think globally, act locally</i>. 
+<p>
+Reference: Neukirch.
+
+<li> <b>Tate's thesis.</b> (depending on time and interest) we will look at John Tate's visionary 1951 Princeton thesis, which
+combined algebraic number theory with analytic. Tate started with the $p$-adic numbers and combined all of them to form the <i>
+ring of adeles</i>, and observed that this was an excellent space on which to do harmonic analysis. This led to a beautiful proof of
+the functional equation of the Riemann zeta functions (and more generally, of Hecke $L$-functions). Later, it led to a huge variety
+of generalizations (e.g. the Langlands program), many of them conjectural, and all of them very important and widely studied. 
+We will see what it was that Tate did.
+<p>
+Reference: Tate (in Cassels-Frohlich).
+<p>
+<li> <b>Class field theory</b>. We will finish our course with the crowning achievement of algebraic number theory.
+The basic theorem of class field theory provides an isomorphism between the class group of a number
+field $K$, and the Galois group of its maximal abelian unramified extension, called the Artin map. We will look at this
+theorem and its generalizations. The proofs are notoriously difficult, so we will instead focus on understanding the theorems 
+and their applications. 
+<p>
+References: Milne, Cox, Childress. (Neukirch and Cassels-Frohlich for advanced treatments)
+</ul>
+</BODY>
+</HTML>
+
+
+
+
+

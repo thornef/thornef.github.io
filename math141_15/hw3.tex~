@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 3 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, September 14}
+\end{center}
+
+As always, please show your work and explain yourself clearly. 
+\\
+\\
+{\bf Required problems:}
+\begin{enumerate}[(a)]
+\item
+Stewart, Ch. 2.2, 1-4, 7, 9, 13.
+
+\item
+Stewart, Ch. 2.3, 13-22, 40, 42.
+
+\item
+Stewart, Ch. 2.6, 1-6.
+
+\item
+Stewart, Ch. 2.6, 15-30, 39-44 (even).
+
+\end{enumerate}
+Additional problems:
+
+\begin{enumerate}[(a)]
+\item
+Stewart, 2.2, 5, 6, 14.
+\item
+Stewart, 2.3, 27-30.
+\item
+Stewart, Ch. 2.6, 15-23, 39-43 (odd).
+\end{enumerate}
+{\bf Bonus} (2 points):
+Consider the following definition of a limit: `We say that
+$\lim_{x \rightarrow a} f(x) = c$ if $f(x)$ gets closer and closer to
+$c$ as $x$ gets closer and closer to $a$.'
+
+What is wrong with this definition, and how might we fix it?
+
+{\bf Hint:} Is it true that $\lim_{x \rightarrow 0} x^2 = -7$?
+
+\end{document}

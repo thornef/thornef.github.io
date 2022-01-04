@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-0.6in}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Examination 1 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Wednesday, September 14, 2011}
+\end{center}
+
+Please work without books, notes, calculators, or any assistance from others. If you have
+any questions, feel free to ask me. 
+
+Please do your work on separate paper; you should staple this sheet to your work (put this on top)
+and turn in everything together. 
+\\
+\\
+{\bf YOUR NAME: }
+\\
+\\
+\begin{enumerate}[(1)]
+\item
+Sketch a rough graph of the outdoor temperature as a function of time during a
+typical spring day.
+
+\item
+Graph the function $y = 1 + 2 \cos x$, not by plotting points, but by
+starting with the graph of $y = \cos x$ and applying the appropriate transformations.
+(Be sure to explicitly explain your work.)
+
+\item
+Explain what is meant by the equation
+$$\lim_{x \rightarrow 2} f(x) = 5.$$
+Is it possible for this statement to be true and yet $f(2) = 3$? Explain.
+
+\item
+Evaluate the limit
+$$\lim_{x \rightarrow -1} \frac{x^2 - 4x}{x^2 - 3x - 4}$$
+if it exists.
+
+\item
+Evaluate the limit
+$$\lim_{x \rightarrow - \infty} \frac{1 - x - x^2}{2 x^2 - 7}$$
+if it exists.
+
+\item
+Evaluate the limit
+$$\lim_{x \rightarrow 0} \bigg( \frac{1}{x} - \frac{1}{x^2 + x}$$
+if it exists.
+
+\item
+Give the definition of the {\itshape derivative} of a function
+$f(x)$ at the point $x = a$. (Please give the algebraic definition,
+using an equation.)
+
+Draw a picture and explain why your
+equation gives the slope of the tangent line to the graph of $f(x)$
+at $x = a$.
+
+\item
+If $f(x) = 1 - x^3$, find $f'(0)$ (directly from the definition 
+of the derivative) and use it to find an equation of the tangent line
+to the curve $y = 1 - x^3$ at the point $(0, 1)$.
+
+\end{enumerate}
+
+\end{document}

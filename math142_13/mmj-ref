@@ -1,0 +1,28 @@
+Dear Editors,
+
+Thank you very much, and please also pass on our thanks to the referee. I'm attaching a revision which incorporates all of the editor's suggestions except the following:
+
+>Remark 2.2 (2): Do you mean p unramified?  In the first sentence it
+>seemed you might be allowing ramified p, but the second sentence
+>suggested the opposite.
+
+I was unsure what the referee meant, and did not see any way to improve Remark 2.2 -- would the referee please clarify if need be?
+
+The revision also includes the following updates:
+
+(1) Rereading the introduction, it seemed like not enough of the previous work was cited. We took the referee's suggestion to cite Cohen, Diaz y Diaz, and Olivier's work on A_4 and S_4 quartic fields, and we also cited a number of other related papers. Also included among these are two of our follow-up papers ([17] and [18]).
+
+(2) We added an application to enumerating S_3-sextic field extensions. I (Frank) wrote another paper on this with Takashi Taniguchi, and the referee of that paper suggested I use a class field theory approach to generate better numerical data --- after which I realized that our work in this paper was ideally suited to such an application.
+
+Our paper now includes a computation of such fields with discriminant bounded by 10^{23}, and the new Section 6 gives
+a brief description of our algorithm, our numerical data, and a reference to [29] where Takashi and I treat S_3-sextic fields from a theoretical point of view. PARI/GP source code may be downloaded from
+
+http://www.math.sc.edu/~thornef/
+
+(3) The remark after Proposition 3.7 is new. In follow-up work with Simon Rubinstein-Salzedo, we determined that an appeal to Nakagawa's theorem is in some sense unnecessary: the machinery of Section 3, combined with some additional Kummer theory and computations, suffices to *prove* the necessary parts of Nakagawa's theorem.
+
+It would be somewhat cumbersome to rewrite this paper to avoid quoting Nakagawa's theorem, and it would make it longer, so after some reflection we decided not to. However, we added this remark as well as a very brief summary of our forthcoming work.
+
+Again, thank you very much! We would happily welcome any further suggestions.
+
+Frank

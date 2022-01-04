@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\newcommand{\p}{\mathfrak{p}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Algebraic number theory (Spring 2013), Homework 1}
+\end{center}
+\begin{center}Frank Thorne, thornef@webmail.sc.edu
+\end{center}
+\begin{center}
+{\bf Due Friday, February 1}
+\end{center}
+
+Please do at least one of the cubic field integral basis calculations, if you do nothing else.
+Questions 2 and 3 can be skipped without loss of continuity, but are great questions for prospective
+algebraists or algebraic geometers.
+
+\begin{enumerate}
+\item (3 points)
+Is $\frac{3 + 2 \sqrt{6}}{1 - \sqrt{6}}$ an algebraic integer?
+
+\item (5 points)
+If the integral domain $A$ is integrally closed, then so is the polynomial ring $A[t]$.
+
+\item (5 points)
+In the polynomial ring $A = \mathbb{Q}[X, Y]$, consider the principal ideal $\mathfrak{p} = (X^2 - Y^3)$.
+Show that $\mathfrak{p}$ is a prime ideal, but $A/\p$ is not integrally closed.
+
+\item (8 points)
+Find the discrimimant of, and an integral basis for, $\Q(2^{1/3})$.
+
+\item (10 points)
+Find the discriminant of, and an integral basis for, $\Q(\theta)$ where $\theta^3 - \theta - 4 = 0$.
+
+\item (10 points)
+Find the discriminant of, and an integral basis for, $\Q(\theta)$ where $\theta^7 - 3 = 0$.
+
+\item (*5 points)
+Prove that the discriminant of an algebraic number field is always congruent to 0 or 1 modulo 4.
+
+Hint: the determinant of an integral basis is a sum of terms, each prefixed by a positive or a 
+negative sign. Writing $P$ and $N$ for the positive and negative terms respectively, the discriminant
+is $(P - N)^2 = (P + N)^2 - 4PN$. The solution is most naturally explained using a little Galois theory.
+
+\item (5 points)
+In the ring $\Z[\sqrt{-5}]$, verify that
+$$(2) = (2, 1 + \sqrt{-5})(2, 1 - \sqrt{-5})$$
+$$(3) = (3, 1 + \sqrt{-5})(3, 1 - \sqrt{-5})$$
+$$(1 + \sqrt{-5}) = (2, 1 + \sqrt{-5})(3, 1 + \sqrt{-5})$$
+$$(1 - \sqrt{-5}) = (2, 1 - \sqrt{-5})(3, 1 - \sqrt{-5}).$$
+In each of the four factorizations above, are the two ideals on the right different from each other?
+
+\item
+(5 points) Verify that the equation $a^2 + 5b^2 = 2$ does not have any solutions over $\Q$.
+
+\end{enumerate}
+
+\end{document}

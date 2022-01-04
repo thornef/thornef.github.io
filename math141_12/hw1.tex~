@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 1 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, August 31}
+\end{center}
+
+{\bf Important:} As with everything else in life, being right is not enough.
+Please show your work, write in complete sentences, and explain your reasoning clearly. 
+\\
+\\
+{\bf Required problems.}
+
+\begin{enumerate}[(a)]
+\item 
+Stewart, Ch. 1.1, 1, 5-6, 12, 13.
+
+\item
+What is a function? (This is the most important question in all of mathematics.)
+
+\item
+Stewart, Ch. 1.2, 10, 16.
+
+\item
+Simplify $\frac{1}{x + 1} - \frac{1}{x}$.
+
+\item
+Simplify $(abc)^{10} (a^5 b^3 d^{-2})^{-2}$.
+
+\item
+Simplify $\frac{ \frac{1}{x + h} - \frac{1}{x}}{h}$.
+
+\item
+Simplify $\frac{(x + h)^2 - x^2}{h}$.
+
+\item
+Simplify $\frac{(xy^2)^2}{(x^2y)^2}$.
+
+\item
+Simplify $(x + 2)(x + 3) + (x + 2)(x - 3)$.
+
+\item
+Simplify $(x + 1)^2 (x + 2)^3 + (x + 1)^3 (x + 2)^2$.
+
+\item
+Factor $x^2 - a^2$.
+
+\item
+Factor $x^3 - a^3$.
+
+\item
+Factor $x^3 + a^3$.
+
+\item
+Define the trigonometric 
+functions $\sin(x)$, $\cos(x)$, $\tan(x)$, $\sec(x)$, $\csc(x)$,
+and $\cot(x)$.
+
+\item
+Stewart, Ch. 1.3, 11-14 ({\bf show your work}), 31, 32, 53, 56.
+
+\item
+Define the exponential and logarithmic functions $e^x$ and $\ln x$. 
+
+\item
+Stewart, Ch. 1.5, 9-10.
+
+\item
+Define the term {\itshape inverse function}. Give an example of a function that has an inverse,
+and of a function that does not.
+
+\item
+Define the logarithmic functions $\log_a(x)$ and $\ln(x)$.
+
+\item
+Stewart, Ch. 1.6, 18 (in addition, graph the inverse of $f$), 21-24, 47-50.
+
+\end{enumerate}
+{\bf Additional problems.}
+\begin{enumerate}[(a)]
+\item
+Stewart, Ch. 1.3, 15-16.
+
+\item
+Stewart, Ch. 1.5, 11, 12.
+
+\item
+Stewart. Ch. 1.6, 5, 6, 20, 50, 52, 53.
+\end{enumerate}
+{\bf Bonus} (1 point).
+\begin{enumerate}[(a)]
+\item
+Simplify the expression
+$$(x - a) (x - b) (x - c) \cdots (x - z).$$
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.6in 
+\pagestyle{empty}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[mathscr]{euscript}
+\usepackage{enumerate, verbatim, url}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-12mm}
+
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Practice ``Examination 3'' - Math 574, Frank Thorne (thorne@math.sc.edu)}
+\end{center}
+
+There was no Exam 3, but enumerative combinatorics will be on the final. If I'd given a midterm,
+it would have looked something like this (although probably this is a bit longer than a midterm would have been.)
+\\
+\\
+\begin{enumerate}[1.]
+\item
+\begin{enumerate}[(a)]
+\item
+How many bit strings of length 9 are there?
+\item
+How many bit strings of length 9 are there, which start with a 1 and which have at least one other 1?
+\item
+How many bit strings of length 9 are there, such that every 1 is followed immediately by a zero?
+\end{enumerate}
+
+\item
+You are in a city with rectangular blocks. You want to walk five blocks north and three blocks east,
+while walking north or east for every block.
+\begin{enumerate}[(a)]
+\item
+In how many ways can do you this?
+\item
+Suppose now you are not allowed to go east for the first block. Now in how many ways can you do this?
+\end{enumerate}
+
+\item
+\begin{enumerate}[(a)]
+\item
+How many integers between 1 and 1000 are multiples of 2 or multiples of 5?
+\item
+(Careful!) How many integers between 1 and 1000 are multiples of 2, multiples of 5, or multiples of 10?
+\end{enumerate}
+
+\item
+You pass five graded papers back to the five students who wrote them. In how many ways can you do this, so that
+no student gets his or her own paper? (Explain fully.)
+
+\item
+How many numbers must you pick to ensure that at least three of them have the same remainder when divided by 11?
+
+\item
+A computer programming team has 13 members -- six men and seven women.
+\begin{enumerate}[(a)]
+\item
+In how many ways can you choose a team of five?
+\item
+In how many ways can you choose a team of five, with two men and three women?
+\item
+In how many ways can you choose a team of five, with at most three men?
+\item
+Suppose that one of the men and one of the women are a divorced couple, and refuse to work together.
+In how many ways can you choose a team of five, with two men and three women?
+\end{enumerate}
+
+\item
+How many functions are there from the set $X = \{1, 2, 3\}$ to the set $Y = \{A, B, C, D, E, F, G\}$?
+How many of these are one-to-one?
+
+\item
+A store sells 8 kinds of balloons with at least 30 balloons of each kind. How many different combinations
+of 30 balloons can be chosen? What if the store has only 10 red balloons, but at least 30 of every other kind
+of balloon?
+
+\item
+How many solutions to $x_1 + x_2 + x_3 = 10$ are there, where $x_1, \ x_2, \ x_3$ are nonnegative integers?
+What if, instead, $x_1, \ x_2, \ x_3$ are positive integers?
+
+\item
+Explain why the equation
+$$2^n = {n \choose 0} + {n \choose 1} + {n \choose 2} + \cdots + {n \choose n}$$
+is a consequence of the binomial theorem. In addition, {\itshape either} give a proof
+of this identity which does not rely on the binomial theorem, {\itshape or} prove the binomial
+theorem.
+
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim, url}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 7 - Analytic number theory}
+\end{center}
+\begin{center}Frank Thorne, thornef@mailbox.sc.edu
+\end{center}
+\begin{center}
+{\bf Due Friday, October 14}
+\end{center}
+\begin{enumerate}
+\item(7 points)
+Prove that for $0 < a < 1$, we have
+\begin{equation}
+\int_0^{\infty} \frac{v^{a - 1}}{1 + v} dv = \frac{\pi}{\sin(\pi a)}.
+\end{equation}
+Here is one way to prove it. By change of variables, the integral is equal to
+\begin{equation}
+\int_{-\infty}^{\infty} \frac{e^{ax}}{1 + e^x} dx.
+\end{equation}
+To evaluate the latter integral, evaluate it from $-R$ to $R$, and let $R \rightarrow \infty$.
+To do this, consider a contour integral from $-R$ to $R$, up to $R + 2\pi i$, left
+to $-R + 2 \pi i$, and back down to $-R$. The sides should go to 0 as $R$ gets big, and
+there is a relation between the top integral and the bottom integral. Use should
+use Cauchy's residue theorem to evaluate the integral over the entire contour.
+
+\item{5 points}
+
+We proved that
+\begin{equation}
+\Gamma(s) = \int_{n = 0}^{\infty} \frac{(-1)^n}{n! (n + s)} 
++ \int_1^{\infty} e^{-t} t^{s - 1} dt
+\end{equation}
+for $\Re(s) > 0$. Prove that this converges for all values of $s$
+other than $0, -1, -2, \cdots$. Further prove that it converges uniformly
+in any closed disc which avoids the poles.
+
+It therefore follows from standard theorems of complex analysis
+that $\Gamma(s)$ is a meromorphic function of $s$.
+
+\item(7 points)
+Prove that $\frac{1}{\Gamma(s)}$ is of order 1; namely, prove the bound
+\begin{equation}
+\frac{1}{|\Gamma(s)|} \ll \exp(C |s| \log |s|)
+\end{equation}
+for some constant $C$. 
+
+One way to prove this is using the identity in the previous problem.
+You can show that the two terms above are both of order 1. For the integral,
+show it first for positive real $s$, then for complex $s$; finally you will
+use the identity $\Gamma(s) \Gamma(1 - s) = \frac{\pi}{\sin(\pi s)}$.
+
+For the sum, you can argue separately for $|\Im(s) \geq 1|$ and $|\Im(s) \leq 1|$.
+
+\item(5 points)
+Starting from Hadamard's product formula, prove the identity
+\begin{equation}
+\frac{\sin(\pi z)}{\pi} = z \prod_{n = 1}^{\infty} \bigg(1 - \frac{z^2}{n^2} \bigg).
+\end{equation}
+
+\item(5-10 points)
+It was claimed that an integral function of order 1 has $\ll R^{1 + \epsilon}$
+zeroes $\rho$ with $|\rho| < R$.
+
+Read the proof of this, in pp. 75-76 of Davenport or elsewhere, and explain it in your
+own words. (A 10-point answer will include a justification of Jensen's formula.)
+
+
+
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,19 @@
+| Team Round proctors | phone number | email              | room | tag |
+|---------------------+--------------+--------------------+------+-----|
+| Yi Sun              |              |                    | 149  |     |
+| Stephen Gagola      | xxx xxx xxxx | gagola@math.sc.edu | 103A |     |
+| Alex Duncan         |              |                    | 304  |     |
+| Patrick McFaddin    |              |                    | 106  |     |
+| Zhu Wang            | 540 808-8874 |                    | 123  |     |
+| Xinfeng Liu         |              |                    | 130  | √   |
+| Matt Miller         |              |                    | 201  |     |
+| George Androulakis  |              |                    | 205  |     |
+| Erik Palmer         |              |                    | 148  |     |
+| Matt Boylan         |              |                    | 246  |     |
+| Joe Foster          |              |                    | 321  | √   |
+| Shuliang Bai        | 803 470 8786 | sbai@math.sc.edu   | 302  |     |
+| Douglas Meade       |              | meade@math.sc.edu  | 204  | √   |
+| Scott Dunn          | 231 250-6776 | dunnsm@math.sc.edu | 103  |     |
+| Ralph Howard        |              |                    | 129  |     |
+| Anton Schep         |              | schep@math.sc.edu  | 124  | √   |
+|---------------------+--------------+--------------------+------+-----|

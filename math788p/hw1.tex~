@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf The Geometry of Numbers (Spring 2014): Homework 1}
+\end{center}
+\begin{center}Frank Thorne, thorne@math.sc.edu
+\end{center}
+\begin{center}
+{\bf Due Monday, January 27}
+\end{center}
+
+Late homework will be accepted, but more will be posted soon and so it might be more interesting to just
+turn in whatever you have.
+
+200 points total are necessary for an A, and there will be many more problems, so you may skip problems
+which you are not interested in.
+
+Asterisks indicate problems representative of what might appear on the comprehensive exam.
+Plusses indicate problems whose solutions will likely involve background beyond what has been taught here
+and in 701/702.
+\\
+\\
+\begin{enumerate}
+\item (* 5 points)
+Adapting the solution of the circle problem, directly determine the number of lattice points within the ellipse
+$x^2 + 5y^2 = 1$. 
+
+With this problem, and all others, obtain an explicit bound for the error term. Implied constants
+(i.e. $O$-notation) but specify (and try to avoid) dependence on other parameters.
+
+\item (* 5 points)
+Adapting the solution of the circle problem, directly determine the number of lattice points within the sphere
+$x^2 + y^2 + z^2 = 1$.
+
+\item (5+ points)
+State and directly prove a generalization of the previous two problems.
+
+\item (5 points)
+Give another proof of the previous two questions by explicitly verifying that they satisfy the conditions
+of Davenport's lemma.
+
+\item (* 10 points)
+Let $p$ be an odd prime. Determine the number of solutions to $x^2 + y^2 = n$, where $n \leq N$ and $n$
+is a quadratic residue mod $p$.
+
+Be sure to compute and specify the dependence of your error term on $p$.
+
+\item (* 5 points)
+Repeat the previous exercise, but substitute the condition $n \equiv 2 \mod p$ for the quadratic residue
+condition. What changes?
+
+\item (5 or (+) 10 points)
+Define the {\itshape Dirichlet series}
+\[
+\zeta(s) = 1 + 2^{-s} + 3^{-s} + 4^{-s} + \cdots,
+\]
+\[
+L(s, \chi_{-4}) = 1 - 3^{-s} + 5^{-s} - 7^{-s} + \cdots,
+\]
+\[
+\zeta_{\mathbb{Z}[i]}(s) = \frac{1}{4} \sum_{(x, y) \neq (0, 0)} (x^2 + y^2)^{-s}.
+\]
+You may regard these as formal infinite series, or you can regard $s$ as a complex variable, in which 
+case it is not too hard (but a bit messy) to prove that they all converge absolutely for $\Re(s) > 1$.
+Moreover, all of them have meromorphic continuation to the complex plane.
+
+Investigate the truth of the identity
+\[
+\zeta(s) \cdot L(s, \chi_{-4}) = \zeta_{\mathbb{Z}[i]}(s).
+\]
+Begin by working out and checking the first 20 or 30 terms (or more by computer). If you are feeling
+plucky and have some additional background, attempt to prove it.
+
+\item (10 points)
+In a page or so, describe what you learned from {\bf Ben Antieau}'s colloquium lecture, along with some
+additional topics (if any) that his lecture led you to want to learn.
+
+\item (10 points)
+In a page or so, describe what you learned from {\bf Claudiu Raicu}'s colloquium lecture, along with some
+additional topics (if any) that his lecture led you to want to learn.
+
+If you have any comments about any of our job candidates which you would like passed on to the hiring committee, please write them with your homework or e-mail them to me or to Adela Vraciu (\url{vraciu@math.sc.ed}).
+
+
+\end{enumerate}
+
+\end{document}

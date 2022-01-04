@@ -1,0 +1,29 @@
+Chatterjee and Gun, On the zeros of generalized Hurwitz zeta function
+
+*Preliminary* referee report. The results seem to be original and of modest, although not insignificant, interest. 
+Here I describe a couple strengths and weaknesses of the paper and give a few recommendations. 
+
+I have not (yet) read the paper in detail or verified the proofs. If the editor recommends proceeding, I will be happy to take a more careful look.
+
+
+*Evaluation*: The authors prove a hybrid of the following two results in the literature:
+
+(1) Davenport and Heilbronn (in classical work) proved that the Hurwitz zeta
+function \zeta(s, a) has infinitely many zeroes with Re(s) > 1, in case a is rational or transcendental
+(and not 1/2 or 1). Cassels did this for algebraic irrationals.
+
+(2) Saias and Weingartner looked at Dirichlet series F(s) \sum_n f(n) n^{-s}, 
+where f(n) is a periodic function, such that F(s) is a nontrivial sum of Dirichlet L-functions. For these,
+they proved the same.
+
+The authors' main result is a proof of the analogous hybrid result for Dirichlet series of the form \sum_n f(n) (n + a)^{-s}. The proof proceeds along standard lines; although I did not (yet) check the proof in detail it certainly seems plausible.
+
+In the referee's opinion, the Dirichlet series considered are slightly unnatural, although not extremely so. This is
+the main result of the paper and I think the paper should be evaluated on this basis. Certainly these kinds of
+questions are interesting and the paper does a nice job of filling a gap in the literature, and providing another
+example of a function for which this kind of result can be proved. The down side is that I'm guessing that the paper is unlikely to be widely read, or to lead to followup work.
+
+The authors also formulate two additional results, Theorem 1.3 and Corollary 1.4. In my opinion these leave a poor impression. The authors compare their results to a conjecture of Erdos, who conjectured
+the nonvanishing of certain Dirichlet series at the boundary of absolute convergence. That is
+quite challenging. In contrast, the authors prove the nonvanishing of a Dirichlet series,
+which converges absolutely for Re(s) > 1, and which has bounded coefficients, at Re(s) = 2. I regret that these results strike me as fairly trivial, and I don't believe that they are of independent interest in a published math paper.

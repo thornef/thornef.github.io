@@ -1,0 +1,145 @@
+\documentclass[14pt]{article}
+\textwidth 7.0in
+
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.6in 
+\pagestyle{empty}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[mathscr]{euscript}
+\usepackage{enumerate, verbatim, url}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-12mm}
+
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Midterm Examination 1 - Math 141, Frank Thorne (thorne@math.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Thursday, February 9, 2012}
+\end{center}
+
+Please work without books, notes, calculators, or any assistance from others.
+\\
+\\
+\begin{enumerate}[1.]
+\item(3 points each)
+For each sentence below, say whether it is logically equivalent to the sentence
+\begin{center}
+If it's snowing, the temperature must be at or below freezing.
+\end{center}
+(No explanation for your answers is required.)
+\begin{enumerate}[(a)]
+\item
+If the temperature is above freezing, then it is not snowing.
+\item
+It only snows if the temperature is at or below freezing.
+\item
+If it is not snowing, then the temperate must be above freezing.
+\item
+If the temperature is at or below freezing, then it is snowing.
+\end{enumerate}
+\vskip 0.2in
+\item(3 points each)
+For each sentence below, say whether it is logically equivalent to the sentence
+\begin{center}
+For all animals $A$, if $A$ has claws then $A$ is dangerous.
+\end{center}
+(No explanation for your answers is required.)
+\begin{enumerate}[(a)]
+\item
+Any animal that is dangerous has claws.
+\item
+Among all the animals which claws, some are dangerous.
+\item
+Every animal with claws is dangerous.
+\item
+Some of all the dangerous animals have claws.
+\end{enumerate}
+\vskip 0.2in
+\item(3 points each)
+(For this question, no explanation for your answers is required. Recall that $\in$ means
+``is an element of'' and $\subseteq$ means ``is a subset of''. Be careful!)
+\begin{enumerate}[(a)]
+\item
+Is $\{y\} \in \{x, y, z\}$?
+\item
+Is $\{y\} \in \{x, \{y\}, \{ \{ z \} \} \}$?
+\item
+Is $\emptyset \subseteq \{42, 1119, \{ \{ \emptyset \} \} \}$?
+\item
+How many elements are in the set $\{a, \{b, c\} \}$?
+\end{enumerate}
+
+\item(4 points each)
+Formally rewrite each of the following statements using appropriate truth variables,
+predicates, and quantifiers. Specify the domain for all your variables.
+
+For example, an answer may look like
+$\forall x \in \mathbb{Z} \ \  \big(P(x) \rightarrow Q(x)\big)$ where you should say what $P$ and $Q$ are.
+
+\begin{enumerate}[(a)]
+\item
+If it walks like a duck and it quacks like a duck, then it is a duck.
+\item
+The sum of any two even integers is even.
+\end{enumerate}
+\vskip 0.2in
+\item(5 points each)
+(For this question, no explanation for your answers is required.) Write negations of the following
+statements.
+
+\begin{enumerate}[(a)]
+\item
+If Tom is Ann's father, then Jim is her uncle and Sue is her aunt.
+\item
+There is a computer program that gives the correct answer to every question that is posed to it.
+(Your answer should include the phrase ``does not give the correct answer''.)
+\end{enumerate}
+
+\item(10 points)
+Determine (with proof) whether the following statement forms are logically equivalent.
+$$p \rightarrow (q \rightarrow r), \ \ \ \ (p \rightarrow q) \rightarrow r.$$
+
+\item(6 points each)
+Formalize the arguments below using symbols, and identify whether each is valid or invalid.
+Explain your answer. 
+
+You may explain using truth tables, informally in English, or by citing the logical rule of inference
+used by name. For at least one argument, please explain using truth tables.
+\begin{enumerate}[(a)]
+\item
+If Frank studied hard for the test, then he got a good score.
+Frank did not get a good score.
+Therefore, Frank did not study hard for the test.
+\item
+If there are as many rational numbers as there are irrational numbers,
+then the set of all irrational numbers is infinite.
+The set of all irrational numbers is infinite.
+Therefore, there are as many rational numbers as there are irrational numbers.
+\end{enumerate}
+
+\item(6 points each)
+Indicate which of these statements are true and which are false. 
+Explain your answers. ($\mathbb{Z}^+$ indicates the positive integers.)
+\begin{enumerate}[(a)]
+\item
+$\forall x \in \mathbb{Z}^+$, $\exists y \in \mathbb{Z}^+$ such that $x = y + 6$.
+\item
+$\exists x \in \mathbb{R}$ such that $\forall y \in \mathbb{R}$, $x = y + 2.$
+\end{enumerate}
+
+\item(6 points)
+Give an example (with explanation) of an argument which is valid but not sound.
+
+\item(6 points)
+What does it mean to say that
+$$\lim_{x \rightarrow 0} \frac{\sin(x)}{x} \neq 0?$$
+\end{enumerate}
+
+\end{document}

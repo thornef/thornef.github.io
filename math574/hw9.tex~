@@ -1,0 +1,79 @@
+\documentclass[12pt]{amsart}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 9 - Math 574, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, April 6 at 5:00.}
+\end{center}
+{\bf Instructions:} Please give numerical answers to all questions, except any involving $11!$
+or higher, in which case you may answer in terms of factorials.
+
+Please do not give bare answers to any question; add a little bit of explanation, although not so
+much is necessary as to be considered a `proof'. For most problems, about one sentence will be good.
+\\
+\\
+{\bf Core:}
+\\
+\\
+9.5: 6, 8, 13, 17, 19, 23, 24, 26(a-e).
+\\
+\\
+9.6: 7, 13, 14.
+\\
+\\
+\begin{enumerate}[(1.)]
+\item
+How many ten-bit strings are there?
+\item
+How many ten-bit strings are there with exactly four ones?
+\item
+A bagel shop sells plain bagels, whole wheat bagels, and blueberry bagels. In how many ways can you buy
+12 bagels, if all bagels of a given type are identical?
+\item
+A bagel shop sells plain bagels, whole wheat bagels, and blueberry bagels. In how many ways can you buy
+12 bagels, if all bagels of a given type are identical, provided that you must buy at least two blueberry bagels?
+\item
+A bagel shop sells plain bagels, whole wheat bagels, and blueberry bagels. In how many ways can you buy
+12 bagels, if all bagels of a given type are identical, provided that you may not buy more than six bagels of any
+one type?
+\item
+A bagel shop sells plain bagels, whole wheat bagels, and blueberry bagels. In how many ways can you buy
+12 bagels, if all bagels of a given type are identical, provided that the bagel shop only has five blueberry bagels
+remaining?
+\item
+For how many integers between 1 and 99,999 is the sum of the digits equal to 10?
+\item
+How many solutions are there to the equation $a + b + c + d = 10$, where $a$, $b$, $c$, $d$ are positive integers?
+\item
+How many solutions are there to the equation $a + b + c + d = 10$, where $a$, $b$, $c$, $d$ are nonnegative integers?
+\item
+How many triples of integers $i, j, k$ are there with $1 \leq i \leq j \leq k \leq 8$?
+\item
+How many triples of integers $i, j, k$ are there with $1 < i < j < k < 8$?
+\item
+How many triples of integers $i, j, k$ are there with $1 < i < j < k < 11$?
+\item
+How many triples of integers $i, j, k$ are there with $1 < i \leq j < k \leq 11$?
+\end{enumerate}
+{\bf Additional:}
+\\
+\\
+9.5: 7, 9, 14, 15, 20, 21, 22, 25
+\\
+\\
+{\bf Bonus:} (2 points each) 9.6: 17, 37.
+\end{document}

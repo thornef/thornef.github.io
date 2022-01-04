@@ -1,0 +1,62 @@
+\documentclass[11pt]{article}
+\textwidth 7.0in
+
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Examination 3 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Friday, November 18, 2011}
+\end{center}
+
+Please work without books, notes, calculators, or any assistance from others. If you have
+any questions, feel free to ask me. 
+\\
+\\
+\begin{enumerate}[(1)]
+\item
+What is a definite integral? Explain thoroughly and draw a picture. (Hint: Your explanation
+should include an equation with a limit in it.)
+
+\item
+Sketch the graph of $f(x) = 2 + 2x^2 - x^4$. In addition, find the intervals of increase
+and decrease, the local maximum and minimum values, the intervals of concavity, and the
+inflection points.
+
+\item
+The graphs of $f$ and three other functions are shown. Which graph is an antiderivative
+of $f$, and why?
+
+\item
+A box with a square base and open top must have a volume of 32 $cm^3$. Find the dimensions
+of the box that minimize the amount of material used.
+
+\item
+A 10 foot ladder rests on a wall and is sliding down the wall (and the bottom is sliding
+away from the wall). If the bottom of the ladder slides away from the wall at a speed of
+2 $ft/s$, how fast is the angle between the top of the ladder and the wall changing when
+the angle is $\pi/4$ radians?
+
+\item
+Evaluate
+$$\int x (2 - x)^2 dx.$$
+
+\item
+Evaluate
+$$\int_0^3 x \sqrt{9 - x^2} dx.$$
+
+\end{enumerate}
+
+\end{document}

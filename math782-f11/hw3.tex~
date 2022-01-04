@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 2 - Analytic number theory}
+\end{center}
+\begin{center}Frank Thorne, thornef@mailbox.sc.edu
+\end{center}
+\begin{center}
+{\bf Due Friday, September 9}
+\end{center}
+\begin{enumerate}
+\item (3 points)
+Describe explicitly (say, by computing tables) all of the Dirichlet characters of modulus $\leq 10$.
+
+\item (5+ points)
+Write a program in PARI/GP, Sage, Java, C, or any other computer language to test Dirichlet's theorem on 
+primes in arithmetic progressions numerically. For example, compute whether there are more primes less than $X$
+congruent to 1 or 3 modulo 4, for a variety of values of $X$. Turn in your code and report your findings.
+
+(If you don't know any of these languages, I strongly recommend you learn one! PARI/GP and Sage are specialized
+for mathematics, are open source, and can be downloaded for free.)
+
+5 points for some relevant data, 5 more points if you find and describe anything ``interesting'', a further 5 points
+for good guesses on rules for when and how the data is ``interesting''.
+
+\item
+(3 points) Let $\chi_4$ be the nontrivial Dirichlet character modulo 4. Prove that $L(1, \chi_4) = \frac{\pi}{4}$.
+
+(10 points) Discover and prove an exact formula for $L(1, \chi)$ for any other nontrivial character $\chi$.
+
+\item (3 points)
+Prove that if $\delta > 0$ and $\chi$ is a Dirichlet character, then the Dirichlet $L$-function $L(s, \chi)$
+converges uniformly for all complex numbers $s$ with $\Re(s) \geq \delta$.
+
+This was basically proved in class, but the end of the proof was only sketched, so give a detailed proof of this.
+
+\item (5 points)
+If $L(1, \chi) = 0$ for some Dirichlet character $\chi$, prove that $L(s, \chi) \ll s - 1$ for $s \in (1, 2)$.
+
+There is a proof of this on p. 6 of Davenport which you are free to give, but please use our notation (which Davenport
+reverts to later in his book) and spell out more of the details.
+
+\item (5 points)
+It was proved in lecture that if $\chi$ is a real, nontrivial Dirichlet character to a prime modulus $q$, then
+$\chi$ is unique and is in fact the quadratic residue symbol modulo $q$.
+
+(a) Write down all of the four real Dirichlet characters modulo 8. 8 is of course not prime; why does the proof
+from lecture fail to prove that there are only two real $\chi$ mod 8?
+
+(b) Find an odd (but not prime) modulus $q$ for which there are more than two real characters modulo $q$, and describe
+all of these characters.
+\end{enumerate}
+
+\end{document}

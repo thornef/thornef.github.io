@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb, amsmath, amsthm, enumerate}
+
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\newcommand{\Gal}{{\text {\rm Gal}}}
+\newcommand{\Disc}{{\text {\rm Disc}}}
+\newcommand{\GL}{{\text {\rm GL}}}
+\newcommand{\Cl}{{\text {\rm Cl}}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\mfp}{\mathfrak{p}}
+\newcommand{\calN}{\mathcal{N}}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Midterm Examination, Algebraic Number Theory (Math 788p), Frank Thorne (thorne@math.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Monday, April 1, 2013}
+\end{center}
+
+\begin{enumerate}[(1)]
+\item
+Prove or disprove.
+\\
+\\
+{\itshape Let $G$ be a finite group. Then there exists a field $K$, Galois over $\Q$, with $\Gal(K/\Q) \cong G$.}
+\\
+\\
+If true, further explain how to construct a $K$ for any $G$.
+\vskip 0.5in
+\item
+Are there infinitely many real quadratic fields which are UFDs? (Prove or disprove.)
+\vskip 0.5in
+\item
+For any odd $\ell \geq 3$, and any $r \geq 1$ and $X \geq 1$, define $\delta(X, \ell, r)$ to be the proportion
+of imaginary quadratic fields $K$, with $|\Disc(K)| < X$, and $\Cl(K) \cong (\Z/\ell)^r \times H$
+for some abelian group $H$ with order coprime to $\ell$.
+
+Prove, for each fixed $\ell$ and $r$, that $\delta(X, \ell, r)$ converges to a positive 
+limit $\delta(\ell, r)$, and determine this limit.
+\vskip 0.5in
+\item
+Let $K/\Q$ be a finite Galois extension, and let $\rho: \Gal(K/\Q) \rightarrow \GL_n(\C)$ be an irreducible
+representation of $\Gal(K/\Q)$.
+
+For each prime $p$, define $\sigma_p \in \Gal(K/\Q)$ as follows: First choose arbitrarily any prime ideal $\mfp$
+of $K$ above $p$. Then, for all but finitely many primes $p$ there exists a unique $\sigma \in \Gal(K/\Q)$ such that
+$\sigma(\mfp) = \mfp$, and $\sigma(x) - x^{\calN(p)} \in \mfp$ for all $x \in \mathcal{O}_K$.
+
+For $\Re(s) > 1$, define a function $f(s)$ by
+\[ f(s) = \prod_p \det(1 - \rho(\sigma_p) p^{-s}),
+\]
+where $1 - \rho(\sigma_p) p^{-s}$ is an endomorphism of $\C^n$, and the product is over all primes for which $\sigma_p$ is uniquely
+defined, up to the choice of $\mfp$.
+
+Prove that the meromorphic continuation of $f(s)$ to all of $\C$ has at most finitely many poles.
+
+\end{enumerate}
+
+\end{document}

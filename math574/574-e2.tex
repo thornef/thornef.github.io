@@ -1,0 +1,155 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.6in 
+\pagestyle{empty}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[mathscr]{euscript}
+\usepackage{enumerate, verbatim, url}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-12mm}
+
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Midterm Examination 2 - Math 141, Frank Thorne (thorne@math.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Thursday, March 22, 2012}
+\end{center}
+
+Please work without books, notes, calculators, or any assistance from others.
+\\
+\\
+\begin{enumerate}[1.]
+\item (13 points)
+If $a$ is any odd integer and $b$ is any even integer, prove that $2a + 3b$ is even.
+(For this problem, use only the definitions of even and odd, and do not appeal to any previously
+established properties of even and odd integers.)
+\\
+\\
+Answer 1:
+You know that $a$ is odd, and therefore $a = 2r + 1$ for some integer $r$. You know that $b$ is even,
+and therefore $b = 2s$ for some integer $s$. Therefore,
+$$2a + 3b = 2(2r + 1) + 3(2s) = 4r + 2 + 6s = 2(2r + 3s + 1).$$
+We know that $2r + 3s + 1$ is an integer, so that $2a + 3b$ is twice an integer, and therefore is even.
+\\
+\\
+Answer 2: (This incorporates a small shortcut that you may have noticed.)
+You know that $b$ is even, and therefore $b = 2s$ for some integer $s$. Therefore,
+$$2a + 3b = 2a + 3(2s) = 2(a + 3s).$$
+We know that $a + 3s$ is an integer, so that $2a + 3b$ is twice an integer, and therefore is even.
+
+\item (13 points)
+Suppose that the product of three positive real numbers $x$, $y$, and $z$ is at least 70.
+Prove that at least one of $x$, $y$, and $z$ is greater than 4.
+\\
+\\
+We argue by contradiction. Suppose that $x$, $y$, and $z$ are all positive integers which are less than or equal
+to 4. Then,
+$$x \cdot y \cdot z \leq 4 \cdot 4 \cdot 4 = 64,$$
+so that $xyz < 64$. However, this contradicts the assumption that $xyz \geq 70$. Therefore, at least one of $x$, $y$, and $z$
+is greater than 4.
+
+\item (13 points)
+Determine whether the following statement is true or false, and prove or disprove it:
+
+If an integer $a$ is of the form $5n + 1$ for some integer $n$, then $a^2$ is of the form $25m + 1$ for some integer $m$.
+\\
+\\
+False. We exhibit a counterexample. Let $n = 1$ so that $a = 6$. Then, $a^2 = 36 = 25 + 11$. By the unique division-with-remainder
+theorem, $a^2$ cannot be of the form $25 m + 1$ if it is of the form $25 b + 11$ (where $b = 1$). 
+
+\item (14 points)
+Prove that  $\sqrt[3]{4}$ is irrational.
+
+You may use the following statement without proving it: For all integers $a$, if $a^3$ is even then $a$ is even.
+\\
+\\
+Proof: Suppose to the contrary that $\sqrt[3]{4}$ is rational, so that we can write it as a fraction $\frac{a}{b}$, written
+where $a$ and $b$ are both positive and have no common factor. Then, cubing both sides of $\sqrt[3]{4} = \frac{a}{b}$,
+we get $4 = \frac{a^3}{b^3}$, so that $4 b^3 = a^3$. Thus, $a^3$ is even, and so $a$ is also even, and we can write $a = 2r$ for some 
+integer $r$. We have $4 b^3 = (2r)^3$, so that $b^3 = 2r^3$. Therefore, $b^3$ is even, and hence $b$ is even also. 
+
+But this shows that $a$ and $b$ are both even and have the common factor $2$, contrary to assumption. This is a contradiction;
+therefore, $\sqrt[3]{4}$ is irrational.
+
+\item (14 points)
+Prove that $\lim_{x \rightarrow 3} (2x + 1) = 7.$
+\\
+\\
+Proof: Suppose that $\epsilon > 0$ is given.
+
+[Aside: Not needed for proof, but shows you how to pick $\delta$. If $2x + 1 = 7 + \epsilon$, then $x = 3 + \epsilon/2$, and similarly
+if $2x + 1 = 7 - \epsilon$, then $x = 3 - \epsilon/2$. So we should pick $\delta = \epsilon/2$, or anything smaller.]
+
+Choose $\delta = \epsilon/2$. Suppose that we are given $x$ with $|x - 3| < \delta$, i.e., $3 - \epsilon/2 < x < 3 + \epsilon/2$.
+Then, we have $2(3 - \epsilon/2) + 1 < 2x + 1 < 2(3 + \epsilon/2) + 1$, i.e., $7 - \epsilon < 2x + 1 < 7 + \epsilon$. In other words
+$|(2x + 1) - 7| < \epsilon$ whenever $|x - 3| < \delta$. By definition, $\lim_{x \rightarrow 3} (2x + 1) = 7$ as desired.
+
+\item (14 points)
+Prove, for all integers $n \geq 1$, that
+$$
+\frac{1}{1 \cdot 2} + 
+\frac{1}{2 \cdot 3} + 
+\cdots + 
+\frac{1}{n \cdot (n + 1)} 
+= \frac{n}{n + 1}.
+$$
+We prove this by induction. Let $P(n)$ be the claim that
+$$
+\frac{1}{1 \cdot 2} + 
+\frac{1}{2 \cdot 3} + 
+\cdots + 
+\frac{1}{n \cdot (n + 1)} 
+= \frac{n}{n + 1}.
+$$
+Then $P(1)$ is true because both sides are equal to $1/2$. Suppose that $P(n)$ is true for some fixed integer $n$. We need to 
+show that $P(n + 1)$ is true. The left hand side of $P(n + 1)$ is
+$$
+\frac{1}{1 \cdot 2} + 
+\frac{1}{2 \cdot 3} + 
+\cdots + 
+\frac{1}{n \cdot (n + 1)} 
++ \frac{1}{(n + 1) \cdot (n + 2)}.$$
+By our inductive hypothesis (that $P(n)$ is true), this is equal to
+$$
+\frac{n}{n + 1} + \frac{1}{(n + 1)(n + 2)} = \frac{n(n +2)}{(n + 1)(n + 2)} 
++ \frac{1}{(n + 1)(n + 2)}.$$
+This is equal to 
+$$\frac{n (n + 2) + 1}{(n + 1)(n + 2)} = 
+\frac{n^2 + 2n + 1}{(n + 1)(n + 2)} = 
+\frac{(n + 1)^2}{(n + 1)(n + 2)} = \frac{n + 1}{n + 2},$$
+which is the right hand side of $P(n + 1)$. Therefore $P(n + 1)$ is true, and hence $P(n)$ is true for all $n \geq 1$ by induction.
+
+\item (14 points)
+Prove that $1 + 3n \leq 4^n$ for every integer $n \geq 0$.
+\\
+\\
+We argue by induction. Let $P(n)$ be the claim $1 + 3n \leq 4^n$. Then $P(0)$ is true because both sides are equal to 1.
+Suppose now that $P(n)$ is true for some particular $n$. We want to prove that $P(n + 1)$ is true.
+
+The left side of $P(n + 1)$ is equal to $1 + 3(n + 1) = (1 + 3n) + 3.$ By induction, this is less than $4^n + 3 \leq 4^n + 3 \cdot 4^n = 4^{n + 1}$,
+so that $P(n + 1)$ is true. The result follows by induction.
+
+\item (5 points)
+Let $S$ be the set of integers divisible by $3$, and let $T$ be the set of integers divisible by $6$. Do we have
+$S \subseteq T$? Do we have $T \subseteq S$?
+
+[For this problem, you do not have to give a proof or explanation (you should know how to -- but time is short), but if your answer
+is wrong, this might be worth partial credit.]
+\\
+\\
+We have $T \subseteq S$ but not $S \subseteq T$. If $x$ is an integer divisible by 6, then $x = 6r$ for some integer $r$, so that
+$x = 3(2r)$, so that $x$ is a multiple of $3$ (i.e., an element of $S$). To see that $S \not \subseteq T$, observe that $3$ is in $S$
+but not $T$.
+
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{enumerate, verbatim, url}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\newcommand{\p}{\mathfrak{p}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Algebraic number theory (Spring 2013), Homework 5}
+\end{center}
+\begin{center}Frank Thorne, thornef@webmail.sc.edu
+\end{center}
+\begin{center}
+{\bf Due Friday, March 22}
+\end{center}
+Recall that starred (*) exercises may involve background beyond what is assumed in this course.
+
+\begin{enumerate}
+\item (20 points)
+In a page or so, 
+explain what you learned, and/or some related topics you would like to learn better, from John Voight's lecture.
+
+\item (5+ points)
+As we proved, the Minkowski bound gives a lower bound for the discriminant of a number field $K$ in terms
+of the degree, and also the number of complex embeddings.
+
+For each $n \leq 6$, write out (as a decimal) the Minkowski lower bound for the discriminant of a number field
+$K$, and look up (using the Jones-Roberts tables, or otherwise) the smallest discriminant of any number field with that
+degree. Compare the data. If you have any interesting observations about number fields of small discriminant,
+be sure to share them.
+
+\item (5 points)
+Compute the class group of $\Q(\sqrt{-33})$.
+
+\item (5 points)
+Compute the class group of $\Q(\sqrt{-163})$.
+
+\item (5 points)
+Compute the class group of $\Q(\sqrt{-14})$.
+
+\item (5 points)
+Compute the class group of $\Q(7^{1/3})$.
+
+\item (8 points)
+Compute the class group of $\Q(\sqrt{\alpha})$, where $\alpha^3 - \alpha - 7 = 0$.
+
+\item (8 points)
+Compute the class group of $\Q(\zeta_{11})$.
+
+\item (*, 12 points)
+Prove that the class number of $\Q(\sqrt{-13947137572})$.
+
+{\itshape Hints: No, the Ankeny and Chowla result doesn't apply. 
+Use Dirichlet's class number formula, in combination with a computer and some analytic number theory. 
+But just asking PARI or SAGE what the class number is (it's 17852) is cheating.}
+
+\end{enumerate}
+
+\end{document}

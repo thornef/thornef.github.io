@@ -1,0 +1,331 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.6in 
+\pagestyle{empty}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[mathscr]{euscript}
+\usepackage{enumerate, verbatim, url}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-12mm}
+
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Midterm Examination 1 with Solutions - Math 574, Frank Thorne (thorne@math.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Thursday, February 9, 2012}
+\end{center}
+\begin{enumerate}[1.]
+\item(3 points each)
+For each sentence below, say whether it is logically equivalent to the sentence
+\begin{center}
+If it's snowing, the temperature must be at or below freezing.
+\end{center}
+(No explanation for your answers is required.)
+\begin{enumerate}[(a)]
+\item
+If the temperature is above freezing, then it is not snowing.
+\\
+\\
+{\bf Logically equivalent}; this is the contrapositive.
+\item
+It only snows if the temperature is at or below freezing.
+\\
+\\
+{\bf Logically equivalent}. If $p$ then $q$ means the same thing as $p$ only if $q$
+(i.e., $\neg p \vee q$)
+\item
+If it is not snowing, then the temperate must be above freezing.
+\\
+\\
+{\bf Not equivalent}. This is the inverse.
+\item
+If the temperature is at or below freezing, then it is snowing.
+\\
+\\
+{\bf Not equivalent.} This is the converse.
+\end{enumerate}
+\vskip 0.2in
+\item(3 points each)
+For each sentence below, say whether it is logically equivalent to the sentence
+\begin{center}
+For all animals $A$, if $A$ has claws then $A$ is dangerous.
+\end{center}
+(No explanation for your answers is required.)
+\begin{enumerate}[(a)]
+\item
+Any animal that is dangerous has claws.
+\\
+\\
+{\bf Not equivalent;} this is the converse.
+\item
+Among all the animals which have claws, some are dangerous.
+\\
+\\
+{\bf Not equivalent.} The original statement describes all animals with claws. This describes only some animals with claws.
+\item
+Every animal with claws is dangerous.
+\\
+\\
+{\bf Equivalent.} This is basically a rewording.
+\item
+Some of all the dangerous animals have claws.
+\\
+\\
+{\bf Not equivalent.} This doesn't describe all animals with claws.
+\end{enumerate}
+\vskip 0.2in
+\item(3 points each)
+(For this question, no explanation for your answers is required. Recall that $\in$ means
+``is an element of'' and $\subseteq$ means ``is a subset of''. Be careful!)
+\begin{enumerate}[(a)]
+\item
+Is $\{y\} \in \{x, y, z\}$?
+\\
+\\
+{\bf No.} The elements of $\{x, y, z\}$ are $x$, $y$, and $z$; $\{y\}$ is not among these.
+\item
+Is $\{y\} \in \{x, \{y\}, \{ \{ z \} \} \}$?
+\\
+\\
+{\bf Yes,} it is one of the three elements on the right.
+\item
+Is $\emptyset \subseteq \{42, 1119, \{ \{ \emptyset \} \} \}$?
+\\
+\\
+{\bf Yes,} the empty set is a subset of any set.
+\item
+How many elements are in the set $\{a, \{b, c\} \}$?
+\\
+\\
+{\bf Two,} $a$ and $\{b, c\}$.
+\end{enumerate}
+
+\item(4 points each)
+Formally rewrite each of the following statements using appropriate truth variables,
+predicates, and quantifiers. Specify the domain for all your variables.
+
+For example, an answer may look like
+$\forall x \in \mathbb{Z} \ \  \big(P(x) \rightarrow Q(x)\big)$ where you should say what $P$ and $Q$ are.
+
+\begin{enumerate}[(a)]
+\item
+If it walks like a duck and it quacks like a duck, then it is a duck.
+\\
+\\
+Let $D$ be the domain of all animals (or of all things, or any other reasonable set which includes ducks.)
+
+$P(x)$: $x$ walks like a duck.
+
+$Q(x)$: $x$ quacks like a duck.
+
+$R(x)$: $x$ is a duck.
+
+The statement is $\forall x \in D \ (P(x) \wedge Q(x) \rightarrow R(x))$.
+\item
+The sum of any two even integers is even.
+\\
+\\
+Let $\mathbb{Z}$ be the domain of all integers.
+
+$P(x)$: $x$ is even.
+
+The statement is $$\forall x \in \mathbb{Z} \ \forall y \in \mathbb{Z} \ (P(x) \wedge P(y) \rightarrow P(x + y)).$$
+
+There are other formulations which don't involve any arithmetic in the statement. For example, let $Q(x, y)$ be
+the statement ``$x + y$ is even'', and then you have
+$$\forall x \in \mathbb{Z} \ \forall y \in \mathbb{Z} \ (P(x) \wedge P(y) \rightarrow Q(x,y)).$$
+
+\end{enumerate}
+\vskip 0.2in
+\item(5 points each)
+(For this question, no explanation for your answers is required.) Write negations of the following
+statements.
+
+\begin{enumerate}[(a)]
+\item
+If Tom is Ann's father, then Jim is her uncle and Sue is her aunt.
+\\
+\\
+{\bf Negation:} Tom is Ann's father, but either Jim is not her uncle or Sue is not her aunt.
+(You can use also the word ``and'' in place of but.)
+
+\item
+There is a computer program that gives the correct answer to every question that is posed to it.
+(Your answer should include the phrase ``does not give the correct answer''.)
+\\
+\\
+{\bf Negation:} For every computer program, there exists some question that can be posed to it
+for which it does not give the correct answer.
+
+\end{enumerate}
+
+\item(10 points)
+Determine (with proof) whether the following statement forms are logically equivalent.
+$$p \rightarrow (q \rightarrow r), \ \ \ \ (p \rightarrow q) \rightarrow r.$$
+\\
+\\
+The statements are {\bf not} logically equivalent.
+
+A truth table proof can be given:
+\begin{center}
+\begin{tabular}{ccc|c c c c}
+$p$ & $q$ & $r$ & $q \rightarrow r$ & $p \rightarrow q$ & $p \rightarrow (q \rightarrow r)$ & $(p \rightarrow q) \rightarrow r$
+\\ \hline
+T & T & T & T & T & T & T \\
+T & T & F & F & T & F & F \\
+T & F & T & T & F & T & T \\ 
+T & F & F & T & F & T & T \\
+F & T & T & T & T & T & T \\
+F & T & F & F & T & T & F \\
+F & F & T & T & T & T & T \\
+F & F & F & T & T & T & F \\
+\end{tabular}
+\end{center}
+We see that the last two columns are not the same, and so the statements are not equivalent.
+(In particular, when $p$ is false, $q$ is true, and $r$ is false, we check that the first statement
+above is true, and the second is false.)
+
+\item(6 points each)
+Formalize the arguments below using symbols, and identify whether each is valid or invalid.
+Explain your answer. 
+
+You may explain using truth tables, informally in English, or by citing the logical rule of inference
+used by name. For at least one argument, please explain using truth tables.
+\begin{enumerate}[(a)]
+\item
+If Frank studied hard for the test, then he got a good score.
+Frank did not get a good score.
+Therefore, Frank did not study hard for the test.
+\\
+\\
+{\bf Valid.} Write
+
+$p$: Frank studied hard for the test.
+
+$q$: Frank got a good score.
+
+The argument is
+
+$p \rightarrow q$
+
+$\neg q$
+
+$\therefore \neg p$.
+
+This is {\bf modus tollens}, a valid form of inference. This can be proved by the following truth table:
+\begin{center}
+\begin{tabular}{cc|cc|c}
+$p$ & $q$ & $p \rightarrow q$ & $\neg q$ & $\neg p$
+\\ \hline
+T & T & T & F & F \\
+T & F & F & T & F \\
+F & T & T & F & T \\
+F & F & T & T & T \\
+\end{tabular}
+\end{center}
+
+We must check that whenever both premises (the third and fourth columns) are true, the conclusion
+(the last) column is true. Thus, we only need to check the last row.
+\item
+If there are as many rational numbers as there are irrational numbers,
+then the set of all irrational numbers is infinite.
+The set of all irrational numbers is infinite.
+Therefore, there are as many rational numbers as there are irrational numbers.
+\\
+\\
+{\bf Invalid.} Write
+$p$: There are as many rational numbers as there are irrational numbers.
+
+$q$ The set of all irrational numbers is infinite.
+
+The form of the argument is
+
+$p \rightarrow q$
+
+$q$
+
+$\therefore p$.
+
+This is the {\bf converse error} which is an invalid method of inference. This can be proved by truth tables:
+\begin{center}
+\begin{tabular}{cc|cc|c}
+$p$ & $q$ & $p \rightarrow q$ & $q$ & $p$
+\\ \hline
+T & T & T & T & T \\
+T & F & F & F & T \\
+F & T & T & T & F \\
+F & F & T & F & F \\
+\end{tabular}
+\end{center}
+We must check that whenever both premises (the third and fourth columns) are true, the conclusion
+(the last) column is true. Thus, we need to check the first and third rows, and the third row fails this test.
+
+\end{enumerate}
+
+\item(6 points each)
+Indicate which of these statements are true and which are false. 
+Explain your answers. ($\mathbb{Z}^+$ indicates the positive integers.)
+\begin{enumerate}[(a)]
+\item
+$\forall x \in \mathbb{Z}^+$, $\exists y \in \mathbb{Z}^+$ such that $x = y + 6$.
+\\
+\\
+{\bf False.} To show this is false, it is enough to find some counterexample. Let $x$ be 3.
+Then if $x = y + 6$ then $y$ must be $-3$, and $-3$ is not an element of $\mathbb{Z}^+$.
+
+\item
+$\exists x \in \mathbb{R}$ such that $\forall y \in \mathbb{R}$, $x = y + 2.$
+\\
+\\
+{\bf False.} Suppose that there exists some $x$ such that $x = y + 2$ for every $y$.
+However, the equation $y = x - 2$ determines $y$ uniquely (in terms of $x$). Therefore,
+this cannot be true for all values of $y$.
+
+\end{enumerate}
+
+\item(6 points)
+Give an example (with explanation) of an argument which is valid but not sound.
+\\
+\\
+Naturally, answers will vary. Here is one example:
+\\
+\\
+If I am good at math, then I am a rock star.
+\\
+\\
+I am good at math.
+\\
+\\
+Therefore, I am a rock star.
+\\
+\\
+The premises imply the conclusion and so the argument is valid. However, the first premise is
+not true (regrettably) and so the argument implies a false conclusion, making it unsound.
+
+
+\item(6 points)
+What does it mean to say that
+$$\lim_{x \rightarrow 0} \frac{\sin(x)}{x} \neq 0?$$
+\\
+\\
+This means that for there exists some $\epsilon > 0$ such that for every
+$\delta > 0$, there exists $x$ for which $0 < |x - 0| < \delta$ but $|\frac{\sin(x)}{x} - 0| \geq \epsilon$.
+
+Equivalently,
+$$
+\exists \epsilon > 0 \ \ \forall \delta < 0 \ \ \exists x \ \Big( 0 < |x - 0| < \delta \Big) \wedge
+\Big( \Big|\frac{\sin(x)}{x} - 0\Big| \geq \epsilon \Big).
+$$
+(Either of the above formulations is a good answer.)
+\end{enumerate}
+
+\end{document}

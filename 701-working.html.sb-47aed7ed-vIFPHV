@@ -1,0 +1,122 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE> Math 701-702: Graduate Algebra, University of South Carolina </TITLE>
+
+</HEAD>
+
+<BODY BGCOLOR=#FFFFFF>
+
+<P>
+
+<DIV ALIGN="CENTER">
+<B> <FONT SIZE="+3"> Math 701-702, Abstract Algebra, University of South Carolina
+</FONT>
+</B>
+</DIV>
+<p>
+Instructor: Frank Thorne, LeConte 317O, thorne [at] math [dot] sc [dot] edu.
+<p>
+Office hours: TBD.
+<p>
+<h2>Course objectives and learning outcomes:</h2>
+
+<p>
+<b>In Math 701 and 702, successful students will</b>: 
+<ul>
+<li>Master algebraic topics concerning groups, rings, fields, and other algebraic structures.
+<p>
+<li>More importantly, develop their sense of <i>algebraic thinking</i>, so that they can more easily
+absorb additional algebraic material in the future.
+<li>Lay the foundation for research in topics including algebraic number theory, algebraic combinatorics,
+representation theory, algebraic geometry, commutative algebra, algebraic topology, etc., etc., etc.
+<li>Prepare for the Qualifying Exam in algebra.
+</ul>
+ 
+<h2>Course Textbooks:</h2>
+In large part I will closely be following <b>Dummit and Foote</b>'s <i>Abstract Algebra</i>. I encourage
+to obtain a copy of the book and follow along.
+<p>
+There are a number of other excellent books on algebra as well. Perhaps the most interesting is that by
+<b>Lang</b>. In my opinion Lang's book is not very good for the beginner, but is excellent for someone
+who has seen the material before and wants to review or see a different perspective. In particular,
+it is great to read when you are studying for quals.
+
+<h2>Course Requirements:</h2> 
+
+<ul>
+<li>(70%) Written homework assignments will be assigned at most weekly.
+<p>
+<li>(20%) Take-home final exam, which will be similar to this course's component of the
+Ph.D. comprehensive exam. 
+<p>
+Students who have advanced to Ph.D. candidacy are excused from the exam (and may additionally be excused from the homework at the request of your thesis advisor).
+
+<li>(10% -- Bonus) Regularly attend the 
+<a href="http://people.math.sc.edu/alicial/grad_colloquium/">graduate colloquium</a>,
+and/or the 
+
+
+: the 
+<a href="http://www.math.sc.edu/colloquia">department colloquium</a>,
+the <a href="http://people.math.sc.edu/algebra/seminar/index.html">algebra seminar</a>,
+the <b>student algebra seminar</b>, and the <b>number theory seminar</b>. Truant
+students will be given large quantities of calculus homeworks to grade.
+</ul>
+
+</ul>
+<p>
+<h2>Grading Scale:</h2>
+<p>
+(Shamelessly stolen from <a href="http://people.math.sc.edu/ballard/">Matt Ballard</a>.)
+
+<ul>
+<li><b>A</b>: You have a strong chance of passing the comprehensive exam if you prepare reasonably. This also represents a strong foundation for learning further related topics.
+<li><b>B+</b>: With additional effort, you should be able to pass the comprehensive exam if you prepare. This represents a partial foundation for learning further related topics.
+
+<li><b>B</b>: You have demonstrated some mastery of the subject material, but should
+put in a lot of additional effort if you want to pass the comprehensive exam or write
+a thesis in a related area.
+
+<li><b>&lt; B</b>: You apparently spent the entire semester playing Pokemon Go.
+</ul>
+
+
+<p>
+<h3>Homework Assignments:</h3> 
+<p>
+<a href="735-hw1.pdf">Homework 1</a>, due Wednesday, September 14.
+<p>
+<b>Homework 2</b>, due Friday, September 30: Ch. 2, 2, 4, 7, 9, 10; Ch. 3, 2, 3, 12. Also verify the that the Lie bracket [X, Y] = XY - YX satisfies the Jacobi identity. You should do this once in your life, so if you have ever proved this no need to do it again.
+<p>
+<b>Homework 3</b>, due Wednesday, October 26: Ch. 4, 1-4, 12. 
+<p><h2>Lecture Notes:</h2> 
+<p>
+<a href="lie1-3.pdf">Lectures 1-3</a>: introduction, examples of Lie groups, restriction of scalars.
+<p>
+<a href="lie4-5.pdf">Lectures 4-5</a>. 
+<p>
+<a href="lie6-10.pdf">Lectures 6-10</a>. 
+<p>
+<a href="lie11-16.pdf">Lectures 11-16</a>. 
+<p>
+<a href="lie17-25.pdf">Lectures 17-25</a>. 
+<p>
+<a href="lie-26-27.pdf">Lectures 26-27 (including review)</a>. 
+<p>
+<p>
+<h2>I love this subject. What should I study next?</h2>
+<p>
+If you enjoyed learning about Lie groups, I would recommend learning about related
+topics such as <b>algebraic geometry</b>, <b>representation theory</b>, <b>algebraic groups</b>, and <b>differential geometry</b>. My work touches on these topics, but
+faculty members whose work is even more relevant include
+<a href="http://people.math.sc.edu/howard/">Ralph Howard</a>,
+<a href="http://people.math.sc.edu/kassj/">Jesse Kass</a>,
+<a href="http://people.math.sc.edu/ballard/">Matt Ballard</a>,
+and <a href="http://people.math.sc.edu/duncan/">Alex Duncan</a>. If you want to meet
+these people, show up to the <a href="http://people.math.sc.edu/algebra/seminar/index.html">algebra seminar</a>, come early for the pretalk, join me in the peanut gallery, and ask lots of questions.
+
+</BODY>
+</HTML>

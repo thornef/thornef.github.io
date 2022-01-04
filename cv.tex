@@ -1,0 +1,573 @@
+
+
+\documentclass{article}
+\usepackage{amssymb,amsmath,amsthm}
+
+%=========================================================================
+% Settings
+%=========================================================================
+\setlength{\textwidth}{6.9in}             % Alter margins
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-1.8cm}
+\setlength{\oddsidemargin}{-0.7cm}
+
+\pagestyle{empty}                       % Suppress page number
+
+%=========================================================================
+% New Definitions
+%=========================================================================
+% \name{NAME-OF-PERSON}
+%       Display a centered NAME-OF-PERSON of a certain size.
+%       A line is placed underneath, which spans the width of the
+%       page.  The name is lowered so that is hovers above 
+%       this line.
+%       NOTE: if you want text directly underneath this command,
+%             do not put a blank line in between.
+%
+\newcommand{\name}[1]{
+  \begin{center}
+    \raisebox{-1.4ex}{\LARGE #1}
+  \end{center}
+}
+
+%-------------------------------------------------------------------------
+%\newcommand{\addrtype}{\sl}            % Type style for addresses
+%\newcommand{\addrwidth}{2in}           % Width of addresses
+
+% ENVIRONMENT: \begin{address}
+%       Display an address.
+%       The address is in a minipage of width \addrwidth.  The type
+%       style of the address is \addrtype.
+%       
+%\newenvironment{address}{\begin{minipage}[t]{\addrwidth}
+%       \addrtype}{\end{minipage}}
+
+% David Carlton sez: I don't recall ever used the above, and I don't
+% remember if it was commented out when I got this or if that's my
+% innovation.  Feel free to play with it yourself...
+
+%-------------------------------------------------------------------------
+
+% The body of the resume should all be in one big categories
+% environment.  Start a new category with \category, start a new entry
+% within the category with \entry.  Leave a blank line between entries
+% (and between categories).  \entry takes two arguments: the topic of
+% the entry (which is in boldface and on a line by itself) and the
+% body of the entry.  If you don't want that format, use \rawentry
+% instead; it takes one argument, the body of the entry, and you can
+% format that however you want.  Within that body, if you want a line
+% break, use \\; also, \\ works in the argument to \category.
+
+\newcommand{\categorywidth}{1in}        % Width of categories (left side)
+\newcommand{\infowidth}{5.8in}          % Width of info (right side)
+\newcommand{\categorysep}{5pt}
+
+\newcommand{\catlistlabel}[1]%
+{\raisebox{0pt}[1ex][0pt]{\makebox[\labelwidth][l]%
+    {\parbox[t]{\labelwidth}{\hspace{0pt}\textbf{#1}}}}}
+\newenvironment{categories}{\begin{list}{}{
+      \setlength{\labelwidth}{\categorywidth}
+      \setlength{\leftmargin}{\labelwidth}
+      \addtolength{\leftmargin}{\labelsep}
+%      \setlength{\rightmargin}{0pt}
+      \setlength{\topsep}{20pt}
+      \setlength{\itemsep}{\categorysep}
+      \renewcommand{\makelabel}{\catlistlabel}
+      }}{\end{list}}
+
+\newcommand{\category}[1]{\item[#1]}
+
+\newcommand{\topic}[1]{
+  {\textbf{#1}}}
+\newcommand{\rawentry}[1]{{\begin{minipage}[t]{\infowidth}{#1}
+    \end{minipage}}}
+\newcommand{\entry}[2]{\rawentry{{\topic{#1}\\}{#2}}}
+
+%*************************************************************************
+% Document
+%*************************************************************************
+\begin{document}
+\begin{flushleft}
+
+%=========================================================================
+% Name
+%=========================================================================
+
+\name{FRANK THORNE}
+\rule{7.0in}{.05cm}
+\vspace{.15ex}
+
+%=========================================================================
+% Addresses
+%=========================================================================
+
+{\em Contact Information:} % \hfill Home Address:}
+
+Department of Mathematics % \hfill Hibben Apartments 3-L
+
+University of South Carolina % \hfill Faculty Road
+
+1523 Greene Street % $\cdot$ Washington Road \hfill Princeton, NJ 08540
+
+Columbia, SC 29208% \hfill (609)-688-9429
+
+\texttt{thorne@math.sc.edu}
+
+\texttt{http://www.math.sc.edu/\~{}thornef}
+
+\vskip 0.1in
+{\em Last updated: July 30, 2014. }
+%=========================================================================
+% Body
+%       Must have space between sections.
+%=========================================================================
+
+
+\begin{categories}
+
+  \category{Employment}
+
+  \rawentry{Assistant Professor, University of South Carolina, Fall 2008-present
+ (on leave 2008-2011).}
+\vskip 0.05in
+ \rawentry{NSF Postdoctoral Fellow, Stanford University, 2008-2011. \\
+  Mentor: Kannan Soundararajan.}
+
+ 
+  \category{Education}
+  
+ 
+ \rawentry{Ph.D., University of Wisconsin, Madison, WI, 2008. \\
+    Dissertation under the supervision
+    of Prof. Ken Ono: `Extensions of results on the distribution of primes.'}
+ \vskip 0.05in
+ \rawentry{Rice University, Houston, TX. \\
+    B.A. summa cum laude in Mathematics, May 1999.}
+
+ 
+  \category{Research \\ Interests}
+
+  \rawentry{Number theory; distribution of primes, field discriminants, class numbers, 
+  and broadly related questions; prehomogeneous vector spaces and their zeta functions. \\}
+
+
+
+
+
+  \category{Research \\ Publications}
+
+  $\bullet$ {\itshape Bounded gaps between products of primes with applications
+to elliptic curves and ideal class groups\upshape, International Mathematics
+Research Notices (2008), 41 pp.}
+
+  $\bullet$ {\itshape Irregularities in the distribution of primes in function fields\upshape, 
+   J. Number Theory \textbf{128} (2008), 1784-1794.}
+
+  $\bullet$ {\itshape Bubbles of congruent primes\upshape,
+  Proc. Camb. Phil. Soc.}, to appear.
+
+  $\bullet$ {\itshape An uncertainty principle for function fields\upshape,
+J. Number Theory \textbf{131} (2011), no. 8, 1363-1389. 
+
+  $\bullet$ {\itshape Maier matrices beyond $\mathbb{Z}$\upshape.
+Combinatorial number theory
+(Proceedings of the Integers Conference 2007), 185-192, Walter de Gruyter, Berlin.}
+
+  $\bullet$ {\itshape Analytic properties of Shintani zeta functions}, Proceedings
+of the RIMS Symposium on automorphic forms, automorphic representations and related topics, Kyoto, Japan.
+(Invited but not peer reviewed.)
+
+  $\bullet$ {\itshape Secondary terms in counting functions for cubic fields}, with T. Taniguchi, Duke Math. J., 
+\textbf{162} (2013), no. 13, 2451-2508.
+
+  $\bullet$ {\itshape Shintani's zeta function is not a finite sum of Euler products},
+Proc. Amer. Math. Soc., to appear.
+
+  $\bullet$ {\itshape Orbital $L$-functions for the space of binary cubic forms}, with T. Taniguchi,
+Can. J. Math. \textbf{65} (2013), no. 6, 1320-1383.
+
+  $\bullet$ {\itshape Four perspectives on secondary terms in the Davenport-Heilbronn theorems}, Integers 12B
+(2012/13),
+Proceedings of the Integers Conference 2011, Paper No. A5, 23 pp.
+
+  $\bullet$ {\itshape An error estimate for counting $S_3$-sextic number fields}, with T. Taniguchi, Int. J.
+Number Theory, to appear.
+
+  $\bullet$ Book review: {\itshape Opera de cribro} and {\itshape
+  An introduction to sieve methods and their applications},
+  Bull. Amer. Math. Soc. (N.S.) \textbf{50} (2013), no. 2, 359-366.
+
+  $\bullet$ {\itshape On the existence of large degree Galois representations for fields of small
+discriminant}, with J. Rouse, submitted.
+
+  $\bullet$ {\itshape Dirichlet series associated to cubic fields with given quadratic resolvent}, with H. Cohen,
+submitted.
+
+  $\bullet$ {\itshape Dirichlet series associated to quartic fields with given cubic resolvent}, with H. Cohen, submitted.
+
+  $\bullet$ {\itshape Zeros of $L$-functions outside the critical strip}, with A. Booker, submitted.
+
+  $\bullet$ {\itshape The square sieve and the number of $A_5$-quintic extensions of bounded discriminant}, 
+with M. Bhargava and A. Cojocaru, in preparation.
+
+  $\bullet$ {\itshape Secondary terms in counting functions for cubic fields, II}, 
+with M. Bhargava and T. Taniguchi, in preparation.
+
+  $\bullet$ {\itshape Weighted averages of class numbers for quadratic fields},
+with L. Goldmakher, W. Ho, K. McGown, and J. Park, in preparation.
+
+  $\bullet$ {\itshape On $D_{\ell}$-extensions of odd prime degree $\ell$}, 
+with H. Cohen, in preparation.
+
+  $\bullet$ {\itshape Identities for field extensions generalizing the Ohno-Nakagawa theorem}, 
+with H. Cohen and S. Rubinstein-Salzedo, in preparation.
+
+  $\bullet$ {\itshape Distribution of zeta zeroes for trigonal curves over a finite field}, 
+with M. Xiong, in preparation.
+
+
+  \category{Awards, Grants, \\ and Prizes}
+
+  $\bullet$ {Invited Participant, Math Olympiad Summer Program. \\
+  \itshape Participated, all expenses paid, in the summer training camp for the IMO. \upshape }
+
+  $\bullet$ {Top 75, Putnam Examination.}
+
+  $\bullet$ {NSF VIGRE (Graduate) Merit Fellowship, Spring 2007, Fall 2007, Spring 2008.}
+
+  $\bullet$ {Letters and Science Teaching Fellow, Fall 2007. \\
+\itshape Was selected as one of fifteen students (and one of two math students)
+to plan and lead orientation for new teaching assistants in the fall.
+\upshape }
+
+  $\bullet$ {(Graduate Student) Excellence in Mathematical Research Award, University of Wisconsin, Spring 2008.}
+
+  $\bullet$ {NSF Postdoctoral Fellowship (awarded), 2008-2011.}
+
+  $\bullet$ {NSF Individual Research Grant (awarded), \$144,926, 2012-2015.}
+
+  $\bullet$ {NSF Grant (awarded), Southeast Number Theory Meetings (co-PI), 2012-2013.}
+
+  $\bullet$ {NSA Grant (awarded), Southeast Number Theory Meetings (co-PI), 2012-2013.}
+
+  $\bullet$ {NSF Grant (awarded), Southeast Number Theory Meetings (PI), 2014-2015.}
+
+  $\bullet$ {NSA Grant (awarded), Southeast Number Theory Meetings (PI), \$14,670, 2014-2015.}
+
+\category{Students \\ Supervised}
+$\bullet$ Richard Oh, Ph. D., Summer 2014.
+
+\vskip -0.12cm
+\hskip 0.5cm
+{\itshape Thesis:} Fake Real Quadratic Orders.
+
+\vskip -0.12cm
+\hskip 0.5cm
+{\itshape First Job:} National Security Agency.
+
+$\bullet$ Daniel Kamenetsky, Ph. D. candidate (Ph.D. expected, Summer 2016.)
+
+$\bullet$ Matthew Corley, USC undergraduate (worked on a research project with me).
+
+\category{Professional Service} 
+$\bullet$ {Referee, Proceedings of the American Mathematical Society (19 articles),
+American Mathematical Monthly (2 articles),
+Acta Arithmetica (2 articles),
+International Journal of Number Theory, 
+Journal of Number Theory (9 articles), 
+Communications in Number Theory and Physics,
+American Journal of Mathematics, Acta Mathematica Sinica,
+Journal Abhandlungen aus dem Mathematischen Seminar der Universit\"at Hamburg,
+Canadian Journal of Mathematics,
+Ramanujan Journal,
+Journal of the London Mathematical Society,
+Algebra and Number Theory,
+Integers,
+Mathematics (MDPI),
+Forum of Mathematics - Sigma,
+Compositio Mathematica}
+
+$\bullet$ {Reviewer, Mathematical Reviews.}
+
+$\bullet$ {Reviewer, NSA Mathematical Sciences Grant Program (3 proposals).}
+
+$\bullet$ {Volunteer, Mega Math Meet and Sidewalk Math, University of Wisconsin.}
+
+$\bullet$ {Volunteer, Julia Robinson Math Festival, Stanford, Spring 2010.}
+ 
+$\bullet$ {Volunteer Speaker, Columbia (High School) Math Circle, Summer 2012.}
+
+$\bullet$ Organizer, Stanford Analytic Number Theory Seminar, 2008-2011.
+
+$\bullet$ Organizer, South Carolina Number Theory Seminar, 2011-present.
+
+$\bullet$ Organizer, South Carolina Algebraic Geometry Seminar, 2013-present.
+
+$\bullet$ Organizer, Informal Pretentious Number Theory Seminar, USC, Spring 2012.
+
+$\bullet$ Organizer, Informal Schemes and Algebraic Geometry Seminar, USC, Spring 2013.
+
+$\bullet$ Organizer, Informal Analytic Number Theory Seminar, USC, Spring 2013.
+
+$\bullet$ Reviewer, DOD SC Junior Science \& Humanities Symposium, December 2011.
+
+$\bullet$ Committee Member, South Carolina State High School Math Contest, 2011-2014.
+
+$\bullet$ Guest Lecturer/Teachers' Preparation, USC AP Calculus Practice Exam, April 2012.
+
+$\bullet$ Hiring Committee, USC, 2012-2013, 2013-2014.
+
+$\bullet$ (other committee service at USC as well)
+
+\category{Conferences Organized}
+
+$\bullet$ Midwest Number Theory Conference for Grad Students V, University of Wisconsin, November 2007.
+
+$\bullet$ Mathematics Research Community on ``The Pretentious View of Analytic Number Theory'', Snowbird, UT, June-July 2011.
+
+$\bullet$ AIM SQuaRE on ``Four Perspectives on Secondary Terms in the Davenport-Heilbronn Theorem'', Palo Alto, CA, Oct.-Nov. 2012., Oct. 2013, (and possibly onward).
+
+{\itshape The SQuaRE was a small workshop with seven mathematicians (including myself). I wrote a proposal which led to full funding
+of the workshop by the American Institute of Mathematics; 
+participants ranged from a graduate student to a Princeton professor and came from the US, Britain, and Japan. A followup workshop
+will be held in 2014 or 2015.}
+
+$\bullet$ Palmetto Number Theory Series, University of South Carolina, December 2012.
+
+$\bullet$ AMS Special Session on Modern Methods in Analytic Number Theory, University of Mississippi, Oxford, MS, March 2013.
+
+\category{Research Talks}
+
+\rawentry{\itshape Asterisks indicate contributed talks. I have also given additional lectures
+at my home universities, not listed.}
+
+$\bullet$ {*Midwest Number Theory Conference for Grad Students IV\upshape, UIUC, October 2006.}
+
+$\bullet$ {AMS Sectional, Fayetteville, AR, November 2006.}
+
+$\bullet$ {Number Theory Seminar, UW-Madison, December 2006.}
+
+$\bullet$ {Number Theory Seminar, UIUC, April 2007.}
+
+$\bullet$ {*Illinois Number Theory Fest, UIUC, May 2007.}
+
+$\bullet$ {Number Theory Seminar,
+University of South Carolina, October 2007.}
+
+$\bullet$ {Number Theory Seminar,
+Stanford, October 2007.}
+
+$\bullet$ {Integers Conference, Carrollton, GA, October 2007.}
+
+$\bullet$ {*Palmetto Number Theory Series, Furman, February 2008.}
+
+$\bullet$ {Colloquium, University of South Carolina, February 2008.}
+
+$\bullet$ {*22nd Annual Workshop on Automorphic
+Forms and Related Topics, Texas A\&M, March 2008.}
+
+$\bullet$ Zeta Function Days,
+Seoul, Korea, September 2009.
+
+$\bullet$ *Palmetto Number Theory Series,
+Columbia, SC, December 2009.
+
+$\bullet$ Kobe Number Theory Workshop,
+Kobe, Japan, January 2010.
+
+$\bullet$ RIMS Symposium on automorphic
+forms, automorphic representations and related topics, University of Tokyo, January 2010.
+
+$\bullet$ Colloquium, Kinki University,
+Osaka, Japan, January 2010.
+
+$\bullet$ 
+ICM Satellite Conference in Analytic and Combinatorial Number Theory, Chennai, India, August 2010.
+
+$\bullet$ Number Theory Seminar,
+University of Georgia, January 2011.
+
+$\bullet$ 
+Number Theory Seminar, Emory University, January 2011.
+
+$\bullet$ 
+Workshop on Arithmetic Statistics, MSRI, Berkeley, CA, January 2011.
+
+$\bullet$ 
+Analytic Aspects of $L$-functions and Applications to Number Theory,
+Calgary, May-June 2011.
+
+$\bullet$ 
+Special Session on $L$-functions and Number Theory, Meeting of the Canadian Mathematical
+Society, June 2011.
+
+$\bullet$ 
+*Palmetto Number Theory Series, Emory University, Atlanta, GA, September 2011.
+
+$\bullet$ 
+Special Session on Modular Forms, Elliptic Curves, and Related Topics,
+AMS Sectional Meeting, September 2011.
+
+$\bullet$ Plenary Speaker, Integers Conference 2011, Carrollton, GA, October 2011.
+
+$\bullet$ 
+Number Theory Seminar, Clemson University, November 2011.
+
+$\bullet$ 
+Quebec-Vermont Number Theory Seminar, Concordia University, November 2011.
+
+$\bullet$ MAA Invited Paper Session on the Beauty and
+Power of Number Theory}, AMS/MAA Joint Meetings, Boston, MA, January 2012.
+
+$\bullet$ Number Theory Seminar,
+Emory University, 2012.
+
+$\bullet$ 
+Special Session on Automorphic and Modular Forms, AMS Sectional Meeting, March 2012.
+
+$\bullet$ 
+*Southeast Regional Meeting on Numbers, Western Carolina University, April 2012.
+
+$\bullet$
+Number Theory Seminar, Texas A\&M, April 2012.
+
+$\bullet$ 
+Number Theory Seminar, University of Wisconsin, April 2012.
+
+$\bullet$ 
+Synergies and Vistas in Analytic Number Theory, Oxford University, September 2012.
+
+$\bullet$
+Workshop on Zeta Functions (two lectures), Tokyo Institute of Technology, Tokyo, Japan, September 2012.
+
+$\bullet$ 
+Special Session on Harmonic Maass Forms and $q$-series, AMS Sectional Meeting, University of Arizona, October 2012.
+
+$\bullet$
+`Baby' Number Theory Seminar, University of Oxford, March 2013.
+
+$\bullet$ 
+Atkin Workshop, University of Illinois at Chicago, May 2013.
+
+$\bullet$ Colloquium, Dartmouth College, May 2013.
+
+$\bullet$ Number Theory Seminar,
+Dartmouth College, May 2013.
+
+$\bullet$ Colloquium,
+Hong Kong University of Science and Technology, May 2013.
+
+$\bullet$ Number Theory Seminar,
+Kobe University, May 2013.
+
+$\bullet$ Number Theory Seminar,
+Tohoku University (Sendai, Japan), June 2013.
+
+$\bullet$
+Workshop on Automorphic Forms, RIMS, Kyoto, Japan, June 2013.
+
+$\bullet$ Number Theory Seminar,
+\'Ecole Polytechnique F\'ederal\'e de Lausanne, Lausanne, Swizerland, June 2013.
+
+$\bullet$ Number Theory Seminar,
+Duke University, October 2013.
+
+$\bullet$ *Palmetto Number Theory Series, Clemson, December 2013.
+
+$\bullet$ 
+Pro-$p$ groups and arithmetic (two lectures), Besan\c{c}on, December 2013.
+
+$\bullet$ Automorphic Forms and Arithmetic, G\"ottingen, February 2014.
+
+$\bullet$ *Southeast Regional Meeting on Numbers, Wofford College, April 2014.
+
+$\bullet$ Undergraduate Colloquium, Ursinus College, May 2014.
+
+$\bullet$ Counting Arithmetic Objects, Montreal, June-July 2014.
+
+
+  \category{Teaching \\ Experience}
+
+  $\bullet$ {Teaching Assistant, Talent Identification Program, Duke University, Summer 1998, 1999. \\
+  \itshape TIP is an intensive academic summer program for academically gifted seventh through
+tenth graders. \upshape}
+
+  $\bullet$ {English Teacher, America Eigo Gakuin, Kyoto, Japan, 1999-2001.}
+
+  \rawentry{\itshape As a graduate student at the University of Wisconsin:}
+
+  $\bullet$ {Teaching Assistant, Math 221 (Calculus I), Fall 2004.}
+
+  $\bullet$ {Teaching Assistant, Math 222 (Calculus II), Spring 2005.}
+
+  $\bullet$ {Teaching Assistant, Math 114 (Algebra and Trigonometry), Fall 2005.*}
+
+  $\bullet$ {Instructor, Math 112 (College Algebra), Spring 2006.}
+
+  $\bullet$ {Instructor, Math 112 (College Algebra), Fall 2006.* }
+
+  $\bullet$ {Instructor, REU in Number Theory, Summer 2007, 2008.}
+
+  \rawentry{* = teaching was judged as Superior by the TA Evaluation Committee.}
+
+  \rawentry{\itshape At Stanford University:}
+
+  $\bullet$ {Instructor, Math 42 (Calculus), Fall 2008.}
+
+  $\bullet$ {Teaching Assistant, Arizona Winter School, Tucson, AZ, March 2010.}
+
+  $\bullet$ {Instructor, Math 108 (Combinatorics), Fall 2010.}
+
+  $\bullet$ {Instructor, Math 249C (Topics in Number Theory: Additive Combinatorics), Spring 2011.}
+
+  \rawentry{\itshape At the University of South Carolina:}
+
+  $\bullet$ {Instructor, Math 141 (Calculus), Fall 2011.}
+
+  $\bullet$ {Instructor, Math 782 (Analytic Number Theory), Fall 2011.}
+
+  $\bullet$ {Instructor, Math 574 (Discrete Math), Spring 2012.}
+
+  $\bullet$ {Instructor, Math 141 (Calculus), Fall 2012.}
+
+  $\bullet$ {Instructor, Math 531 (Euclidean Geometry), Fall 2012.}
+
+  $\bullet$ {Instructor, Math 788p (Topics in Algebraic Number Theory), Spring 2013.}
+
+  $\bullet$ {Instructor, Math 142 (Calculus), 2013.}
+
+  $\bullet$ {Instructor, Math 580 (Elementary Number Theory), Fall 2013.}
+
+  $\bullet$ {Instructor, Math 788g (The Geometry of Numbers), Spring 2014.}
+
+  \category{Non-Academic \\ Employment}
+  
+  $\bullet$ {English Teacher, America Eigo Gakuin, Kyoto, Japan, 1999-2001. \\
+  \itshape Responsible for curriculum design as well as classroom instruction;
+taught individuals and small and large groups from ages three to adult. \upshape}
+
+  $\bullet$ {Software Developer, /n software, inc., Durham, NC, 2002-2004. \\
+  \itshape Was lead developer for multiple commercial software projects in
+Java, Delphi, and Microsoft .NET. \upshape}
+
+  \category{Personal}
+
+  $\bullet$ {Proficient in German and Japanese (spoken and written).}
+
+  $\bullet$ {Black Belt in Shorin-Ryu Karate, April 2007.}
+
+  \category{References}
+ 
+  $\bullet$ {Available upon request.}
+
+\end{categories}
+
+
+%\vspace{0.3in}
+%\begin{center}
+%References available upon request.
+%\end{center}
+
+\end{flushleft}
+\end{document}
+%*************************************************************************

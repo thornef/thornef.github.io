@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 4 - Math 574, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, February 17 at 5:00.}
+\end{center}
+{\bf The discussions on writing proofs and common mistakes in Chapter 4.1 of your book are extremely useful.}
+I strongly recommend that you read them carefully, especially if you are unfamiliar with writing proofs.
+\\
+\\
+{\bf Core:}
+\\
+\\
+4.1: 5, 11, 14, 18 (but only for $1 \leq n \leq 5$), 24, 31, 44, 45, 53.
+\\
+\\
+4.2: 14, 17, 18, 28.
+\\
+\\
+4.6: 3, 5, 10, 12, 15, 19, 21.
+\\
+\\
+Determine whether each of the following statements is true or false, and prove or disprove each of them. (Feel free to apply the division with remainder
+theorem.)
+\begin{enumerate}
+\item
+If $n$ is any odd integer, then $n^2$ is equal to $16 a + b$ for some integers $a$ and $b$.
+
+\item
+If $n = 3k + 1$ for some integer $k$, then $n^2$ is equal to $3m + 1$ for some integer $m$.
+
+\item
+If $n = 3k + 1$ for some integer $k$, then $n^2$ is equal to $9m + 1$ for some integer $m$.
+
+\item
+If $n = 4k + 1$ for some integer $k$, then $n^2$ is equal to $8m + 1$ for some integer $m$.
+
+\item
+If $n = 4k + 1$ for some integer $k$, then $n^2$ is equal to $16m + 1$ for some integer $m$.
+\end{enumerate}
+
+{\bf Additional:}
+\\
+\\
+4.1: 12, 15, 25, 33, 43, 46.
+\\
+\\
+4.2: 8, 12, 16.
+\\
+\\
+4.6: 4, 7, 11, 24.
+\\
+\\
+{\bf Bonus:}
+\\
+\\
+\begin{enumerate}
+\item (3 points; partial credit for some special cases)
+Determine, with proof, for which integers $m$ the following statement is true:
+
+For each integer $n$ that satisfies $n = am + 1$ for some integer $a$, we have
+$n^2 = bm^2 + 1$ for some integer $m$.
+
+\item (2 points)
+Prove:
+
+Let $P(x) = a_k x^k + a_{k - 1} x^{k - 1} + \cdots + a_1 x$ be a polynomial in $n$ without a constant term.
+Then, $P(n)$ is even for all integers $n$ if and only if the sum $a_1 + a_2 + \cdots + a_k$ is even.
+\
+\item (2 points) 4.2, 32.
+
+\end{document}

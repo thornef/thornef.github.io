@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 2 - Math 141, Frank Thorne (thornef@mailbox.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, September 7}
+\end{center}
+
+This one is short! Enjoy the break while you can.
+\\
+\\
+{\bf Required problems:}
+\\
+\\
+\begin{enumerate}[(a)]
+\item
+Suppose that you are given the graph of the function $y = f(x)$, and
+you want to find the slope of the tangent line to the graph at the point
+$(a, f(a))$. Explain how to guess this slope by
+finding the slopes of secant lines.
+
+\item
+Given the slope of the tangent line to the graph of $y = f(x)$ at the point
+$(a, f(a))$, explain how to find the equation of this line.
+
+\item
+By finding the slopes of appropriate secant lines, determine the equation
+of the tangent line to $y = x^2$ at $(1, 1)$.
+
+\item
+By finding the slopes of appropriate secant lines, determine the equation
+of the tangent line to $y = -x$ at $(4, -4)$.
+
+\item
+By finding the slopes of appropriate secant lines, determine the equation
+of the tangent line to $y = x^3 - 3$ at $(1, -2)$.
+\end{enumerate}
+
+Additional problems:
+
+\begin{enumerate}[(a)]
+\item
+By finding the slopes of appropriate secant lines, determine the equation
+of the tangent line to $y = 1/x$ at $(1, 1)$.
+
+\item
+By finding the slopes of appropriate secant lines, determine the equation
+of the tangent line to $y = -1/x^2$ at $(2, -1/4)$.
+\end{enumerate}
+{\bf Bonus:} Describe a function and a point for which this process does not yield an
+intelligent answer.
+
+\end{document}
