@@ -16,7 +16,7 @@ v = concat(v1, v2);
 
 DF_bound = 1000;
 default_F_bound = 0; /* This turns out to maximize the range we can do */ 
-exclude_minus_3 = 0;
+exclude_minus_3 = 1;
 
 read("cm-test.gp");
 
@@ -105,7 +105,7 @@ actual_count(X) =
 
 {
 expected_asym(X) = 
-  (compute_EP_const(10000000) + .066907733/3) * X * log(X);
+ (compute_EP_const(10000000) + (1 - exclude_minus_3) * .066907733/3) * X * log(X); 
 }
 
 {
@@ -126,4 +126,22 @@ test2(D_bound, F_bound) =
   expcount = compute_EP_const(1000000) * D_bound * F_bound;
   print("Expected: ", expcount);
   print("Actual: ", actcount);
+}
+
+{
+test_many() = 
+  print("Excluding minus 3:");
+  exclude_minus_3 = 1;
+  test(100);
+  test(1000);
+  test(10000);
+  test(20000);
+  test(30000);
+  print("Including minus 3:");
+  exclude_minus_3 = 0;
+  test(100);
+  test(1000);
+  test(10000);
+  test(20000);
+  test(30000);
 }
