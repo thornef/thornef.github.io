@@ -2,101 +2,39 @@ deg = 4;
 p = 5;
 
 {
-to_pol(v) = 
+vec_to_pol(v) = 
   res = 0;
   for (i = 1, length(v), res = res + v[i]*x^(length(v) - i));
   res;
 }
 
-psi(u) 
-
-FT(
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\ Sym3(2)--Binary cubic forms
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\
- 
-
-q1 = q^2 - 1;
-q2 = q^2 - q;
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\ orbit size;
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-ors=[1, q1, q*q1, q1*q2/6, q1*q2/2, q1*q2/3];
-ORS=matdiagonal(ors);
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\ Counting elements in subspaces
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-W0=[1,0,0,0,0,0];
-W0P = ors;
-W1=[1, q-1, 0,0,0,0];
-
-mul = [1, 1/(q + 1), 2/(q + 1), 3/(q + 1), 1/(q + 1), 0];
-W1P = vector(6, i, ors[i] * mul[i]);
-
-W2 = [1, q-1, q*(q - 1), 0,0,0];
-W3 = [1, 0, 2*(q - 1), (q - 1)^2, 0,0];
-W3Pa = [1, 2*(q - 1), 0, (q - 1)^2/3, 0, 2*(q - 1)^2/3];
-W3Pb = [1, 2*(q - 1), 0, 0, (q - 1)^2, 0];
-
-W3P = W3Pb; \\ checked with both
-
-M1 = matrix(6, 6);
-M2 = matrix(6, 6);
-
-for(i=1,6,M1[1,i]=W0[i]/ors[i]);
-for(i=1,6,M1[2,i]=W1[i]/ors[i]);
-for(i=1,6,M1[3,i]=W2[i]/ors[i]);
-for(i=1,6,M1[4,i]=W3[i]/ors[i]);
-for(i=1,6,M1[5,i]=W1P[i]/ors[i]);
-for(i=1,6,M1[6,i]=W0P[i]/ors[i]);
-
-for(i=1,6,M2[1,i]=      W0P[i]/ors[i]);
-for(i=1,6,M2[2,i]=q   * W1P[i]/ors[i]);
-for(i=1,6,M2[3,i]=q^2 * W2[i]/ors[i]);
-for(i=1,6,M2[4,i]=q^2 * W3P[i]/ors[i]);
-for(i=1,6,M2[5,i]=q^3 * W1[i]/ors[i]);
-for(i=1,6,M2[6,i]=q^4 * W0[i]/ors[i]);
-
-M = (M1^-1 * M2)~;
-
-\\ Note: this is really q^4 times the M of Theorem 12
-print(M);
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\ Check that M satisfy Lemma 6 \\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-T=ORS*M;
-TBZ=T-T~;
+/* transforms an integer in base b to a vector. e.g. 3462 to [3,4,6,2] */
 
 {
-if(TBZ==matrix(6,6),
-	print("  -- M is symmetric in the sense of Lemma 6"),
-	print("  -- M is NOT symmetric in the sense of Lemma 6")
-);
+int_to_vec(i, b) = 
+  i_temp = i;
+  res = vector(deg);
+  for (j = 1, length(res),
+    n = lift(Mod(res, b));
+    res[(deg + 1) - j] = b;
+    i_temp = (i_temp - n)/b;
+  );
+  res;
 }
 
 {
-if(M*M==q^4*matid(6),
-	print("  -- M^2 is the scalar matrix"),
-	print("  -- M^2 is NOT the scalar matrix")
-);
+vec_ip(v1, v2) = 
+  res = 0;
+  for (i = 1, length(v1), res = res + v1[i]*v2[i]);
 }
 
+psi(u) = Mod(poldisc(vec_to_pol(u)), p^2 == 0);
 
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\ Compute some Fourier transforms
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-sing=[1,1,1,0,0,0];
-quad=[0,0,0,1,-1,1];
-
-print("* Fourier transform of singular sets:");
-print(sing*M~);
-print("* Fourier transform of the quadratic charcter:");
-print(quad*M~);
+FT(w) = 
+  res = 0;
+  for (i = 0, p^(2*deg) - 1,
+    v = int_to_vec(i, p^2);
+    res = res + psi(v) * exp(2*Pi*I*vec_ip(v,w)/p^2);
+  );
+  res;
+}
