@@ -1,0 +1,38 @@
+Hello all --
+
+Thanks to all (especially Takashi) for your hard work! I definitely agree that standardizing the notation and avoiding ordinal numbers (so, X_{2^2}^f instead of C_2(f)) is a good idea!
+
+I have a number of small comments. It sounded like perhaps you and Yasuhiro were in the middle of some revisions, so I didn't make any changes yet.
+
+4557880 
+--
+
+- I'm happy with all of your proposed revisions to the abstract!
+
+- I found a handful of extremely small English errors which I'll correct once no one else is working on the file.
+
+- (p. 3) You mention Bhargava and Ho by name, and I noticed we didn't do this later in the paper ("According to [BH16, Section 6.1]"). Perhaps we mention them by name later also?
+
+- (p. 3) "this E'_f is neither isomorphic nor isogenous" -- perhaps this is well-known, and I don't think we need to revise the paper, but is it easy to see these curves are not isogenous?
+
+- (p. 3) I agree with Stanley that "prime number theory" looks fine
+
+- (p. 4) In Theorem 1.3, I would omit "Let X >> 0", as this >> would mean something than the other >>. In my experience, "for sufficiently large X" is implicitly understood in contexts like this.
+
+- (p. 4) At the bottom, has X^f been defined yet? Maybe I missed it. If not, I think we should perhaps reword. (The same occurs on p. 6 also.) 
+
+p. 7 - "each nondegenerate point v \in P(V)"
+
+
+
+On Thu, Feb 22, 2024 at 2:47 PM Frank Thorne <thorne.frank2@gmail.com> wrote:
+
+    8 "refer to them as..." "for most of f"
+ 
+
+    p. 17 last two cases "the f=... case".
+
+
+p. 8 "We refer to them" -- grammar
+    p. 15 "accoring as"
+    p. 22 "Same results still holds"
