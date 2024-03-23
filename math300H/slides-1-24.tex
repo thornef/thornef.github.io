@@ -1,0 +1,742 @@
+
+\documentclass[article]{beamer}
+\usepackage{beamerthemesplit,fancybox}
+\usepackage{graphicx,pgfarrows,pgfnodes,skull}
+\newtheorem{thm}{Theorem}
+\theoremstyle{definition}
+\newtheorem*{ex}{Example}
+\newtheorem{cor}{Corollary}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{rbop}[thm]{Really Big Open Problem}
+\newtheorem{conjecture}[thm]{Conjecture}
+\newtheorem{prop1}[thm]{Proposition 1}
+\newtheorem{prop2}[thm]{Proposition 2}
+\newtheorem{prop3}[thm]{Proposition 3}
+\newtheorem{prop4}[thm]{Proposition 4}
+\newtheorem{prop5}[thm]{Proposition 5}
+\newtheorem{prop6}[thm]{Proposition 6}
+\newtheorem{prop7}[thm]{Proposition 7}
+\newtheorem{proposition}[thm]{Proposition}
+\newtheorem{wild_spec}[thm]{Wild Speculation}
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\theoremstyle{definition}
+\newtheorem*{ack}{Acknowledgements}
+\def\Q{\mathbb{Q}}
+\def\F{\mathbb{F}}
+\def\Gal{{\rm Gal}}
+\newcommand{\legen}[2]{\genfrac{(}{)}{}{}{#1}{#2}}
+\def\ord{{\rm ord}}
+\def\Tr{{\rm Tr}}
+\def\d{d}
+\def\const{\text{const}}
+\newcommand{\leg}[2]{\genfrac{(}{)}{}{}{#1}{#2}}
+\newcommand{\bfrac}[2]{\genfrac{}{}{}{0}{#1}{#2}}
+\newcommand{\sm}[4]{\left(\begin{smallmatrix}#1&#2\\ #3&#4 \end{smallmatrix} \right)}
+\newcommand{\mfG}{\mathfrak{G}}
+\newcommand{\mfF}{\mathfrak{F}}
+\newcommand{\pr}{\text {\rm pr}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calW}{\mathcal{W}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\calq}{\mathcal{q}}
+\newcommand{\mfq}{\mathfrak{q}}
+\newcommand{\mfp}{\mathfrak{p}}
+\newcommand{\mfa}{\mathfrak{a}}
+\newcommand{\Fqt}{\mathbb{F}_q[t]}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\GG}{\mathcal{G}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\FF}{\mathcal{F}}
+\newcommand{\QQ}{\mathcal{Q}}
+\newcommand{\Mp}{\text {\rm Mp}}
+\newcommand{\frakG}{\mathfrak{G}}
+\newcommand{\Qmd}{\mathcal{Q}_{m,d}}
+\newcommand{\la}{\lambda}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Qd}{\mathcal{Q}_d}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\SL}{{\text {\rm SL}}}
+\newcommand{\GL}{{\text {\rm GL}}}
+\newcommand{\add}{{\text {\rm add}}}
+\newcommand{\sub}{{\text {\rm sub}}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\PSL}{{\text {\rm PSL}}}
+\newcommand{\Stab}{\textnormal{Stab}}
+\newcommand{\Op}{\mathcal{O}_K}
+\newcommand{\h}{\mathfrak{h}}
+\newcommand{\G}{\Gamma}
+\newcommand{\g}{\gamma}
+\newcommand{\zaz}{\Z / a\Z}
+\newcommand{\znz}{\Z / n\Z}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\tr}{{\text {\rm tr}}}
+\newcommand{\odd}{{\text {\rm odd}}}
+\newcommand{\bk}{B_k}
+\newcommand{\rr}{R_r}
+\newcommand{\rk}{{\text {\rm rk}}}
+\newcommand{\Tor}{{\text {\rm Tor}}}
+\newcommand{\disc}{\textnormal{disc}}
+\newcommand{\Disc}{\textnormal{Disc}}
+\newcommand{\textmod}{\textnormal{mod}}
+\newcommand{\sump}{\sideset{}{'}\sum}
+\newcommand{\gkr}{\mathfrak{g}_{k,r}}
+\newcommand{\re}{\textnormal{Re}}
+\newcommand{\Res}{\textnormal{Res}}
+\newcommand{\im}{\textnormal{Im}}
+\def\H{\mathbb{H}}
+
+
+\definecolor{Dblue}{rgb}{.255,.41,.884}
+\definecolor{Ggreen}{rgb}{.196,.804,.466}
+
+
+\title{Quantifier Examples}
+\date{January 24, 2024}
+
+\begin{document}
+
+
+\frame{\titlepage}
+
+\frame{ \frametitle{Abraham Lincoln}
+``You can fool some of the people all of the time, and all of the people some of the time, but you can not fool all of the people all of the time.''
+\onslide<2->
+\vskip 0.5in
+Formalize and negate each part.
+}
+
+\frame{ \frametitle{Extra Credit Question From Hell}
+
+\begin{center}
+\Huge{ $\skull \skull \skull$ }
+\end{center}
+
+}
+
+\frame{ \frametitle{Weierstrass's theorem}
+\begin{theorem}[Weierstrass]
+There exists a real-valued function which is continuous everywhere and differentiable nowhere.
+\end{theorem}
+}
+
+\frame{ \frametitle{The setup}
+Given:
+\begin{itemize}
+\item<2-> We write $\lim_{x \rightarrow a} f(x) = L$ if for every $\epsilon > 0$ there exists $\delta > 0$ such that whenever $|x - a| < \delta$ we have $|f(x) - L| < \epsilon$.
+\item<3-> We say that $f(x)$ is continuous at $x = a$ if $\lim_{x \rightarrow a} f(x)$ exists and equals $f(a)$.
+\item<4-> We say that $f(x)$ is differentiable at $x = a$ if the limit
+\[
+f'(a) = \lim_{h \rightarrow 0} \frac{ f(a + h) - f(a) }{h}
+\]
+exists.
+\item<5-> We say that $f(x)$ is continuous everywhere if, for all $a \in \R$, $f(x)$ is continuous at $x = a$. Analogously for `differentiable everywhere'.
+\end{itemize}
+}
+
+\frame{ \frametitle{The extra credit problem}
+\begin{itemize}
+\item<2-> Formalize, and then negate Weierstrass's theorem in predicate logic. Your predicates should only involve inequalities and should not use any calculus terminology.
+\end{itemize}
+}
+\end{document}
+
+
+ We write $\lim_{x \rightarrow a} f(x) = L$ if for every $\epsilon > 0$ there exists $\delta > 0$ such that whenever $|x - a| < \delta$ we have $|f(x) - L| < \epsilon$.
+\item We say that $f(x)$ is continuous at $x = a$ if $\lim_{x \rightarrow a} f(x)$ exists and equals $f(a)$.
+\item We say that $f(x)$ is differentiable at $x = a$ if the limit
+\[
+f'(a) = \lim_{h \rightarrow 0} \frac{ f(a + h) - f(a) }{h}
+\]
+exists.
+\item We say that $f(x)$ is continuous everywhere if, for all $a \in \R$, $f(x)$ is continuous at $x = a$. Analogously for `differentiable everywhere'.
+\end{itemize}
+}
+
+
+
+\frame{ \frametitle{Conditional statements}
+``If iron is melting, then its temperature must be at least 2800 degrees.'' Assuming this, which of these must be true?
+\begin{itemize}
+\item If iron is at least 2800 degrees, then it is melting.
+\item If iron is less than 2800 degrees, then it is not melting.
+\item Iron will melt only if its temperature is at least 2800.
+\item If iron is not melting, then its temperature is less than 2800.
+\item A necessary condition for iron to melt is that its temperature be at least 2800.
+\item A sufficient condition for iron to melt is that its temperature be at least 2800.
+\end{itemize}
+}
+
+\end{document}
+
+
+%\frame{\tableofcontents}
+
+\frame{\frametitle{The basic problem}
+
+We know that
+$$1 + 2 = 3,$$
+\onslide<2->
+$$1 + 2 + 3 = 6,$$
+\onslide<3->
+$$1 + 2 + 3 + 4 = 10,$$
+\onslide<4->
+and so on. But what is
+\onslide<5->
+$$1 + 2 + 3 + 4 + \cdots \ ?$$
+}
+\frame{\frametitle{Ramanujan's Big Theorem}
+\begin{theorem}[Ramanujan]
+We have 
+$$1 + 2 + 3 + 4 + \cdots = - \frac{1}{12}.$$
+\end{theorem}
+\onslide<2->
+\vskip 0.5in
+\begin{center}
+{\itshape {\bf {\center Huh?!}}}
+\end{center}
+}
+
+\frame{\frametitle{Srinivasa Ramanujan (1887-1920)}
+\begin{center}
+\includegraphics[scale=0.8]{ramanujan.jpg}
+\end{center}
+}
+
+\frame{\frametitle{Ramanujan's second letter to Hardy}
+
+\begin{small}
+\begin{quote}
+``Dear Sir, I am very much gratified on perusing your letter of the 8th February 1913. I was expecting a reply from you similar to the one which a Mathematics Professor at London wrote asking me to study carefully Bromwich's Infinite Series and not fall into the pitfalls of divergent series. É I told him that the sum of an infinite number of terms of the series: $1 + 2 + 3 + 4 + \cdots = -1/12$ under my theory. If I tell you this you will at once point out to me the lunatic asylum as my goal. I dilate on this simply to convince you that you will not be able to follow my methods of proof if I indicate the lines on which I proceed in a single letter. $\dots$"
+\end{quote}
+\end{small}
+\begin{flushright}
+(S. Ramanujan, 27 February 1913)
+\end{flushright}
+
+}
+
+\frame{\frametitle{A warmup}
+We have the {\itshape geometric series summation formula}
+$$1 + x + x^2 + x^3 + \cdots = \frac{1}{1 - x}$$
+and so
+\onslide<2->
+$$1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots = \frac{1}{1 - \frac{1}{2}} = 2,$$
+\onslide<3->
+$$1 + 2 + 4 + 8 + \cdots = \frac{1}{1 - 2} = -1,$$
+\onslide<4->
+$$1 - 1 + 1 - 1 + \cdots = \frac{1}{1 - (-1)} = \frac{1}{2}.$$
+
+}
+
+\frame{\frametitle{Some algebraic manipulation}
+By the above,
+$$(1 - 1 + 1 - 1 + \cdots)^2 = \bigg( \frac{1}{2} \bigg)^2 = \frac{1}{4}.$$
+\onslide<2->
+FOILing (carefully!),
+$$1 - 2 + 3 - 4 + \cdots = \frac{1}{4}.$$
+\onslide<3->
+This is a special case of
+$$1 - 2x + 3x^2 - 4x^3 + \cdots = \frac{1}{(1 - x)^2}.$$
+}
+
+\frame{\frametitle{Ramanujan's proof}
+\begin{center}
+\includegraphics[scale=0.8]{ramanujans-proof.jpg}
+\end{center}
+}
+
+%\frame{\frametitle{Ramanujan's proof}
+%Suppose that 
+%$$1  + 2  + 3  + 4  + 5  +  6 + \cdots = c.$$
+%\onslide<2->
+%Then 
+%$$\ \ \ \ \ \  \ - 4 \ \ \ \ \ -8 \ \ \ \ \ -12 \ \ \cdots = -4c.$$
+%\onslide<3->
+%Adding,
+%$$\ \ \ \ 1 - 2 + 3 - 4 + 5 - 6 + \cdots = -3c.$$
+%\onslide<4->
+%\vskip0.05in
+%Therefore, $-3c = \frac{1}{4}$, so $c = - \frac{1}{12}.$
+%\vskip0.1in
+%\onslide<5->
+%\begin{center}
+%{\bf Q.E.D.}
+%\end{center}
+%}
+
+\frame{ \frametitle{ \ }
+
+\begin{center}
+{\bf Q.E.D.}
+\end{center}
+\vskip 0.2in
+\onslide<2->
+\begin{quote}
+``The divergent series are the invention of the devil, and it is a shame 
+to base on them any demonstration whatsoever.''
+\end{quote}
+\begin{flushright}
+(N. Abel, 1832)
+\end{flushright}
+}
+
+%\frame{ \frametitle{Abel summability}
+
+%We say that $1 -1 + 1 - 1 + \cdots$ is {\itshape Abel summable} to $\frac{1}{2}$, because
+%\onslide<2->
+%$$\lim_{x \rightarrow 1^-} \bigg(1 - x + x^2 - x^3 + \cdots \bigg) =
+%\lim_{x \rightarrow 1^-} \frac{1}{1 + x} = \frac{1}{2}.$$
+%\onslide<3->
+%Similarly, $1 - 2 + 3 - 4 + \cdots$ is Abel summable to $\frac{1}{4}$.
+%\vskip 0.1in
+%\onslide<4->
+%But $1 + 2 + 3 + 4 + \cdots$ is not Abel summable to anything.
+%\vskip 0.1in
+%\onslide<5->
+%We need something stronger!
+%}
+
+\frame{ \frametitle{The Riemann zeta function}
+The {\itshape Riemann zeta function} is defined by
+$$\zeta(s) := 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \cdots,$$
+\onslide<2->
+for any complex number $s$ with $\Re(s) > 1$.
+\onslide<3->
+\vskip 0.1in
+{\bf Cool fact:}
+$$\zeta(2) = 1 + \frac{1}{4} + \frac{1}{9} + \frac{1}{16} + \cdots = \frac{\pi^2}{6}.$$
+}
+
+%{
+%\frame{ \frametitle{Euler's calculation of $\zeta(2)$}
+%Consider
+%$$\frac{\sin(x)}{x} = 1 - \frac{x^2}{3!} + \frac{x^4}{5!} - \frac{x^6}{7!} + \cdots$$
+%\onslide<2->
+%The roots are at $x = n \pi$ for $n = \pm 1, \ \pm 2, \dots$, so
+%\begin{align*}
+%\frac{\sin(x)}{x} & = 
+%\bigg(1 - \frac{x}{\pi} \bigg)
+%\bigg(1 + \frac{x}{\pi} \bigg)
+%\bigg(1 - \frac{x}{2 \pi} \bigg)
+%\bigg(1 + \frac{x}{2 \pi} \bigg)
+%\cdots
+%\\
+%& = 
+%\bigg(1 - \frac{x^2}{\pi^2} \bigg)
+%\bigg(1 - \frac{x^2}{4 \pi^2} \bigg)
+%\bigg(1 - \frac{x^2}{9 \pi^2} \bigg)
+%\cdots
+%\end{align*}
+%Multiplying out, the $x^2$ coefficient of $\sin(x)/x$ is
+%$$- \bigg(\frac{1}{\pi^2} + \frac{1}{4\pi^2} + \frac{1}{9 \pi^2} + \cdots \bigg)
+%= -\frac{1}{\pi^2} \sum_{n = 1}^{\infty} \frac{1}{n^2}$$
+%}
+
+%\frame{ \frametitle{Euler's calculation of $\zeta(2)$}
+%Comparing coefficients, 
+%$$ - \frac{1}{6} = - \frac{1}{\pi^2} \sum_{n = 1}^{\infty} \frac{1}{n^2}.$$
+%\onslide<2->
+%Therefore
+%$$\zeta(2) =  \sum_{n = 1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}.$$
+%\onslide<3->
+%\vskip 0.1in
+%{\bf Cauchy, Weierstrass:} Develop {\itshape complex analysis} and make this kind
+%of argument rigorous.
+%}
+
+
+\frame{ \frametitle{Analytic continuation}
+\begin{theorem}[Riemann, 1859]
+The zeta function has {\itshape analytic continuation} to all complex numbers $s \neq 1$, with
+$$\zeta(s) = \zeta(1 - s) \frac{ \Gamma\big(\frac{1 - s}{2}\big) \pi^{- \frac{1 - s}{2}}}
+{ \Gamma\big(\frac{s}{2}\big) \pi^{- \frac{s}{2}}}.$$
+\end{theorem}
+\onslide<2->
+Therefore,
+$$\zeta(-1) = \zeta(2) \frac{ \Gamma(1) \pi^{-1} }{\Gamma(-\frac{1}{2}) \pi^{1/2}} = 
+\frac{\pi^2}{6} \cdot \frac{1 \times \pi^{-1}}{(-2 \sqrt{\pi}) \pi^{1/2} }
+= -\frac{1}{12}.$$
+}
+
+\frame{ \frametitle{Poisson summation}
+The usual proof is by {\bf Poisson summation.}
+
+\begin{quote}
+When you first see it, it looks like a piece of magic.
+\end{quote}
+\begin{flushright}
+(--Timothy Gowers, Fields Medalist)
+\end{flushright}
+\onslide<2->
+Can compute $\zeta(-1) = -\frac{1}{12}$ using elementary methods?}
+
+\frame{ \frametitle{Preliminaries}
+Write
+\begin{itemize}
+\item<2->
+$\lfloor x \rfloor$ for the greatest integer $\leq x$: $\lfloor 8.7 \rfloor = 8.$
+\item<3->
+$\{ x \}$ for the fractional part of $x$: $\{ 8.7 \} = 0.7.$
+\end{itemize}
+}
+
+\frame{ \frametitle{First step: Analytic continuation to $\Re(s) > 0$}
+We have
+\begin{align*}
+s \int_1^{\infty} \frac{ \lfloor t \rfloor }{t^{s + 1}} dt &
+= s \sum_{n = 1}^{\infty} n \int_n^{n + 1} \frac{1}{t^{s + 1}} dt
+\\
+&
+= \sum_{n = 1}^{\infty} n \bigg( \frac{-1}{(n + 1)^s} + \frac{1}{n^s} \bigg)
+\\
+& = \zeta(s),
+\end{align*}
+and therefore
+\onslide<2->
+$$
+\zeta(s) = s \int_1^{\infty} \frac{ \lfloor t \rfloor }{t^{s + 1}} dt
+= 
+ s \int_1^{\infty} \frac{ t - \{ t \} }{t^{s + 1}} dt
+ = 
+ \frac{s}{s - 1} -
+ s \int_1^{\infty} \frac{ \{ t \} }{t^{s + 1}} dt.
+ $$
+ }
+ 
+ \frame{ \frametitle{Analytic continuation to $\Re(s) > 0$}
+$$
+\zeta(s) = \frac{s}{s - 1} -
+ s \int_1^{\infty} \frac{ \{ t \} }{t^{s + 1}} dt.
+ $$
+ \onslide<2->
+ Some notes:
+ \begin{itemize}
+ \item<3->
+ We see the ``pole'' at $s = 1$: $1 + \frac{1}{2} + \frac{1}{3} + \cdots = \infty$.
+ \item<4->
+ The integral converges absolutely in $\Re(s) > 0$.
+ \end{itemize}
+\vskip 0.1in
+ \onslide<5->
+\begin{rbop}
+Prove that if $$\int_1^{\infty} \frac{ \{ t \} }{t^{s + 1}} dt = \frac{1}{s - 1},$$ then $\Re(s) = \frac{1}{2}$.
+\end{rbop}
+}
+ 
+ \frame{ \frametitle{A better analytic continuation}
+ Write
+ \begin{align*}
+ \zeta(s) = s \int_1^{\infty} \frac{ \lfloor t \rfloor }{t^{s + 1}} dt
+&
+= 
+s \int_1^{\infty} \frac{ t - \frac{1}{2} - (\{ t \} - \frac{1}{2}) }{t^{s + 1}} dt
+\\
+&
+ = 
+ \frac{s}{s - 1} - \frac{1}{2} - 
+ s \int_1^{\infty} \frac{ \{ t \} - \frac{1}{2} }{t^{s + 1}} dt.
+\end{align*}
+\onslide<2->
+The integral converges for $\Re(s) > -1$, because
+$$\int_0^1 \bigg( \{ t \} - \frac{1}{2} \bigg) dt = 0.$$
+}
+
+\frame{ \frametitle{ The ``polynomial'' $P_2(t)$ }
+Define $P_2(t)$ by:
+\begin{itemize}
+\item<2->
+$P_2(t)$ is an antiderivative of $t - \frac{1}{2}$ for $t \in [0, 1)$;
+\item<3->
+$P_2(t)$ is periodic mod 1, so that $P_2(t) = P_2(\{ t\})$;
+\item<4->
+So, on $[0, 1)$, $P_2(t) = \frac{1}{2} t^2 - \frac{1}{2} t + C_2$, for some $C_2$.
+\end{itemize}
+\onslide<5->
+Integrating by parts, 
+$$
+s \int_1^{\infty} \frac{ \{ t \} - \frac{1}{2} }{t^{s + 1}} dt
+= 
+s \frac{P_2(t)}{t^{s + 1}} \bigg|_1^{\infty}
++ 
+s (s + 1) \int_1^{\infty} \frac{P_2(t)}{t^{s + 2}}.$$
+}
+
+\frame{ \frametitle{ Analytic continuation to $\Re(s) = -2$}
+From the previous slides,
+$$
+\zeta(s) = \frac{s}{s - 1} - \frac{1}{2} - s P_2(1) + s (s + 1)
+\int_1^{\infty} \frac{P_2(t)}{t^{s + 2}}.$$
+\onslide<2->
+Choose $C_2$ so that $\int_0^1 P_2(t) dt = 0$: 
+$$P_2(t) = \frac{1}{2} t^2 - \frac{1}{2} t  + \frac{1}{12}.$$
+\onslide<3->
+Therefore
+$$
+\zeta(s) = \frac{s}{s - 1} - \frac{1}{2} + \frac{s}{12} - s (s + 1)
+\int_1^{\infty} \frac{P_2(t)}{t^{s + 2}}.$$
+\onslide<4->
+Kablam!
+$$\zeta(-1) = \frac{-1}{-1 - 1} - \frac{1}{2} - \frac{1}{12} - 0 = - \frac{1}{12}.$$
+}
+\frame{ \frametitle{ It keeps going... } 
+Defining $P_3(t)$ in the same manner, where
+$$\int_0^1 P_3(t) dt = 0,$$
+we have (on $[0, 1]$)
+\onslide<2->
+$$P_3(t) = \frac{1}{6} t^3 - \frac{1}{4} t^2 + \frac{1}{12} t,$$
+\onslide<3->
+similarly
+$$P_4(t) = \frac{1}{24} t^4 - \frac{1}{12} t^3 + \frac{1}{24} t^2 - \frac{1}{720},$$
+\onslide<4->
+so
+$$
+\zeta(s) = \frac{s}{s - 1} - \frac{1}{2} + \frac{s}{12} -
+\frac{s(s + 1)(s + 2)}{720} 
+- 
+s(s + 1)(s + 2)
+\int_1^{\infty} \frac{P_4(t)}{t^{s + 4}}.$$
+}
+\frame{ \frametitle{ $1 + 8 + 27 + 64 + ...$ }
+$$
+\zeta(s) = \frac{s}{s - 1} - \frac{1}{2} + \frac{s}{12} -
+\frac{s(s + 1)(s + 2)}{720} 
+- 
+s(s + 1)(s + 2)
+\int_1^{\infty} \frac{P_4(t)}{t^{s + 4}}.$$
+This implies that 
+\onslide<2->
+$$\zeta(-2) = 1 + 4 + 9 + 16 + 25 + \cdots = 0,$$
+\onslide<3->
+$$\zeta(-3) = 1 + 8 + 27 + 64 + 125 + \cdots = \frac{1}{120}.$$
+\onslide<4->
+and we can compute any value of $\zeta(-n)$ similarly.
+}
+
+
+\frame{ \frametitle{ A variant on analytic continuation of $\zeta(s)$}
+This also works for {\itshape finite} sums.
+\onslide<2->
+For example:
+$$
+\sum_{n = 1}^N n^{-s} = \zeta(s) + \frac{ N^{1 - s} }{ 1 - s } + \frac{1}{2} N^{-s}
+- \frac{1}{12} s N^{-s - 1} + O_s(N^{-s - 2}).$$
+\onslide<3->
+Taking $s = -1$,
+\onslide<4->
+$$
+\sum_{n = 1}^N n = \zeta(-1) + \frac{N^2}{2} + \frac{N}{2} + \frac{1}{12}
++ O(N^{-1}).$$
+\onslide<5->
+We see again that $\zeta(-1) = - \frac{1}{12}$.
+}
+
+{\frame{ \frametitle{ Some standard terminology}
+\begin{itemize}
+\item<1->
+The polynomial $B_n(t) := n! P_n(t)$ is called the {\itshape $n$th Bernoulli polynomial};
+\item<2->
+The constant term $B_n := B_n(0)$ is called the {\itshape $n$th Bernoulli number.}
+\item<3->
+If $n$ is odd, then $B_n = 0$ (except $B_1 = - \frac{1}{2}$).
+\end{itemize}
+}
+
+
+{\frame{
+\begin{center}
+\includegraphics[scale=0.42]{bernoulli-numbers.jpg}
+\end{center}
+}
+
+{\frame{ \frametitle{Some Bernoulli polynomials}
+\begin{center}
+\includegraphics[scale=0.6]{bernoulli-polys.jpg}
+\end{center}
+}
+\frame{ \frametitle{ The Euler-Maclaurin sum formula}
+A generalization of the above:
+\onslide<2->
+\begin{theorem}
+If $f \in C^{\infty}[0, \infty)$, then for all integers $a, \ b, \ k$ we have
+\begin{align*}
+\sum_{n = a}^b f(n) & 
+=
+\int_a^b f(t) dt + \frac{1}{2} \Big( f(a) + f(b) \Big)
+\\
+&
++ 
+\sum_{\ell = 2}^k \frac{B_{\ell}}{\ell!} \Big( f^{(\ell - 1)}(b) - f^{(\ell - 1)}(a) \Big)
+\\
+& 
++ \frac{1}{k!} \int_a^b B_k(x) f^{(k)}(t) dt.
+\end{align*}
+\end{theorem}
+}
+
+\frame{\frametitle{Euler-Maclaurin: a special case}
+\begin{center}
+\includegraphics[scale=0.75]{ram-em.jpg}
+\end{center}
+}
+
+
+\frame{ \frametitle{ The Ramanujan constant $C_R$}
+We have
+\begin{equation*}
+\sum_{n = 1}^x f(n) = \int_0^x f(t) dt + C_R + \frac{1}{2} f(x)
++ \sum_{k = 2}^{\infty} \frac{B_k}{k!} f^{(k - 1)}(x),
+\end{equation*}
+\onslide<2->
+where the {\itshape Ramanujan constant} $C_R$ is defined by
+$$C_R = -\frac{1}{2} f(0) - \sum_{k = 2}^{\infty} \frac{B_k}{k!} f^{(k - 1)}(0).$$
+\onslide<3->
+The Ramanujan constant of $\sum_{n = 1}^{\infty} 1$ is $- \frac{1}{2}$, because
+$$
+\sum_{n = 1}^x 1 = \int_0^x 1 \ dt + C_R + \frac{1}{2} \cdot 1.
+$$
+\onslide<4->
+The Ramanujan constant of $\sum_{n = 1}^{\infty} n$ is $- \frac{1}{12}$, because
+$$
+\sum_{n = 1}^x n = \int_0^x t \ dt + C_R + \frac{1}{2} n + \frac{1}{12}.
+$$
+}
+
+\frame{ \frametitle{ A broader definition of Ramanujan sums?}
+
+Can we define the value of an {\itshape arbitrary} infinite sum, whether convergent
+or not?
+\begin{definition}
+We define the value of {\itshape any} infinite sum $\sum_{n = 1}^{\infty} f(n)$ to
+be the Ramanujan constant $C_R$.
+\end{definition}
+}
+
+\frame{ \frametitle{A convergent sum}
+
+Consider
+$$\sum_{n = 1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}.$$
+\onslide<2->
+
+The Ramanujan constant is
+$$C_R = - \frac{1}{2} + \sum_{k = 1}^{\infty} \frac{B_{2k}}{(2k)!} \cdot (2k)!$$
+\onslide<3->
+Can we speed up the convergence?
+\vskip0.2in
+\begin{center}
+{\Tiny {\center Warning: I am lying on this slide.}}
+\end{center}
+}
+
+\frame{ \frametitle{A convergent sum (cont.)}
+
+Consider instead 
+$$\sum_{n = 1}^{\infty} \frac{1}{(n + 5)^2} = \frac{\pi^2}{6} -
+\Big(1 + \frac{1}{4} + \frac{1}{9} + \frac{1}{16} + \frac{1}{25} \Big).$$
+\onslide<2->
+Now the Ramanujan constant is
+\begin{align*}
+C_R & = - \frac{1}{2} \cdot \frac{1}{25} 
++ \sum_{k = 1}^{\infty} \frac{B_{2k}}{(2k)!} \cdot \frac{(2k)!}{5^{2k + 1}}
+\\
+& 
+= - \frac{1}{50} + \frac{1}{750} - \frac{1}{93750} + \frac{1}{3281250} - \cdots
+\\
+&
+= -0.018677028\dots
+\end{align*}
+
+}
+
+\frame{ \frametitle{A convergent sum (cont.)}
+$\frac{1}{36} + \frac{1}{49} + \frac{1}{64} + \cdots$ is {\bf not} $-0.018677028$.
+\onslide<2->
+However,
+$$
+\sum_{n = 1}^{\infty} \frac{1}{(n + 5)^2} \approx -0.018677028 
++ \int_0^{\infty} \frac{1}{(t + 5)^2} dt
+= 0.181322971\dots$$
+\onslide<3->
+and
+\begin{align*}
+\sum_{n = 1} \frac{1}{(n + 5)^2} & = 
+ \frac{\pi^2}{6} -
+\Big(1 + \frac{1}{4} + \frac{1}{9} + \frac{1}{16} + \frac{1}{25} \Big)
+\\
+& = 0.181322955.
+\end{align*}
+\onslide<4->
+This calculation convinced Euler that $\zeta(2) = \frac{\pi^2}{6}$.
+}
+
+\frame{ \frametitle{Careful!!!}
+We have
+\begin{align*}
+C_R & = - \frac{1}{2} \cdot \frac{1}{25} 
++ \sum_{k = 1}^{\infty} \frac{B_{2k}}{(2k)!} \cdot \frac{(2k)!}{5^{2k + 1}}
+\\
+& 
+= - \frac{1}{50} + \frac{1}{750} - \frac{1}{93750} + \frac{1}{3281250} - 
+\\
+&
++ \frac{1}{58593750}
++ \frac{1}{644531250}
+- \frac{691}{3332519531250}
+\cdots
+\\
+&
++ \cdots 
+\\
+&
+{\small
+{ \ }^{- \frac{94598037819122125295227433069493721872702841533066936133385696204311395415197247711}{1314636698550816173718645654043763251750398524109186837449669837951660156250}}
+}
+\\
+&
+{ \ }^
+{+ \frac{3204019410860907078243020782116241775491817197152717450679002501086861530836678158791}{
+4265765344982621337763922216766666536957863797852041898295283317565917968750}}
+\\
+&
+{ \ }^{\frac{
+-319533631363830011287103352796174274671189606078272738327103470162849568365549721224053}{
+39196526228169024081395263087488440786887444744479580549523234367370605468750}}
+\\&+ ...
+\end{align*}
+}
+
+\frame{ \frametitle{ How to get the correct constant?}
+The `Ramanujan sum' $\sum_{n = 1}^{\infty} \frac{1}{n^2}$ is not equal to $\frac{\pi^2}{6}$.
+\onslide<2->
+\vskip 0.1in
+{\bf Hardy:} Introduce another parameter $a$.
+\begin{quote}
+``The introduction of the parameter $a$ allows more flexibility and enables
+one to always obtain the ``correct'' constant; usually, there is a certain
+value of $a$ which is more natural than other values. If $\sum f(k)$ converges,
+then normally we would take $a = \infty$. Although the concept of the constant
+of a series has been made precise, Ramanujan's concomitant theory cannot always
+be made rigorous.''
+\end{quote}
+\begin{flushright}
+(B. Berndt)
+\end{flushright}
+}
+
+\frame{ \frametitle{ Hardy and Berndt's approach}
+In other words, to evaluate an infinite series:
+\begin{itemize}
+\item<2->
+Decide what you want the answer to be;
+\item<3->
+Rig the method to produce that answer.
+\end{itemize}
+}
+%(to do: Euler-Maclaurin formula, def. of Ramanujan summation, sum up?)
+\end{document}
