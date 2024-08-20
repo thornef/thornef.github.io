@@ -1,0 +1,140 @@
+<HTML>
+
+<HEAD>
+
+<TITLE> Math 788: Elliptic Curves and Arithmetic Geometry, Spring 2023 </TITLE>
+
+</HEAD>
+
+<BODY BGCOLOR=#FFFFFF>
+
+<P>
+
+<DIV ALIGN="CENTER">
+<B> <FONT SIZE="+3"> Math 788 -- Elliptic Curves and Arithmetic Geometry, Spring 2023
+</FONT>
+<font size="+1">
+</B>
+</DIV>
+<p>
+Instructor: Frank Thorne, LeConte 317O, thorne [at] math [dot] sc [dot] edu.
+<p>
+Lectures: MWF 12:00, in LeConte 315.
+<p>
+<a href="https://www.scagnt.org/seminar/">Algebra, Geometry, and Number Theory Seminar</a>: Fridays 2:30 or 3:30 in LC 315. You should go. <b>YES, YOU.</b>
+<p>
+Office hours: Tuesdays 9:00-10:30, Wednesdays 3:30-5:00, or by request.
+<p>
+<h2>What is arithmetic geometry?</h2>
+Arithmetic (or <i>diophantine</i>) geometry is, equivalently:
+<ul>
+<li>The study of solutions to polynomial equations, especially over the integers and 
+over the rationals. For example a classical problem is to prove that the equation a^n + b^n = c^n has no nontrivial integer solutions when n is at least 3. This is known as "Fermat's Last Theorem" but its proof had to wait much later, for Andrew Wiles.
+<li>Algebraic geometry over fields which are not algebraically closed. (Fermat's Last Theorem is much less interesting over C than it is over Z or Q.)
+</ul>
+<p>
+<h2><a href="ec-syllabus-rev.pdf">Syllabus</a>.</h2>
+
+<h2>Course prerequisites:</h2>
+
+<p>
+<b>Hard prerequisites:</b> Abstract algebra (701/702 or equivalent; concurrent enrollment okay), and elementary number theory (780 or equivalent, or willingness to learn this material on the side).
+<p>
+<b>Soft prerequisites:</b> Occasionally other mathematical disciplines will be brought in, especially algebraic geometry and algebraic number theory. The student who has studied these topics before will get the most out of the course.
+<p>
+Many students will not have had these prerequisites. Occasionally the course will go over their heads (I hope not too badly!) but that is par for a topics graduate course in any case. Such students will be okay -- it is hoped that the course will motivate them to learn a little bit on the side and to study these topics in depth later.
+ 
+<h2>Course Textbooks:</h2>
+
+Large portions of the course will simultaneously follow <i>two</i> books on elliptic
+curves. These are:
+
+<ul>
+<li>Silverman and Tate, <i>Rational Points on Elliptic Curves</i>.
+This elementary book was written for advanced undergraduates. It is suitable for
+beginners, first-year students, or anyone whose thesis will not involve a heavy
+amount of algebraic machinery.
+<p>
+<li>Silverman, <i>The Arithmetic of Elliptic Curves</i>. This is <i>the</i>
+book on elliptic curves. Silverman works hard to be 'accessible' and 'friendly',
+while introducing the student to the highbrow perspective. In particular, Silverman
+illustrates the relevance of ideas from algebraic geometry, algebraic number theory,
+group cohomology, complex analysis, and a host of other algebraic topics. 
+<p>
+This is the clear choice for algebraists and for would-be algebraists.
+</ul>
+The student should purchase and follow along in one (or both) of these books,
+according to his or her background and aims.
+
+<h2>Other References</h2>
+<p>
+<h3>Arithmetic Geometry:</h3>
+<p>
+Two other great books on elliptic curves are <b>Knapp</b>, <i>Elliptic curves</i> and <b>Washington</b>,
+<i>Elliptic curves: number theory and cryptography</i>. These cover similar material at a level intermediate
+between Silverman-Tate and Silverman. In particular you can read them with little or no knowledge of algebraic
+number theory. The Washington book (as may be inferred from the title) also covers cryptographic applications of
+elliptic curves (I haven't read this part).
+<p>
+You might also see
+<b>McKean and Moll</b> for an interesting approach emphasizing topology. Another
+good book is <b>Koblitz</b>'s <i>Introduction to elliptic curves and modular forms</i>.
+It has the friendliest introduction to modular forms of half-integral weight
+of which I am aware.
+<p>
+A wonderful advanced book is <b>Hindry and Silverman</b>'s <i>Diophantine Geometry</i>. (But Do Not Read Part A.) Their book is very much not limited to elliptic curves. There are also a wealth of outstanding,
+still more advanced books. See <a href="http://www.mathcs.emory.edu/~dzb/adviceArithmeticGeometry.html">
+David Zureick-Brown's page</a> for advice and further links.
+<p>
+There is also <b>Sutherland</b>'s lecture notes, available free 
+<a href="http://ocw.mit.edu/courses/mathematics/18-782-introduction-to-arithmetic-geometry-fall-2013/lecture-notes/">here</a> from MIT OpenCourseWare.
+<p>
+<h3>Algebra:</h3>
+<p>
+A generally useful book is <b>Dummit and Foote</b>'s <i>Abstract Algebra</i>. It
+has excellent brief introductions to subjects such as representation theory, Galois cohomology, etc. which will mostly suffice for this course. <b>Lang</b>'s <i>Algebra</i>
+is also excellent, especially if you are <i>not</i> an absolute beginner.
+
+If you are using Aluffi, note that the categorical perspective won't be adopted heavily here.
+<p>
+<h3>Algebraic Geometry:</h3>
+<p>
+A good all-around (and inexpensive) book is <b>Hulek</b>'s <i>Elementary Algebraic
+Geometry</i>. It contains pretty much all the algebraic geometry you'll need for this course.
+<p>
+Other excellent reads include <b>Smith, Kahanpaa, Kekalainen, Traves</b>'s
+<a>An Invitation to Algebraic Geometry</i> and <b>Harris</b>'s <i>Algebraic Geometry:
+A First Course</i>. Anyone wishing to seriously master the subject should master the
+theory of schemes: read <b>Hartshorne</b>, <i>Algebraic Geometry</i>,
+or <b>Vakil</b>, <a href="http://math.stanford.edu/~vakil/216blog/FOAGsep1815public.pdf">The Rising Sea: Foundations of Algebraic Geometry</a>. (By "read" I mean, as usual, "do all the exercises".)
+<p>
+<h3>Elementary Number Theory:</h3>
+I recommend <b>Ireland and Rosen</b> or <b>Hardy and Wright</b>, or the lecture
+notes from Matt Boylan's course. Another excellent resource is Filaseta's
+<a href="http://people.math.sc.edu/filaseta/gradcourses/Math780.html">lecture notes</a>.
+
+<h3>Algebraic Number Theory:</h3>
+<p>
+The gold standard is <b>Neukirch</b>, <i>Algebraic Number Theory</i>. An excellent
+free alternative is <b>Milne</b>, <a href="http://www.jmilne.org/math/CourseNotes/ANT.pdf">Algebraic Number Theory</a>.
+
+<h2>Very Rough, Tentative List of Topics:</h2>
+
+This will be refined based on student background and interest.
+<ul>
+<li>Rational Points on Conics (1-2 weeks)
+<li>Quadratic Forms, the p-adic numbers, and Local-to-Global (2 weeks)
+<li>The geometry of curves (2 weeks - ??)
+<li>Elliptic curves: the basics (2-4 weeks)
+<li>Elliptic curves over C: Curves as complex tori (0-2 weeks)
+<li>Elliptic curves over finite fields: The Weil conjectures (1-2 weeks)
+<li>Elliptic curves over Q: The Mordell-Weil theorem (2-5 weeks?)
+<li>Survey of Additional Topics (Faltings' theorem??) (????)
+</ul>
+</BODY>
+</HTML>
+
+
+
+
+
