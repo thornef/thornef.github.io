@@ -1,0 +1,174 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{enumerate, url, amssymb, amsmath}
+\begin{document}
+\newcommand\Hom{\operatorname{Hom}}
+\newcommand\Aut{\operatorname{Aut}}
+\newcommand\Out{\operatorname{Out}}
+\newcommand\Vol{\operatorname{Vol}}
+\newcommand\Covol{\operatorname{Covol}}
+\newcommand\C{\mathbb{C}}
+\newcommand\F{\mathbb{F}}
+\newcommand\Q{\mathbb{Q}}
+\newcommand\R{\mathbb{R}}
+\newcommand\Z{\mathbb{Z}}
+\newcommand\Disc{\operatorname{Disc}}
+\newcommand\disc{\operatorname{Disc}}
+\newcommand\im{\operatorname{im}}
+\newcommand\ord{\operatorname{ord}}
+
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Problem Set 1 -- Arithmetic Geometry, Frank Thorne (thorne@math.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Due Friday, September 20, 2024}
+\end{center}
+
+\begin{enumerate}[(1)]
+\item
+Adapting the solution to the Gauss circle problem, compute an asymptotic for the number of lattice points within the ellipse $x^2 + 5y^2 = N$. 
+Obtain an explicit bound on the error term without any $O$-notation. 
+
+\item
+Recall that {\itshape Minkowski's second theorem} states that the successive minima $\lambda_i$ of a complete lattice $\Lambda$ in $\R^n$ satisfy
+\[
+\frac{2^n}{n!} \Covol(\Lambda) \leq \lambda_1 \lambda_2 \cdots \lambda_n \cdot \Vol(B(0, 1)) \leq 2^n \Covol(\Lambda).
+\]
+Prove either of these two inequalities, either as stated, or with any other constant depending only on $n$. 
+(Aim for a short and easy solution, rather than the best possible constant.)
+
+\item Let $\alpha$ be a root of $f(x) := x^3 - 4x - 1$, and write $K := \Q(\alpha)$.
+\begin{enumerate}[(a)]
+\item Verify that $K$ has ring of integers $\Z[\alpha]$ and discriminant $229$, and is totally real. 
+\item Explicitly write down the Minkowski embedding of $\mathcal{O}_K$ into $\R^3$. Use a calculator or computer to write
+everything down in terms of decimal approximations, to at least three decimal places.
+\item If $1, \alpha, \alpha^2$ were vectors whose lengths are the successive minima, would this be consistent with Minkowski's
+second theorem? 
+\item (Optional) You may wish to try to compute the successive minima, provably or not. This is in general a {\itshape highly} nontrivial 
+problem, and you may be interested to poke around the Internet to see what you can learn about this.
+\end{enumerate}
+\item Suppose, {\itshape contrary to fact}, that the Riemann zeta function was absolutely bounded by some constant $M$ in the region
+\[
+\{ z \in \C \ : \ \Re(z) \geq \frac{1}{2}, \ \ |z - 1| > \frac{1}{10} \}.
+\]
+Moreover, define the $k$-divisor function $d_k(n)$ to be the number of ways to write $n$ as a product of $k$ natural numbers.
+
+\begin{enumerate}[(a)]
+\item 
+Prove the identity
+\[
+\sum_n d_k(n)^s = \zeta(s)^k,
+\]
+valid when $\Re(s) = 1$.
+\item
+By Perron's formula we have
+\[
+\sum_{n < X} d_k(n) = \frac{1}{2 \pi i} \int_{2 - i \infty}^{2 + i \infty} \zeta(s)^k X^s \frac{ds}{s},
+\]
+whenever $X$ is a positive real number, not an integer. By shifting a portion of the contour left of the line $\Re(s) = 1$,
+obtain an asymptotic formula for $\sum_{n < X} d_k(n)$ with a power saving error term. You should give {\itshape some} description
+of all the constants in front of your main terms, although it need not be a simplified one. 
+
+(Answer this relative to our counterfactual assumption.)
+\item
+Now, suppose instead of our counterfactual bound, we have a bound
+\[
+|\zeta(\sigma + it)| \ll (1 + |t|)^{\alpha}
+\]
+for some $\alpha > 0$. Repeat the previous question, obtaining an error term which is presumably worse, but still saves a power of $X$.
+
+(Note: we can take any $\alpha > \frac{1}{4}$ by the so-called `convexity bound', any $\alpha > \frac{32}{205}$ by more intricate
+work of Huxley, and any $\alpha > 0$ if the Riemann Hypothesis is true.)
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+\end{document}
+
+
+A special case of {\bf Schanuel's Theorem} says that
+\[
+C(\mathbb{P}^N(\Q), B) := 
+\{ P \in \mathbb{P}^N(\Q) \ : \ H(P) \leq B \} \sim \frac{2^N}{\zeta(N + 1)} B^{N + 1}.
+\]
+Prove this. A template for a proof is given on the next page:
+\begin{itemize}
+\item If you're unfamiliar with proofs of this nature, following the template should be very helpful. 
+\item For more of a challenge, skim the template for a minute and then write up a proof without reading it further.
+\item For still more challenge, don't read or follow the template.
+\end{itemize}
+
+{\itshape Note that Schanuel proved his result where $\Q$ is replaced with any number field, where the analysis became more difficult.
+For definitions of height functions in number fields, see Chapter 8.5 of Silverman.}
+
+\end{enumerate}
+
+\newpage 
+The following is a step-by-step outline for Schanuel's theorem. 
+\begin{enumerate}[(a)]
+\item
+Prove that the set to be counted is in an exactly $2$-to-$1$ correspondence 
+with $N + 1$-tuples of integers $(x_0, x_1, \cdots, x_N)$, where $x_i \in [-B, B]$ for each $i$, and the $x_i$ do not all share a common factor.
+\item
+Write 
+$C(N, B)$ for the number of $N + 1$-tuples of integers $(x_0, x_1, \cdots, x_N)$, where $x_i \in [-B, B]$ for each $i$ (but with no
+`no common factor' condition).
+Prove that
+\[
+C(N, B) = (2B)^{N + 1} + O(B^N).
+\]
+(Be sure to justify that the constant implied by the $O$-notation is in fact independent of $B$. It may depend on $N$ however. You might wish
+to be especially careful and actually compute the constant implied in the error term.)
+\item
+Let $\mu(d)$ be the {\itshape M\"obius function}, equal to $(-1)^{\omega(d)}$ if $d$ is squarefree, where $\omega(d)$ denotes the number of
+prime factors of $d$, and equal to zero otherwise.
+
+Prove that, for any positive integer $n$, $\sum_{d \mid n} \mu(d)$ is equal to $1$ if $n = 1$ and zero otherwise.
+
+(Hint: the sum can be rewritten as $\prod_{p \mid n} (1 + \mu(p))$, where the product is over all primes dividing $n$. Why is this?)
+\item
+Write 
+$C(N, B, d)$ for the number of $N + 1$-tuples of integers $(x_0, x_1, \cdots, x_N)$, where $x_i \in [-B, B]$ for each $i$, such that $d$ divides
+all the $x_i$. Explain why $C(N, B, d) = C(N, B/d)$ and deduce an estimate for $C(N, B, d)$.
+\item
+Prove that 
+\[
+C(\mathbb{P}^N(\Q), B) = \sum_{d = 1}^B \mu(d) C(N, B, d)
+\]
+and use your previous estimates to conclude that
+\[
+C(\mathbb{P}^N(\Q), B) = 2^N B^{N + 1} \sum_{d = 1}^B \frac{\mu(d)}{d^{B + 1}} + o(B^{N + 1}).
+\]
+\item
+Prove that
+\[
+\sum_{d = B + 1}^\infty \frac{\mu(d)}{d^{N + 1}} = o(1)
+\]
+and that
+\[
+\sum_{d = 1}^{\infty} \frac{ \mu(d) }{d^{N + 1}} = \frac{1}{\zeta(B + 1)}. 
+\]
+Conclude that
+\[
+\sum_{d = 1}^B \frac{\mu(d)}{d^{N + 1}} = \frac{1}{\zeta(N + 1)} + o(1).
+\]
+\item
+Conclude the statement of Schanuel's theorem.
+
+
+\end{enumerate}
+\end{document}
