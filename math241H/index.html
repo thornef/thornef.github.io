@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Math 241H: Vector Calculus — Fall 2026</title>
+  <style>
+    /*
+      Math 241H syllabus, Fall 2026
+      Intentionally kept as one small, dependency-free HTML file so it is
+      easy to edit by hand. Colors and spacing are defined here in one place.
+    */
+    :root {
+      --ink: #1f2933;
+      --muted: #52606d;
+      --paper: #ffffff;
+      --page: #f4f6f8;
+      --accent: #73000a;
+      --accent-dark: #570008;
+      --border: #cbd2d9;
+      --focus: #005fcc;
+      --max-width: 58rem;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      font-size: 100%;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--page);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    a {
+      color: #005ea8;
+      text-decoration: underline;
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover { color: #003e73; }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 0.75rem;
+      top: -5rem;
+      z-index: 100;
+      padding: 0.6rem 0.8rem;
+      color: #ffffff;
+      background: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    .skip-link:focus { top: 0.75rem; }
+
+    .site-header {
+      color: #ffffff;
+      background: var(--accent);
+      border-bottom: 0.35rem solid var(--accent-dark);
+    }
+
+    .header-inner,
+    main,
+    footer {
+      width: min(calc(100% - 2rem), var(--max-width));
+      margin-inline: auto;
+    }
+
+    .header-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2.2rem 0 2rem;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.25rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      width: 100%;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      line-height: 1.12;
+      text-align: center;
+    }
+
+    .subtitle {
+      margin: 0.75rem 0 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.1rem;
+    }
+
+    main {
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+      padding: clamp(1.2rem, 3vw, 2.4rem);
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 0.45rem;
+      box-shadow: 0 0.25rem 1.25rem rgba(31, 41, 51, 0.08);
+    }
+
+    .course-info {
+      margin: 0 0 2rem;
+      padding: 0.9rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .course-info p {
+      margin: 0.3rem 0;
+      max-width: none;
+    }
+
+    section + section {
+      margin-top: 2.25rem;
+      padding-top: 0.2rem;
+    }
+
+    h2 {
+      margin: 0 0 0.6rem;
+      color: var(--accent-dark);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.45rem;
+      line-height: 1.3;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.25rem;
+    }
+
+    h3 {
+      margin: 1.5rem 0 0.4rem;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.15rem;
+      line-height: 1.35;
+    }
+
+    p,
+    li { max-width: 75ch; }
+
+    ul { padding-left: 1.5rem; }
+
+    li + li { margin-top: 0.55rem; }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .tba {
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .grading-table {
+      width: 100%;
+      max-width: 36rem;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+
+    .grading-table th,
+    .grading-table td {
+      padding: 0.55rem 0.7rem;
+      border: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .grading-table th {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fb;
+    }
+
+    footer {
+      padding: 0 0 2rem;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 38rem) {
+      .header-inner,
+      main,
+      footer {
+        width: min(calc(100% - 1rem), var(--max-width));
+      }
+
+      main {
+        padding: 1rem;
+        border-radius: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #ffffff; }
+      .skip-link { display: none; }
+      .site-header {
+        color: #000000;
+        background: #ffffff;
+        border-bottom: 2px solid #000000;
+      }
+      main {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+      }
+      a { color: #000000; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">University of South Carolina</p>
+      <h1>Vector Calculus — Math 241H</h1>
+      <p class="subtitle">Frank Thorne · Fall 2026</p>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <div class="course-info" aria-label="Course information">
+      <p><strong>Instructor:</strong> Frank Thorne, LeConte 447, thorne [at] math [dot] sc [dot] edu</p>
+      <p><strong>Class meetings:</strong> MWF, 9:40–10:30 a.m., LeConte 348</p>
+      <p><strong>Office hours:</strong> <span class="tba">TBA</span></p>
+    </div>
+
+    <section aria-labelledby="objectives-heading">
+      <h2 id="objectives-heading">Course Objectives and Learning Outcomes</h2>
+      <p>Successful students will:</p>
+      <ul>
+        <li>Understand the geometry of 2- and 3-dimensional Euclidean space, and be able to answer questions related to lengths, distances, and related topics.</li>
+        <li>Understand the concept of a vector, including dot and cross products, be able to explain its relationship to geometry, and work problems involving vectors.</li>
+        <li>Work problems involving derivatives and integrals in multiple variables.</li>
+        <li>Work problems involving derivatives and integrals of vector-valued functions.</li>
+        <li>Understand classical applications of vector calculus to physics.</li>
+        <li>Practice good mathematical writing. In mathematics, as indeed in everything else, it is important not only to be correct but to explain yourself clearly and as simply as possible.</li>
+        <li>Gain mathematical maturity, and be prepared to take more advanced math classes if desired.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="text-heading">
+      <h2 id="text-heading">Text</h2>
+      <p>Strang, Herman, et al., <a href="https://openstax.org/details/books/calculus-volume-3">OpenStax Calculus, Volume 3</a>. View or download it from that link—freely and legally! Here is a <a href="https://assets.openstax.org/oscms-prodcms/media/documents/CalculusVolume3-OP.pdf">direct PDF link</a>. The book is <a href="https://en.wikipedia.org/wiki/Open_educational_resources">OER (an open educational resource)</a>.</p>
+      <p>A printed copy is not required, but you may buy one from the above link, from the campus bookstore, or from online booksellers. The color version is suggested over the black-and-white version.</p>
+      <p><strong>The Thomas book is not required.</strong> (It is used in most other sections of Math 241.) If you bought one for this course, please contact the bookstore for a refund.</p>
+    </section>
+
+    <section aria-labelledby="work-heading">
+      <h2 id="work-heading">Written Work</h2>
+      <ul>
+        <li><strong>Exams:</strong> There will be <strong>two in-class midterms</strong>; dates will be announced later in the term, at least a week in advance of each exam. The <strong>final exam</strong> will be given <strong>Wednesday, December 9, 9:00–11:30 a.m.</strong>
+          <p>At least half of all exam questions will be very similar to (or taken verbatim from) the homework assignments. You should also be prepared for questions that ask you to explain the main concepts of the course and their relation to each other.</p>
+          <p><strong>Crib sheets</strong> will be allowed: a 4-by-6 index card for each midterm, and an 8½-by-11-inch sheet of paper for the final exam. You may write anything you like on these, front and back, as long as you prepare and handwrite them yourself and do not copy from another student.</p>
+        </li>
+        <li><strong>Homework:</strong> Homework will be assigned approximately weekly and <strong>must be turned in</strong> by the announced deadline. Homework is an important part of the course and will be graded for both mathematical correctness and quality of exposition.
+          <ul>
+            <li>All quiz questions will be taken verbatim from the homework.</li>
+            <li>At least half of all exam questions will be very similar to (or taken verbatim from) the homework assignments.</li>
+          </ul>
+        </li>
+        <li><strong>Quizzes:</strong> Quizzes will be given on the dates homework is due, approximately once a week, and announced at least one class period in advance.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="grading-heading">
+      <h2 id="grading-heading">Grading</h2>
+      <p><strong>Please note:</strong> You will be graded both on correctness and on quality of exposition. <strong>The standard is that someone who does not know the answer should be able to easily follow your work.</strong> In particular, you should write in <strong>complete English sentences</strong> and draw <strong>clear diagrams</strong> where appropriate.</p>
+      <p>Any work that is confusing, ambiguous, or poorly explained will not receive full credit.</p>
+      <p><strong>Grading scale:</strong> You are guaranteed at least the following: A = 88+, B+ = 83+, B = 76+, C+ = 71+, C = 64+, D = 50+.</p>
+      <p><strong>Please note that my grading scale is more generous than the usual 10-point scale.</strong> However, I am a (slightly) stricter grader than most. This is intended to balance out.</p>
+
+      <table class="grading-table">
+        <caption class="visually-hidden">Course grade components and percentages</caption>
+        <thead>
+          <tr>
+            <th scope="col">Grade component</th>
+            <th scope="col">Percent of grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Quiz/Homework</td><td>30%</td></tr>
+          <tr><td>Two midterm exams</td><td>20% × 2</td></tr>
+          <tr><td>Final exam</td><td>30%</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="policies-heading">
+      <h2 id="policies-heading">Course Policies</h2>
+      <ul>
+        <li><strong>Academic honesty</strong> is expected of all students. Collaboration on homework is encouraged, but do not copy anyone else's writeup.</li>
+        <li><strong>Attendance</strong> is expected of all students. Roll will not be taken. In case of excused absences, you are welcome to go through formal channels; alternatively, unless you are missing many classes or are asking to make up an exam, an email letting me know the circumstances will suffice.</li>
+        <li><strong>Makeup quizzes and exams:</strong> Quizzes and exams may be made up in case of illness, emergency, or university-sanctioned absence (including religious observances). Barring extremely unusual circumstances, advance notice must be given; in case of a university-sanctioned absence, please give at least a week's notice.</li>
+        <li>If you have difficulty seeing the board or hearing the lectures, or a related problem, <strong>let me know as soon as possible</strong>, and I will do something about it.</li>
+        <li>Harassment, bullying, racism, sexism, and homophobia will not be tolerated, and flagrant or repeated violations will be reported to the Office of Student Conduct. Please bring any incidents I do not notice to my attention.</li>
+        <li>If you require <strong>disability-related accommodations</strong>, please contact the <a href="https://www.sc.edu/about/offices_and_divisions/student_disability_resource_center/">Student Disability Resource Center</a> as soon as possible. It is your responsibility to advise me of any needed accommodations a week in advance.</li>
+        <li><strong>Please contact me if you have any questions about the course, about my expectations, about my lectures, about the homework, about the reading, or about anything else.</strong> The syllabus is demanding and it is my job to help you succeed.
+          <p>The best ways to get help are to come to office hours (no appointment necessary) or to email me. During the week, I will almost always reply within 24 hours. If neither of these works for you, please email me to set up an appointment.</p>
+          <p>You can also seek help at the <a href="https://sc.edu/about/offices_and_divisions/student_success_center/">Student Success Center</a>. They offer peer tutoring in the subject matter and can also give advice on time management and study skills.</p>
+        </li>
+      </ul>
+
+      <h3>AI Policy</h3>
+      <p class="tba">TBA</p>
+    </section>
+
+    <section aria-labelledby="schedule-heading">
+      <h2 id="schedule-heading">Rough Course Schedule</h2>
+      <p><em>To be updated as the course progresses. Homeworks and other study materials will also be posted here.</em></p>
+    </section>
+
+    <section aria-labelledby="coverage-heading">
+      <h2 id="coverage-heading">Planned Course Coverage</h2>
+      <p>The plan is to cover most or all the following chapters from OpenStax:</p>
+      <ul>
+        <li><strong>Vectors in Space</strong> (2.1–2.7): 3 weeks</li>
+        <li><strong>Vector-Valued Functions</strong> (3.1–3.4): 2 weeks</li>
+        <li><strong>Differentiation in Multiple Variables</strong> (4.1–4.8): 3 weeks</li>
+        <li><strong>Integration in Multiple Variables</strong> (5.1–5.7): 4 weeks</li>
+        <li><strong>Vector Calculus</strong> (6.1–6.8): as time permits</li>
+      </ul>
+      <p>Timing is approximate, and minor changes may be made if necessary. More details will be announced as the course progresses.</p>
+      <p>Unfortunately we will not have time to cover the following:</p>
+      <ul>
+        <li>Parametric and Polar Coordinates (1.1–1.5): Hopefully this is familiar from previous coursework. We might do a bit of review, if necessary.</li>
+        <li>Differential Equations (7.1–7.4): Very important stuff, covered in Math 242 or 520.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Math 241H · Vector Calculus · Fall 2026 · University of South Carolina</p>
+  </footer>
+</body>
+</html>
