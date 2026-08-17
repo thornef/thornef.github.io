@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Policy and Expectations — Frank Thorne</title>
+  <style>
+    /*
+      AI Policy and Expectations
+      Intentionally kept as one small, dependency-free HTML file so it is
+      easy to edit by hand. Colors and spacing are defined here in one place.
+    */
+    :root {
+      --ink: #1f2933;
+      --muted: #52606d;
+      --paper: #ffffff;
+      --page: #f4f6f8;
+      --accent: #73000a;
+      --accent-dark: #570008;
+      --border: #cbd2d9;
+      --focus: #005fcc;
+      --max-width: 58rem;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      font-size: 100%;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--page);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    a {
+      color: #005ea8;
+      text-decoration: underline;
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover { color: #003e73; }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 0.75rem;
+      top: -5rem;
+      z-index: 100;
+      padding: 0.6rem 0.8rem;
+      color: #ffffff;
+      background: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    .skip-link:focus { top: 0.75rem; }
+
+    .site-header {
+      color: #ffffff;
+      background: var(--accent);
+      border-bottom: 0.35rem solid var(--accent-dark);
+    }
+
+    .header-inner,
+    main,
+    footer {
+      width: min(calc(100% - 2rem), var(--max-width));
+      margin-inline: auto;
+    }
+
+    .header-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2.2rem 0 2rem;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.25rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      width: 100%;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      line-height: 1.12;
+      text-align: center;
+    }
+
+    .subtitle {
+      margin: 0.75rem 0 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.1rem;
+    }
+
+    main {
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+      padding: clamp(1.2rem, 3vw, 2.4rem);
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 0.45rem;
+      box-shadow: 0 0.25rem 1.25rem rgba(31, 41, 51, 0.08);
+    }
+
+    section + section {
+      margin-top: 2.25rem;
+      padding-top: 0.2rem;
+    }
+
+    h2 {
+      margin: 0 0 0.6rem;
+      color: var(--accent-dark);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.45rem;
+      line-height: 1.3;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.25rem;
+    }
+
+    p,
+    li { max-width: 75ch; }
+
+    ul { padding-left: 1.5rem; }
+
+    li + li { margin-top: 0.8rem; }
+
+    footer {
+      padding: 0 0 2rem;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 38rem) {
+      .header-inner,
+      main,
+      footer {
+        width: min(calc(100% - 1rem), var(--max-width));
+      }
+
+      main {
+        padding: 1rem;
+        border-radius: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #ffffff; }
+      .skip-link { display: none; }
+      .site-header {
+        color: #000000;
+        background: #ffffff;
+        border-bottom: 2px solid #000000;
+      }
+      main {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+      }
+      a { color: #000000; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">University of South Carolina</p>
+      <h1>AI Policy and Expectations</h1>
+      <p class="subtitle">Frank Thorne</p>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section aria-labelledby="general-principles-heading">
+      <h2 id="general-principles-heading">General Principles</h2>
+      <ul>
+        <li><strong>Use AI as a tool, never as a crutch.</strong> If AI helps you to learn effectively, then by all means use it. But learning a new subject is always difficult; do not try to use AI to bypass the hard parts.</li>
+        <li><strong>Never pass off AI-generated work as your own.</strong> Any work that you should be turn in should be yours, not a chatbot's.</li>
+        <li><strong>Use of AI is optional.</strong> Millions of people have learned mathematics without AI. If you don't like AI, don't use it.</li>
+        <li><strong>You are responsible for following the intent of these rules.</strong> I haven't tried to anticipate every technicality, no looking for loopholes! If you choose to use AI, it is your responsibility to understand these guidelines and ask questions if needed.</li>
+        <li><strong>Use AI at your own risk.</strong> AI is capable of giving confident answers that are totally wrong.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="assignment-guidelines-heading">
+      <h2 id="assignment-guidelines-heading">Assignment-Specific Guidelines</h2>
+      <ul>
+        <li><strong>Homeworks:</strong> <strong>Do not input assigned homework questions into AI</strong>, until after it is due. If you want to see how the AI solves typical problems, you are welcome to ask it questions other than those which were assigned. Similarly, the ability to check your work yourself is an important one to develop.</li>
+        <li><strong>Quizzes/Exams:</strong> <strong>No AI use allowed.</strong></li>
+        <li><strong>Essays/Term Papers:</strong> To be determined. (No essays or term papers will be assigned in Fall 2026.)</li>
+        <li><strong>Crib Sheets:</strong> AI use is allowed, but <strong>no wholesale verbatim copying.</strong> Read what it says, check it and make sure you understand it, and then write in your own words.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="communication-heading">
+      <h2 id="communication-heading">Communication</h2>
+      <ul>
+        <li><strong>Please write your own emails to me.</strong> Using AI to write emails is, in my opinion, impolite.</li>
+        <li><strong>Don't ask me to read AI-generated output.</strong> There are exceptions—for example, if you study an AI response in detail and have a specific question. But please don't send me a large quantity of AI-generated output and ask me to check it.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="commitments-heading">
+      <h2 id="commitments-heading">Instructor Commitments</h2>
+      <ul>
+        <li><strong>I will write lecture notes myself.</strong> I will also write homework/quiz/exam questions, etc. myself, other than when I take them from the textbook.</li>
+        <li><strong>I will not use AI to write emails to you.</strong> If you ask me a technical question, I will not write back with “Here's what ChatGPT says...” You deserve my attention as a human.</li>
+        <li><strong>I will grade your work myself.</strong></li>
+        <li><strong>How I might use AI:</strong> For example—for brainstorming, for formatting help, to choose a random or representative sample of textbook problems, etc.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Frank Thorne · University of South Carolina</p>
+  </footer>
+</body>
+</html>
