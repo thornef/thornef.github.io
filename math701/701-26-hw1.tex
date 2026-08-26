@@ -1,0 +1,290 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{amsmath, amssymb, amscd, amsfonts}
+\usepackage{amsthm}
+\usepackage{latexsym, epsfig, color, verbatim, xcolor, color}
+\usepackage{url}
+
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+\newcommand{\sump}{\sideset{}{'}\sum}
+\newcommand{\Aa}{{\alpha}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{{\rm{N}}}
+\newcommand{\re}{{\rm{max\,red}}}
+\newcommand{\nonmax}{{\rm{nonmax}}}
+\newcommand{\ma}{{\rm{max}}}
+\newcommand{\PGL}{{\rm{PGL}}}
+\newcommand{\diag}{{\rm{diag}}}
+\newcommand{\sqf}{{\rm{sqf}}}
+\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\FF}{\mathcal{F}}
+\newcommand{\OO}{\mathcal{O}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\QQ}{\mathcal{Q}}
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calZ}{\mathcal{Z}}
+\newcommand{\calT}{\mathcal{T}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\Y}{\mathcal{Y}}
+\newcommand{\GQ}{G_{\Q}}
+\newcommand{\Qbar}{\bar{\Q}}
+\newcommand{\ra}{\rightarrow}
+\newcommand\Hom{\operatorname{Hom}}
+\newcommand\Tr{\operatorname{Tr}}
+\newcommand\Aut{\operatorname{Aut}}
+\newcommand\Sym{\operatorname{Sym}}
+\newcommand\Disc{\operatorname{Disc}}
+\newcommand\Vol{\operatorname{Vol}}
+\newcommand\Out{\operatorname{Out}}
+\newcommand\im{\operatorname{im}}
+\renewcommand\div{\operatorname{div}}
+\newcommand\irr{\textnormal{irr}}
+\newcommand\Stab{\operatorname{Stab}}
+\newcommand\Gal{\operatorname{Gal}}
+\newcommand\Res{\operatorname{Res}}
+\newcommand\SL{\operatorname{SL}}
+\newcommand\GL{\operatorname{GL}}
+\newcommand\SO{\operatorname{SO}}
+\newcommand\ur{\operatorname{ur}}
+\newcommand\sr{\operatorname{sr}}
+\newcommand\htt{\operatorname{ht}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\co}{\mathcal{O}}
+\newcommand\codim{\operatorname{codim}}
+
+
+\newcommand{\odr}{\co_{D1^2}}		% Ramify
+\newcommand{\ods}{\co_{D11}}		% Split
+\newcommand{\odi}{\co_{D2}}		% Inert
+\newcommand{\odg}{\co_{D\rm{ns}}}	% Generic
+% Common component
+\newcommand{\ocs}{\co_{C\rm{s}}}	% Singular
+\newcommand{\ocg}{\co_{C\rm{ns}}}	% Generic
+% essentially in Two variables
+\newcommand{\ots}{\co_{B11}}		% Split
+\newcommand{\oti}{\co_{B2}}		% Inert
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 1, Math 701 -- Frank Thorne (thorne@math.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Instructions:} You are welcome and encouraged to collaborate, but please write up your own solutions. \\
+
+Due Wednesday, September 9.
+\end{center}
+
+\begin{enumerate}
+%
+%\item
+%Let $V$ be a vector space, possibly infinite dimensional.
+%\begin{enumerate}
+%\item
+%Prove that the map
+%\[
+%v \rightarrow \{ f \rightarrow f(v) \}
+%\]
+%defines an injective map from $V$ to the double dual $V^{**} = (V^*)^*$.
+%\item
+%Prove that this map is not surjective if $V$ is infinite dimensional.
+%\end{enumerate}
+%
+%\item
+%\begin{enumerate}
+%\item
+%Exhibit a $2 \times 2$ matrix with real entries which does not have any eigenvalues over $\mathbb{R}$. 
+%\item 
+%Characterize, as explicitly as you can, the set of all such matrices,
+%\end{enumerate}
+%
+%\item 
+%Suppose that $\phi$ is a linear transformation whose Jordan canonical form $M$ consists of blocks of size $k_i$ and with diagonal entries $\lambda_i$, for $i = 1, ..., r$.
+%
+%\begin{itemize}
+%\item Write down explicitly what that means. (Here is probably where you want to read a more detailed exposition of Jordan form in your favorite book.)
+%\item Prove that each $\lambda_i$ is an eigenvalue of $\phi$, and describe all of the associated eigenvectors in terms of $M$. 
+%\item Prove that no scalar other than the $\lambda_i$ is an eigenvalue of $\phi$.
+%\item Let $f(x) := (x- \lambda_i)^{k_i}$. Explain why this is the characteristic polynomial of $\phi$. 
+%\item The {\bf Cayley-Hamilton theorem} asserts that $f(\phi) = 0$. Prove it.
+%\end{itemize}
+%
+%\item 
+%Prove that the Jordan canonical form is not uniquely determined, by showing that the matrices
+%\[
+%\begin{pmatrix} 2 & 1 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 3 \end{pmatrix}, \ \ \ \ 
+%\begin{pmatrix} 3 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 1 & 2 \end{pmatrix}
+%\]
+%are conjugate. 
+%
+%\item
+%Suppose that $\phi$ is a linear transformation with characteristic polynomial $f(x) = (x - 2)^2 (x - 3)^2$.
+%
+%Determine how many possible Jordan forms there are for $\phi$, and write them all down up to conjugacy. 
+%(In other words only write down a single Jordan form, when there are multiple choices and they are conjugate to each other.)
+%Only write down a single Jordan form for 
+%
+%
+%
+%Better still:
+%can you characterize all such matrices?)
+%
+%
+%Give a proof that every basis of $\mathbb{R}^2$ has exactly two vectors. {\bf Your proof should be as minimal as possible} -- don't use {\bf any} lemmas
+%or propositions described in class unless you prove them.
+
+\item 
+The {\itshape Fibonacci numbers} are defined by $F_1 = 1$, $F_2 = 1$, and $F_{n + 1} = F_n + F_{n - 1}$ for $n \geq 2$.
+Note that they satisfy
+\[
+M
+\begin{bmatrix}
+F_n \\ F_{n - 1}  
+\end{bmatrix}
+=
+\begin{bmatrix}
+F_{n + 1} \\ F_{n}  
+\end{bmatrix}
+\]
+where $M := \begin{bmatrix}
+1 & 1 \\ 1 & 0 
+\end{bmatrix}$, for each $n \geq 2$.
+\begin{enumerate}[(a)]
+\item Compute the characteristic polynomial, eigenvalues, and a basis of eigenvectors for $M$. 
+\item Compute a diagonal matrix $D$ and an invertible matrix $P$ for which $D = P^{-1} M P$. Interpreting $P$ as a change 
+of basis matrix, describe the linear transformations and bases represented by $D$, $P$, and $M$.
+\item Sketch a proof that the set of functions $f : \Z^+ \rightarrow \R$ satisfying $f(n + 1) = f(n) + f(n - 1)$ for $n \geq 2$
+forms a two-dimensional real vector space $V$. 
+\item Using your work above, find a basis for $V$ consisting of functions satisfying $f(n) = f(1) \lambda^{n - 1}$ for some
+$\lambda \in \R$. 
+\item Write $F$ in terms of this basis, thereby computing an explicit closed formula for the Fibonacci numbers.
+\end{enumerate}
+
+\item 
+Let $V$ be the vector space of {\itshape affine plane conics}
+\[
+ax^2 + bxy + cy^2 + dx + ey + f = 0
+\]
+with coefficients in $\mathbb{C}$. Then $V$ is a vector space of dimension $6$. 
+
+\begin{enumerate}[(a)]
+\item Fix $(x_0, y_0)$, and let $W \subseteq V$ be the subspace of conics $g$ for which $g(x_0, y_0) = 0$. Explain briefly why $W$
+is a subspace, and why it has dimension $5$ for any choice of $(x_0, y_0)$. 
+\item Now, for $k \geq 1$, consider the following statement:
+{\itshape For any $k$ distinct points $(x_1, y_1), \dots, (x_k, y_k)$, let $W_k \subseteq V$ be the subspace of conics $g$ for which $g(x_i, y_i) = 0$
+for each $i$. Then $W_k$ has dimension $6 - i$.}
+
+For which $k \geq 1$ is the above statement true or false? (Prove your assertion.)
+
+\item A conic $g(x, y)$ is {\itshape singular} if it contains some point $(x_0, y_0)$ at which both partial derivatives vanish. Find (with proof) an example
+of a nonsingular conic, and a nonzero example of a singular conic.
+
+\item Find a basis for $V$ consisting of nonsingular conics. 
+\end{enumerate}
+
+\item
+Let $V$ be the real vector space consisting of all continuous functions from $\mathbb{R}$ to itself. Prove that $V$ is not finite dimensional.
+
+\item (Lagrange Interpolation, following Friedberg, Insel, and Spence)
+Let $V$ be the $n + 1$-dimensional vector space of polynomials of degree $\leq n$, over a field $F$, and let $c_0, \dots, c_n$ be
+distinct scalars in $F$.
+\begin{enumerate}[(a)]
+
+\item 
+For $0 \leq i \leq n$, define $f_i \in V^*$ by $f_i(p) = p(c_i)$. Prove that the $f_i$ form a basis for $V^*$.
+\item 
+Prove that there exist unique polynomials $p_0, \dots, p_n$ with $p_i(c_j) = \delta_{ij}$.
+\item 
+For any scalars $a_0, \dots, a_n$ (not necessarily distinct), prove that there exists a unique polynomial $q$ of degree $\leq n$,
+such that $q(c_i) = a_i$ for each $i$. Determine a formula for $q$ in terms of the above.
+
+\end{enumerate}
+
+\item (Suggested by ChatGPT)
+For each $n$, let $P_n$ be the vector space of polynomials over $\R$ of degree at most $n$.
+\begin{enumerate}[(a)]
+\item 
+Let $D : P_3 \mapsto P_2$ be the differentiation map. Briefly explain why $D$ is a homomorphism. Compute a matrix representing $D$
+(with respect to bases you should choose and specify).
+\item 
+Similarly to the previous question, for $a \in \R$ define $\textnormal{ev}_a$ to be the `evaluation at $a$ map', that is 
+$\textnormal{ev}_a(p) = p(a)$. Explain why this is an element of $P_n^*$, and describe $D^*(\textnormal{ev}_a)$.
+\item 
+Define $I : P_n \mapsto \R$ by
+\[
+I(p) = \int_0^1 p(x) dx.
+\]
+Explain why $I \in P_n^*$. 
+\item
+Compute $D^*(I)$.
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
+
+\item
+({\bf Row Rank Equals Column Rank})
+The {\bf row rank} and {\bf column rank} of an $n \times m$ 
+matrix $A$ are the dimensions of the subspaces of $F^n$
+and $F^m$, respectively, spanned by its rows and columns respectively.
+
+Prove\footnote{Credit: I learned of this proof from Marc van Leeuwen} that the row
+rank and column rank are equal as follows:
+\begin{itemize}
+\item
+Show that the column rank is the smallest number $r$ for which the homomorphism
+$\phi$ corresponding to $A$ can be written as a composition of two linear maps
+$F^m \rightarrow F^r \rightarrow F^n$.
+\item
+Conclude that $r$ is the smallest number for which one can write $A = BC$,
+with $B$ an $n \times r$ and $C$ an $r \times m$ matrix respectively.
+\item
+Taking transposes, conclude the result.
+\end{itemize}
+\item
+Let $V$ be a vector space, possibly infinite dimensional.
+\begin{enumerate}
+\item
+Prove that the map
+\[
+v \rightarrow \{ f \rightarrow f(v) \}
+\]
+defines an injective map from $V$ to the double dual $V^{**} = (V^*)^*$.
+\item
+Prove that this map is not surjective if $V$ is infinite dimensional.
+\end{enumerate}
+
+\item
+Let $V$ be a finite dimensional vector space, and let $A$ and $B$ be the matrices of a linear transformation $\phi$
+with respect to two different bases.
+
+Prove that $B = M A M^{-1}$ for some matrix $M$, and describe $M$ explicitly.
+
+\item
+Exhibit a $2 \times 2$ matrix with real entries which does not have any eigenvalues over $\mathbb{R}$. (Better still:
+can you characterize all such matrices?)
+
+\end{enumerate}
+
+\end{document}
