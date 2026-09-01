@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<title id="title">Mathematical blackboard illustration</title><desc id="desc">A dark green chalkboard filled with geometric diagrams, equations, and mathematical symbols.</desc>
+<rect width="1200" height="800" fill="#173f36"/>
+<g fill="none" stroke="#f3f0dc" stroke-width="5" opacity="0.92" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="205" cy="220" r="115"/><path d="M205 105v230M90 220h230"/><path d="M125 300L280 135M125 135L280 300"/>
+<path d="M450 145h250M475 190h210M450 235h250"/><path d="M490 330c70-90 160-90 230 0s160 90 230 0"/>
+<path d="M785 120l115 190H670z"/><path d="M745 245h110"/>
+<path d="M130 535h250M150 610h220"/><path d="M440 535h240M470 610h190"/><path d="M760 540h300M795 610h230"/>
+</g>
+<g fill="#f8f3dc" font-family="Georgia, serif" font-size="42" opacity="0.95">
+<text x="415" y="115">a² + b² = c²</text><text x="420" y="290">∫ f(x) dx</text><text x="735" y="380">∑ 1/n² = π²/6</text>
+<text x="105" y="480">x² − y² = (x−y)(x+y)</text><text x="405" y="480">e^{iπ}+1=0</text><text x="780" y="480">P(A∩B)</text>
+<text x="105" y="700">prime?</text><text x="455" y="700">pattern → conjecture</text><text x="805" y="700">why?</text>
+</g>
+</svg>
