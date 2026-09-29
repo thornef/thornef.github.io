@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Math Jeopardy! — Final Jeopardy</title>
+<style>
+  @font-face {
+    font-family: "Math Jeopardy Korinna";
+    src: url("ITC Korinna Std Bold.otf") format("opentype"),
+         url("ITC Korinna Bold.otf") format("opentype"),
+         url("ITC_ Korinna Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Math Jeopardy Korinna";
+    src: url("ITC Korinna Regular.otf") format("opentype"),
+         url("ITC Korinna LT Regular.otf") format("opentype"),
+         url("ITC_ Korinna Normal.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  :root {
+    --board-blue: #0716a4;
+    --board-deep: #020b66;
+    --gold: #ffcc00;
+    --white: #fff;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; overflow: hidden; background: #000; }
+  body { color: var(--white); user-select: none; }
+  button { font: inherit; }
+
+  #screen {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 6vw;
+    background: radial-gradient(circle at center, #1730ed 0%, #0815b0 50%, #020863 100%);
+  }
+  .panel {
+    width: min(92vw, 1500px);
+    min-height: min(74vh, 760px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(145deg, #1028d4, #07179e 55%, #030c75);
+    border: clamp(7px, .8vw, 13px) solid #000;
+    box-shadow: inset 0 0 40px rgba(0,0,0,.28), 0 18px 70px #000;
+    cursor: pointer;
+    padding: 5vh 5vw;
+  }
+  #categoryView {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: clamp(48px, 8vw, 130px);
+    line-height: .95;
+    letter-spacing: .02em;
+    text-shadow: 4px 5px 0 #000;
+  }
+  #clueView {
+    display: none;
+    flex-direction: column;
+    gap: 3vh;
+  }
+  #clueView.active { display: flex; }
+  #categoryView.hidden { display: none; }
+  .final-label {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-size: clamp(20px, 2.3vw, 38px);
+    letter-spacing: .08em;
+    text-shadow: 2px 2px 0 #000;
+  }
+  .clue {
+    font-family: "Math Jeopardy Korinna", "ITC Korinna", "Korinna", Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: clamp(30px, 4.6vw, 76px);
+    line-height: 1.18;
+    letter-spacing: .012em;
+    text-shadow: 3px 4px 0 rgba(0,0,0,.75);
+  }
+  .hint {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 1.6vh;
+    text-align: center;
+    font: clamp(12px, 1.05vw, 17px) Arial, Helvetica, sans-serif;
+    opacity: .58;
+  }
+  .top-controls {
+    position: fixed;
+    right: 1.2vw;
+    top: 1.4vh;
+    display: flex;
+    gap: .6rem;
+    z-index: 2;
+  }
+  .control {
+    border: 2px solid rgba(255,255,255,.7);
+    background: rgba(0,0,0,.22);
+    color: white;
+    border-radius: 999px;
+    padding: .5rem .85rem;
+    cursor: pointer;
+    font: clamp(12px, 1.05vw, 17px) Arial, Helvetica, sans-serif;
+  }
+  .control:hover { background: rgba(255,255,255,.13); }
+</style>
+</head>
+<body>
+<div class="top-controls">
+  <button class="control" id="fullscreenBtn" type="button">Fullscreen</button>
+  <button class="control" id="resetBtn" type="button">Reset</button>
+</div>
+
+<main id="screen">
+  <section class="panel" id="categoryView" role="button" tabindex="0" aria-label="Final Jeopardy category: Prime Numbers. Click to reveal clue.">
+    Prime Numbers
+  </section>
+
+  <section class="panel" id="clueView" aria-live="polite">
+    <div>
+      <div class="final-label">Final Jeopardy — Prime Numbers</div>
+      <div class="clue">It was proved by Harald Helfgott in 2013 that this is the largest odd number which can’t be written as the sum of three primes</div>
+    </div>
+  </section>
+</main>
+
+<div class="hint" id="hint">Click the category to reveal the clue and start the theme</div>
+
+<audio id="theme" preload="auto">
+  <source src="final_jeopardy_theme.mp3" type="audio/mpeg">
+  <source src="final_jeopardy_theme.ogg" type="audio/ogg">
+</audio>
+
+<script>
+const categoryView = document.getElementById('categoryView');
+const clueView = document.getElementById('clueView');
+const theme = document.getElementById('theme');
+const hint = document.getElementById('hint');
+let revealed = false;
+let themeStarted = false;
+
+function revealClue() {
+  if (revealed) return;
+  revealed = true;
+  categoryView.classList.add('hidden');
+  clueView.classList.add('active');
+  hint.textContent = 'Theme plays once from start to finish if final_jeopardy_theme.mp3 (or .ogg) is in this directory';
+
+  if (!themeStarted) {
+    themeStarted = true;
+    theme.currentTime = 0;
+    theme.loop = false;
+    const p = theme.play();
+    if (p && typeof p.catch === 'function') {
+      p.catch(() => {
+        hint.textContent = 'Clue revealed. Add final_jeopardy_theme.mp3 (or .ogg) beside this HTML to play the theme.';
+      });
+    }
+  }
+}
+
+function resetFinal() {
+  revealed = false;
+  themeStarted = false;
+  theme.pause();
+  theme.currentTime = 0;
+  clueView.classList.remove('active');
+  categoryView.classList.remove('hidden');
+  hint.textContent = 'Click the category to reveal the clue and start the theme';
+}
+
+categoryView.addEventListener('click', revealClue);
+categoryView.addEventListener('keydown', e => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    revealClue();
+  }
+});
+
+document.getElementById('resetBtn').addEventListener('click', e => {
+  e.stopPropagation();
+  resetFinal();
+});
+
+document.getElementById('fullscreenBtn').addEventListener('click', async e => {
+  e.stopPropagation();
+  try {
+    if (!document.fullscreenElement) await document.documentElement.requestFullscreen();
+    else await document.exitFullscreen();
+  } catch (_) {}
+});
+
+document.addEventListener('keydown', async e => {
+  if (e.key.toLowerCase() === 'f') {
+    try {
+      if (!document.fullscreenElement) await document.documentElement.requestFullscreen();
+      else await document.exitFullscreen();
+    } catch (_) {}
+  }
+  if (e.key.toLowerCase() === 'r') resetFinal();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Math Jeopardy! — Round 2</title>
+<style>
+  @font-face {
+    font-family: "Math Jeopardy Korinna";
+    src: url("ITC Korinna Std Bold.otf") format("opentype"),
+         url("ITC Korinna Bold.otf") format("opentype"),
+         url("ITC_ Korinna Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Math Jeopardy Korinna";
+    src: url("ITC Korinna Regular.otf") format("opentype"),
+         url("ITC Korinna LT Regular.otf") format("opentype"),
+         url("ITC_ Korinna Normal.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  :root {
+    --jeopardy-blue: #060ce9;
+    --board-blue: #0716a4;
+    --board-deep: #020b66;
+    --gold: #ffcc00;
+    --white: #fff;
+    --line: #020547;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; overflow: hidden; background: #000; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+    user-select: none;
+  }
+  button { font: inherit; }
+
+  #boardScreen, #clueScreen { position: fixed; inset: 0; }
+
+  #boardScreen {
+    display: grid;
+    grid-template-rows: minmax(86px, 16vh) 1fr;
+    background: radial-gradient(circle at center, #152ae9 0%, var(--board-blue) 48%, var(--board-deep) 100%);
+    padding: 1.2vh 1vw 1.5vh;
+    gap: 1vh;
+  }
+  .titlebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+    padding: 0 1.2vw;
+  }
+  .logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: clamp(28px, 5.3vw, 76px);
+    line-height: .9;
+    letter-spacing: 0.03em;
+    transform: scaleX(.92);
+    text-transform: uppercase;
+    text-shadow: 0 3px 0 #000, 0 0 14px rgba(255,255,255,.2);
+  }
+  .logo span { color: var(--gold); }
+  .controls { display: flex; gap: .6rem; }
+  .control {
+    border: 2px solid rgba(255,255,255,.7);
+    background: rgba(0,0,0,.2);
+    color: white;
+    border-radius: 999px;
+    padding: .55rem .9rem;
+    cursor: pointer;
+    font-size: clamp(12px, 1.15vw, 18px);
+  }
+  .control:hover { background: rgba(255,255,255,.14); }
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1.18fr repeat(5, 1fr);
+    gap: clamp(4px, .45vw, 9px);
+    min-height: 0;
+    background: #000;
+    border: clamp(5px, .7vw, 12px) solid #000;
+    box-shadow: 0 0 0 2px rgba(255,255,255,.08), 0 12px 50px #000;
+  }
+  .category, .value {
+    background: linear-gradient(145deg, #1028d4, #07179e 55%, #030c75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 0;
+    min-height: 0;
+    box-shadow: inset 0 0 28px rgba(0,0,0,.25);
+  }
+  .category {
+    padding: .4rem .5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(16px, 2.35vw, 38px);
+    line-height: .95;
+    letter-spacing: .015em;
+    text-shadow: 2px 3px 0 #000;
+  }
+  .value {
+    border: 0;
+    cursor: pointer;
+    color: var(--gold);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: clamp(31px, 5.3vw, 78px);
+    text-shadow: 3px 4px 0 #000;
+    transition: filter .12s, transform .06s;
+  }
+  .value:hover:not(.used) { filter: brightness(1.18); }
+  .value:active:not(.used) { transform: scale(.985); }
+  .value.used { cursor: default; color: transparent; text-shadow: none; }
+
+  #clueScreen {
+    display: none;
+    background: radial-gradient(circle at center, #1730ed 0%, #0815b0 50%, #020863 100%);
+    align-items: center;
+    justify-content: center;
+    padding: 4.5vh 5vw;
+    cursor: pointer;
+  }
+  #clueScreen.active { display: flex; }
+  .clue-wrap {
+    width: min(92vw, 1500px);
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.8vh;
+  }
+  .clue-category {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-size: clamp(18px, 2vw, 34px);
+    letter-spacing: .06em;
+    text-shadow: 2px 2px 0 #000;
+    opacity: .95;
+  }
+  .clue-text {
+    font-family: "Math Jeopardy Korinna", "ITC Korinna", "Korinna", "Korinna BT", Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: clamp(30px, 4.4vw, 72px);
+    line-height: 1.2;
+    letter-spacing: .012em;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 4px 0 rgba(0,0,0,.75);
+  }
+  .math {
+    font-family: "STIX Two Text", "Cambria Math", "Times New Roman", serif;
+    text-transform: none;
+    white-space: nowrap;
+    letter-spacing: 0;
+  }
+  .clue-footer {
+    position: fixed;
+    left: 0; right: 0; bottom: 1.2vh;
+    text-align: center;
+    font-size: clamp(12px, 1.1vw, 17px);
+    opacity: .55;
+  }
+
+  #help {
+    position: fixed; inset: 0; display: none; z-index: 5;
+    background: rgba(0,0,0,.82); align-items: center; justify-content: center;
+  }
+  #help.active { display: flex; }
+  .help-card {
+    width: min(680px, 90vw); background: #101fb6; border: 4px solid #fff;
+    padding: 2rem; box-shadow: 0 18px 70px #000; line-height: 1.55;
+    font-size: clamp(16px, 1.5vw, 22px);
+  }
+  .help-card h2 { margin-top: 0; color: var(--gold); text-transform: uppercase; }
+  .help-card kbd { background: #fff; color: #111; padding: .1em .35em; border-radius: 4px; }
+
+  @media (max-aspect-ratio: 4/3) {
+    .category { font-size: clamp(13px, 2.55vw, 29px); }
+    .value { font-size: clamp(27px, 6vw, 60px); }
+  }
+</style>
+</head>
+<body>
+<section id="boardScreen" aria-label="Math Jeopardy round 2 board">
+  <div class="titlebar">
+    <div class="logo"><span>Math</span> Jeopardy! <small style="font-family:Arial,sans-serif;font-size:.28em;vertical-align:middle;letter-spacing:.08em">ROUND 2</small></div>
+    <div class="controls">
+      <button class="control" id="helpBtn" type="button">Help</button>
+      <button class="control" id="resetBtn" type="button">Reset board</button>
+    </div>
+  </div>
+  <main class="board" id="board"></main>
+</section>
+
+<section id="clueScreen" aria-live="polite" aria-label="Clue screen">
+  <div class="clue-wrap">
+    <div class="clue-category" id="clueCategory"></div>
+    <div class="clue-text" id="clueText"></div>
+  </div>
+  <div class="clue-footer">Click anywhere, or press Esc / Space / Enter, to return to the board</div>
+</section>
+
+<div id="help">
+  <div class="help-card">
+    <h2>Host controls</h2>
+    <p>Click a dollar value to show its clue. That value disappears after it has been used.</p>
+    <p>On a clue, click anywhere or press <kbd>Esc</kbd>, <kbd>Space</kbd>, or <kbd>Enter</kbd> to return.</p>
+    <p>Press <kbd>F</kbd> to enter or exit browser fullscreen. Press <kbd>R</kbd> to reset the board. Used clues are remembered in this browser.</p>
+    <p style="opacity:.75">Click anywhere on this help panel to close it.</p>
+  </div>
+</div>
+
+<script>
+const categories = [
+  {
+    name: "Simplify!",
+    clues: [
+      `<span class="math">2<sup>(2<sup>2</sup>)</sup></span>`,
+      `<span class="math">(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)(<i>x</i> − <i>c</i>) ⋯ (<i>x</i> − <i>z</i>)</span>`,
+      `<span class="math">arcsin(sin(7π/6))</span>`,
+      `<span class="math">0!</span>`,
+      `<span class="math">log<sub>8</sub>(2<sup>5</sup>)</span>`
+    ]
+  },
+  {
+    name: "Areas of Mathematics",
+    clues: [
+      `The branch of mathematics devoted largely to the integers and their properties`,
+      `This area of mathematics allows you to decompose periodic functions into sines and cosines`,
+      `Groups, rings, and polynomials belong to this branch of mathematics`,
+      `The branch of mathematics that can’t tell a coffee cup from a donut`,
+      `The logistic equation for population growth might be studied in a course on this`
+    ]
+  },
+  {
+    name: "Mathematical Fighters",
+    clues: [
+      `In the 17th century, Isaac Newton and Gottfried Leibniz argued over who discovered this subject first`,
+      `On May 30, 1832, this mathematician was shot in a duel; he died the next day`,
+      `Considered the father of theoretical computer science, this mathematician led efforts to break Nazi codes in WWII`,
+      `MIT-trained mathematician John Urschel also enjoyed a career in this high-contact professional sports league`,
+      `In 2026, Levent Alpöge and Tristan Buckmaster accused OpenAI of stealing its work related to this Millennium Prize problem`
+    ]
+  },
+  {
+    name: "A World of Mathematics",
+    clues: [
+      `Euclid did his best-known work within the borders of this modern-day country`,
+      `Omar Khayyam, 11th-century poet and mathematician, hailed from this country`,
+      `The Fibonacci numbers were described fourteen centuries before Fibonacci by Pingala, from this country`,
+      `A theorem about solutions to simultaneous integer congruences is named for this country`,
+      `Al-Khwarizmi, whose 9th-century book <i>Al-Jabr</i> lent its name to the word “algebra,” worked in this modern-day country`
+    ]
+  },
+  {
+    name: "Mathematics in Cinema",
+    clues: [
+      `In a 2015 film, Dev Patel played this man who <i>Knew Infinity</i>`,
+      `This 1997 film stars Matt Damon as a mathematical genius working as a janitor at MIT`,
+      `This 1998 Darren Aronofsky film sees its genius main character take a power drill to his own head`,
+      `2001 Oscar-winning biopic about John Nash, who invented mathematical game theory`,
+      `This 1980 Golden Raspberry nominee is known for its pitch-perfect proof of the Snake Lemma`
+    ]
+  }
+];
+
+const values = [100, 200, 300, 400, 500];
+const storageKey = 'mathJeopardyUsed-round2-v1';
+let used = new Set(JSON.parse(localStorage.getItem(storageKey) || '[]'));
+let currentKey = null;
+
+const board = document.getElementById('board');
+const boardScreen = document.getElementById('boardScreen');
+const clueScreen = document.getElementById('clueScreen');
+const clueCategory = document.getElementById('clueCategory');
+const clueText = document.getElementById('clueText');
+const help = document.getElementById('help');
+
+function buildBoard() {
+  board.innerHTML = '';
+  categories.forEach(cat => {
+    const h = document.createElement('div');
+    h.className = 'category';
+    h.textContent = cat.name;
+    board.appendChild(h);
+  });
+  values.forEach((value, row) => {
+    categories.forEach((cat, col) => {
+      const key = `${col}-${row}`;
+      const b = document.createElement('button');
+      b.className = 'value' + (used.has(key) ? ' used' : '');
+      b.type = 'button';
+      b.dataset.key = key;
+      b.setAttribute('aria-label', `${cat.name} for $${value}`);
+      b.innerHTML = used.has(key) ? '&nbsp;' : `$${value}`;
+      b.addEventListener('click', () => {
+        if (!used.has(key)) showClue(col, row, key);
+      });
+      board.appendChild(b);
+    });
+  });
+}
+
+function showClue(col, row, key) {
+  currentKey = key;
+  used.add(key);
+  localStorage.setItem(storageKey, JSON.stringify([...used]));
+  clueCategory.textContent = `${categories[col].name} — $${values[row]}`;
+  clueText.innerHTML = categories[col].clues[row];
+  boardScreen.style.display = 'none';
+  clueScreen.classList.add('active');
+}
+
+function returnToBoard() {
+  if (!clueScreen.classList.contains('active')) return;
+  clueScreen.classList.remove('active');
+  boardScreen.style.display = 'grid';
+  buildBoard();
+  currentKey = null;
+}
+
+function toggleFullscreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen?.().catch(() => {});
+  } else {
+    document.exitFullscreen?.();
+  }
+}
+
+clueScreen.addEventListener('click', returnToBoard);
+document.getElementById('resetBtn').addEventListener('click', () => {
+  if (confirm('Reset all 25 clues and make every dollar value visible again?')) {
+    used.clear();
+    localStorage.removeItem(storageKey);
+    buildBoard();
+  }
+});
+document.getElementById('helpBtn').addEventListener('click', () => help.classList.add('active'));
+help.addEventListener('click', () => help.classList.remove('active'));
+
+document.addEventListener('keydown', (e) => {
+  if (help.classList.contains('active')) {
+    if (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ') help.classList.remove('active');
+    return;
+  }
+  if (clueScreen.classList.contains('active') && ['Escape', 'Enter', ' '].includes(e.key)) {
+    e.preventDefault(); returnToBoard(); return;
+  }
+  if (e.key.toLowerCase() === 'f') toggleFullscreen();
+  if (e.key.toLowerCase() === 'r' && !clueScreen.classList.contains('active')) document.getElementById('resetBtn').click();
+});
+
+buildBoard();
+</script>
+</body>
+</html>
