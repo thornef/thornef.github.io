@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Math 701: Abstract Algebra — Fall 2026</title>
+  <style>
+    /*
+      Math 701 syllabus, Fall 2026
+      Intentionally kept as one small, dependency-free HTML file so it is
+      easy to edit by hand. Colors and spacing are defined here in one place.
+    */
+    :root {
+      --ink: #1f2933;
+      --muted: #52606d;
+      --paper: #ffffff;
+      --page: #f4f6f8;
+      --accent: #73000a;
+      --accent-dark: #570008;
+      --border: #cbd2d9;
+      --soft: #f8f1f2;
+      --focus: #005fcc;
+      --max-width: 58rem;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 100%;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--page);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    a {
+      color: #005ea8;
+      text-decoration: underline;
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover {
+      color: #003e73;
+    }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 0.75rem;
+      top: -5rem;
+      z-index: 100;
+      padding: 0.6rem 0.8rem;
+      color: #ffffff;
+      background: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    .skip-link:focus {
+      top: 0.75rem;
+    }
+
+    .site-header {
+      color: #ffffff;
+      background: var(--accent);
+      border-bottom: 0.35rem solid var(--accent-dark);
+    }
+
+    .header-inner,
+    main,
+    footer {
+      width: min(calc(100% - 2rem), var(--max-width));
+      margin-inline: auto;
+    }
+
+    .header-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2.2rem 0 2rem;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.25rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      width: 100%;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      line-height: 1.12;
+      text-align: center;
+    }
+
+    .header-inner p {
+      max-width: none;
+    }
+
+    .subtitle {
+      margin: 0.75rem 0 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.1rem;
+    }
+
+    main {
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+      padding: clamp(1.2rem, 3vw, 2.4rem);
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 0.45rem;
+      box-shadow: 0 0.25rem 1.25rem rgba(31, 41, 51, 0.08);
+    }
+
+    .course-info {
+      margin: 0 0 2rem;
+      padding: 0.9rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .course-info p {
+      margin: 0.3rem 0;
+      max-width: none;
+    }
+
+    section + section {
+      margin-top: 2.25rem;
+      padding-top: 0.2rem;
+    }
+
+    h2 {
+      margin: 0 0 0.6rem;
+      color: var(--accent-dark);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.45rem;
+      line-height: 1.3;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.25rem;
+    }
+
+    p,
+    li {
+      max-width: 75ch;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li + li {
+      margin-top: 0.55rem;
+    }
+
+    .tba {
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .note {
+      padding: 0.85rem 1rem;
+      background: #f7f9fb;
+      border: 1px solid var(--border);
+      border-radius: 0.3rem;
+    }
+
+    footer {
+      padding: 0 0 2rem;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 38rem) {
+      .header-inner,
+      main,
+      footer {
+        width: min(calc(100% - 1rem), var(--max-width));
+      }
+
+      main {
+        padding: 1rem;
+        border-radius: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .skip-link {
+        display: none;
+      }
+
+      .site-header {
+        color: #000000;
+        background: #ffffff;
+        border-bottom: 2px solid #000000;
+      }
+
+      main {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+      }
+
+      a {
+        color: #000000;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">University of South Carolina</p>
+      <h1>Abstract Algebra — Math 701</h1>
+      <p class="subtitle">Frank Thorne · Fall 2026</p>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <div class="course-info" aria-label="Course information">
+      <p><strong>Instructor:</strong> Frank Thorne, LeConte 447, thorne [at] math [dot] sc [dot] edu</p>
+      <p><strong>Class meetings:</strong> MWF, 10:50–11:40 a.m., LeConte 315</p>
+      <p><strong>Office hours:</strong> Tue 9:00–10:30 a.m. and Wed 3:30–5:00 p.m.</p>
+    </div>
+
+    <section aria-labelledby="objectives">
+      <h2 id="objectives">Course Objectives and Learning Outcomes</h2>
+      <p><strong>In Math 701 and 702, successful students will:</strong></p>
+      <ul>
+        <li>Master algebraic topics concerning groups, rings, fields, and other algebraic structures.</li>
+        <li>More importantly, develop their sense of <em>algebraic thinking</em>, so that they can more easily absorb additional algebraic material in the future.</li>
+        <li>Lay the foundation for research in topics including algebraic number theory, algebraic combinatorics, representation theory, algebraic geometry, commutative algebra, algebraic topology, and related areas.</li>
+        <li>Prepare for the Qualifying Exam in algebra.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="books">
+      <h2 id="books">Books</h2>
+      <p>The course will use <strong>Dummit and Foote</strong>'s <em>Abstract Algebra</em>; please obtain a copy of the book and follow along.</p>
+      <p>There are a number of other excellent books on algebra as well. Perhaps the most interesting is that by <strong>Lang</strong>. In my opinion Lang's book is not very good for the beginner, but is excellent for someone who has seen the material before and wants to review or see a different perspective. In particular, it is great to read when you are studying for quals.</p>
+    </section>
+
+    <section aria-labelledby="requirements">
+      <h2 id="requirements">Course Requirements</h2>
+      <ul>
+        <li><strong>70%</strong> — Written homework assignments, assigned at most weekly.</li>
+        <li><strong>10%</strong> — Midterm.</li>
+        <li><strong>10%</strong> — Final exam.</li>
+        <li><strong>10%</strong> — Seminar reports.</li>
+      </ul>
+
+      <p>The <strong>exams</strong> will be take-home and pledged, closed book/notes, four hours for both the midterm and the final, and similar to what will appear on the qualifying exam. The midterm will be passed out on a date to be announced, and you will have a week to do it. The final exam will be distributed on a date to be announced and due on the last day of the finals period.</p>
+
+      <p>For the <strong>seminar reports</strong> you are asked to attend at least <strong>four</strong> seminars, conference talks, or colloquia and write a brief report of what you learned, what you found interesting, or what questions you have. The format is up to you; Ravi Vakil's <a href="https://math.stanford.edu/~vakil/threethings.html">“Three Things” advice for attending talks</a> is one good choice.</p>
+
+      <p>Seminars may be in-person or online. USC-sponsored seminars include <a href="https://sc.edu/study/colleges_schools/artsandsciences/mathematics/beyond_classroom/colloquia_and_seminars/agcant/index.php">Algebra, Geometry, and Number Theory</a> and the <a href="https://sc.edu/study/colleges_schools/artsandsciences/mathematics/beyond_classroom/colloquia_and_seminars/colloquia/index.php">department colloquium</a>. There are also many external online seminars, for example the <a href="https://www.ntwebseminar.org/">Number Theory Web Seminar</a>.</p>
+
+      <p>You should periodically go to these if a topic catches your interest. Even if you expect the seminar to go over your head, it's worthwhile to go anyway: in part, we learn mathematics the same way babies learn language. See Ravi Vakil's <a href="https://math.stanford.edu/~vakil/threethings.html">advice on how to go to a talk</a>.</p>
+    </section>
+
+    <section aria-labelledby="policies-heading">
+      <h2 id="policies-heading">Course Policies</h2>
+      <ul>
+        <li><strong>Academic honesty</strong> is expected of all students. Collaboration on homework is encouraged, but do not copy anyone else's writeup.</li>
+        <li><strong>Attendance</strong> is expected of all students. Roll will not be taken. In case of excused absences, you are welcome to go through formal channels; alternatively, unless you are missing many classes or are asking to make up an exam, an email letting me know the circumstances will suffice.</li>
+        <li><strong>Makeup exams:</strong> Exams may be made up in case of illness, emergency, or university-sanctioned absence (including religious observances). Barring extremely unusual circumstances, advance notice must be given; in case of a university-sanctioned absence, please give at least a week's notice.</li>
+        <li>If you have difficulty seeing the board or hearing the lectures, or a related problem, <strong>let me know as soon as possible</strong>, and I will do something about it.</li>
+        <li>Harassment, bullying, racism, sexism, and homophobia will not be tolerated, and flagrant or repeated violations will be reported to the Office of Student Conduct. Please bring any incidents I do not notice to my attention.</li>
+        <li>If you require <strong>disability-related accommodations</strong>, please contact the <a href="https://www.sc.edu/about/offices_and_divisions/student_disability_resource_center/">Student Disability Resource Center</a> as soon as possible. It is your responsibility to advise me of any needed accommodations a week in advance.</li>
+        <li><strong>Please contact me if you have any questions about the course, about my expectations, about my lectures, about the homework, about the reading, or about anything else.</strong> The syllabus is demanding and it is my job to help you succeed.
+          <p>The best ways to get help are to come to office hours (no appointment necessary) or to email me. During the week, I will almost always reply within 24 hours. If neither of these works for you, please email me to set up an appointment.</p>
+        </li>
+      </ul>
+
+      <h3>AI Policy</h3>
+      <p>Refer to the AI policy <a href="https://thornef.github.io/ai-policy.html">here</a>.</p>
+    </section>
+
+    <section aria-labelledby="grading">
+      <h2 id="grading">Grading Scale</h2>
+      <ul>
+        <li><strong>A (75+):</strong> You have a strong chance of passing the qualifying exam if you prepare reasonably. This also represents a strong foundation for learning further related topics.</li>
+        <li><strong>B+ (60+):</strong> With additional effort, you should be able to pass the qualifying exam if you prepare. This represents a partial foundation for learning further related topics.</li>
+        <li><strong>B (50+):</strong> You have demonstrated some mastery of the subject material, but should put in a lot of additional effort if you want to pass the qualifying exam or take follow-up courses in algebra.</li>
+        <li><strong>C (40–49), D (30–39), F (0–29):</strong> This represents a serious problem.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="homework">
+      <h2 id="homework">Homework Assignments</h2>
+      <ul class="assignment-list">
+        <li>
+          <strong>Homework 1</strong> — due <time datetime="2026-09-09">Wednesday, September 9</time>.
+          <a href="701-26-hw1.pdf">PDF (original)</a> ·
+          <a href="701-26-hw1-accessible.docx">Word (accessible)</a>
+        </li>
+        <li>
+          <strong>Homework 2</strong> — due <time datetime="2026-10-07">Wednesday, October 7</time>.
+          <a href="701-26-hw2.pdf">PDF (original)</a> ·
+          <a href="701-26-hw2-accessible.docx">Word (accessible)</a>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="lecture-notes">
+      <h2 id="lecture-notes">Lecture Notes</h2>
+      <p class="tba">TBA</p>
+    </section>
+
+    <section aria-labelledby="schedule">
+      <h2 id="schedule">Rough Schedule of Topics</h2>
+      <p>This is for both 701 and 702, and is subject to change based on student background and interest.</p>
+
+      <p>The course will include a short unit on linear algebra at the very beginning of the term. This will showcase the themes of the course in a setting that will be very familiar, and yet possibly unfamiliar at the same time. (Matrices will be mentioned only briefly if at all, and they will certainly not be row reduced at the blackboard.)</p>
+
+      <p>For a more highbrow perspective, I recommend Lang's book. For a still more highbrow perspective, read <a href="https://people.math.harvard.edu/~lurie/papers/HA.pdf">Lurie's <em>Higher Algebra</em></a> or the <a href="https://stacks.math.columbia.edu/download/book.pdf">Stacks Project</a> if you dare.</p>
+
+      <ul>
+        <li><strong>Linear Algebra</strong> (2–3 weeks): Dummit–Foote, Ch. 11–12; Axler, <em>Linear Algebra Done Right</em>.</li>
+        <li><strong>Group Theory</strong> (~6 weeks): Dummit–Foote, Ch. 1–5.</li>
+        <li><strong>Ring Theory</strong> (~4 weeks): Dummit–Foote, Ch. 7–9. For the most part we will deal with <em>commutative rings</em>.</li>
+        <li><strong>Module Theory and Tensor Products</strong> (~3 weeks): Dummit–Foote, Ch. 10, 11.5; Atiyah–Macdonald, <a href="https://wstein.org/edu/Fall2003/252/references/Atiyah-MacDonald/Atiyah-McDonald-Commutative_Algebra.pdf"><em>Introduction to Commutative Algebra</em></a>.</li>
+        <li><strong>Field and Galois Theory</strong> (~6 weeks): Dummit–Foote, Ch. 13–14.</li>
+        <li>If possible, introduction to <strong>Commutative Rings and Algebraic Geometry</strong> (~3 weeks): Dummit–Foote, Ch. 15; Atiyah–Macdonald.</li>
+        <li>If possible, introduction to <strong>Algebraic Number Theory</strong> (2–3 weeks): Dummit–Foote, Ch. 15.3, 16.2–16.3; Neukirch, <em>Algebraic Number Theory</em>.</li>
+      </ul>
+
+      <p>If there is additional time (wishful thinking?), we will cover additional topics such as homological algebra and group representation theory (see Ch. 17–19 of Dummit–Foote). Another option is to cover the basics of category theory, borrowing from Aluffi's <em>Algebra: Chapter 0</em>. Still another option is to do more noncommutative ring theory. If there are topics you would like to see covered, please be in touch!</p>
+
+      <p>Other topics may be covered as well, depending on student interest.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Math 701 · Abstract Algebra · Fall 2026</p>
+  </footer>
+</body>
+</html>
