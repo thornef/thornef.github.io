@@ -1,0 +1,147 @@
+\documentclass[12pt]{article}
+\textwidth 7.0in
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textheight 9.0in 
+\pagestyle{empty}
+\usepackage{amsmath, amssymb, amscd, amsfonts}
+\usepackage{amsthm}
+\usepackage{latexsym, epsfig, color, verbatim, xcolor, color}
+\usepackage{url}
+
+
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\SL}{\operatorname{SL}}
+\newcommand{\leg}[2]{\genfrac{(}{)}{}{}{#1}{#2}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\del}{\delta}
+\newcommand{\om}{\omega}
+\newcommand{\Qscr}{\mathscr{Q}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\mfp}{\mathfrak{p}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Vol}{\operatorname{Vol}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\SO}{\operatorname{SO}}
+\newcommand{\Tr}{\operatorname{Tr} }
+\newcommand{\Frob}{\operatorname{Frob}}
+\newcommand{\Sel}{\operatorname{Sel}}
+\newcommand{\Hilb}{\operatorname{Hilb}}
+\newcommand{\Det}{\operatorname{Det}}
+\newcommand{\sha}{\operatorname{Sha}}
+
+\usepackage{enumerate}
+\begin{document}
+% 8.5in paper width -2x1in margin = 6.5in text width
+\setlength{\topmargin}{-2mm}
+
+
+
+% 11in paper height -2x1in margin = 9in text height
+
+
+\begin{center}{\bf Homework 4, Math 701 -- Frank Thorne (thorne@math.sc.edu)}
+\end{center}
+\begin{center}
+{\bf Instructions:} You are welcome and encouraged to collaborate, but please write up your own solutions. \\
+
+Due  Friday, November 20, 2026.
+\end{center}
+
+\begin{enumerate}
+
+\item
+Let $F$ be a field. Prove that the matrix ring $M_n(F)$ is {\itshape simple}: it has no two-sided ideals other than $0$ and itself.
+
+\item
+Prove (with an explicit description) that $M_2(\R)$ contains a subring isomorphic to $\C$.
+
+\item
+Use the Chinese Remainder Theorem to prove the existence of a partial fraction decomposition: If 
+$g(x) = \prod_{i=1}^n (x - a_i) \in \C[x]$ is a polynomial of degree $n$ with distinct roots, and $f(x)$ is any polynomial of lesser degree,
+then we may write
+\[
+\frac{f(x)}{g(x)} = \frac{ b_1 }{x - a_1} + \cdots + \frac{b_n}{x - a_n}
+\]
+for complex numbers $b_i$.
+
+\item
+Prove:
+\begin{enumerate}
+\item
+The maximal ideals of $\C[x]$ are $(x - a)$ for $a \in \C$; 
+\item
+The only prime, nonmaximal ideal of $\C[x]$ is $(0)$. (Recall that every maximal ideal is prime.)
+\end{enumerate}
+
+\item 
+Let $R$ be the ring of continuous functions from $[0, 1]$ to $\mathbb{R}$. 
+\begin{enumerate}
+\item
+Determine the units of $R$. 
+\item 
+Determine all the zero divisors of $R$.
+\item 
+For each $0 \leq t \leq 1$, prove that $\{ f \in R: f(t) = 0 \}$ is a maximal ideal.
+\item 
+Prove that every maximal ideal is of this form. 
+
+{\itshape Hint:} You will probably need a bit of real analysis in your proof. 
+\end{enumerate}
+
+\end{enumerate}
+
+
+\end{document}
+
+
+\item
+({\bf Row Rank Equals Column Rank})
+The {\bf row rank} and {\bf column rank} of an $n \times m$ 
+matrix $A$ are the dimensions of the subspaces of $F^n$
+and $F^m$, respectively, spanned by its rows and columns respectively.
+
+Prove\footnote{Credit: I learned of this proof from Marc van Leeuwen} that the row
+rank and column rank are equal as follows:
+\begin{itemize}
+\item
+Show that the column rank is the smallest number $r$ for which the homomorphism
+$\phi$ corresponding to $A$ can be written as a composition of two linear maps
+$F^m \rightarrow F^r \rightarrow F^n$.
+\item
+Conclude that $r$ is the smallest number for which one can write $A = BC$,
+with $B$ an $n \times r$ and $C$ an $r \times m$ matrix respectively.
+\item
+Taking transposes, conclude the result.
+\end{itemize}
+\item
+Let $V$ be a vector space, possibly infinite dimensional.
+\begin{enumerate}
+\item
+Prove that the map
+\[
+v \rightarrow \{ f \rightarrow f(v) \}
+\]
+defines an injective map from $V$ to the double dual $V^{**} = (V^*)^*$.
+\item
+Prove that this map is not surjective if $V$ is infinite dimensional.
+\end{enumerate}
+
+\item
+Let $V$ be a finite dimensional vector space, and let $A$ and $B$ be the matrices of a linear transformation $\phi$
+with respect to two different bases.
+
+Prove that $B = M A M^{-1}$ for some matrix $M$, and describe $M$ explicitly.
+
+\item
+Exhibit a $2 \times 2$ matrix with real entries which does not have any eigenvalues over $\mathbb{R}$. (Better still:
+can you characterize all such matrices?)
+
+\end{enumerate}
+
+\end{document}
