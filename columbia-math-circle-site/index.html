@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Columbia Math Circle</title>
+  <meta name="description" content="Columbia Math Circle: mathematical enrichment for middle and high school students in Columbia, South Carolina.">
+  <style>
+    :root {
+      --ink: #18222f;
+      --muted: #4b5868;
+      --paper: #ffffff;
+      --soft: #f3f6f8;
+      --navy: #17324d;
+      --navy-2: #244b6e;
+      --gold: #d59b2a;
+      --gold-soft: #fff5d9;
+      --border: #d7dfe7;
+      --focus: #8a3ffc;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--soft);
+      line-height: 1.65;
+      font-size: 1.05rem;
+    }
+
+    a {
+      color: #0b5ea8;
+      text-decoration-thickness: 0.1em;
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover { color: #083f72; }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 1rem;
+      top: -5rem;
+      z-index: 100;
+      background: #fff;
+      color: #000;
+      padding: .75rem 1rem;
+      border: 2px solid #000;
+    }
+
+    .skip-link:focus { top: 1rem; }
+
+    header {
+      background: linear-gradient(135deg, var(--navy), var(--navy-2));
+      color: #fff;
+    }
+
+    .hero {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 3.8rem 1.25rem 3.2rem;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 .6rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #ffe19d;
+      font-size: .92rem;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 4.6rem);
+      line-height: 1.05;
+      margin: 0;
+      letter-spacing: -.025em;
+    }
+
+    .tagline {
+      margin: 1rem 0 1.4rem;
+      font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+      max-width: 42rem;
+      color: #eef5fb;
+    }
+
+    .hero-note {
+      display: inline-block;
+      background: var(--gold-soft);
+      color: #402d04;
+      border-left: 5px solid var(--gold);
+      padding: .9rem 1rem;
+      border-radius: .35rem;
+      font-weight: 700;
+    }
+
+    .hero-card {
+      background: #fff;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 18px 40px rgba(0,0,0,.22);
+    }
+
+    .hero-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .hero-card figcaption {
+      color: #394858;
+      font-size: .88rem;
+      padding: .65rem .85rem .8rem;
+      background: #fff;
+    }
+
+    nav {
+      background: #0f2538;
+      border-top: 1px solid rgba(255,255,255,.2);
+    }
+
+    nav ul {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: .65rem 1.25rem;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .35rem 1.25rem;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      padding: .35rem 0;
+    }
+
+    nav a:hover,
+    nav a:focus-visible { text-decoration: underline; color: #fff; }
+
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 2.4rem 1.25rem 4rem;
+    }
+
+    section {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: .9rem;
+      padding: clamp(1.35rem, 3vw, 2.1rem);
+      margin: 0 0 1.35rem;
+      box-shadow: 0 8px 24px rgba(23,50,77,.06);
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: var(--navy);
+      font-size: clamp(1.55rem, 3vw, 2rem);
+      line-height: 1.2;
+    }
+
+    section h3 { color: var(--navy); margin-bottom: .4rem; }
+
+    .intro-grid,
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .feature-list {
+      padding-left: 1.25rem;
+      margin-bottom: 0;
+    }
+
+    .feature-list li { margin-bottom: .7rem; }
+
+    .event-card {
+      background: var(--gold-soft);
+      border: 2px solid #e7c66f;
+      border-radius: .75rem;
+      padding: 1.2rem 1.35rem;
+    }
+
+    .event-card p { margin: .4rem 0; }
+
+    .event-card .date {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #372600;
+    }
+
+    address {
+      font-style: normal;
+      margin-bottom: 1rem;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      margin-top: 1rem;
+    }
+
+    .button-link {
+      display: inline-block;
+      background: var(--navy);
+      color: #fff;
+      padding: .65rem .9rem;
+      border-radius: .45rem;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button-link:hover { background: #0d2539; color: #fff; }
+
+    .leaders {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .leader {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: .65rem;
+      padding: 1rem;
+    }
+
+    .leader strong { display: block; color: var(--navy); font-size: 1.08rem; }
+
+    .photo-strip {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .photo-strip figure {
+      margin: 0;
+      border: 1px solid var(--border);
+      border-radius: .75rem;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .photo-strip img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .photo-strip figcaption {
+      padding: .65rem .8rem .8rem;
+      color: var(--muted);
+      font-size: .88rem;
+    }
+
+    .contact-box {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy);
+    }
+
+    .contact-box h2 { color: #fff; }
+    .contact-box a { color: #ffe19d; }
+    .contact-box a:hover { color: #fff2c4; }
+
+    footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.25rem 2.8rem;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    @media (max-width: 800px) {
+      .hero,
+      .intro-grid,
+      .two-col,
+      .leaders,
+      .photo-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .hero { padding-top: 2.6rem; }
+      .photo-strip img { height: auto; aspect-ratio: 16 / 10; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; }
+      header { background: #fff; color: #000; }
+      .tagline { color: #000; }
+      nav, .hero-card { display: none; }
+      section { box-shadow: none; break-inside: avoid; }
+      a { color: #000; }
+      .contact-box { background: #fff; color: #000; border: 1px solid #000; }
+      .contact-box h2, .contact-box a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <div class="hero">
+      <div>
+        <p class="eyebrow">For middle and high school students</p>
+        <h1>Columbia Math Circle</h1>
+        <p class="tagline">Explore beautiful mathematics, tackle open-ended problems, and discover ideas that go beyond the usual school curriculum.</p>
+        <div class="hero-note">First meeting: Saturday, September 19, 10:00 a.m.–1:00 p.m.</div>
+      </div>
+      <figure class="hero-card">
+        <img src="images/students-collaborating.svg" alt="Four students collaborating around a table on a mathematics problem, with prompts to try examples, make a conjecture, and explain why.">
+        <figcaption>Illustration of students collaborating on an open-ended mathematics problem.</figcaption>
+      </figure>
+    </div>
+
+    <nav aria-label="Page sections">
+      <ul>
+        <li><a href="#about">What is a Math Circle?</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#contact">Register &amp; Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">What is a Math Circle?</h2>
+      <div class="intro-grid">
+        <div>
+          <p>A Math Circle is an enrichment program where students meet to explore interesting mathematics together. Instead of racing through a textbook, participants spend time on <strong>open-ended problems</strong>, puzzles, patterns, and mathematical ideas that reward experimentation, discussion, and creative thinking.</p>
+          <p>The Columbia Math Circle is intended for <strong>middle and high school students</strong> who are curious about mathematics and would enjoy seeing what the subject looks like beyond the standard curriculum. A typical session may involve working in small groups, testing examples, drawing pictures, making conjectures, finding counterexamples, and explaining why an idea works.</p>
+        </div>
+        <div>
+          <h3>What to expect</h3>
+          <ul class="feature-list">
+            <li>Problems with more than one possible path forward.</li>
+            <li>Topics drawn from areas such as number theory, geometry, combinatorics, logic, games, probability, and more.</li>
+            <li>Time to think, ask questions, try ideas that fail, and try again.</li>
+            <li>Conversation with students and teachers who enjoy mathematics.</li>
+            <li>An emphasis on curiosity and mathematical reasoning rather than speed.</li>
+          </ul>
+        </div>
+      </div>
+
+      <p>Math Circles have a long tradition in mathematical enrichment. If you would like to see examples of similar programs and activities, visit <a href="https://mathcircles.org/">MathCircles.org</a>, the <a href="https://mathcircle.berkeley.edu/">Berkeley Math Circle</a>, or the <a href="https://jrmf.org/">Julia Robinson Mathematics Festival</a>.</p>
+
+      <div class="photo-strip" aria-label="Mathematics images">
+        <figure>
+          <img src="images/math-board.svg" alt="A blackboard covered with mathematical equations, graphs, symbols, and geometric diagrams.">
+          <figcaption>A mathematical blackboard illustration featuring equations, geometry, and prompts for exploration.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/students-collaborating.svg" alt="Four students collaborating around a table on a mathematics problem.">
+          <figcaption>Illustration of students working together on mathematics.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="schedule" aria-labelledby="schedule-heading">
+      <h2 id="schedule-heading">Schedule</h2>
+      <div class="event-card">
+        <p class="date">Saturday, September 19, 2026</p>
+        <p><strong>Time:</strong> 10:00 a.m.–1:00 p.m.</p>
+        <p><strong>Location:</strong> Hammond School, Columbia, South Carolina</p>
+        <p><strong>Food:</strong> Light snacks will be provided.</p>
+      </div>
+      <p>Future Math Circle dates will be announced later. To receive future announcements, join the mailing list using the contact information below.</p>
+    </section>
+
+    <section id="location" aria-labelledby="location-heading">
+      <h2 id="location-heading">Location and Arrival</h2>
+      <div class="two-col">
+        <div>
+          <address>
+            <strong>Hammond School</strong><br>
+            854 Galway Lane<br>
+            Columbia, SC 29209
+          </address>
+          <p>Hammond is an independent Pre-K–12 school in Columbia with a 100-acre campus. First-time visitors may find it useful to review Hammond's official campus information before coming.</p>
+          <div class="button-row">
+            <a class="button-link" href="https://www.google.com/maps/search/?api=1&amp;query=854+Galway+Lane+Columbia+SC+29209">Open in Google Maps</a>
+            <a class="button-link" href="https://www.hammondschool.org/about/campus-and-facilities">Hammond campus information</a>
+          </div>
+        </div>
+        <div>
+          <h3>When you arrive</h3>
+          <p><strong>At the gate, please tell the guard that you are there for the Columbia Math Circle.</strong></p>
+          <p>For general information about the school, visit <a href="https://www.hammondschool.org/">Hammond School's website</a>. Hammond's main telephone number is <a href="tel:+18037760295">(803) 776-0295</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership" aria-labelledby="leadership-heading">
+      <h2 id="leadership-heading">Leadership</h2>
+      <p>The Columbia Math Circle is organized by mathematics educators from Hammond School and the University of South Carolina.</p>
+      <div class="leaders">
+        <div class="leader">
+          <strong>Marcus Neal</strong>
+          Hammond School
+        </div>
+        <div class="leader">
+          <strong>Patrick Rybarczyk</strong>
+          Hammond School
+        </div>
+        <div class="leader">
+          <strong>Frank Thorne</strong>
+          University of South Carolina
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-box" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Register, Ask a Question, or Join the Mailing List</h2>
+      <p>To register for the September 19 Math Circle, ask a question, or receive announcements about future meetings, contact <strong>Patrick Rybarczyk</strong> at <a href="mailto:prybarczyk@hammondschool.org">prybarczyk@hammondschool.org</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Columbia Math Circle • Columbia, South Carolina</p>
+    <p>Accessibility note: this page uses semantic headings and landmarks, keyboard-visible focus, descriptive link text, responsive layout, and text alternatives for meaningful images.</p>
+  </footer>
+</body>
+</html>

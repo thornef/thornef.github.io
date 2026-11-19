@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<title id="title">Students collaborating on mathematics</title><desc id="desc">A stylized illustration of four students around a table discussing a sheet filled with mathematical diagrams.</desc>
+<rect width="1200" height="800" fill="#edf3f7"/>
+<rect x="90" y="70" width="1020" height="310" rx="18" fill="#244b6e"/>
+<g fill="#fff" font-family="Georgia, serif" font-size="42"><text x="145" y="150">Try examples.</text><text x="145" y="225">Make a conjecture.</text><text x="145" y="300">Explain why.</text></g>
+<g fill="none" stroke="#ffe19d" stroke-width="7"><circle cx="825" cy="215" r="90"/><path d="M825 125v180M735 215h180"/><path d="M935 135l95 160H840z"/></g>
+<ellipse cx="600" cy="650" rx="430" ry="105" fill="#d8b27c"/>
+<polygon points="480,555 720,555 770,675 430,675" fill="#fff" stroke="#718096" stroke-width="4"/>
+<g stroke="#244b6e" stroke-width="4" fill="none"><circle cx="565" cy="610" r="28"/><path d="M525 645l70-70M630 585l70 55M620 640h90"/></g>
+<g>
+<circle cx="330" cy="490" r="62" fill="#8c5a3c"/><path d="M260 570q70-75 140 0v120H260z" fill="#51789c"/>
+<circle cx="500" cy="450" r="62" fill="#c88d69"/><path d="M430 530q70-75 140 0v120H430z" fill="#8b5f8f"/>
+<circle cx="700" cy="450" r="62" fill="#a36f4f"/><path d="M630 530q70-75 140 0v120H630z" fill="#497b64"/>
+<circle cx="870" cy="490" r="62" fill="#d2a17f"/><path d="M800 570q70-75 140 0v120H800z" fill="#a96d3d"/>
+</g>
+<g stroke="#18222f" stroke-width="7" stroke-linecap="round"><path d="M365 570l105 45"/><path d="M535 535l60 70"/><path d="M665 535l-55 70"/><path d="M835 570l-105 45"/></g>
+</svg>
